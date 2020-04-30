@@ -1,9 +1,0 @@
-playerblock=0
-playerblocktop=0
-npcblock=1
-npcblocktop=1
-grabtop=0
-jumphurt=1
-nofireball=0
-noiceball=0
-framestyle=1

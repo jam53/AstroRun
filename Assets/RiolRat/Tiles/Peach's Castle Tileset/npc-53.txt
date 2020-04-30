@@ -1,9 +1,0 @@
-gfxoffsety=2
-gfxwidth=32
-gfxheight=48
-width=32
-height=48
-jumphurt=0
-noyoshi=1
-frames=4
-framestyle=1
