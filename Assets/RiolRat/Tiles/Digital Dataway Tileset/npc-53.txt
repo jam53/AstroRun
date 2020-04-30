@@ -1,9 +1,0 @@
-gfxoffsety=2
-gfxwidth=36
-gfxheight=42
-width=36
-height=42
-jumphurt=0
-frames=4
-framestyle=1
-name="Computer Virus"

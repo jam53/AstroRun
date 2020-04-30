@@ -1,7 +1,0 @@
-gfxwidth=96
-gfxheight=36
-width=96
-height=32
-speed=2
-frames=4
-framestyle=1
