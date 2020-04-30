@@ -1,0 +1,5 @@
+gfxwidth=56
+gfxheight=70
+width=56
+height=56
+framespeed=12

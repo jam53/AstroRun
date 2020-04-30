@@ -1,0 +1,5 @@
+gfxheight=40
+height=40
+jumphurt=0
+frames=4
+framestyle=1

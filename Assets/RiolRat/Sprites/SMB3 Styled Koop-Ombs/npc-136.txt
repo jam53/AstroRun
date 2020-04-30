@@ -1,0 +1,7 @@
+gfxwidth=72
+gfxheight=48
+width=48
+height=32
+frames=3
+framestyle=1
+name="Koop-Omb"
