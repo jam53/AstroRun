@@ -1,0 +1,7 @@
+gfxwidth=40
+gfxheight=40
+width=40
+height=40
+npcblock=0
+speed=2
+framespeed=4

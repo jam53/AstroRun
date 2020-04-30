@@ -1,0 +1,4 @@
+gfxwidth=28
+gfxheight=28
+width=28
+height=28

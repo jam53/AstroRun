@@ -1,0 +1,7 @@
+gfxwidth=56
+gfxheight=32
+width=48
+height=32
+frames=1
+framestyle=1
+name="Mecha-Koopa Kicked"

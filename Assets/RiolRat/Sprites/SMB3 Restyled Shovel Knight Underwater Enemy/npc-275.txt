@@ -1,0 +1,5 @@
+gfxwidth=52
+gfxheight=44
+width=52
+height=24
+framespeed=10

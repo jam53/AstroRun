@@ -1,0 +1,10 @@
+gfxwidth=42
+gfxheight=42
+width=42
+height=32
+playerblocktop=0
+npcblock=0
+grabtop=0
+jumphurt=0
+nofireball=0
+framestyle=1
