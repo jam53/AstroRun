@@ -10,10 +10,14 @@ public class ObjectMover : MonoBehaviour
     public Vector3 EndPosition;
     public float GaanSnelheid;
     public float TerugSnelheid;
+
     public float pauze;
+    private bool StaStil;
 
     public AudioClip GeluidOpImpact;
     public AudioClip GeluidBijTerugGaan;
+
+
 
     private bool AanHetGaan = true; // Als het terug komt, gwn op false zetten
     // Start is called before the first frame update
@@ -34,7 +38,14 @@ public class ObjectMover : MonoBehaviour
         if (Vector3.Distance(this.transform.position, StartPosition) < 0.1f)
         {
             AanHetGaan = true;
-            pauze -= Time.deltaTime;
+            //float WatIsPauze = pauze;
+            //while (pauze > 0)
+            //{
+            //    pauze -= Time.deltaTime;
+            //}
+            //pauze = WatIsPauze;
+
+            
         }
 
         if (AanHetGaan)

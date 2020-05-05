@@ -24,7 +24,7 @@ namespace UnityStandardAssets._2D
             if (!m_Jump)
             {
                 // Read the jump input in Update so button presses aren't missed.
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                m_Jump = Input.GetButtonDown("Jump");
             }
         }
 
@@ -32,7 +32,6 @@ namespace UnityStandardAssets._2D
         private void FixedUpdate()
         {
             // Read the inputs.
-            //bool crouch = Input.GetKey(KeyCode.LeftControl);
             bool crouch;
             if (joystick.Vertical <= -0.5f)
             {
@@ -43,8 +42,10 @@ namespace UnityStandardAssets._2D
             {
                 crouch = false; ;
             }
+            crouch = Input.GetKey(KeyCode.LeftControl);
             //float h = CrossPlatformInputManager.GetAxis("Horizontal"); > Voor pc toetsen
-            float h = joystick.Horizontal; // Voor joystick AKA android
+            float h = Input.GetAxis("Horizontal");
+            //h = joystick.Horizontal; // Voor joystick AKA android
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
