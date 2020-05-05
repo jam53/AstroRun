@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
 using UnityEngine;
 
 public class ObjectMover : MonoBehaviour
@@ -8,8 +10,7 @@ public class ObjectMover : MonoBehaviour
     public Vector3 EndPosition;
     public float GaanSnelheid;
     public float TerugSnelheid;
-
-    public FloatingJoystick test;
+    public float pauze;
 
     public AudioClip GeluidOpImpact;
     public AudioClip GeluidBijTerugGaan;
@@ -19,7 +20,6 @@ public class ObjectMover : MonoBehaviour
     void Start()
     {
         StartPosition = this.transform.position;
-        float h = test.Horizontal;
     }
 
     // Update is called once per frame
@@ -34,6 +34,7 @@ public class ObjectMover : MonoBehaviour
         if (Vector3.Distance(this.transform.position, StartPosition) < 0.1f)
         {
             AanHetGaan = true;
+            pauze -= Time.deltaTime;
         }
 
         if (AanHetGaan)
