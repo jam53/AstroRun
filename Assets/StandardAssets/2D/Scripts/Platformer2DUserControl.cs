@@ -44,8 +44,11 @@ namespace UnityStandardAssets._2D
             }
             crouch = Input.GetKey(KeyCode.LeftControl);
             //float h = CrossPlatformInputManager.GetAxis("Horizontal"); > Voor pc toetsen
-            float h = Input.GetAxis("Horizontal");
-            //h = joystick.Horizontal; // Voor joystick AKA android
+            float h;
+            h = joystick.Horizontal; // Voor joystick AKA android
+#if UNITY_EDITOR
+            h = Input.GetAxis("Horizontal");
+#endif
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
