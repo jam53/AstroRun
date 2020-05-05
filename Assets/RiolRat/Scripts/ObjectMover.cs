@@ -9,6 +9,8 @@ public class ObjectMover : MonoBehaviour
     public float GaanSnelheid;
     public float TerugSnelheid;
 
+    public FloatingJoystick test;
+
     public AudioClip GeluidOpImpact;
     public AudioClip GeluidBijTerugGaan;
 
@@ -17,6 +19,7 @@ public class ObjectMover : MonoBehaviour
     void Start()
     {
         StartPosition = this.transform.position;
+        float h = test.Horizontal;
     }
 
     // Update is called once per frame
