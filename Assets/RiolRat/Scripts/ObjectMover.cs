@@ -38,6 +38,7 @@ public class ObjectMover : MonoBehaviour
         if (Vector3.Distance(this.transform.position, StartPosition) < 0.1f)
         {
             AanHetGaan = true;
+            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
             //float WatIsPauze = pauze;
             //while (pauze > 0)
             //{
@@ -45,7 +46,7 @@ public class ObjectMover : MonoBehaviour
             //}
             //pauze = WatIsPauze;
 
-            
+
         }
 
         if (AanHetGaan)
