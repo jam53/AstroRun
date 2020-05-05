@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets._2D
@@ -10,6 +11,7 @@ namespace UnityStandardAssets._2D
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
 
+        public FloatingJoystick joystick;
 
         private void Awake()
         {
@@ -30,8 +32,19 @@ namespace UnityStandardAssets._2D
         private void FixedUpdate()
         {
             // Read the inputs.
-            bool crouch = Input.GetKey(KeyCode.LeftControl);
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
+            //bool crouch = Input.GetKey(KeyCode.LeftControl);
+            bool crouch;
+            if (joystick.Vertical <= -0.5f)
+            {
+                crouch = true;
+            }
+
+            else
+            {
+                crouch = false; ;
+            }
+            //float h = CrossPlatformInputManager.GetAxis("Horizontal"); > Voor pc toetsen
+            float h = joystick.Horizontal; // Voor joystick AKA android
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
