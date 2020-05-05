@@ -49,5 +49,14 @@ namespace UnityStandardAssets._2D
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
         }
+
+        public void SetJumpActive ()
+        {
+            if (!m_Jump)
+            {
+                // Read the jump input in Update so button presses aren't missed.
+                m_Jump = true;
+            }
+        }
     }
 }
