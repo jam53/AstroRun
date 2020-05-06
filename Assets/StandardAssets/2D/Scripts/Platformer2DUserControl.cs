@@ -32,17 +32,17 @@ namespace UnityStandardAssets._2D
         private void FixedUpdate()
         {
             // Read the inputs.
-            bool crouch;
-            if (joystick.Vertical <= -0.5f)
-            {
-                crouch = true;
-            }
+            bool crouch = false;
+            //if (joystick.Vertical <= -0.5f)
+            //{
+            //    crouch = true;
+            //}
 
-            else
-            {
-                crouch = false; ;
-            }
-            crouch = Input.GetKey(KeyCode.LeftControl);
+            //else
+            //{
+            //    crouch = false; ;
+            //}
+            //crouch = Input.GetKey(KeyCode.LeftControl);
             //float h = CrossPlatformInputManager.GetAxis("Horizontal"); > Voor pc toetsen
             float h;
             h = joystick.Horizontal; // Voor joystick AKA android
