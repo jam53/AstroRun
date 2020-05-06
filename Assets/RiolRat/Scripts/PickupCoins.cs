@@ -9,12 +9,17 @@ public class PickupCoins : MonoBehaviour
 
     private int Coins;
 
+    public AudioClip CoinGeluid;
+    public AudioSource Source;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         // If the player enters the trigger zone...
         if (other.tag == "Coin")
         {
             // Destroy the crate.
+            Source.clip = CoinGeluid;
+            Source.Play();
             Destroy(other.gameObject);
             Coins++;
             Debug.Log("Player has: " + Coins + " coins.");
