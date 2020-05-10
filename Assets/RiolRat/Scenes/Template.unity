@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -296,7 +296,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 135
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -350,7 +350,8 @@ Tilemap:
       e33: 0
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: -6.970093, g: -6.970093, b: -6.970093, a: -6.970093}
+    m_Data: {r: 0.0000000017138113, g: 0.0000000017138113, b: 0.0000000017138113,
+      a: 0.0000000017138113}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -902,7 +903,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 840
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -979,28 +980,29 @@ Tilemap:
   - m_RefCount: 0
     m_Data:
       e00: NaN
-      e01: 0
-      e02: 1.04e-43
-      e03: 0
+      e01: 5.081608e+36
+      e02: 0
+      e03: NaN
       e10: NaN
-      e11: 0
-      e12: NaN
-      e13: 0
-      e20: 1.04e-43
+      e11: 2.3e-43
+      e12: 0
+      e13: NaN
+      e20: 5.081603e+36
       e21: 0
       e22: 0
-      e23: 8.628847e+9
-      e30: 2.86e-43
-      e31: NaN
+      e23: 0
+      e30: 2.3e-43
+      e31: 0
       e32: 0
-      e33: 9.63e-43
+      e33: 0
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: 0, g: 0, b: 0, a: 0}
   - m_RefCount: 0
     m_Data: {r: -11.479218, g: -11.479218, b: -11.479218, a: -11.479218}
   - m_RefCount: 0
-    m_Data: {r: -7.0487213, g: -7.0487213, b: -7.0487213, a: -7.0487213}
+    m_Data: {r: 0.0000000017799877, g: 0.0000000017799877, b: 0.0000000017799877,
+      a: 0.0000000017799877}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1095,10 +1097,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: joystick
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2834900820479230446, guid: 87a2357765801c34292d6718d8b4d770,
         type: 3}
