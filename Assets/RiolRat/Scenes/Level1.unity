@@ -239,7 +239,7 @@ Transform:
   - {fileID: 2090837162}
   - {fileID: 99251265}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &37316451
 PrefabInstance:
@@ -3042,7 +3042,7 @@ Tilemap:
       - {fileID: 21300000, guid: 89087334282881b409ba180411276c28, type: 3}
       - {fileID: 21300000, guid: 010f1c78dd9b71443b04f76c77f2691a, type: 3}
       - {fileID: 21300000, guid: 574eba55cee7d30418e65c66da2149c3, type: 3}
-      m_AnimationSpeed: 17.000002
+      m_AnimationSpeed: 17
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 101, y: -5, z: 0}
@@ -5877,7 +5877,7 @@ Transform:
   - {fileID: 1302403436}
   - {fileID: 373505680}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670192821
 GameObject:
@@ -79942,7 +79942,7 @@ PrefabInstance:
     - target: {fileID: 7104425430907744694, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7104425430907744694, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
@@ -80155,7 +80155,7 @@ PrefabInstance:
     - target: {fileID: 9193570260274180447, guid: c109b8ebbfec81242a723b071b7defb4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9193570260274180447, guid: c109b8ebbfec81242a723b071b7defb4,
         type: 3}
