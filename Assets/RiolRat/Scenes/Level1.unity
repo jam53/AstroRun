@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -406,6 +406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 7.52719
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747496458931255784, guid: 1ead21ae9e53c36479209329e0f3cc3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ead21ae9e53c36479209329e0f3cc3a, type: 3}
@@ -73233,6 +73238,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.534819
       objectReference: {fileID: 0}
+    - target: {fileID: 2747496458931255784, guid: 1ead21ae9e53c36479209329e0f3cc3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2747496458931255785, guid: 1ead21ae9e53c36479209329e0f3cc3a,
         type: 3}
       propertyPath: speed
@@ -76024,6 +76034,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.525347
       objectReference: {fileID: 0}
+    - target: {fileID: 2747496458931255784, guid: 1ead21ae9e53c36479209329e0f3cc3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ead21ae9e53c36479209329e0f3cc3a, type: 3}
 --- !u!4 &1212970282 stripped
@@ -77057,6 +77072,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 5.6597424
       objectReference: {fileID: 0}
+    - target: {fileID: 2747496458931255784, guid: 1ead21ae9e53c36479209329e0f3cc3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ead21ae9e53c36479209329e0f3cc3a, type: 3}
 --- !u!4 &1349459048 stripped
@@ -77872,6 +77892,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 7.5332355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747496458931255784, guid: 1ead21ae9e53c36479209329e0f3cc3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ead21ae9e53c36479209329e0f3cc3a, type: 3}
@@ -79853,6 +79878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 9.421208
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747496458931255784, guid: 1ead21ae9e53c36479209329e0f3cc3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ead21ae9e53c36479209329e0f3cc3a, type: 3}
