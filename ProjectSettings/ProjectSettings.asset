@@ -258,7 +258,7 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 0}
+  androidSplashScreen: {fileID: 2800000, guid: ab7b2eccd71f7b94b8bb869d42af77c1, type: 3}
   AndroidKeystoreName: '{inproject}: Assets/RiolRat/Other/Riolrat.keystore'
   AndroidKeyaliasName: riolratkey
   AndroidBuildApkPerCpuArchitecture: 0
