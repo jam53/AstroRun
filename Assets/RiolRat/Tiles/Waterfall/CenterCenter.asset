@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: CenterCenter
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: 5f15915165815f842a838675c072fba1, type: 3}
+  - {fileID: 21300000, guid: b920661123409c148bfb4614c8045693, type: 3}
+  - {fileID: 21300000, guid: ff5c59488e6dd3d40860f50c9c7652f2, type: 3}
+  - {fileID: 21300000, guid: 4bde12bc7bf719d4783980578dc1b36d, type: 3}
+  - {fileID: 21300000, guid: 78c08efbe03761a44a5960ab6a92c7dd, type: 3}
+  - {fileID: 21300000, guid: 1e1cc5f6783e0a845be4a01772cb3178, type: 3}
+  - {fileID: 21300000, guid: 4a0d794551a350a4c9f72f11f8dbe787, type: 3}
+  - {fileID: 21300000, guid: 13fe86d2bcc8c30479aa2f0f55baf068, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

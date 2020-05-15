@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: BottomRIght
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: 40fd84fd8c8062042b630ee6080e080c, type: 3}
+  - {fileID: 21300000, guid: 906524ab4374aa34ba6afc809cb22580, type: 3}
+  - {fileID: 21300000, guid: cca3fa9611383a04e91b687fc117d80f, type: 3}
+  - {fileID: 21300000, guid: 8595360f659612241996e4c5ba6e0392, type: 3}
+  - {fileID: 21300000, guid: 8b46c8b30c12e8b4e96bd949c3a17bc9, type: 3}
+  - {fileID: 21300000, guid: 98061c4896b60984e97ff5feb1f0c73b, type: 3}
+  - {fileID: 21300000, guid: 65cba94b84f8fe54199cda8583b67afb, type: 3}
+  - {fileID: 21300000, guid: 2f4e63ddd4b9300469e141da5fc9cca1, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
