@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -239,7 +239,7 @@ Transform:
   - {fileID: 2090837162}
   - {fileID: 99251265}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &37316451
 PrefabInstance:
@@ -7119,7 +7119,7 @@ Transform:
   - {fileID: 1424745106}
   - {fileID: 1621284668}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &715113766
 PrefabInstance:
@@ -77173,7 +77173,7 @@ Transform:
   - {fileID: 748705248}
   - {fileID: 945320638}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1262098816 stripped
 Transform:
@@ -87290,6 +87290,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1095544591}
+    - target: {fileID: 7104425430701250628, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104425430701250628, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -307
+      objectReference: {fileID: 0}
     - target: {fileID: 7104425430907744682, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Name
@@ -87333,7 +87343,7 @@ PrefabInstance:
     - target: {fileID: 7104425430907744694, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7104425430907744694, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
