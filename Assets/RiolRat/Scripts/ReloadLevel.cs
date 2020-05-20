@@ -26,7 +26,7 @@ public class ReloadLevel : MonoBehaviour
 
         else if (true)
         {
-            Player.transform.position = SpawnPoint.position;
+            Player.transform.position = SpawnPoint.position + new Vector3(0,1,0);
         }
     }
 }
