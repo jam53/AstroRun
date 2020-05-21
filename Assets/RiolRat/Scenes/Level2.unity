@@ -8836,36 +8836,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1925834029, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925834029, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925834029, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925834029, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438278718477341083, guid: d01ea779d92e5a1438e1b39c75bae174,
+    - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -201.25
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1012921172}
+    - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetJumpActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104425430701250627, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1012921172}
+    - target: {fileID: 7104425430701250627, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetJumpActive
       objectReference: {fileID: 0}
     - target: {fileID: 7104425430907744682, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7104425430907744682, guid: d01ea779d92e5a1438e1b39c75bae174,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7104425430907744694, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
@@ -48685,6 +48684,11 @@ PrefabInstance:
       propertyPath: CoinsText
       value: 
       objectReference: {fileID: 535326462}
+    - target: {fileID: 3141724873748147730, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6770547955879843074, guid: 87a2357765801c34292d6718d8b4d770,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -48754,6 +48758,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1012921167}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1012921172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770,
+    type: 3}
+  m_PrefabInstance: {fileID: 1012921167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279511451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1014158540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6536441058896479594, guid: 08a0a583ef2ead0408e0a93a22ea2f3f,
