@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3098,7 +3098,7 @@ Tilemap:
       - {fileID: 21300000, guid: bc5910a2f61e25345a871b60de2f0c2e, type: 3}
       - {fileID: 21300000, guid: cf97474ab1c6afe409b82449a503655b, type: 3}
       - {fileID: 21300000, guid: a89ae7fb0d3be8f4e8c8a75704ecb152, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 140, y: -8, z: 0}
@@ -3723,7 +3723,7 @@ Tilemap:
       - {fileID: 21300000, guid: 1a48ab70aadec8b4c845f12ba3cf36fa, type: 3}
       - {fileID: 21300000, guid: 61062d5b072552a4aadbc95a1a19d337, type: 3}
       - {fileID: 21300000, guid: 155a090219f24bd48a07c1413139a4ce, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 139, y: -1, z: 0}
@@ -4330,7 +4330,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -87476,6 +87476,11 @@ PrefabInstance:
       propertyPath: PutPlayerBackToSpawnPoint
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9117136550958909191, guid: de0550dd4f3ff834aaeeb48121a40ccd,
+        type: 3}
+      propertyPath: Vcam
+      value: 
+      objectReference: {fileID: 914589601}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0550dd4f3ff834aaeeb48121a40ccd, type: 3}
 --- !u!1001 &9193570261246598706
