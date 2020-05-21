@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RiolRat/Scenes/Level1.unity
     guid: ad84ffe1a8fe866479e9ad538ef41324
+  - enabled: 1
+    path: Assets/RiolRat/Scenes/Level2.unity
+    guid: 324aa5f30fd669d4c9c9b1918deaf00e
   m_configObjects: {}
