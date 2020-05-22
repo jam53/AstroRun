@@ -8,6 +8,8 @@ public class MusicChanger : MonoBehaviour
     public AudioClip EndMusic;
     public Rigidbody2D Player;
 
+    private bool AchtergrondMuziekSpeelt = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,11 @@ public class MusicChanger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && !AchtergrondMuziekSpeelt)
         {
             BackgroundSource.clip = EndMusic;
             BackgroundSource.Play();
-            BackgroundSource = null;
+            AchtergrondMuziekSpeelt = true;
         }
     }
 
