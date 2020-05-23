@@ -6,7 +6,6 @@ public class MusicChanger : MonoBehaviour
 {
     public AudioSource BackgroundSource;
     public AudioClip EndMusic;
-    public Rigidbody2D Player;
 
     private bool AchtergrondMuziekSpeelt = false;
 
