@@ -44,6 +44,8 @@ QualitySettings:
     excludedTargetPlatforms:
     - Standalone
     - Android
+    - iPhone
+    - WebGL
   - serializedVersion: 2
     name: Low
     pixelLightCount: 0
@@ -82,6 +84,8 @@ QualitySettings:
     excludedTargetPlatforms:
     - Standalone
     - Android
+    - iPhone
+    - WebGL
   - serializedVersion: 2
     name: Medium
     pixelLightCount: 1
@@ -158,6 +162,8 @@ QualitySettings:
     excludedTargetPlatforms:
     - Android
     - Standalone
+    - iPhone
+    - WebGL
   - serializedVersion: 2
     name: Very High
     pixelLightCount: 3
@@ -196,6 +202,8 @@ QualitySettings:
     excludedTargetPlatforms:
     - Android
     - Standalone
+    - iPhone
+    - WebGL
   - serializedVersion: 2
     name: Ultra
     pixelLightCount: 4
@@ -234,6 +242,8 @@ QualitySettings:
     excludedTargetPlatforms:
     - Standalone
     - Android
+    - iPhone
+    - WebGL
   m_PerPlatformDefaultQuality:
     Android: 2
     Nintendo 3DS: 5
