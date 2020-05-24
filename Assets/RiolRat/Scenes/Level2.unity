@@ -507,6 +507,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6536441058896479591, guid: 08a0a583ef2ead0408e0a93a22ea2f3f,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 279511451}
+    - target: {fileID: 6536441058896479591, guid: 08a0a583ef2ead0408e0a93a22ea2f3f,
+        type: 3}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 869975087}
     - target: {fileID: 6536441058896479594, guid: 08a0a583ef2ead0408e0a93a22ea2f3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2141,7 +2151,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
