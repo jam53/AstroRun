@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RiolRat/Scenes/Level2.unity
     guid: 324aa5f30fd669d4c9c9b1918deaf00e
+  - enabled: 1
+    path: Assets/RiolRat/Scenes/Level3.unity
+    guid: 3df1b874307263747b036ea4d7ae199e
   m_configObjects: {}
