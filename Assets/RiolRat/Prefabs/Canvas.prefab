@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 1201753345505541440}
   - component: {fileID: 8506379808963759400}
   - component: {fileID: 4624668226232364103}
+  - component: {fileID: 3057340742130856075}
   m_Layer: 5
   m_Name: FPS
   m_TagString: Untagged
@@ -571,12 +572,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4091403984596215847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1287420ce4776c49b7ded9e8b6e3a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   avgFrameRate: 0
+  display_TextFPS: {fileID: 5631347155583542352}
+  display_TextMaxFPS: {fileID: 3371155632364747213}
+--- !u!114 &3057340742130856075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4091403984596215847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bbf57ec543cee42a5aa0ec2dd9e457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   display_TextFPS: {fileID: 5631347155583542352}
   display_TextMaxFPS: {fileID: 3371155632364747213}
 --- !u!1 &5667007894379547499
