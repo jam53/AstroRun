@@ -1,35 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Turret : MonoBehaviour
 {
     public GameObject ShootSpawnpoint;
-    public GameObject ProjectilePrefab;
+    public GameObject Projectile;
 
     public float ProjectileSpeed;
-    public float ShootRate;
+    public float FireRate;
+
+    private float nextTimeToFire = 0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //StartCoroutine(Shoot());
-        //dus je kan kiezen welke sprite je afschiet, en om de hoeveel tijd er een wordt afgeschoten
-        //    turret.looktowards, ook zo een optie om de gun heel de tijd naar de player te laten rotaten
-        //    en vector.moveotwards. ge hebt nu zo een spawnpoint voor het projectile, ook een eindpunt, en daar naar toe laten gaan
-        //    je kan de firerate kiezen
+        if (Time.time >= nextTimeToFire)
+        {
+            nextTimeToFire = Time.time + 1f / FireRate;
+            Shoot();
+        }
     }
 
-    //IEnumerator Shoot()
-    //{
-    //    //yield return new WaitForSeconds(ShootRate);
-    //    //Instantiate(ProjectilePrefab, ShootSpawnpoint.transform.position, ShootSpawnpoint.transform.rotation)
-    //}
+    public void Shoot()
+    {
+        GameObject gameObject = Instantiate(Projectile, ShootSpawnpoint.transform.position, ShootSpawnpoint.transform.rotation);
+        Debug.Log(ShootSpawnpoint.transform.right);
+        gameObject.GetComponent<Rigidbody2D>().velocity = ShootSpawnpoint.transform.right * -1 * ProjectileSpeed;
+        Destroy(gameObject, 30f);
+    }
 }

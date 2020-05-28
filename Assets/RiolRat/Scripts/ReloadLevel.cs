@@ -9,7 +9,9 @@ public class ReloadLevel : MonoBehaviour
     public bool PutPlayerBackToSpawnPoint;
 
     public Transform SpawnPoint;
-    public GameObject Player;
+    public Transform CheckPoint;
+
+    private bool ReachedCheckpoint = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +19,30 @@ public class ReloadLevel : MonoBehaviour
     }
 
     // Update is called once per frame
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ReloadScene == true)
+        if (collision.name == "Flag")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            ReachedCheckpoint = true;
         }
 
-        else if (true)
+        if (collision.tag == "DoesDamage")
         {
-            Player.transform.position = SpawnPoint.position + new Vector3(0,1,0);
+            if (ReloadScene == true)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+
+            else if (PutPlayerBackToSpawnPoint == true && !ReachedCheckpoint)
+            {
+                this.transform.position = SpawnPoint.position + new Vector3(0, 1, 0);
+            }
+
+            else if (PutPlayerBackToSpawnPoint == true && ReachedCheckpoint)
+            {
+                this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
+            }
         }
     }
 }
