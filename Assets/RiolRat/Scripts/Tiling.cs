@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Tiling : MonoBehaviour
 {
-    public int offSetX = 2;
+    public float offSetX = 2;
 
     public bool hasARightBuddy = false;
     public bool hasALeftBuddy = false;
