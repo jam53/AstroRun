@@ -203,6 +203,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1555254628330662533, guid: b67e2161244001e44a22d834a2dab1b6,
+        type: 3}
+      propertyPath: LiveTimeProjectile
+      value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555254628330662533, guid: b67e2161244001e44a22d834a2dab1b6,
+        type: 3}
+      propertyPath: FireRate
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b67e2161244001e44a22d834a2dab1b6, type: 3}
 --- !u!4 &3837200 stripped
@@ -87251,8 +87261,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065944465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.85, y: 4.89, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: -7.79, y: 5.94, z: 0}
+  m_LocalScale: {x: 1.6740311, y: 1.6740311, z: 0}
   m_Children: []
   m_Father: {fileID: 7389945685879066110}
   m_RootOrder: 0
