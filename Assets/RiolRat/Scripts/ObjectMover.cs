@@ -17,8 +17,6 @@ public class ObjectMover : MonoBehaviour
     private float pauzeBackup;
     private bool StaStil;
 
-    public Transform Spawnpoint;
-
     public AudioClip GeluidOpImpact;
     public AudioClip GeluidBijTerugGaan;
 
@@ -83,13 +81,5 @@ public class ObjectMover : MonoBehaviour
             this.transform.position = Vector3.MoveTowards(this.transform.position, StartPosition, TerugSnelheid * Time.deltaTime);
         }
 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            collision.transform.position = Spawnpoint.position;
-        }
     }
 }

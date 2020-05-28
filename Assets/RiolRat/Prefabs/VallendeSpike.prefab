@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9193570260274180444}
   m_Layer: 0
   m_Name: VallendeSpike
-  m_TagString: Untagged
+  m_TagString: DoesDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,6 @@ MonoBehaviour:
   GaanSnelheid: 15
   TerugSnelheid: 5
   pauze: 2
-  Spawnpoint: {fileID: 0}
   GeluidOpImpact: {fileID: 0}
   GeluidBijTerugGaan: {fileID: 0}
 --- !u!61 &9193570260274180444
@@ -119,7 +118,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.13, y: 5.12}
+    oldSize: {x: 5.12, y: 5.12}
     newSize: {x: 5.13, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
