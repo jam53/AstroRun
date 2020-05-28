@@ -255,6 +255,7 @@ MonoBehaviour:
     type: 3}
   ProjectileSpeed: 4
   FireRate: 0.7
+  LiveTimeProjectile: 30
 --- !u!1 &1555254629467936180
 GameObject:
   m_ObjectHideFlags: 0

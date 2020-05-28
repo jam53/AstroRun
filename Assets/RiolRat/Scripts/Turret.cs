@@ -11,6 +11,8 @@ public class Turret : MonoBehaviour
     public float ProjectileSpeed;
     public float FireRate;
 
+    public float LiveTimeProjectile;
+
     private float nextTimeToFire = 0f;
 
 
@@ -33,8 +35,7 @@ public class Turret : MonoBehaviour
     public void Shoot()
     {
         GameObject gameObject = Instantiate(Projectile, ShootSpawnpoint.transform.position, ShootSpawnpoint.transform.rotation);
-        Debug.Log(ShootSpawnpoint.transform.right);
         gameObject.GetComponent<Rigidbody2D>().velocity = ShootSpawnpoint.transform.right * -1 * ProjectileSpeed;
-        Destroy(gameObject, 30f);
+        Destroy(gameObject, LiveTimeProjectile);
     }
 }
