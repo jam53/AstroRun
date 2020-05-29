@@ -254,8 +254,8 @@ MonoBehaviour:
   Projectile: {fileID: 6132488403693877510, guid: ff376dd0c55da754fbbf37af179a2fe7,
     type: 3}
   ProjectileSpeed: 4
-  FireRate: 0.7
-  LiveTimeProjectile: 30
+  FireRate: 0.3
+  LiveTimeProjectile: 12
 --- !u!1 &1555254629467936180
 GameObject:
   m_ObjectHideFlags: 0
