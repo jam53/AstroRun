@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6981,6 +6981,11 @@ PrefabInstance:
       propertyPath: EndPosition.y
       value: -7.51
       objectReference: {fileID: 0}
+    - target: {fileID: 9193570260274180446, guid: c109b8ebbfec81242a723b071b7defb4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9193570260274180447, guid: c109b8ebbfec81242a723b071b7defb4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7235,6 +7240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: EndPosition.y
       value: -2.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193570260274180446, guid: c109b8ebbfec81242a723b071b7defb4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9193570260274180447, guid: c109b8ebbfec81242a723b071b7defb4,
         type: 3}
@@ -83842,6 +83852,11 @@ PrefabInstance:
       propertyPath: EndPosition.x
       value: 103.02
       objectReference: {fileID: 0}
+    - target: {fileID: 9193570260274180446, guid: c109b8ebbfec81242a723b071b7defb4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9193570260274180447, guid: c109b8ebbfec81242a723b071b7defb4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -86828,6 +86843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: EndPosition.x
       value: 92.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193570260274180446, guid: c109b8ebbfec81242a723b071b7defb4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9193570260274180447, guid: c109b8ebbfec81242a723b071b7defb4,
         type: 3}
