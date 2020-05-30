@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +12,9 @@ public class ReloadLevel : MonoBehaviour
 
     public Transform SpawnPoint;
     public Transform CheckPoint;
+
+    public TextMeshProUGUI DeathCounter;
+    public GameObject VirtualCamera;
 
     private bool ReachedCheckpoint = false;
     // Start is called before the first frame update
@@ -37,11 +42,16 @@ public class ReloadLevel : MonoBehaviour
             else if (PutPlayerBackToSpawnPoint == true && !ReachedCheckpoint)
             {
                 this.transform.position = SpawnPoint.position + new Vector3(0, 1, 0);
+                VirtualCamera.gameObject.SetActive(false);
+                VirtualCamera.gameObject.SetActive(true);
+                DeathCounter.text = (Convert.ToInt32(DeathCounter.text) + 1).ToString();
             }
 
             else if (PutPlayerBackToSpawnPoint == true && ReachedCheckpoint)
             {
                 this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
+                VirtualCamera.gameObject.SetActive(false);
+                VirtualCamera.gameObject.SetActive(true);
             }
         }
     }
