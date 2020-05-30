@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 5468a4f6217963b4d8ed24ce91916f78,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3548,7 +3548,7 @@ Tilemap:
       - {fileID: 21300000, guid: 1a48ab70aadec8b4c845f12ba3cf36fa, type: 3}
       - {fileID: 21300000, guid: 61062d5b072552a4aadbc95a1a19d337, type: 3}
       - {fileID: 21300000, guid: 155a090219f24bd48a07c1413139a4ce, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 139, y: -1, z: 0}
@@ -48561,8 +48561,8 @@ Tilemap:
   - first: {x: 9, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -72994,7 +72994,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 3e4b63f00dce1fa4e834bfc2980f13dc, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: 71b66e31db583b64da9d03c268b5cf03, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 066904f6cdf068749b101e0bc55399f5, type: 2}
@@ -73002,7 +73002,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 38
     m_Data: {fileID: 11400000, guid: 93a8089daba8d194c9c0d1f7a2a4aeff, type: 2}
-  - m_RefCount: 6831
+  - m_RefCount: 6832
     m_Data: {fileID: 11400000, guid: 932d11d910955e044bb1369478e394ec, type: 2}
   - m_RefCount: 38
     m_Data: {fileID: 11400000, guid: 02a93355f28d6ac408473ec800ba1fe3, type: 2}
@@ -73021,7 +73021,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 21300000, guid: 11ecfc3db9296b44c9811fc5657ed4b7, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -73029,7 +73029,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 6831
+  - m_RefCount: 6832
     m_Data: {fileID: 21300000, guid: 9a1dbd66572d13f43911ffa278d5a4c9, type: 3}
   - m_RefCount: 38
     m_Data: {fileID: 21300000, guid: f507ebe811e2fcd4ebaa13156a850a34, type: 3}
@@ -74497,6 +74497,26 @@ PrefabInstance:
       propertyPath: CheckPoint
       value: 
       objectReference: {fileID: 1056795554}
+    - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: ReloadScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: PutPlayerBackToSpawnPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: VirtualCamera
+      value: 
+      objectReference: {fileID: 914589599}
+    - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: DeathCounter
+      value: 
+      objectReference: {fileID: 7104425429585675304}
     - target: {fileID: 2834900820479230446, guid: 87a2357765801c34292d6718d8b4d770,
         type: 3}
       propertyPath: CoinsText
@@ -86588,11 +86608,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1095544595}
-    - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetJumpActive
-      objectReference: {fileID: 0}
     - target: {fileID: 7104425430907744682, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Name
@@ -86705,6 +86720,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
+--- !u!114 &7104425429585675304 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1968201312, guid: d01ea779d92e5a1438e1b39c75bae174,
+    type: 3}
+  m_PrefabInstance: {fileID: 7104425429585675303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9117136550794899216
 PrefabInstance:
   m_ObjectHideFlags: 0

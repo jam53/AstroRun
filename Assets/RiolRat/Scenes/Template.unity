@@ -724,6 +724,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1077931089, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
+      propertyPath: m_text
+      value: World-Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077931089, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -854,6 +862,18 @@ PrefabInstance:
 --- !u!114 &564501078 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1925834029, guid: d01ea779d92e5a1438e1b39c75bae174,
+    type: 3}
+  m_PrefabInstance: {fileID: 564501077}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &564501079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1968201312, guid: d01ea779d92e5a1438e1b39c75bae174,
     type: 3}
   m_PrefabInstance: {fileID: 564501077}
   m_PrefabAsset: {fileID: 0}
@@ -1299,6 +1319,16 @@ PrefabInstance:
       propertyPath: GameFPS
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: VirtualCamera
+      value: 
+      objectReference: {fileID: 267046909}
+    - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
+        type: 3}
+      propertyPath: DeathCounter
+      value: 
+      objectReference: {fileID: 564501079}
     - target: {fileID: 2834900820479230446, guid: 87a2357765801c34292d6718d8b4d770,
         type: 3}
       propertyPath: CoinsText
