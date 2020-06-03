@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReloadLevel : MonoBehaviour
+public class KillAndRespawn : MonoBehaviour
 {
     public bool ReloadScene;
     public bool PutPlayerBackToSpawnPoint;
@@ -17,10 +17,11 @@ public class ReloadLevel : MonoBehaviour
     public GameObject VirtualCamera;
 
     private bool ReachedCheckpoint = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
