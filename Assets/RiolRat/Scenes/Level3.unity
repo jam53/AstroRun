@@ -6819,6 +6819,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1077931089, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
+      propertyPath: m_text
+      value: 1-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077931089, guid: d01ea779d92e5a1438e1b39c75bae174, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -86520,6 +86520,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1411057404}
+    - target: {fileID: 1976693563321463483, guid: 8daa8047aa501264a80b66becb451ff3,
+        type: 3}
+      propertyPath: NameSceneToLoad
+      value: Level2
+      objectReference: {fileID: 0}
     - target: {fileID: 1976693563321463487, guid: 8daa8047aa501264a80b66becb451ff3,
         type: 3}
       propertyPath: m_Name

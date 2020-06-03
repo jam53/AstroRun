@@ -1,46 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-    public Animator animator;
-    public string NameSceneToLoad;
+    public string SceneToLoad;
+    public Slider slider;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(LoadYourAsyncScene());
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    public void FadeToLevel ()
+    IEnumerator LoadYourAsyncScene()
     {
-        animator.SetTrigger("FadeOut");
-        StartCoroutine(OnFadeComplete());
+        // The Application loads the Scene in the background as the current Scene runs.
+        // This is particularly good for creating loading screens.
+        // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
+        // a sceneBuildIndex of 1 as shown in Build Settings.
 
-    }
-    IEnumerator OnFadeComplete()
-    {
-        //yield on a new YieldInstruction that waits for 1 seconds.
-        yield return new WaitForSeconds(1);
-        //we wachten 1 sec, omdat de animatie 1 sec duurt, we wachten dus totdat hij gedaan is
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneToLoad);
 
-        SceneManager.LoadScene(NameSceneToLoad);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
         {
-            FadeToLevel();
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+
+            slider.value = progress;
+
+            yield return null;
         }
+        Resources.UnloadUnusedAssets();
     }
 }
