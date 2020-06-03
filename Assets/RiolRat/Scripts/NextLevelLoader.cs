@@ -9,10 +9,11 @@ public class NextLevelLoader : MonoBehaviour
     public Animator animator;
     public string NameSceneToLoad;
 
+    private Collider2D colllider;
     // Start is called before the first frame update
     void Start()
     {
-
+        colllider = this.GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -40,6 +41,7 @@ public class NextLevelLoader : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoogs
             FadeToLevel();
         }
     }
