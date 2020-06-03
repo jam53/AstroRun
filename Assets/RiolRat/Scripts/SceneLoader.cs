@@ -9,16 +9,23 @@ public class SceneLoader : MonoBehaviour
     public string SceneToLoad;
     public Slider slider;
 
+    private bool Started = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LoadYourAsyncScene());
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time > 1 && !Started)
+        {
+            Debug.Log("Started scene loading");
+            StartCoroutine(LoadYourAsyncScene());
+            Started = true;
+        }
     }
 
     IEnumerator LoadYourAsyncScene()
@@ -39,6 +46,7 @@ public class SceneLoader : MonoBehaviour
 
             yield return null;
         }
+        Debug.Log("Loading done");
         Resources.UnloadUnusedAssets();
     }
 }
