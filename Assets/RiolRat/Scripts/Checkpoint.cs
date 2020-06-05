@@ -25,6 +25,8 @@ public class Checkpoint : MonoBehaviour
         {
             animator.SetBool("CheckPointBereikt", true);
             colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoog
+            //Data zorgt er wss voor dat je niet meer wordt bijgeteld bij de counter, omdat de collider weg is
+            //    tzou gefixed moeten zijn, alst gefixed is, op trello zetten
         }
     }
 }

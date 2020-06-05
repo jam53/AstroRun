@@ -53,6 +53,7 @@ public class KillAndRespawn : MonoBehaviour
                 this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
                 VirtualCamera.gameObject.SetActive(false);
                 VirtualCamera.gameObject.SetActive(true);
+                DeathCounter.text = (Convert.ToInt32(DeathCounter.text) + 1).ToString();
             }
         }
     }
