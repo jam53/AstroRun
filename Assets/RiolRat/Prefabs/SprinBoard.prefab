@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2747496458931255781}
   - component: {fileID: 2747496458931255785}
   - component: {fileID: 2747496458931255784}
+  - component: {fileID: 2645061148064279815}
   - component: {fileID: 8980442576192264769}
   m_Layer: 0
   m_Name: SprinBoard
@@ -145,6 +146,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.93, y: 0.73396635}
+  m_EdgeRadius: 0
+--- !u!61 &2645061148064279815
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747496458931255780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.965, y: -1.233017}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 1.93, y: 1.6014347}
+    newSize: {x: 1.93, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.93, y: 1.03}
   m_EdgeRadius: 0
 --- !u!82 &8980442576192264769
 AudioSource:
