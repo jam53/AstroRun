@@ -19,3 +19,4 @@ public class sdfsqsf : MonoBehaviour
 // want al die fotos appart, komen wss groter uit dan 1 sprite sheet of atlas
 // en in 1 sprite sheet ook betere performance wss
 //https://gamedevelopment.tutsplus.com/articles/using-texture-atlas-in-order-to-optimize-your-game--cms-26783
+//voor nieuw character
