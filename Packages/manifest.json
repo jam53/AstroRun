@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.google.external-dependency-manager": "1.2.156",
     "com.unity.2d.animation": "3.2.2",
     "com.unity.2d.ik": "2.0.2-preview.1",
     "com.unity.2d.pixel-perfect": "2.0.4",
@@ -54,5 +55,14 @@
       "revision": "HEAD",
       "hash": "7bac29caf2db04323260d437581e1cc5f22df2c7"
     }
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Game Package Registry by Google",
+      "url": "https://unityregistry-pa.googleapis.com",
+      "scopes": [
+        "com.google"
+      ]
+    }
+  ]
 }
