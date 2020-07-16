@@ -11,6 +11,8 @@ public class LoadingScreen : MonoBehaviour
 
     private bool Started = false;
 
+    public InAppUpdates InAppUpdates;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +22,14 @@ public class LoadingScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > 1 && !Started)
+        if (InAppUpdates.LevelCanBeLoaded)
         {
-            Debug.Log("Started scene loading");
-            StartCoroutine(LoadYourAsyncScene());
-            Started = true;
+            if (Time.time > 1 && !Started)
+            {
+                Debug.Log("Started scene loading");
+                StartCoroutine(LoadYourAsyncScene());
+                Started = true;
+            }
         }
     }
 
