@@ -12,6 +12,9 @@ public class InAppUpdates : MonoBehaviour
 
     public bool LevelCanBeLoaded = false;
 
+    public GameObject NewUpdateAvaible;
+    public GameObject VideoPlayer; // We doen dit omdat die loading animatie anders gewoon blijft doorgaan op de achtergrond.
+
     private void Awake()
     {
         ConfigManager.FetchCompleted += CheckForUpdates;
@@ -22,14 +25,27 @@ public class InAppUpdates : MonoBehaviour
     {
         if (ConfigManager.appConfig.GetString("ApplicationVersion") != Application.version)
         {
-            Application.OpenURL("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jam54.AstroRun");
+            NewUpdateAvaible.SetActive(true);
+            VideoPlayer.SetActive(false);
         }
 
         else
         {
-            LevelCanBeLoaded = false;
+            LevelCanBeLoaded = true;
         }
 
+    }
+
+    public void UpdateGame()
+    {
+        Application.OpenURL("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jam54.AstroRun");
+    }
+
+    public void SkipUpdate()
+    {
+        VideoPlayer.SetActive(true);
+        NewUpdateAvaible.SetActive(false);
+        LevelCanBeLoaded = true;
     }
 
     // Update is called once per frame
