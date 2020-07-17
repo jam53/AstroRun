@@ -17,7 +17,7 @@ public class InAppUpdates : MonoBehaviour
 
     private void Awake()
     {
-        ConfigManager.FetchCompleted += CheckForUpdates;
+        ConfigManager.FetchCompleted += CheckForUpdates; // Als de lijn hieronder voltooid is, wordt de functie "CheckForUpdates" opgeroepen
         ConfigManager.FetchConfigs<userAttributes, appAttributes>(new userAttributes(), new appAttributes());
     }
 
