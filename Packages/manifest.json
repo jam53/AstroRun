@@ -5,13 +5,13 @@
     "com.unity.2d.pixel-perfect": "2.0.4",
     "com.unity.2d.psdimporter": "2.1.4",
     "com.unity.2d.sprite": "1.0.0",
-    "com.unity.2d.spriteshape": "3.0.11",
+    "com.unity.2d.spriteshape": "3.0.12",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.2d.tilemap.extras": "https://github.com/Unity-Technologies/2d-extras.git",
     "com.unity.cinemachine": "2.5.0",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
-    "com.unity.ide.vscode": "1.2.0",
+    "com.unity.ide.vscode": "1.2.1",
     "com.unity.remote-config": "1.2.3",
     "com.unity.render-pipelines.universal": "7.3.1",
     "com.unity.test-framework": "1.1.14",
@@ -49,11 +49,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.unity.2d.tilemap.extras": {
-      "revision": "HEAD",
-      "hash": "7bac29caf2db04323260d437581e1cc5f22df2c7"
-    }
   }
 }
