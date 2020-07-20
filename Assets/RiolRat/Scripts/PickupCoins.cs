@@ -25,7 +25,7 @@ public class PickupCoins : MonoBehaviour
         // If the player enters the trigger zone...
         if (other.tag == "Coin")
         {
-            Destroy(other.gameObject);
+            Destroy(other.transform.parent.gameObject);
             // Destroy the crate.
             Source.clip = CoinGeluid;
             Source.Play();
