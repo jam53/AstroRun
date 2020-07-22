@@ -792,6 +792,21 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 663911826908099583, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1012921170}
+    - target: {fileID: 663911826908099583, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RespawnPauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187886467166251406, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: BackgroundMusic
+      value: 
+      objectReference: {fileID: 426142695}
     - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1458,46 +1473,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1012921167}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1012921170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8410049299074795656, guid: 87a2357765801c34292d6718d8b4d770,
+--- !u!114 &1012921170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
     type: 3}
   m_PrefabInstance: {fileID: 1012921167}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1012921171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012921170}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 70fa790c54d39cd4ca5ee925752c1564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1012921172 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770,
