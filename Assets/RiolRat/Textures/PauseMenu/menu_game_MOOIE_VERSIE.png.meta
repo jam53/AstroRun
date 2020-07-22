@@ -20,6 +20,27 @@ TextureImporter:
   - first:
       213: 667471728563035604
     second: menu_game_MOOIE_VERSIE_5
+  - first:
+      213: 793313801371447559
+    second: menu_game_MOOIE_VERSIE_0
+  - first:
+      213: 5712805711779294927
+    second: menu_game_MOOIE_VERSIE_1
+  - first:
+      213: -8884054142882499617
+    second: menu_game_MOOIE_VERSIE_2
+  - first:
+      213: -8155148475829584017
+    second: menu_game_MOOIE_VERSIE_3
+  - first:
+      213: 3267660049065323705
+    second: menu_game_MOOIE_VERSIE_4
+  - first:
+      213: -2994129945677683936
+    second: menu_game_MOOIE_VERSIE_5
+  - first:
+      213: -7479277761260871200
+    second: menu_game_MOOIE_VERSIE_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +75,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -64,7 +85,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 604, y: 485, z: 556, w: 487}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -82,9 +103,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -94,9 +115,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -106,33 +127,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -144,8 +141,8 @@ TextureImporter:
       name: menu_game_MOOIE_VERSIE_0
       rect:
         serializedVersion: 2
-        x: 604
-        y: 485
+        x: 36
+        y: 284
         width: 440
         height: 228
       alignment: 0
@@ -155,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 811fed4c067d9b020800000000000000
-      internalID: 2358152690524942616
+      spriteID: 701f82ef2ba620b00800000000000000
+      internalID: 793313801371447559
       vertices: []
       indices: 
       edges: []
@@ -165,9 +162,9 @@ TextureImporter:
       name: menu_game_MOOIE_VERSIE_1
       rect:
         serializedVersion: 2
-        x: 655
-        y: 377
-        width: 83
+        x: 84
+        y: 190
+        width: 86
         height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -176,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9953113cb45d3550800000000000000
-      internalID: 6142158634057161117
+      spriteID: fce6d61f686f74f40800000000000000
+      internalID: 5712805711779294927
       vertices: []
       indices: 
       edges: []
@@ -186,9 +183,9 @@ TextureImporter:
       name: menu_game_MOOIE_VERSIE_2
       rect:
         serializedVersion: 2
-        x: 780
-        y: 377
-        width: 84
+        x: 212
+        y: 190
+        width: 88
         height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -197,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1a881834c7198aa0800000000000000
-      internalID: -6158364883930281444
+      spriteID: fd3b628a3df75b480800000000000000
+      internalID: -8884054142882499617
       vertices: []
       indices: 
       edges: []
@@ -207,8 +204,71 @@ TextureImporter:
       name: menu_game_MOOIE_VERSIE_3
       rect:
         serializedVersion: 2
-        x: 912
-        y: 375
+        x: 343
+        y: 188
+        width: 85
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ffb974ba713de80800000000000000
+      internalID: -8155148475829584017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_game_MOOIE_VERSIE_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 95
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc2647708f095d20800000000000000
+      internalID: 3267660049065323705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_game_MOOIE_VERSIE_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 96
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023a5809da6b276d0800000000000000
+      internalID: -2994129945677683936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_game_MOOIE_VERSIE_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
         width: 83
         height: 85
       alignment: 0
@@ -218,50 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a14e5d931d9bf7e70800000000000000
-      internalID: 9115208479090795546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: menu_game_MOOIE_VERSIE_4
-      rect:
-        serializedVersion: 2
-        x: 655
-        y: 271
-        width: 83
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce00c45b835a24cf0800000000000000
-      internalID: -269471364710399764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: menu_game_MOOIE_VERSIE_5
-      rect:
-        serializedVersion: 2
-        x: 655
-        y: 159
-        width: 83
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dd9d9e2006534900800000000000000
-      internalID: 667471728563035604
+      spriteID: 0e12197c084443890800000000000000
+      internalID: -7479277761260871200
       vertices: []
       indices: 
       edges: []

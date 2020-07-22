@@ -57,4 +57,26 @@ public class KillAndRespawn : MonoBehaviour
             }
         }
     }
+
+    public void RespawnPauseMenu ()
+    {
+        if (ReloadScene == true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        else if (PutPlayerBackToSpawnPoint == true && !ReachedCheckpoint)
+        {
+            this.transform.position = SpawnPoint.position + new Vector3(0, 1, 0);
+            VirtualCamera.gameObject.SetActive(false);
+            VirtualCamera.gameObject.SetActive(true);
+        }
+
+        else if (PutPlayerBackToSpawnPoint == true && ReachedCheckpoint)
+        {
+            this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
+            VirtualCamera.gameObject.SetActive(false);
+            VirtualCamera.gameObject.SetActive(true);
+        }
+    }
 }
