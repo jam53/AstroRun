@@ -3006,7 +3006,7 @@ Tilemap:
       - {fileID: 21300000, guid: bc5910a2f61e25345a871b60de2f0c2e, type: 3}
       - {fileID: 21300000, guid: cf97474ab1c6afe409b82449a503655b, type: 3}
       - {fileID: 21300000, guid: a89ae7fb0d3be8f4e8c8a75704ecb152, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: -20, z: 0}
@@ -3090,7 +3090,7 @@ Tilemap:
       - {fileID: 21300000, guid: a911792b2f0c3d94b811a135df1ee178, type: 3}
       - {fileID: 21300000, guid: 2df09c4dca5820d43af8075a836e7cb9, type: 3}
       - {fileID: 21300000, guid: b713877011ccae4469aea795f1005a93, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: -18, z: 0}
@@ -3538,7 +3538,7 @@ Tilemap:
       - {fileID: 21300000, guid: 1a48ab70aadec8b4c845f12ba3cf36fa, type: 3}
       - {fileID: 21300000, guid: 61062d5b072552a4aadbc95a1a19d337, type: 3}
       - {fileID: 21300000, guid: 155a090219f24bd48a07c1413139a4ce, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -7, y: -7, z: 0}
@@ -3622,7 +3622,7 @@ Tilemap:
       - {fileID: 21300000, guid: 1a48ab70aadec8b4c845f12ba3cf36fa, type: 3}
       - {fileID: 21300000, guid: 61062d5b072552a4aadbc95a1a19d337, type: 3}
       - {fileID: 21300000, guid: 155a090219f24bd48a07c1413139a4ce, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -7, y: -5, z: 0}
@@ -3734,7 +3734,7 @@ Tilemap:
       - {fileID: 21300000, guid: 1e1cc5f6783e0a845be4a01772cb3178, type: 3}
       - {fileID: 21300000, guid: 4a0d794551a350a4c9f72f11f8dbe787, type: 3}
       - {fileID: 21300000, guid: 13fe86d2bcc8c30479aa2f0f55baf068, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -5, y: -3, z: 0}
@@ -50904,7 +50904,7 @@ PrefabInstance:
         type: 3}
       propertyPath: VirtualCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4358856642473989103}
     - target: {fileID: 2441722503556998898, guid: 87a2357765801c34292d6718d8b4d770,
         type: 3}
       propertyPath: DeathCounter
