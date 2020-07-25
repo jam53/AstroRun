@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 3986207575191605622}
   - component: {fileID: 3986207575191605617}
   - component: {fileID: 3986207575191605616}
+  - component: {fileID: 3915454451393551800}
   m_Layer: 0
   m_Name: Saw
   m_TagString: DoesDamage
@@ -265,6 +266,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -330,3 +332,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   Waypoints: {fileID: 3986207573403505358}
+--- !u!95 &3915454451393551800
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986207575191605618}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 014492b702be8f24fb73791cf6f070fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
