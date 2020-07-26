@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevelLoader : MonoBehaviour
 {
-    public Animator animator;
+    public Animator BlackLevelFadeAnimator;
     public string NameSceneToLoad;
 
     private Collider2D colllider;
@@ -24,7 +24,7 @@ public class NextLevelLoader : MonoBehaviour
 
     public void FadeToLevel ()
     {
-        animator.SetTrigger("FadeOut");
+        BlackLevelFadeAnimator.SetTrigger("FadeOut");
         StartCoroutine(OnFadeComplete());
 
     }
