@@ -13,7 +13,12 @@ public class Shop : MonoBehaviour
     public Sprite[] SkinThumbnail;
     public string[] SkinPrice;
 
+    public GameObject Coins;
+    public GameObject Owned_Text;
+
     private int CurrentItem;
+
+    public bool Owned;
 
     // Start is called before the first frame update
     void Start()
@@ -31,15 +36,59 @@ public class Shop : MonoBehaviour
 
     public void GoRight()
     {
-        CurrentItem++;
-        Display.sprite = SkinThumbnail[CurrentItem];
-        Price.text = SkinPrice[CurrentItem];
+        if (CurrentItem == SkinThumbnail.Length - 1)
+        {
+            CurrentItem = 0;
+            Display.sprite = SkinThumbnail[CurrentItem];
+            Price.text = SkinPrice[CurrentItem];
+        }
+
+        else
+        {
+            CurrentItem++;
+            Display.sprite = SkinThumbnail[CurrentItem];
+            Price.text = SkinPrice[CurrentItem];
+        }
+
+        if (Owned)
+        {
+            Coins.SetActive(false);
+            Owned_Text.SetActive(true);
+        }
+
+        else
+        {
+            Coins.SetActive(true);
+            Owned_Text.SetActive(false);
+        }
     }
 
     public void GoLeft()
     {
-        CurrentItem--;
-        Display.sprite = SkinThumbnail[CurrentItem];
-        Price.text = SkinPrice[CurrentItem];
+        if (CurrentItem == 0)
+        {
+            CurrentItem = SkinThumbnail.Length - 1;
+            Display.sprite = SkinThumbnail[CurrentItem];
+            Price.text = SkinPrice[CurrentItem];
+        }
+
+        else
+        {
+            CurrentItem--;
+            Display.sprite = SkinThumbnail[CurrentItem];
+            Price.text = SkinPrice[CurrentItem];
+        }
+
+        if (Owned)
+        {
+            Coins.SetActive(false);
+            Owned_Text.SetActive(true);
+        }
+
+        else
+        {
+            Coins.SetActive(true);
+            Owned_Text.SetActive(false);
+        }
     }
 }
