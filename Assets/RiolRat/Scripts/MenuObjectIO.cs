@@ -7,14 +7,15 @@ public class MenuObjectIO : MonoBehaviour
 
     public GameObject[] MenuToActivate = new GameObject[1];
     public GameObject[] MenuToClose = new GameObject[1];
-    public int ClosedMenus;
-    public int ActiveMenus;
+    private int ClosedMenus;
+    private int ActiveMenus;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+       ActiveMenus = MenuToActivate.Length;
+       ClosedMenus = MenuToClose.Length;
     }
 
     // Update is called once per frame
@@ -34,17 +35,6 @@ public class MenuObjectIO : MonoBehaviour
         {
             MenuToClose[i].SetActive(false);
         }
-
-
-        /*for (int i = 0; i == ActiveMenus; i++)
-        {
-            MenuToActivate[i].SetActive(true);
-        }
-
-        for (int i = 0; i == ClosedMenus; i++)
-        {
-            MenuToActivate[i].SetActive(false);
-        }*/
     }
 }
 
