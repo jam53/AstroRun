@@ -7,6 +7,15 @@ using GooglePlayGames.BasicApi;
 using GooglePlayGames.BasicApi.SavedGame;
 using System;
 
+// Tested Logic, that should work
+
+/*v Save with, load with
+ *v Save with, load without
+ *V save without, load with
+ *v savewithout, loadwithout
+ *
+ *x save with after with after saved withouth
+ */ 
 public class GPGSAutenthicator : MonoBehaviour
 {
     public static PlayGamesPlatform platform;
@@ -26,6 +35,12 @@ public class GPGSAutenthicator : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+
+        if (PlayerPrefsX.GetStringArray("KeysToLoad")[0] != "exists")
+        {
+            string[] cars = new string[] {"exists"};
+            PlayerPrefsX.SetStringArray("KeysToLoad", cars);
         }
     }
     // Start is called before the first frame update
@@ -59,28 +74,66 @@ public class GPGSAutenthicator : MonoBehaviour
         
     }
 
-    string DataToSave;
-    string DataToLoad;
+    string DataToSave = null;
+    string DataToLoad = null;
     public void SaveString(string KeyName, string DataTooSave)
     {
         if (Social.localUser.authenticated)
         {
-            OpenSave(true, KeyName);
+            string[] cars = PlayerPrefsX.GetStringArray("KeysToLoad");
+            if (cars.Length > 1)
+            {
+                for (int i = 1; i < cars.Length; i++)
+                {
+                    DataToSave = PlayerPrefs.GetString(cars[i]);
+                    OpenSave(true, cars[i]);
+                }
+            }
             DataToSave = DataTooSave;
+            OpenSave(true, KeyName);
+            PlayerPrefs.SetString(KeyName, DataTooSave);
         }
 
         else
         {
+            string[] cars = PlayerPrefsX.GetStringArray("KeysToLoad");
+            Array.Resize(ref cars, cars.Length + 1);
             PlayerPrefs.SetString(KeyName, DataTooSave);
+            cars[cars.Length - 1] = KeyName;
+            PlayerPrefsX.SetStringArray("KeysToLoad", cars);
         }
 
     }
 
     public string LoadString(string KeyName)
     {
-        if (Social.localUser.authenticated)
+        DataToLoad = null;
+        string[] cars = PlayerPrefsX.GetStringArray("KeysToLoad");
+        if (Social.localUser.authenticated && cars.Length == 1)
         {
             OpenSave(false, KeyName);
+            while (DataToLoad == null)
+            {
+                
+            }
+            return DataToLoad;
+        }
+
+        else if (Social.localUser.authenticated && cars.Length > 1)
+        {
+            for (int i = 1; i < cars.Length; i++)
+            {
+                DataToSave = PlayerPrefs.GetString(cars[i]);
+                OpenSave(true, cars[i]);
+            }
+            Array.Resize(ref cars, 1);
+            cars[0] = "exists";
+            PlayerPrefsX.SetStringArray("KeysToLoad", cars);
+            OpenSave(false, KeyName);
+            while (DataToLoad == null)
+            {
+                
+            }
             return DataToLoad;
         }
 
