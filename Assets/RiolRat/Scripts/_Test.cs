@@ -34,4 +34,5 @@ public class _Test : MonoBehaviour
     {
         text.text = (Convert.ToInt32(text.text)+ 1).ToString();
     }
+
 }

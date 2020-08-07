@@ -39,7 +39,7 @@ public class GPGSAutenthicator : MonoBehaviour
 
         if (PlayerPrefsX.GetStringArray("KeysToLoad")[0] != "exists")
         {
-            string[] cars = new string[] {"exists"};
+            string[] cars = new string[] { "exists" };
             PlayerPrefsX.SetStringArray("KeysToLoad", cars);
         }
     }
@@ -54,7 +54,7 @@ public class GPGSAutenthicator : MonoBehaviour
             platform = PlayGamesPlatform.Activate();
         }
 
-        Social.Active.localUser.Authenticate(success =>
+        Social.Active.localUser.Authenticate(success=>
         {
             if (success)
             {
@@ -108,15 +108,26 @@ public class GPGSAutenthicator : MonoBehaviour
     public string LoadString(string KeyName)
     {
         DataToLoad = null;
+        StartCoroutine(CoRoutineLoadString(KeyName));
+        while (DataToLoad == null)
+        {
+
+        }
+        return DataToLoad;
+    }
+
+    public IEnumerator CoRoutineLoadString(string KeyName)
+    {
         string[] cars = PlayerPrefsX.GetStringArray("KeysToLoad");
         if (Social.localUser.authenticated && cars.Length == 1)
         {
             OpenSave(false, KeyName);
-            while (DataToLoad == null)
-            {
-                
-            }
-            return DataToLoad;
+            yield return new WaitUntil(() => DataToLoad != null);
+            //while (DataToLoad == null)
+            //{
+
+            //}
+            //return DataToLoad;
         }
 
         else if (Social.localUser.authenticated && cars.Length > 1)
@@ -130,16 +141,18 @@ public class GPGSAutenthicator : MonoBehaviour
             cars[0] = "exists";
             PlayerPrefsX.SetStringArray("KeysToLoad", cars);
             OpenSave(false, KeyName);
-            while (DataToLoad == null)
-            {
-                
-            }
-            return DataToLoad;
+            yield return new WaitUntil(() => DataToLoad != null);
+            //while (DataToLoad == null)
+            //{
+
+            //}
+            //return DataToLoad;
         }
 
         else
         {
-            return PlayerPrefs.GetString(KeyName);
+            DataToLoad = PlayerPrefs.GetString(KeyName);
+            yield return new WaitUntil(() => DataToLoad != null);
         }
     }
 
