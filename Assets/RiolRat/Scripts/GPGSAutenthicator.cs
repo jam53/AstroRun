@@ -17,7 +17,7 @@ using System;
  *x save with after with after saved withouth
  */
 
-/* Whats in the saved array
+/* Whats in the saved array (also dont forget to create the array with the default values; line: 47)
  * AstroRun[0] = unlocked levels
 */
 public class GPGSAutenthicator : MonoBehaviour
@@ -43,10 +43,10 @@ public class GPGSAutenthicator : MonoBehaviour
             }
         }
 
-        // Check if the user has a save file, if not to the following:
-        if (PlayerPrefsX.GetStringArray("AstroRun") == null)
+        // Check if the user has a save file, if not do the following:
+        if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
         {
-            string[] DefaultValues = {"0"};// Create an array with default values
+            string[] DefaultValues = { "0"};// Create an array with default values
             PlayerPrefsX.SetStringArray("AstroRun", DefaultValues);// Create a savefile with default values
         }
     }
@@ -107,7 +107,8 @@ public class GPGSAutenthicator : MonoBehaviour
     // We call this function from other scripts to load data
     public string LoadString(int KeyIndex)
     {
-        return PlayerPrefsX.GetStringArray("AstroRun")[KeyIndex];//Load whatever data is needed from whatever position in the array
+        string[] DataToLoadHolder = PlayerPrefsX.GetStringArray("AstroRun");
+        return DataToLoadHolder[KeyIndex];//Load whatever data is needed from whatever position in the array
     }
 
     // This should be called when we launch the application, to download any changes from the cloud
