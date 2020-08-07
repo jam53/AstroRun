@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/RiolRat/Scenes/MainMenu.unity
-    guid: d21b53202c51b84468304bb8cb8ecb07
-  - enabled: 1
     path: Assets/RiolRat/Scenes/Loader.unity
     guid: 6abfe005aa61d034e9db3cbbe9f418b8
+  - enabled: 1
+    path: Assets/RiolRat/Scenes/MainMenu.unity
+    guid: d21b53202c51b84468304bb8cb8ecb07
   - enabled: 1
     path: Assets/RiolRat/Scenes/World 1/Level1.unity
     guid: ad84ffe1a8fe866479e9ad538ef41324

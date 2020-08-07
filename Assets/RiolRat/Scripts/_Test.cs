@@ -22,12 +22,12 @@ public class _Test : MonoBehaviour
 
     public void Saveee()
     {
-        GPGSAutenthicator.GPGSZelf.SaveString("TestKKeyyy", text.text);
+        GPGSAutenthicator.GPGSZelf.SaveString(0, text.text);
     }
 
     public void loaoaad()
     {
-        text.text = GPGSAutenthicator.GPGSZelf.LoadString("TestKKeyyy");
+        text.text = GPGSAutenthicator.GPGSZelf.LoadString(0);
     }
 
     public void INcrememennt()
