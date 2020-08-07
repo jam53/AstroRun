@@ -138,7 +138,7 @@ public class GPGSAutenthicator : MonoBehaviour
         {
             //Declare a variabe to know wheter we are saving or loading. isSaving(true) = saving / isSaving(false) = loading
             isSaving = saving;
-            ((PlayGamesPlatform)Social.Active).SavedGame.OpenWithAutomaticConflictResolution("AstroRun"/*Save name*/, GooglePlayGames.BasicApi.DataSource.ReadCacheOrNetwork, ConflictResolutionStrategy.UseMostRecentlySaved/* how to resolve conflict */, SaveGameOpened);
+            ((PlayGamesPlatform)Social.Active).SavedGame.OpenWithAutomaticConflictResolution("AstroRun"/*Save name*/, GooglePlayGames.BasicApi.DataSource.ReadCacheOrNetwork, ConflictResolutionStrategy.UseLastKnownGood/* how to resolve conflict */, SaveGameOpened);
             // Open the save in the cloud with the name "AstroRun"
         }
 
