@@ -1425,6 +1425,7 @@ GameObject:
   - component: {fileID: 54968953}
   - component: {fileID: 54968952}
   - component: {fileID: 54968951}
+  - component: {fileID: 54968954}
   m_Layer: 5
   m_Name: Play_Button
   m_TagString: Untagged
@@ -1495,7 +1496,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 54968952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54968954}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &54968952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,6 +1547,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54968949}
   m_CullTransparentMesh: 0
+--- !u!114 &54968954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54968949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: 
 --- !u!1 &65649863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,6 +2623,7 @@ MonoBehaviour:
   TextObject: {fileID: 1420538289}
   AdittionalText: 
   KeyIndex: 4
+  LevelTimeButton: 0
 --- !u!1 &149223329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,6 +2637,7 @@ GameObject:
   - component: {fileID: 149223333}
   - component: {fileID: 149223332}
   - component: {fileID: 149223331}
+  - component: {fileID: 149223335}
   m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
@@ -2716,6 +2744,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149223329}
   m_CullTransparentMesh: 0
+--- !u!114 &149223335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149223329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbac153c8e8551f45948559854667e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Music: {fileID: 1844722780}
+  SFX: {fileID: 1828627117}
 --- !u!1 &171532229
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,6 +8870,7 @@ MonoBehaviour:
   TextObject: {fileID: 1790932986}
   AdittionalText: /1000
   KeyIndex: 9
+  LevelTimeButton: 0
 --- !u!1 &495449900
 GameObject:
   m_ObjectHideFlags: 0
@@ -9471,6 +9514,7 @@ MonoBehaviour:
   TextObject: {fileID: 449502248}
   AdittionalText: 
   KeyIndex: 2
+  LevelTimeButton: 1
 --- !u!1 &528126772
 GameObject:
   m_ObjectHideFlags: 0
@@ -13331,6 +13375,7 @@ MonoBehaviour:
   TextObject: {fileID: 720026272}
   AdittionalText: /100
   KeyIndex: 8
+  LevelTimeButton: 0
 --- !u!114 &794578703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13492,7 +13537,7 @@ GameObject:
   - component: {fileID: 805434707}
   - component: {fileID: 805434706}
   m_Layer: 5
-  m_Name: Geluid_Button
+  m_Name: SFX_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13579,7 +13624,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1828627117}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 149223335}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: SFXX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &805434708
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15691,6 +15748,7 @@ MonoBehaviour:
   TextObject: {fileID: 194235824}
   AdittionalText: /100
   KeyIndex: 7
+  LevelTimeButton: 0
 --- !u!114 &927157815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18349,6 +18407,7 @@ MonoBehaviour:
   TextObject: {fileID: 275811176}
   AdittionalText: 
   KeyIndex: 0
+  LevelTimeButton: 1
 --- !u!1 &1078764804
 GameObject:
   m_ObjectHideFlags: 0
@@ -20185,6 +20244,7 @@ MonoBehaviour:
   TextObject: {fileID: 1240821749}
   AdittionalText: 
   KeyIndex: 3
+  LevelTimeButton: 1
 --- !u!1 &1189140445
 GameObject:
   m_ObjectHideFlags: 0
@@ -20868,6 +20928,7 @@ MonoBehaviour:
   TextObject: {fileID: 1040771163}
   AdittionalText: 
   KeyIndex: 4
+  LevelTimeButton: 0
 --- !u!1 &1256774003
 GameObject:
   m_ObjectHideFlags: 0
@@ -21888,6 +21949,7 @@ MonoBehaviour:
   TextObject: {fileID: 528126774}
   AdittionalText: /100
   KeyIndex: 6
+  LevelTimeButton: 0
 --- !u!114 &1293213015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22029,6 +22091,7 @@ MonoBehaviour:
   TextObject: {fileID: 36969072}
   AdittionalText: 
   KeyIndex: 1
+  LevelTimeButton: 1
 --- !u!1 &1300556187
 GameObject:
   m_ObjectHideFlags: 0
@@ -25021,6 +25084,7 @@ MonoBehaviour:
   TextObject: {fileID: 1421782383}
   AdittionalText: /100
   KeyIndex: 5
+  LevelTimeButton: 0
 --- !u!114 &1512154763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30524,7 +30588,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1844722780}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 149223335}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: Musicc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1858126208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33746,6 +33822,7 @@ MonoBehaviour:
   TextObject: {fileID: 2026485686}
   AdittionalText: 
   KeyIndex: 4
+  LevelTimeButton: 0
 --- !u!1 &2062649330
 GameObject:
   m_ObjectHideFlags: 0

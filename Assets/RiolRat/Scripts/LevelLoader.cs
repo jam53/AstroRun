@@ -23,4 +23,9 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(NameSceneToLoad);
     }
+
+    public void Play()
+    {
+        SceneManager.LoadScene("Level" + GPGSAutenthicator.GPGSZelf.LoadString(10));
+    }
 }

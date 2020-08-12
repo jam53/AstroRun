@@ -608,6 +608,16 @@ PrefabInstance:
       propertyPath: SceneToLoad
       value: MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2187886467166251406, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: SoundEffects
+      value: 
+      objectReference: {fileID: 1012921168}
+    - target: {fileID: 2187886467166251406, guid: d01ea779d92e5a1438e1b39c75bae174,
+        type: 3}
+      propertyPath: AudioListener
+      value: 
+      objectReference: {fileID: 1012921174}
     - target: {fileID: 6100950105860566229, guid: d01ea779d92e5a1438e1b39c75bae174,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1323,6 +1333,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+--- !u!82 &1012921168 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1095544590, guid: 87a2357765801c34292d6718d8b4d770,
+    type: 3}
+  m_PrefabInstance: {fileID: 1012921167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1012921169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770,
@@ -1393,6 +1409,12 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!81 &1012921174 stripped
+AudioListener:
+  m_CorrespondingSourceObject: {fileID: 3792573879502938442, guid: 87a2357765801c34292d6718d8b4d770,
+    type: 3}
+  m_PrefabInstance: {fileID: 1012921167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1017442061
 GameObject:
   m_ObjectHideFlags: 0
