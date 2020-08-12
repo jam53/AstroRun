@@ -9,6 +9,9 @@ public class NextLevelLoader : MonoBehaviour
     public Animator BlackLevelFadeAnimator;
     public string NameSceneToLoad;
 
+    public int KeyIndex;
+    public int LevelToUnlock;
+
     private Collider2D colllider;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +44,7 @@ public class NextLevelLoader : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelToUnlock.ToString());
             colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoogs
             FadeToLevel();
         }

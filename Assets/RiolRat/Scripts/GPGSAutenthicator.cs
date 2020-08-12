@@ -17,9 +17,6 @@ using System;
  *x save with after with after saved withouth
  */
 
-/* Whats in the saved array (also dont forget to create the array with the default values; line: 47)
- * AstroRun[0] = unlocked levels
-*/
 public class GPGSAutenthicator : MonoBehaviour
 {
     public static PlayGamesPlatform platform;
@@ -43,13 +40,29 @@ public class GPGSAutenthicator : MonoBehaviour
             }
         }
 
+        /* Whats in the saved array (also dont forget to create the array with the default values; line: 47)
+         * AstroRun[0] = Level1 Best Time
+         * AstroRun[1] = Level2 Best Time
+         * AstroRun[2] = Level3 Best Time
+         * AstroRun[3] = Level4 Best Time
+         * AstroRun[4] = Total amount of coins across all levels
+         * AstroRun[5] = Total amount of coins collected in Level 1
+         * AstroRun[6] = Total amount of coins collected in Level 2
+         * AstroRun[7] = Total amount of coins collected in Level 3
+         * AstroRun[8] = Total amount of coins collected in Level 4
+         * AstroRun[9] = Total amount of coins collected in World 1
+         * AstroRun[10] = The Level We are at, the heighest unlocked level
+         */
+
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
         {
-            string[] DefaultValues = { "0"};// Create an array with default values
+            string[] DefaultValues = { "00:00:00", "00:00:00", "00:00:00", "00:00:00", "0", "0", "0", "0", "0", "0", "1" };// Create an array with default values
             PlayerPrefsX.SetStringArray("AstroRun", DefaultValues);// Create a savefile with default values
         }
     }
+
+
     // Start is called before the first frame update
     void Start()
     {
