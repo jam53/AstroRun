@@ -52,12 +52,13 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[8] = Total amount of coins collected in Level 4
          * AstroRun[9] = Total amount of coins collected in World 1
          * AstroRun[10] = The Level We are at, the heighest unlocked level
+         * AstroRun[11] = Music and SFX(0), Only SFX(1), or no Sound option(2)
          */
 
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
         {
-            string[] DefaultValues = { "00:00:00", "00:00:00", "00:00:00", "00:00:00", "0", "0", "0", "0", "0", "0", "1" };// Create an array with default values
+            string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0" };// Create an array with default values
             PlayerPrefsX.SetStringArray("AstroRun", DefaultValues);// Create a savefile with default values
         }
     }

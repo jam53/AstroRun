@@ -7,6 +7,8 @@ public class LevelTimer : MonoBehaviour
     public int KeyIndex;
     private float milliseconds, seconds, minutes;
 
+    private string LevelTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,13 @@ public class LevelTimer : MonoBehaviour
         seconds = (int)(Time.timeSinceLevelLoad % 60f);
         milliseconds = (int)(Time.timeSinceLevelLoad * 1000f) % 1000;
 
-        GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("00"));
+        LevelTime = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("00");
+        string[] NewTime = LevelTime.Split(':');
+        string[] OldTime = GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex).Split(':');
+        if (int.Parse(NewTime[0]) < int.Parse(OldTime[0]) || int.Parse(NewTime[0]) <= int.Parse(OldTime[0]) && int.Parse(NewTime[1]) < int.Parse(OldTime[1]) || int.Parse(NewTime[0]) <= int.Parse(OldTime[0]) && int.Parse(NewTime[1]) <= int.Parse(OldTime[1]) && int.Parse(NewTime[2]) < int.Parse(OldTime[2])) 
+        {
+            GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelTime);
+        }
     }
 
 }

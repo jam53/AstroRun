@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,14 +14,17 @@ public class PauseMenu : MonoBehaviour
     public Image GeluidButton;
     public Sprite[] GeluidStanden = new Sprite[3];
     public AudioSource BackgroundMusic;
+    public AudioListener AudioListener;
     private int HoeveelsteFoto;
     public string SceneToLoad;
     
     // Start is called before the first frame update
     void Start()
     {
-        HoeveelsteFoto = 0;
-        GeluidButton.sprite = GeluidStanden[HoeveelsteFoto];
+        HoeveelsteFoto = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11));
+        //GeluidButton.sprite = GeluidStanden[HoeveelsteFoto];
+        HoeveelsteFoto--;
+        Geluid();
     }
 
     // Update is called once per frame
@@ -55,13 +59,17 @@ public class PauseMenu : MonoBehaviour
         {
             case 0:
                 BackgroundMusic.mute = false;
+                AudioListener.enabled = true;
+                GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
             case 1:
                 BackgroundMusic.mute = true;
+                GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
             case 2:
                 BackgroundMusic.mute = true;
-                Debug.Log("Geluidseffecten uitzetten");
+                AudioListener.enabled = false;
+                GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
         }
         GeluidButton.sprite = GeluidStanden[HoeveelsteFoto];
