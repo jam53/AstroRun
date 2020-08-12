@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelTimer : MonoBehaviour
 {
@@ -33,6 +34,26 @@ public class LevelTimer : MonoBehaviour
         if (int.Parse(NewTime[0]) < int.Parse(OldTime[0]) || int.Parse(NewTime[0]) <= int.Parse(OldTime[0]) && int.Parse(NewTime[1]) < int.Parse(OldTime[1]) || int.Parse(NewTime[0]) <= int.Parse(OldTime[0]) && int.Parse(NewTime[1]) <= int.Parse(OldTime[1]) && int.Parse(NewTime[2]) < int.Parse(OldTime[2])) 
         {
             GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelTime);
+        }
+
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level1")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel1((long) (Time.timeSinceLevelLoad * 1000f));
+        }
+
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level2")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel2((long)(Time.timeSinceLevelLoad * 1000f));
+        }
+
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level3")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel3((long)(Time.timeSinceLevelLoad * 1000f));
+        }
+
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level4")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4((long)(Time.timeSinceLevelLoad * 1000f));
         }
     }
 
