@@ -222,7 +222,52 @@ public class GPGSAutenthicator : MonoBehaviour
         }
     }
 
+    //Post score to leaderboard
+    public void UpdateLeaderboardScoreLevel1(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_1, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+            }
+        });
+    }
     
+    public void UpdateLeaderboardScoreLevel2(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_2, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+            }
+        });
+    }
+
+    public void UpdateLeaderboardScoreLevel3(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_3, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+            }
+        });
+    }
+
+    public void UpdateLeaderboardScoreLevel4(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_4, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+            }
+        });
+    }
+
+
 }
 
 #region oud
