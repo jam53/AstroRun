@@ -31,29 +31,32 @@ public class LevelTimer : MonoBehaviour
         LevelTime = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("00");
         string[] NewTime = LevelTime.Split(':');
         string[] OldTime = GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex).Split(':');
+
         if (int.Parse(NewTime[0]) < int.Parse(OldTime[0]) || int.Parse(NewTime[0]) <= int.Parse(OldTime[0]) && int.Parse(NewTime[1]) < int.Parse(OldTime[1]) || int.Parse(NewTime[0]) <= int.Parse(OldTime[0]) && int.Parse(NewTime[1]) <= int.Parse(OldTime[1]) && int.Parse(NewTime[2]) < int.Parse(OldTime[2])) 
         {
             GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelTime);
-        }
 
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level1")
-        {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel1((long) (Time.timeSinceLevelLoad * 1000f));
-        }
+            // ---
 
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level2")
-        {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel2((long)(Time.timeSinceLevelLoad * 1000f));
-        }
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level1")
+            {
+                GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel1((long)(Time.timeSinceLevelLoad * 1000f));
+            }
 
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level3")
-        {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel3((long)(Time.timeSinceLevelLoad * 1000f));
-        }
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level2")
+            {
+                GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel2((long)(Time.timeSinceLevelLoad * 1000f));
+            }
 
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level4")
-        {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4((long)(Time.timeSinceLevelLoad * 1000f));
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level3")
+            {
+                GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel3((long)(Time.timeSinceLevelLoad * 1000f));
+            }
+
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level4")
+            {
+                GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4((long)(Time.timeSinceLevelLoad * 1000f));
+            }
         }
     }
 

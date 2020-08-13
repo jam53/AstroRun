@@ -18,11 +18,40 @@ public class LoadDataInToText : MonoBehaviour
         {
             AdittionalText = "";
         }
+
         TextObject.text = GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex) + AdittionalText;
+
+
 
         if (LevelTimeButton && GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex) == "99:99:99")
         {
             TextObject.text = "No Time";
+        }
+
+
+
+        if (GPGSAutenthicator.GPGSZelf.LoadString(12) != "0")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel1(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
+            GPGSAutenthicator.GPGSZelf.SaveString(12, "0");
+        }
+
+        if (GPGSAutenthicator.GPGSZelf.LoadString(13) != "0")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel2(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
+            GPGSAutenthicator.GPGSZelf.SaveString(13, "0");
+        }
+
+        if (GPGSAutenthicator.GPGSZelf.LoadString(14) != "0")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel3(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
+            GPGSAutenthicator.GPGSZelf.SaveString(14, "0");
+        }
+
+        if (GPGSAutenthicator.GPGSZelf.LoadString(15) != "0")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
+            GPGSAutenthicator.GPGSZelf.SaveString(15, "0");
         }
     }
 
