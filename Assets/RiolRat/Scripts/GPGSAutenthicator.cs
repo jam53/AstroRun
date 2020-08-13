@@ -53,12 +53,16 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[9] = Total amount of coins collected in World 1
          * AstroRun[10] = The Level We are at, the heighest unlocked level
          * AstroRun[11] = Music and SFX(0), Only SFX(1), or no Sound option(2)
+         * AstroRun[12] = TimeInMiliseconds for Level 1 that still need to be submitted
+         * AstroRun[13] = TimeInMiliseconds for Level 2 that still need to be submitted
+         * AstroRun[14] = TimeInMiliseconds for Level 3 that still need to be submitted
+         * AstroRun[15] = TimeInMiliseconds for Level 4 that still need to be submitted
          */
 
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
         {
-            string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0" };// Create an array with default values
+            string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0" };// Create an array with default values
             PlayerPrefsX.SetStringArray("AstroRun", DefaultValues);// Create a savefile with default values
         }
     }
@@ -231,6 +235,12 @@ public class GPGSAutenthicator : MonoBehaviour
             {
                 Debug.Log("Updated To LeaderBoard");
             }
+
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveString(12, TimeInMilliseconds.ToString());
+            }
         });
     }
     
@@ -241,6 +251,12 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+            }
+
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveString(13, TimeInMilliseconds.ToString());
             }
         });
     }
@@ -253,6 +269,12 @@ public class GPGSAutenthicator : MonoBehaviour
             {
                 Debug.Log("Updated To LeaderBoard");
             }
+
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveString(14, TimeInMilliseconds.ToString());
+            }
         });
     }
 
@@ -263,6 +285,12 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+            }
+
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveString(15, TimeInMilliseconds.ToString());
             }
         });
     }
