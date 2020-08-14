@@ -19,6 +19,9 @@ public class ObjectMover : MonoBehaviour
 
     public AudioClip GeluidOpImpact;
     public AudioClip GeluidBijTerugGaan;
+    public bool PlayTerugGaan;
+
+    public AudioSource source;
 
 
 
@@ -42,6 +45,12 @@ public class ObjectMover : MonoBehaviour
         {
             AanHetGaan = false;
             //geluid op impact hier
+            source.clip = GeluidOpImpact;
+            source.Play();
+            if (!source.isPlaying)
+            {
+
+            }
         }
 
         if (Vector3.Distance(this.transform.position, StartPosition) < 0.1f)
@@ -55,6 +64,11 @@ public class ObjectMover : MonoBehaviour
             //    pauze -= Time.deltaTime;
             //}
             //pauze = WatIsPauze;
+            if (PlayTerugGaan)
+            {
+                source.clip = GeluidBijTerugGaan;
+                source.Play();
+            }
 
 
         }

@@ -59,7 +59,7 @@ public class PauseMenu : MonoBehaviour
         {
             case 0:
                 BackgroundMusic.mute = false;
-                AudioListener.enabled = true;
+                AudioListener.volume = 1f;
                 GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
             case 1:
@@ -68,7 +68,7 @@ public class PauseMenu : MonoBehaviour
                 break;
             case 2:
                 BackgroundMusic.mute = true;
-                AudioListener.enabled = false;
+                AudioListener.volume = 0f;
                 GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
         }
