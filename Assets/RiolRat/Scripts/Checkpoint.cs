@@ -6,6 +6,9 @@ public class Checkpoint : MonoBehaviour
 {
     public Animator animator;
 
+    public AudioClip clip;
+    public AudioSource source;
+
     private Collider2D colllider;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +28,9 @@ public class Checkpoint : MonoBehaviour
         {
             animator.SetBool("CheckPointBereikt", true);
             colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoog
+
+            source.clip = clip;
+            source.Play();
         }
     }
 }
