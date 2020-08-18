@@ -101,7 +101,7 @@ MonoBehaviour:
   GaanSnelheid: 15
   TerugSnelheid: 5
   pauze: 2
-  GeluidOpImpact: {fileID: 8300000, guid: 12704a14f86352141ae8da75d93491bf, type: 3}
+  GeluidOpImpact: {fileID: 8300000, guid: 588fa13843cf7b043bd6374078f4cb52, type: 3}
   GeluidBijTerugGaan: {fileID: 8300000, guid: be0a3b2f17576874db649570d1b87fb7, type: 3}
   PlayTerugGaan: 0
   source: {fileID: 2997718787162618434}
