@@ -70,21 +70,27 @@ public class GPGSAutenthicator : MonoBehaviour
             PlayerPrefsX.SetStringArray("AstroRun", DefaultValues);// Create a savefile with default values
         }
 
-        else if (PlayerPrefsX.GetStringArray("AstroRun").Length != DefaultValues.Length)
+        //If we added values to the game, ea a new level. The old data string isnt correct anymore
+        //So here we add the new necessarry values
+        else if (PlayerPrefsX.GetStringArray("AstroRun").Length != DefaultValues.Length) // If the current save string isnt the same as the default one
         {
             int OldDataStringLength = PlayerPrefsX.GetStringArray("AstroRun").Length;
             int NewDataStringLength = DefaultValues.Length;
 
             string[] OldArray = PlayerPrefsX.GetStringArray("AstroRun");
 
-            Array.Resize(ref OldArray, NewDataStringLength);
+            Array.Resize(ref OldArray, NewDataStringLength); // resize the array, to the length that it has to be
 
-            for (int i = OldDataStringLength; i < NewDataStringLength /*- 1*/; i++)
-            {
+            for (int i = OldDataStringLength; i < NewDataStringLength /*- 1*/; i++) //Fill those new empty spots in the array with there
+            {//.....................................................................corresponding default value
                 OldArray[i] = DefaultValues[i];
             }
 
-            PlayerPrefsX.SetStringArray("AstroRun", OldArray);
+            PlayerPrefsX.SetStringArray("AstroRun", OldArray); // save the now new and complete data string to the device
+            if (Social.localUser.authenticated)
+            {
+                OpenSave(true);//Call the function to upload the data to the cloud.
+            }
         }
     }
 
