@@ -57,13 +57,34 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[13] = TimeInMiliseconds for Level 2 that still need to be submitted
          * AstroRun[14] = TimeInMiliseconds for Level 3 that still need to be submitted
          * AstroRun[15] = TimeInMiliseconds for Level 4 that still need to be submitted
+         * AstroRun[16] = Level5 Best Time (default: "99:99:99")
+         * AstroRun[17] = TimeInMiliseconds for Level 5 that still need to be submitted (default: "0")
+         * AstroRun[18] = Total amount of coins collected in Level 5 (default: "0")
          */
+
+        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0" };// Create an array with default values
 
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
         {
-            string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0" };// Create an array with default values
             PlayerPrefsX.SetStringArray("AstroRun", DefaultValues);// Create a savefile with default values
+        }
+
+        else if (PlayerPrefsX.GetStringArray("AstroRun").Length != DefaultValues.Length)
+        {
+            int OldDataStringLength = PlayerPrefsX.GetStringArray("AstroRun").Length;
+            int NewDataStringLength = DefaultValues.Length;
+
+            string[] OldArray = PlayerPrefsX.GetStringArray("AstroRun");
+
+            Array.Resize(ref OldArray, NewDataStringLength);
+
+            for (int i = OldDataStringLength; i < NewDataStringLength /*- 1*/; i++)
+            {
+                OldArray[i] = DefaultValues[i];
+            }
+
+            PlayerPrefsX.SetStringArray("AstroRun", OldArray);
         }
     }
 
@@ -295,7 +316,22 @@ public class GPGSAutenthicator : MonoBehaviour
         });
     }
 
+    public void UpdateLeaderboardScoreLevel5(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_5, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+            }
 
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveString(17, TimeInMilliseconds.ToString());
+            }
+        });
+    }
 }
 
 #region oud

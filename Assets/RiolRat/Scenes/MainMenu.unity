@@ -11912,6 +11912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703372574}
+  - component: {fileID: 703372575}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -11940,6 +11941,22 @@ RectTransform:
   m_AnchoredPosition: {x: -170, y: -394}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &703372575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703372573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8337c90b96c7d4b448f58bd8dc61bc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObject: {fileID: 1613504066}
+  AdittionalText: 
+  KeyIndex: 16
+  LevelTimeButton: 1
 --- !u!1 &706529543
 GameObject:
   m_ObjectHideFlags: 0
@@ -22769,7 +22786,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6871593f506da1847b92f70058a92e6f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25459,6 +25476,8 @@ GameObject:
   - component: {fileID: 1565119679}
   - component: {fileID: 1565119678}
   - component: {fileID: 1565119677}
+  - component: {fileID: 1565119681}
+  - component: {fileID: 1565119680}
   m_Layer: 5
   m_Name: Level2_Button
   m_TagString: Untagged
@@ -25549,7 +25568,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1363861493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1565119680}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1565119679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25558,6 +25589,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565119675}
   m_CullTransparentMesh: 0
+--- !u!114 &1565119680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565119675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: Level5
+--- !u!114 &1565119681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565119675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8337c90b96c7d4b448f58bd8dc61bc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObject: {fileID: 876567634}
+  AdittionalText: /100
+  KeyIndex: 18
+  LevelTimeButton: 0
 --- !u!1 &1567751977
 GameObject:
   m_ObjectHideFlags: 0
@@ -25803,7 +25863,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.98823535, g: 0.9176471, b: 0.7686275, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
