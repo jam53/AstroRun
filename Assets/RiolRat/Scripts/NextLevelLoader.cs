@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
@@ -44,7 +45,10 @@ public class NextLevelLoader : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelToUnlock.ToString());
+            if (LevelToUnlock > Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex)))
+            {
+                GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelToUnlock.ToString());
+            }
             colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoogs
             FadeToLevel();
         }
