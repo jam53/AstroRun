@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class Options : MonoBehaviour
 {
+    public AudioSource BackgroundMusic;
+    public GameObject SFXs;
+
     public TextMeshProUGUI Music;
     public TextMeshProUGUI SFX;
 
@@ -19,18 +22,24 @@ public class Options : MonoBehaviour
         {
             Music.text = "Music: On";
             SFX.text = "Sound Effects: On";
+            BackgroundMusic.Play();
+            SFXs.SetActive(true);
         }
 
         else if (Stand == 1)
         {
             Music.text = "Music: Off";
             SFX.text = "Sound Effects: On";
+            BackgroundMusic.Stop();
+            SFXs.SetActive(true);
         }
 
         else
         {
             Music.text = "Music: Off";
             SFX.text = "Sound Effects: Off";
+            BackgroundMusic.Stop();
+            SFXs.SetActive(false);
         }
     }
 
@@ -45,16 +54,19 @@ public class Options : MonoBehaviour
         if (Music.text == "Music: On")
         {
             Music.text = "Music: Off";
+            BackgroundMusic.Stop();
         }
 
         else if (Music.text == "Music: Off")
         {
             Music.text = "Music: On";
+            BackgroundMusic.Play();
         }
 
         if (Music.text == "Music: On" && SFX.text == "Sound Effects: Off")
         {
             SFX.text = "Sound Effects: On";
+            SFXs.SetActive(true);
         }
         Save();
     }
@@ -64,16 +76,19 @@ public class Options : MonoBehaviour
         if (SFX.text == "Sound Effects: On")
         {
             SFX.text = "Sound Effects: Off";
+            SFXs.SetActive(false);
         }
 
         else if (SFX.text == "Sound Effects: Off")
         {
             SFX.text = "Sound Effects: On";
+            SFXs.SetActive(true);
         }
 
         if (Music.text == "Music: On" && SFX.text == "Sound Effects: Off")
         {
             Music.text = "Music: Off";
+            BackgroundMusic.Stop();
         }
         Save();
     }
