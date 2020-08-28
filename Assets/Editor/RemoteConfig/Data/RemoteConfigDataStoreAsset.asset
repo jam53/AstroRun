@@ -21,7 +21,7 @@ MonoBehaviour:
   deletedRulesIDs: []
   _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b5c3f531-b4ff-4e01-bc89-149438dbc835\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
-    \"string\",\r\n      \"value\": \"0.7.2\"\r\n    }\r\n  }\r\n]"
+    \"string\",\r\n      \"value\": \"0.8.0\"\r\n    }\r\n  }\r\n]"
   _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b5c3f531-b4ff-4e01-bc89-149438dbc835\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
     \"string\",\r\n      \"value\": \"0.7.2\"\r\n    }\r\n  }\r\n]"
