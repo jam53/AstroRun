@@ -1,0 +1,13 @@
+Opnemen in 4K 30fps MP4(H264), is betere kwaliteit dan webm(vp8)
+Dan in Davinci laten loopen en exporteren in beste kwaliteit 2K 30fps MP4(H264)
+Dan in handbrake MP4 omzetten naar mkv(VP9) FHD 1080p. VP9 is veel kleiner dan MP4 maar behoud kwaliteit.
+Dan die mkv hernoemen naar webm. En importeren in unity
+
+H265 < H264 < VP9 < VP8
+
+https://mattgadient.com/handbrake-rf-slower-speeds-craziness/
+
+slower != smaller size
+slower = greater quality per file size
+ => so you should always pick slower, which might be bigger then fast e.a.
+    But after tuning the RF (making it higher, so lower quality) you can get the same quality, but in a smaller size
