@@ -13,10 +13,12 @@ public class LoadingScreen : MonoBehaviour
 
     public InAppUpdates InAppUpdates;
 
+    public int GameFPS;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        Application.targetFrameRate = GameFPS;
     }
 
     // Update is called once per frame
