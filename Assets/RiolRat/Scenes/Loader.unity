@@ -255,6 +255,7 @@ MonoBehaviour:
   SceneToLoad: MainMenu
   slider: {fileID: 1454895726}
   InAppUpdates: {fileID: 1886747927105785768}
+  GameFPS: 60
 --- !u!1 &280537536
 GameObject:
   m_ObjectHideFlags: 0
