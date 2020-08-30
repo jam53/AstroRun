@@ -60,6 +60,7 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[16] = Level5 Best Time (default: "99:99:99")
          * AstroRun[17] = TimeInMiliseconds for Level 5 that still need to be submitted (default: "0")
          * AstroRun[18] = Total amount of coins collected in Level 5 (default: "0")
+         * AstroRun[19] = mjmklj
          */
 
         string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0" };// Create an array with default values
@@ -117,6 +118,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Loged in successfully");
+                OnStartUp();
             }
 
             else
