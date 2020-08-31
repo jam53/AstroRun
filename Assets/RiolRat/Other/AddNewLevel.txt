@@ -1,0 +1,35 @@
+In the level before it, put a level complete prefab and assign everything in it
+On the level put a LevelTimer prefab and assign everything in it
+
+---
+
+Make sure the scene is added in the build settings
+
+In the level fading screen. Adjust the level text ea. 1-2
+
+Op google play console nieuw leaderboard voor level toevoegen
+Resources opnieuw importeren
+
+Add new values to the default value list in GPGSAutenthicator + their explanation
+
+At the bottom of GPGSAutenthicator add a new method for the level; UpdateLeaderboardLevelScore
+
+In the LevelTimer script, at the bottom, add a new if statement for updating the leaderboard time
+
+in LoadDataInToText van onder if statement toevoegen
+	TF WAT IS DIT, OOK LEVEL 5 TOEVOEGEN
+
+In the ResetCoins script, in the ResettCoins method, add the variable which should be deleted to reset the coins
+
+---
+On the main menu with the level selection buttons
+Take a thumbnail image and assign it to the button on the main menu
+
+Assign the LoadDataInToText script and the LevelLoader script + assign the audiosource for button clicks and Levelloader to the events
+
+And on the time gameobject, which is parent of the button add the LoadDataInToText script
+
+
+
+nu van da nieuw coin reset script
+
