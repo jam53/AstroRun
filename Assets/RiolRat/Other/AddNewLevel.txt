@@ -28,8 +28,3 @@ Take a thumbnail image and assign it to the button on the main menu
 Assign the LoadDataInToText script and the LevelLoader script + assign the audiosource for button clicks and Levelloader to the events
 
 And on the time gameobject, which is parent of the button add the LoadDataInToText script
-
-
-
-nu van da nieuw coin reset script
-
