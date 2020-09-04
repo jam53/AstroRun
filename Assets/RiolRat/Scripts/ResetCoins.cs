@@ -49,7 +49,7 @@ public class ResetCoins : MonoBehaviour
             GPGSAutenthicator.GPGSZelf.SaveString(6, "0");//Level 2
             GPGSAutenthicator.GPGSZelf.SaveString(7, "0");//Level 3
             GPGSAutenthicator.GPGSZelf.SaveString(8, "0");//Level 4
-            GPGSAutenthicator.GPGSZelf.SaveString(18, "0") ;//Level 5
+            GPGSAutenthicator.GPGSZelf.SaveString(18, "0");//Level 5
         }
     }
 }
