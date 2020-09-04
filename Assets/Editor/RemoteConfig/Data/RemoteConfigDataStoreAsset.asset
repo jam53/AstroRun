@@ -19,12 +19,12 @@ MonoBehaviour:
   addedRulesIDs: []
   updatedRulesIDs: []
   deletedRulesIDs: []
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5a2a63fa-4e50-4ce7-9c8f-354acb0d057a\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2874b0af-fe1b-4080-989d-48fe8cf5a6b6\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
-    \"string\",\r\n      \"value\": \"0.8.0\"\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5a2a63fa-4e50-4ce7-9c8f-354acb0d057a\"\r\n   
+    \"string\",\r\n      \"value\": \"0.8.1\"\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2874b0af-fe1b-4080-989d-48fe8cf5a6b6\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
-    \"string\",\r\n      \"value\": \"0.8.0\"\r\n    }\r\n  }\r\n]"
+    \"string\",\r\n      \"value\": \"0.8.1\"\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"1d0de93d-1877-4251-bffb-49842a771ebe\",\r\n   
     \"name\": \"Release\",\r\n    \"id\": \"98f17f6a-b1d0-4bd7-af6a-7c71f4202557\",\r\n   
     \"createdAt\": \"2020-07-16T14:30:33Z\",\r\n    \"updatedAt\": \"2020-07-16T14:30:33Z\",\r\n   
