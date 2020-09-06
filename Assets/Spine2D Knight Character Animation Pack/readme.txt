@@ -1,1 +1,0 @@
-Spine version : 3.8.97
