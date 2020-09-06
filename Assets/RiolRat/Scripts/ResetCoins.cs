@@ -24,6 +24,8 @@ public class ResetCoins : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ResettCoins();
+
         houres = (int)(_lastAdTime.AddDays(1).Subtract(DateTime.Now).TotalSeconds / 3600f) % 60;
         minutes = (int)(_lastAdTime.AddDays(1).Subtract(DateTime.Now).TotalSeconds / 60f) % 60;
         seconds = (int)(_lastAdTime.AddDays(1).Subtract(DateTime.Now).TotalSeconds % 60f);
