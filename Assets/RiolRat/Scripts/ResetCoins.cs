@@ -18,7 +18,8 @@ public class ResetCoins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _lastAdTime = Convert.ToDateTime(GPGSAutenthicator.GPGSZelf.LoadString(19)); // Load the last reset
+        //_lastAdTime = Convert.ToDateTime(GPGSAutenthicator.GPGSZelf.LoadString(19)); // Load the last reset
+        _lastAdTime = Convert.ToDateTime(PlayerPrefs.GetString("AdTime")); // Load the last reset
     }
 
     // Update is called once per frame
@@ -43,15 +44,18 @@ public class ResetCoins : MonoBehaviour
         if (_lastAdTime.AddDays(1) < DateTime.Now) //if 24 houres passed
         {
             _lastAdTime = DateTime.Now; //Reset the countdown
-            GPGSAutenthicator.GPGSZelf.SaveString(19, Convert.ToString(DateTime.Now));
+            //GPGSAutenthicator.GPGSZelf.SaveString(19, Convert.ToString(DateTime.Now));
+            PlayerPrefs.SetString("AdTime", Convert.ToString(DateTime.Now));
 
             // Reset the collected coins
 
-            GPGSAutenthicator.GPGSZelf.SaveString(5, "0");//Level 1
-            GPGSAutenthicator.GPGSZelf.SaveString(6, "0");//Level 2
-            GPGSAutenthicator.GPGSZelf.SaveString(7, "0");//Level 3
-            GPGSAutenthicator.GPGSZelf.SaveString(8, "0");//Level 4
-            GPGSAutenthicator.GPGSZelf.SaveString(18, "0");//Level 5
+            GPGSAutenthicator.GPGSZelf.SaveString(5, "0");//Level 1 coins
+            GPGSAutenthicator.GPGSZelf.SaveString(6, "0");//Level 2 coins
+            GPGSAutenthicator.GPGSZelf.SaveString(7, "0");//Level 3 coins
+            GPGSAutenthicator.GPGSZelf.SaveString(8, "0");//Level 4 coins
+            GPGSAutenthicator.GPGSZelf.SaveString(18, "0");//Level 5 coins
+            GPGSAutenthicator.GPGSZelf.SaveString(9, "0");//World 1 coins
         }
     }
+
 }
