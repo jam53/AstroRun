@@ -5003,7 +5003,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 918.67596, y: -4004.56}
-  m_SizeDelta: {x: 1400, y: -639}
+  m_SizeDelta: {x: 1400, y: -419}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &234333330
 MonoBehaviour:
@@ -5027,8 +5027,6 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Special thanks too:
 
-    My parents
-
     Anynomouse
 
     Berend
@@ -5049,11 +5047,15 @@ MonoBehaviour:
 
     Jfrost
 
+    Lionmilk
+
     Lize
 
     Maaren
 
     Milan
+
+    PonPonPanPan
 
     Quinten
 
@@ -7158,7 +7160,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 649105215}
   m_Direction: 2
   m_Value: 0.9999999
-  m_Size: 0.184804
+  m_Size: 0.18480402
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14287,8 +14289,8 @@ RectTransform:
   m_Father: {fileID: 1256774004}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.8151959}
-  m_AnchorMax: {x: 1, y: 0.99999994}
+  m_AnchorMin: {x: 0, y: 0.81519586}
+  m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
