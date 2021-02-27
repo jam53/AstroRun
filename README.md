@@ -17,7 +17,7 @@ To get the project folder you will need to clone the project.
 After you installed both Git LFS and GitHub Desktop you can start cloning the project.
 
 ### How do I clone AstroRun
-Open GitHub Desktop > file > Clone repository > URL > enter the following url: https://github.com/jam53/FPSSample.git > and press Clone
+Open *GitHub Desktop > file > Clone repository > URL >* enter the following url: https://github.com/jam53/FPSSample.git and press Clone
 
 After cloning the project you will see the following message:
 > This repository uses Git LFS. To contribute to it, Git LFS must first be initialilzed. Would you like to do so now?
@@ -36,7 +36,42 @@ The following guide should take you to the point where
 you can hit play in the editor and run around the levels and also build a
 standalone version of the game.
 
-### Part 1
+### Unity Safe Mode
+After you opened the project for the first time there will be some compilation errors,
+so Unity will recommend you to enter safe mode, press **Ignore**.
+
+### Errors in the console
+You will be met by the following **error** in the console: 
+> Assets\RiolRat\Scripts\GPGSAutenthicator.cs(22,19): error CS0246: The type or namespace name 'PlayGamesPlatform' could not be found (are you missing a using directive or an assembly reference?)
+
+To fix this you should set the **build platform** to **Android**.
+
+*File > Build Settings > Platform > Android > Switch Platform*
+
+### Android Auto-resolution
+After the project has been reimported for Android, you will be greeted by a message
+asking you if you want to enable **Android Auto-resolution**, press **enable.**
+
+### Google Play Games Plugins for Unity
+After the project has been reimported for Android, navigate to:
+
+*Windows > Google Play Games > Setup > Android Setup*
+
+Under **Resources Definition**, you should paste the **resources** from the **Google Play** leaderboards.
+
+### Android SDK not found
+If you get this error go to:
+
+*Edit > Preferences > External Tools*
+
+**Uncheck** `Android SDK Tools Installed with Unity (recommended)` and input the **path** to the **Android SDK.**
+
+### Main scene
+The **main scene** for this project can be found under:
+
+*Assets > RiolRat > Scenes > Loader*
+
+Open the **Loader scene**, and hit **play.**
 
 ## Development of AstroRun
 
