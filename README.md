@@ -7,12 +7,22 @@ AstroRun is an indie game developed by a small team of 3 people. It's about a lo
 You can try out the game  for yourself by downloading it from the [Play Store](https://play.google.com/store/apps/details?id=com.jam54.AstroRun)
 
 # Getting the project
-To get the project folder you will need to clone the project using **Git** and **Git LFS**.
+To get the project folder you will need to clone the project.
 
 > __IMPORTANT__: 
 > This project uses Git Large Files Support (LFS). Downloading a zip file using the green button on Github
 > **will not work**. You must clone the project with a version of git that has LFS.
 > You can download Git LFS here: https://git-lfs.github.com/.
+
+After you installed both Git LFS and GitHub Desktop you can start cloning the project.
+
+### How do I clone AstroRun
+Open GitHub Desktop > file > Clone repository > URL > enter the following url: https://github.com/jam53/FPSSample.git > and press Clone
+
+After cloning the project you will see the following message:
+> This repository uses Git LFS. To contribute to it, Git LFS must first be initialilzed. Would you like to do so now?
+
+Press **Initialize Git LFS**
 
 ## Getting the right version of Unity
 
