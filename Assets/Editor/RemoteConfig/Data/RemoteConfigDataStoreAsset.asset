@@ -12,13 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  configId: 5cd4b271-717b-422d-85ab-aae0b87b34a1
-  currentEnvironment: Release
-  currentEnvironmentId: 98f17f6a-b1d0-4bd7-af6a-7c71f4202557
-  currentEnvironmentIsDefault: 1
-  addedRulesIDs: []
-  updatedRulesIDs: []
-  deletedRulesIDs: []
   _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"fcda468c-b98f-4b20-b123-2768c7146d88\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
     \"string\",\r\n      \"value\": \"0.8.4\"\r\n    }\r\n  }\r\n]"
