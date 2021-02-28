@@ -216,3 +216,4 @@ Received Import Request.
 Start importing Assets/RiolRat/Other/AddNewLevel.txt using Guid(34154a9dd2a09074c801f83408bf6827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec76c4811c944e160ff6e7074da1d9e') in 0.005780 seconds
   Import took 0.012737 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
