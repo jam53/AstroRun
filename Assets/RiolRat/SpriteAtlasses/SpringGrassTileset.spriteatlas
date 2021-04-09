@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpringGrassTileset
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 53
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 31daaf28d4bc0274d81bb3967aea04fe, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7f9448f08d02bc9418ed432199cca5cc, type: 3}
+  - {fileID: 21300000, guid: 80f71ba242e23634ca995d2051cbed2d, type: 3}
+  - {fileID: 21300000, guid: 0d2105f2f5285c04b885124cb4a0f8fa, type: 3}
+  - {fileID: 21300000, guid: 26da5d73d53ccd644b77d93fd0681810, type: 3}
+  - {fileID: 21300000, guid: da4a1414d01730044aa8eca4dd1e6865, type: 3}
+  - {fileID: 21300000, guid: 2c7014443e97a954eaf177ca46746c46, type: 3}
+  - {fileID: 21300000, guid: 9a13d38469028e041b62c697d3013c43, type: 3}
+  - {fileID: 21300000, guid: af18fcd4f92ad3b4cbc9aa30a2ad20ef, type: 3}
+  - {fileID: 21300000, guid: e15fa195476af414ba25c5106629f6e9, type: 3}
+  - {fileID: 21300000, guid: 817ca0f5328a79145b074301bd0a3699, type: 3}
+  - {fileID: 21300000, guid: 7bb93af5468a1944db056a9b960b1c2b, type: 3}
+  - {fileID: 21300000, guid: d9f1a166a35862142ba0d0147888fbc1, type: 3}
+  - {fileID: 21300000, guid: 87010566091b425429b5b184b55f3c35, type: 3}
+  - {fileID: 21300000, guid: 9a1dbd66572d13f43911ffa278d5a4c9, type: 3}
+  - {fileID: 21300000, guid: 74e039d6aec2f0e4fbc5d1457051a38e, type: 3}
+  - {fileID: 21300000, guid: 583c3737846aca847a349891767483ae, type: 3}
+  - {fileID: 21300000, guid: c74558e871feb4d4fa0bd1b57d5eac5a, type: 3}
+  - {fileID: 21300000, guid: f507ebe811e2fcd4ebaa13156a850a34, type: 3}
+  - {fileID: 21300000, guid: af2bcd39f3568de40a2ec5d19fd89dd6, type: 3}
+  - {fileID: 21300000, guid: 074d49795aa890a47a3c60220864c505, type: 3}
+  - {fileID: 21300000, guid: 42a8d7a955abefa459def2f8aba895be, type: 3}
+  - {fileID: 21300000, guid: 5264cb4aa33bede4ab91ee33bbf33e31, type: 3}
+  - {fileID: 21300000, guid: da54eb7af0911454cbc8a8dafa36482b, type: 3}
+  - {fileID: 21300000, guid: 2b27469a869daf943bf921b1c5e843b4, type: 3}
+  - {fileID: 21300000, guid: e890680b33b91ca4eb3af7d2722b9ff7, type: 3}
+  - {fileID: 21300000, guid: acb8685bdcd014d4191c6f027598e71c, type: 3}
+  - {fileID: 21300000, guid: fd907adb7308a7d4a98009646426f116, type: 3}
+  - {fileID: 21300000, guid: 606b3b9c0285e0e4f8a517ac9b0d5099, type: 3}
+  - {fileID: 21300000, guid: 11ecfc3db9296b44c9811fc5657ed4b7, type: 3}
+  - {fileID: 21300000, guid: fe84cf7dee62fe14e9ce1f08a0cc3f0d, type: 3}
+  - {fileID: 21300000, guid: 8799d31e896e0344093532e0e8cc0a7a, type: 3}
+  - {fileID: 21300000, guid: c1f252aee26b55f43ab59d04e8ca5687, type: 3}
+  - {fileID: 21300000, guid: 7b9ba15f384fee649a1f7247bdd3b70a, type: 3}
+  - {fileID: 21300000, guid: 74ad26cf82ab77e42ba0dd084a25d4ed, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - GrassSample_2
+  - GrassLeft
+  - DirtDown
+  - GrassJoinHillRight
+  - Asset 41
+  - GrassCliffMid
+  - DirtLeft
+  - GrassCliffLeft
+  - GrassRight
+  - GrassJoinHillRight2
+  - GrassMid
+  - column_up
+  - GrassJoinHillRight&Left
+  - Dirt
+  - Asset 40
+  - GrassHillLeft
+  - GrassJoinHillLeft
+  - GrassHillLeft2
+  - GrassHillLeft2_Down Shadow
+  - GrassHillRight
+  - GrassJoinHillRight2_Downshadow
+  - GrassJoinHillLeft2
+  - Column
+  - GrassJoinHillRight2&Left2
+  - DirtRight
+  - DirtRightCorner
+  - GrassHillRight2_Down Shadow
+  - Grass
+  - GrassHillRight2
+  - DirtLeftCorner
+  - GrassJoinHillRight2&Left2_Down Shadow
+  - GrassCliffRight
+  - GrassJoinHillLeft2_Down Shadow
+  - column_down
+  m_RenderDataMap: {}
+  m_Tag: SpringGrassTileset
+  m_IsVariant: 0
