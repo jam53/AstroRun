@@ -475,7 +475,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0250f5e35a0fb70459ed804ef7aa9e45, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ebf57cf824beb04478ef1bc4b0149511, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -1834,7 +1834,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.5368663, y: 1}
+    m_SensorSize: {x: 1.5512195, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
