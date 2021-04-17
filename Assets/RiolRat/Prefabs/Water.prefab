@@ -240,9 +240,9 @@ MonoBehaviour:
   size: {x: 16.4, y: 5}
   sortingLayerID: 0
   sortingLayerOrder: 7
-  dampening: 0.96
-  tension: 0.0025
-  neighbourTransfer: 0.009
+  dampening: 0.94
+  tension: 0.0039
+  neighbourTransfer: 0.03
   splashPlayerPrefab: {fileID: 114804191753921972, guid: b0babd94205c1974ab821bc52a53b027,
     type: 3}
 --- !u!50 &416869004446948985
