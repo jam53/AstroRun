@@ -157,6 +157,66 @@ public class GPGSAutenthicator : MonoBehaviour
         return DataToLoadHolder[KeyIndex];//Load whatever data is needed from whatever position in the array
     }
 
+    //---
+    // Save method overloading
+    //---
+
+    public void Save(int KeyIndex, string DataTooSave)
+    {
+        SaveString(KeyIndex, DataTooSave);
+    }
+
+    public void Save(int KeyIndex, string[] DataTooSave)
+    {
+        SaveString(KeyIndex, "strngrrxx");
+    }
+
+    public void Save(int KeyIndex, int DataTooSave)
+    {
+        SaveString(KeyIndex, "intxxxxxx" + DataTooSave.ToString());
+    }
+
+    public void Save(int KeyIndex, float DataTooSave)
+    {
+        SaveString(KeyIndex, "fltxxxxxx" + DataTooSave.ToString());
+    }
+
+    public void Save(int KeyIndex, bool DataTooSave)
+    {
+        SaveString(KeyIndex, "blxxxxxxx" + DataTooSave.ToString());
+    }
+
+
+    //Check what kind of data type we are loading
+    public dynamic Load(int KeyIndex)
+    {
+        string prefix;
+        string data;
+
+        prefix = LoadString(KeyIndex).Substring(0,9);
+        data = LoadString(KeyIndex).Substring(10, LoadString(KeyIndex).Length);  
+
+        switch (prefix)
+        {
+            case "strngrrxx":
+                return data.Split('ù');
+
+            case "intxxxxxx":
+                return int.Parse(data);
+
+            case "fltxxxxxx":
+                return float.Parse(data);
+
+            case "blxxxxxxx":
+                return bool.Parse(data);
+
+            default:
+                return LoadString(KeyIndex);
+        }
+
+    }
+
+
     // This should be called when we launch the application, to download any changes from the cloud
     // and overwrite them on the save file
     public void OnStartUp()
