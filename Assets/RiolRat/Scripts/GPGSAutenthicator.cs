@@ -66,9 +66,12 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[22] = Level7 Best Time (default: "99:99:99")
          * AstroRun[23] = Total amount of coins collected in Level 7 (default: "0")
          * AstroRun[24] = TimeInMiliseconds for Level 7 that still need to be submitted (default: "0")
+         * AstroRun[25] = Level8 Best Time (default: "99:99:99")
+         * AstroRun[26] = Total amount of coins collected in Level 8 (default: "0")
+         * AstroRun[27] = TimeInMiliseconds for Level 8 that still need to be submitted (default: "0")
          */
 
-        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0" };// Create an array with default values
+        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0" };// Create an array with default values
 
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
@@ -439,6 +442,23 @@ public class GPGSAutenthicator : MonoBehaviour
             {
                 Debug.Log("Couldnt submit score to LeaderBoard");
                 SaveString(24, TimeInMilliseconds.ToString());
+            }
+        });
+    }
+
+    public void UpdateLeaderboardScoreLevel8(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_8, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+            }
+
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveString(27, TimeInMilliseconds.ToString());
             }
         });
     }
