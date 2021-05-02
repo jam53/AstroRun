@@ -3812,7 +3812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00208c59fca60874da59812397c94a3f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12825,6 +12825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 574282512}
+  - component: {fileID: 574282513}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -12853,6 +12854,22 @@ RectTransform:
   m_AnchoredPosition: {x: -170, y: -394}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &574282513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574282511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8337c90b96c7d4b448f58bd8dc61bc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObject: {fileID: 932935304}
+  AdittionalText: 
+  KeyIndex: 22
+  LevelTimeButton: 1
 --- !u!1 &591475492
 GameObject:
   m_ObjectHideFlags: 0
@@ -27305,6 +27322,8 @@ GameObject:
   - component: {fileID: 1263250860}
   - component: {fileID: 1263250859}
   - component: {fileID: 1263250858}
+  - component: {fileID: 1263250862}
+  - component: {fileID: 1263250861}
   m_Layer: 5
   m_Name: Level1_Button
   m_TagString: Untagged
@@ -27409,6 +27428,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1263250861}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1263250860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27417,6 +27448,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263250856}
   m_CullTransparentMesh: 0
+--- !u!114 &1263250861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263250856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: Level7
+--- !u!114 &1263250862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263250856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8337c90b96c7d4b448f58bd8dc61bc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObject: {fileID: 487840145}
+  AdittionalText: /100
+  KeyIndex: 23
+  LevelTimeButton: 0
 --- !u!1 &1276573651
 GameObject:
   m_ObjectHideFlags: 0

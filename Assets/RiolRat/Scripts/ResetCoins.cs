@@ -55,6 +55,7 @@ public class ResetCoins : MonoBehaviour
             GPGSAutenthicator.GPGSZelf.SaveString(8, "0");//Level 4 coins
             GPGSAutenthicator.GPGSZelf.SaveString(18, "0");//Level 5 coins
             GPGSAutenthicator.GPGSZelf.SaveString(21, "0");//Level 6 coins
+            GPGSAutenthicator.GPGSZelf.SaveString(23, "0");//Level 7 coins
 
 
             GPGSAutenthicator.GPGSZelf.SaveString(9, "0");//World 1 coins
