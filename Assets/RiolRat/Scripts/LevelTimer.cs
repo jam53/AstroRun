@@ -62,6 +62,11 @@ public class LevelTimer : MonoBehaviour
             {
                 GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel5((long)(Time.timeSinceLevelLoad * 1000f));
             }
+
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level6")
+            {
+                GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel6((long)(Time.timeSinceLevelLoad * 1000f));
+            }
         }
     }
 

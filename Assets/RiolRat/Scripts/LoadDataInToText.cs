@@ -53,6 +53,18 @@ public class LoadDataInToText : MonoBehaviour
             GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
             GPGSAutenthicator.GPGSZelf.SaveString(15, "0");
         }
+
+        if (GPGSAutenthicator.GPGSZelf.LoadString(17) != "0")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel5(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
+            GPGSAutenthicator.GPGSZelf.SaveString(17, "0");
+        }
+
+        if (GPGSAutenthicator.GPGSZelf.LoadString(20) != "0")
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel6(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
+            GPGSAutenthicator.GPGSZelf.SaveString(20, "0");
+        }
     }
 
     // Update is called once per frame
