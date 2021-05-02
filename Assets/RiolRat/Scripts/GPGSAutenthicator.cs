@@ -163,12 +163,12 @@ public class GPGSAutenthicator : MonoBehaviour
 
     public void Save(int KeyIndex, string DataTooSave)
     {
-        SaveString(KeyIndex, DataTooSave);
+        SaveString(KeyIndex, "strstrxxx" + DataTooSave);
     }
 
     public void Save(int KeyIndex, string[] DataTooSave)
     {
-        SaveString(KeyIndex, "strngrrxx");
+        SaveString(KeyIndex, "strngrrxx" + String.Join("#", DataTooSave));
     }
 
     public void Save(int KeyIndex, int DataTooSave)
@@ -193,13 +193,13 @@ public class GPGSAutenthicator : MonoBehaviour
         string prefix;
         string data;
 
-        prefix = LoadString(KeyIndex).Substring(0,9);
-        data = LoadString(KeyIndex).Substring(10, LoadString(KeyIndex).Length);  
+        prefix = LoadString(KeyIndex).Substring(0,9);// this contains the identifier of what type it is e.g. 'strngrrxx' for a string
+        data = LoadString(KeyIndex).Substring(9);// the actual data we want to load
 
         switch (prefix)
         {
             case "strngrrxx":
-                return data.Split('ù');
+                return data.Split('#');
 
             case "intxxxxxx":
                 return int.Parse(data);
@@ -210,8 +210,11 @@ public class GPGSAutenthicator : MonoBehaviour
             case "blxxxxxxx":
                 return bool.Parse(data);
 
+            case "strstrxxx":
+                return data;
+
             default:
-                return LoadString(KeyIndex);
+                return "Error, couldnt recognize variable type";
         }
 
     }
