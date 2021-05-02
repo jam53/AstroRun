@@ -15,6 +15,7 @@ public class LevelSelection : MonoBehaviour
     void Start()
     {
         LevelAt = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(10));
+        Debug.Log(GPGSAutenthicator.GPGSZelf.LoadString(10));
 
         for (int i = LevelAt; i < LevelButtons.Length; i++)
         {
