@@ -31,6 +31,7 @@ public static class GPGSIds
         public const string leaderboard_level_6 = "CggIjqvd8UMQAhAL"; // <GPGSID>
         public const string leaderboard_level_5 = "CggIjqvd8UMQAhAK"; // <GPGSID>
         public const string leaderboard_level_4 = "CggIjqvd8UMQAhAF"; // <GPGSID>
+        public const string leaderboard_level_9 = "CggIjqvd8UMQAhAO"; // <GPGSID>
         public const string leaderboard_level_8 = "CggIjqvd8UMQAhAN"; // <GPGSID>
 
 }
