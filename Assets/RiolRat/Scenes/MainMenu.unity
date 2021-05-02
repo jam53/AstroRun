@@ -12927,7 +12927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9df501523b90cb4fa5ecfbe587e7c2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16537,6 +16537,8 @@ GameObject:
   - component: {fileID: 762067466}
   - component: {fileID: 762067465}
   - component: {fileID: 762067464}
+  - component: {fileID: 762067468}
+  - component: {fileID: 762067467}
   m_Layer: 5
   m_Name: Level3_Button
   m_TagString: Untagged
@@ -16641,6 +16643,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 762067467}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &762067466
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16649,6 +16663,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762067462}
   m_CullTransparentMesh: 0
+--- !u!114 &762067467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762067462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: Level9
+--- !u!114 &762067468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762067462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8337c90b96c7d4b448f58bd8dc61bc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObject: {fileID: 1932954838}
+  AdittionalText: /100
+  KeyIndex: 29
+  LevelTimeButton: 0
 --- !u!1 &769932678
 GameObject:
   m_ObjectHideFlags: 0
@@ -27546,6 +27589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1276573652}
+  - component: {fileID: 1276573653}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -27574,6 +27618,22 @@ RectTransform:
   m_AnchoredPosition: {x: -170, y: -394}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1276573653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276573651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8337c90b96c7d4b448f58bd8dc61bc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObject: {fileID: 850773699}
+  AdittionalText: 
+  KeyIndex: 28
+  LevelTimeButton: 1
 --- !u!1 &1278713392
 GameObject:
   m_ObjectHideFlags: 0
