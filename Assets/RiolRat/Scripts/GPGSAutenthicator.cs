@@ -6,6 +6,8 @@ using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using GooglePlayGames.BasicApi.SavedGame;
 using System;
+using System.IO;
+using System.Text;
 
 // Tested Logic, that should work
 //with = internet/logged in
@@ -23,8 +25,12 @@ public class GPGSAutenthicator : MonoBehaviour
 
     public static GPGSAutenthicator GPGSZelf; //Om dan te kunnen oproepen van andere scripts GPGSAutenthicator.GPGSZelf.FunctieNaam;
 
+    private string SavePath;
+
     private void Awake()
     {
+        SavePath = Application.persistentDataPath + "/AstroRun.dat";
+
         //If there is nothing (which is always the case when you restart the application)
         //Put this script in the static variable, so that we can acces it from elsewhere
         if (GPGSZelf == null)
@@ -98,11 +104,18 @@ public class GPGSAutenthicator : MonoBehaviour
                 OldArray[i] = DefaultValues[i];
             }
 
-            PlayerPrefsX.SetStringArray("AstroRun", OldArray); // save the now new and complete data string to the device
-            if (Social.localUser.authenticated)
-            {
-                OpenSave(true);//Call the function to upload the data to the cloud.
-            }
+            PlayerPrefsX.SetStringArray("AstroRun", OldArray); // save the now new and complete data string to the playerprefs
+
+            #region SaveToSaveFile
+            OpenSaveFILE(true);//Call the function to save the updated playerprefs to the save file on the device
+            #endregion
+
+            #region SaveToGooglePlay
+            //if (Social.localUser.authenticated)
+            //{
+            //    OpenSave(true);//Call the function to upload the data to the cloud.
+            //}
+            #endregion
         }
     }
 
@@ -126,40 +139,61 @@ public class GPGSAutenthicator : MonoBehaviour
         // Welcome back: "username"! -> If this doesnt get displayed, it means we didnt log in succesfully
         Social.Active.localUser.Authenticate(success=>
         {
-            if (success)
-            {
-                Debug.Log("Loged in successfully");
-                OnStartUp();
-            }
+            #region SaveToGooglePlay
+            //if (success)
+            //{
+            //    Debug.Log("Loged in successfully");
+            //    OnStartUp();
+            //}
 
-            else
-            {
-                Debug.Log("FAILED TO LOG IN");
-            }
+            //else
+            //{
+            //    Debug.Log("FAILED TO LOG IN");
+            //}
+            #endregion
         });
+
+        if (File.Exists(SavePath))
+        {
+            OnStartUpFILE();//Load data from the save file on the device into playerprefs, when you start the game
+        }
+
+        else if (!File.Exists(SavePath))
+        {
+            File.WriteAllLines(SavePath, PlayerPrefsX.GetStringArray("AstroRun"));//There is no save file on the device, so we create one
+        }
     }
 
     // We call this function from other script to save data
     public void SaveString(int KeyIndex, string DataTooSave)
     {
-        // Logic to do when the user is logged in
-        if (Social.localUser.authenticated)
-        {
-            string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
-            DataToSaveHolder[KeyIndex] = DataTooSave; //Update whatever data needs to be updated
-            PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
-            OpenSave(true);//Call the function to upload the data to the cloud.
-        }
+        #region SaveToSaveFile
+        string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
+        DataToSaveHolder[KeyIndex] = DataTooSave; //Update whatever data needs to be updated
+        PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
+        OpenSaveFILE(true);//Call the function to save the data to the savefile on the device.
+        #endregion
 
-        // Logic to do when the user isnt logged in
-        else
-        {
-            PlayerPrefs.SetInt("UnUploadedData", 1); //Set this to true, so that we know that we 
-            // have to upload some data to the cloud, the very next time we have internet/are loged in
-            string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
-            DataToSaveHolder[KeyIndex] = DataTooSave;//Update whatever data needs to be updated
-            PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
-        }
+        #region SaveToGooglePlay
+        //// Logic to do when the user is logged in
+        //if (Social.localUser.authenticated)
+        //{
+        //    string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
+        //    DataToSaveHolder[KeyIndex] = DataTooSave; //Update whatever data needs to be updated
+        //    PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
+        //    OpenSave(true);//Call the function to upload the data to the cloud.
+        //}
+        //
+        //// Logic to do when the user isnt logged in
+        //else
+        //{
+        //    PlayerPrefs.SetInt("UnUploadedData", 1); //Set this to true, so that we know that we 
+        //    // have to upload some data to the cloud, the very next time we have internet/are loged in
+        //    string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
+        //    DataToSaveHolder[KeyIndex] = DataTooSave;//Update whatever data needs to be updated
+        //    PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
+        //}
+        #endregion
     }
 
     // We call this function from other scripts to load data
@@ -231,101 +265,161 @@ public class GPGSAutenthicator : MonoBehaviour
 
     }
 
-
+    #region SaveToGooglePlay
     // This should be called when we launch the application, to download any changes from the cloud
-    // and overwrite them on the save file
-    public void OnStartUp()
+    //// and overwrite them on the save file
+    //public void OnStartUp()
+    //{
+    //    //If the user is online, load the data from the cloud and overwrite the current savefile
+    //    if (Social.localUser.authenticated)
+    //    {
+    //        OpenSave(false);
+    //    }
+
+    //    //If the user isnt online, do nothing. The old savefile will be used.
+    //    else
+    //    {
+    //        Debug.Log("Couldnt load data from cloud. User is not connected");
+    //    }
+    //}
+    #endregion
+
+    #region SaveToSaveFile
+    //We use this to load the data from the save file on the device, into playerprefs. So it overwrites playerprefs
+    public void OnStartUpFILE()
     {
-        //If the user is online, load the data from the cloud and overwrite the current savefile
-        if (Social.localUser.authenticated)
-        {
-            OpenSave(false);
-        }
-
-        //If the user isnt online, do nothing. The old savefile will be used.
-        else
-        {
-            Debug.Log("Couldnt load data from cloud. User is not connected");
-        }
+        Decode(SavePath);//Decrypt the save file on the device in order to read from it
+        PlayerPrefsX.SetStringArray("AstroRun", File.ReadAllLines(SavePath));//Overwrite/save to playerprefs using the save file on the device
+        Encode(SavePath);//Encrypt the save file on the device after we are done reading from it
     }
+    #endregion
 
-    //Cloud Saving
-    private bool isSaving = false;
-    public void OpenSave(bool saving)
+    #region SaveToGooglePlay
+    ////Cloud Saving
+    //private bool isSaving = false;
+    //public void OpenSave(bool saving)
+    //{
+    //    Debug.Log("Open Save");
+
+    //    //Check if the user is online.
+    //    if (Social.localUser.authenticated)
+    //    {
+    //        //Declare a variabe to know wheter we are saving or loading. isSaving(true) = saving / isSaving(false) = loading
+    //        isSaving = saving;
+    //        ((PlayGamesPlatform)Social.Active).SavedGame.OpenWithAutomaticConflictResolution("AstroRun"/*Save name*/, GooglePlayGames.BasicApi.DataSource.ReadCacheOrNetwork, ConflictResolutionStrategy.UseLastKnownGood/* how to resolve conflict */, SaveGameOpened);
+    //        // Open the save in the cloud with the name "AstroRun"
+    //    }
+
+    //    //Incase the user isnt online/logged in
+    //    else
+    //    {
+    //        Debug.LogWarning("Dit stukje code zou in principe nooit bereikt mogen worden. Aangezien we in Savestring en Loadstring al kijken als we connectie hebben.");
+    //            //we zijn niet // online dus met player prefs. en als we weer online zijn, checken als er nog iets is in playerprefs, zo ja,
+    //            //da eerst opslaan
+    //            // mss zo bool van saved playerprefs = false;
+    //            // en als we het dan hebben gesaved naar cloud, kunnen we het op true zetten
+    //    }
+    //}
+    #endregion
+
+    #region SaveToSaveFile
+    public void OpenSaveFILE(bool saving)
     {
         Debug.Log("Open Save");
 
-        //Check if the user is online.
-        if (Social.localUser.authenticated)
+        if (saving) // If true, that means we are writing
         {
-            //Declare a variabe to know wheter we are saving or loading. isSaving(true) = saving / isSaving(false) = loading
-            isSaving = saving;
-            ((PlayGamesPlatform)Social.Active).SavedGame.OpenWithAutomaticConflictResolution("AstroRun"/*Save name*/, GooglePlayGames.BasicApi.DataSource.ReadCacheOrNetwork, ConflictResolutionStrategy.UseLastKnownGood/* how to resolve conflict */, SaveGameOpened);
-            // Open the save in the cloud with the name "AstroRun"
+            Decode(SavePath);
+            File.WriteAllLines(SavePath, PlayerPrefsX.GetStringArray("AstroRun"));
+            Encode(SavePath);
         }
 
-        //Incase the user isnt online/logged in
-        else
+        else //Means we are reading
         {
-            Debug.LogWarning("Dit stukje code zou in principe nooit bereikt mogen worden. Aangezien we in Savestring en Loadstring al kijken als we connectie hebben.");
-                //we zijn niet // online dus met player prefs. en als we weer online zijn, checken als er nog iets is in playerprefs, zo ja,
-                //da eerst opslaan
-                // mss zo bool van saved playerprefs = false;
-                // en als we het dan hebben gesaved naar cloud, kunnen we het op true zetten
+            Decode(SavePath);
+            PlayerPrefsX.SetStringArray("AstroRun", File.ReadAllLines(SavePath));
+            Encode(SavePath);
+        }
+    }
+    #endregion
+
+    #region SaveToGooglePlay
+    ////Logic to save/load
+    //private void SaveGameOpened(SavedGameRequestStatus status, ISavedGameMetadata meta)
+    //{
+    //    Debug.Log("SaveGameOpened");
+
+    //    if (status ==  SavedGameRequestStatus.Success)
+    //    {
+    //if (isSaving) // If true, that means we are writing
+    //{
+    //    byte[] data = System.Text.ASCIIEncoding.ASCII.GetBytes(String.Join("|", PlayerPrefsX.GetStringArray("AstroRun")));//Get the save file
+    //    //Then create a string from the save file, which is an array. Because we can only save strings to the cloud, not arrays.
+    //    //Convert the string to a byte array
+    //    //And save that byte array below
+    //    SavedGameMetadataUpdate update = new SavedGameMetadataUpdate.Builder().WithUpdatedDescription("Saved at " + DateTime.Now.ToString()).Build();
+    //    ((PlayGamesPlatform)Social.Active).SavedGame.CommitUpdate(meta, update, data, SaveUpdate);
+    //}
+
+    //        else // If false, that means we are reading
+    //        {
+    //            ((PlayGamesPlatform)Social.Active).SavedGame.ReadBinaryData(meta, SaveRead);
+    //        }
+    //    }
+    //}
+
+    ////Succes Save
+    //private void SaveUpdate(SavedGameRequestStatus status, ISavedGameMetadata meta)
+    //{
+    //    Debug.Log(status);
+    //}
+
+    ////Load
+    //private void SaveRead(SavedGameRequestStatus status, byte[] data)
+    //{
+    //    if (status == SavedGameRequestStatus.Success)
+    //    {
+    //        //If we saved without an internet connection last time
+    //        if (PlayerPrefs.GetInt("UnUploadedData") == 1)
+    //        {
+    //            PlayerPrefs.SetInt("UnUploadedData", 0); // Set this to false, so then we know there isnt any data
+    //            // that still needs to be uploaded to the cloud
+    //            OpenSave(true);// Upload the unuploaded data to the cloud
+    //    }
+
+    //    // If we were able to save with internet last time
+    //    else
+    //    {
+    //        string savedData = System.Text.ASCIIEncoding.ASCII.GetString(data);// Get the byte array from the cloud
+    //        //Then convert the byte array to a string, and put it in a temporary variable
+    //        PlayerPrefsX.SetStringArray("AstroRun", savedData.Split('|'));//Now convert the string to an array.
+    //        //And save the array to the save file            
+    //    }
+    //}
+    #endregion
+//}
+
+    public void Encode (string path)
+    {
+        if (File.Exists(path))
+        {
+            // Encode
+            string data = String.Join("|", File.ReadAllLines(path));//The data in the save file on the device is saved as a stringarray, convert this to a string
+            byte[] bytes = Encoding.UTF8.GetBytes(data); //convert the string into a byte array
+            string base64 = Convert.ToBase64String(bytes); //convert the byte array to a string, this string is unrecognaizable compared to the string: 'data'
+            File.WriteAllText(path, base64); //Write the obfuscated string to the save file on the device 
         }
     }
 
-    //Logic to save/load
-    private void SaveGameOpened(SavedGameRequestStatus status, ISavedGameMetadata meta)
+    public void Decode (string path)
     {
-        Debug.Log("SaveGameOpened");
-
-        if (status ==  SavedGameRequestStatus.Success)
+        if (File.Exists(path))
         {
-            if (isSaving) // If true, that means we are writing
-            {
-                byte[] data = System.Text.ASCIIEncoding.ASCII.GetBytes(String.Join("|", PlayerPrefsX.GetStringArray("AstroRun")));//Get the save file
-                //Then create a string from the save file, which is an array. Because we can only save strings to the cloud, not arrays.
-                //Convert the string to a byte array
-                //And save that byte array below
-                SavedGameMetadataUpdate update = new SavedGameMetadataUpdate.Builder().WithUpdatedDescription("Saved at " + DateTime.Now.ToString()).Build();
-                ((PlayGamesPlatform)Social.Active).SavedGame.CommitUpdate(meta, update, data, SaveUpdate);
-            }
-
-            else // If false, that means we are reading
-            {
-                ((PlayGamesPlatform)Social.Active).SavedGame.ReadBinaryData(meta, SaveRead);
-            }
-        }
-    }
-
-    //Succes Save
-    private void SaveUpdate(SavedGameRequestStatus status, ISavedGameMetadata meta)
-    {
-        Debug.Log(status);
-    }
-
-    //Load
-    private void SaveRead(SavedGameRequestStatus status, byte[] data)
-    {
-        if (status == SavedGameRequestStatus.Success)
-        {
-            //If we saved without an internet connection last time
-            if (PlayerPrefs.GetInt("UnUploadedData") == 1)
-            {
-                PlayerPrefs.SetInt("UnUploadedData", 0); // Set this to false, so then we know there isnt any data
-                // that still needs to be uploaded to the cloud
-                OpenSave(true);// Upload the unuploaded data to the cloud
-            }
-
-            // If we were able to save with internet last time
-            else
-            {
-                string savedData = System.Text.ASCIIEncoding.ASCII.GetString(data);// Get the byte array from the cloud
-                //Then convert the byte array to a string, and put it in a temporary variable
-                PlayerPrefsX.SetStringArray("AstroRun", savedData.Split('|'));//Now convert the string to an array.
-                //And save the array to the save file
-            }
+            // Decode
+            string base64 = File.ReadAllText(path); // Read the obfuscated string from the save file on the device
+            byte[] data = Convert.FromBase64String(base64);//Convert the obfuscated string into an byte array
+            string decodedString = Encoding.UTF8.GetString(data); //Create the original string from the byte array
+            File.WriteAllLines(path, decodedString.Split('|')); //Split the string and save it as an string array to the save file on the device
         }
     }
 

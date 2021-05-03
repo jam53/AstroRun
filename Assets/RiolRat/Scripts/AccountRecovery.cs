@@ -30,7 +30,7 @@ public class AccountRecovery : MonoBehaviour
         Continue.interactable = false;
         Reset = true;
         PlayerPrefs.DeleteAll();
-        GPGSAutenthicator.GPGSZelf.OnStartUp();
+        //GPGSAutenthicator.GPGSZelf.OnStartUp();
         TimeStarted = Time.timeSinceLevelLoad;
     }
 }
