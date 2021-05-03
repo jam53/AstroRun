@@ -123,6 +123,12 @@ public class GPGSAutenthicator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //DIT VERWIJDEREN TIJDENS RELEASE-----------------
+        GPGSAutenthicator.GPGSZelf.SaveString(10, "9");
+        //DIT UNLOCKED ALLE LEVELS, handig tijdens testen--------------------------
+
+
+
         //If there is nothing (which is always the case when you restart the application)
         //Crate the GPGS thing
         if (platform == null)
@@ -161,6 +167,7 @@ public class GPGSAutenthicator : MonoBehaviour
         else if (!File.Exists(SavePath))
         {
             File.WriteAllLines(SavePath, PlayerPrefsX.GetStringArray("AstroRun"));//There is no save file on the device, so we create one
+            Encode(SavePath);
         }
     }
 
