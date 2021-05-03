@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"90b5cb55-31c9-4e44-b56a-eb475795710e\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"922cd826-34ad-4068-833c-5c97b5fc4de5\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
     \"string\",\r\n      \"value\": \"0.9.1\"\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"90b5cb55-31c9-4e44-b56a-eb475795710e\"\r\n   
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"922cd826-34ad-4068-833c-5c97b5fc4de5\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"ApplicationVersion\",\r\n      \"type\":
     \"string\",\r\n      \"value\": \"0.9.1\"\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"1d0de93d-1877-4251-bffb-49842a771ebe\",\r\n   
