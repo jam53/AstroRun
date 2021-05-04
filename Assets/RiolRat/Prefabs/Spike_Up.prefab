@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6536441058896479594}
   - component: {fileID: 6536441058896479589}
   - component: {fileID: 6536441058896479588}
+  - component: {fileID: 5368374948390909093}
   m_Layer: 0
   m_Name: Spike_Up
   m_TagString: DoesDamage
@@ -43,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -51,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b511889014ec69549a78844ed5365a56, type: 2}
+  - {fileID: 2100000, guid: 290700d3afc85ad44a999e6afc8c5114, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,7 +102,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -133,3 +135,17 @@ PolygonCollider2D:
       - {x: 0.11, y: -0.61}
       - {x: 0.26999998, y: -0.52}
       - {x: 0.34, y: -0.48}
+--- !u!114 &5368374948390909093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536441058896479590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4fe4fff54dba945a6387462db526e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationSpeed: 0.35
+  MaxThickness: 0.004
