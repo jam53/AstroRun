@@ -8,7 +8,7 @@ public class SpriteOutliner : MonoBehaviour
     public float MaxThickness;
 
 
-    private float AnimationState;
+    private float AnimationState; // Used to lerp between the minimum and maximum thickness. AnimationState = 0 >> minimumthickness | AnimationState = 1 >> maximumthickness
 
     private Material SpriteOutline;
     private Color MaterialColor;
@@ -23,8 +23,7 @@ public class SpriteOutliner : MonoBehaviour
 
         SpriteOutline = GetComponent<Renderer>().material; //Get the SpringOutline material on the object
 
-        //Get it's values
-        MaterialColor = SpriteOutline.GetColor("_Color");
+        MaterialColor = SpriteOutline.GetColor("_Color");//Get it's color
 
         SpriteOutline.SetFloat("Enable", 0);//Disable the shader
 
@@ -33,9 +32,9 @@ public class SpriteOutliner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpriteOutline.SetFloat("Thickness", Mathf.Lerp(MaterialMinimumThickness, MaxThickness, AnimationState));
+        SpriteOutline.SetFloat("Thickness", Mathf.Lerp(MaterialMinimumThickness, MaxThickness, AnimationState));//Set the thickness
 
-        AnimationState += AnimationSpeed * Time.deltaTime;
+        AnimationState += AnimationSpeed * Time.deltaTime;//Set the state of the thickness between minimum and maximum thickness
 
         if (AnimationState > 1.0f)
         {
