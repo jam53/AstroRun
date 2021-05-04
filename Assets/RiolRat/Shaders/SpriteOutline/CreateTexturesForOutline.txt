@@ -1,0 +1,3 @@
+Zorg dat de texture wat transparante plaats errond heeft, niet dat het gewoon is afgesneden net aan de zijkant van de sprite.
+	Die transparante kant wordt gebruikt voor de outline.
+in Texture import settings Mesh type van Tight > Full Rect
