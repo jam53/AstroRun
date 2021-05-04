@@ -406,26 +406,26 @@ public class GPGSAutenthicator : MonoBehaviour
 
     public void Encode (string path)
     {
-        //if (File.Exists(path))
-        //{
-        //    // Encode
-        //    string data = String.Join("|", File.ReadAllLines(path));//The data in the save file on the device is saved as a stringarray, convert this to a string
-        //    byte[] bytes = Encoding.UTF8.GetBytes(data); //convert the string into a byte array
-        //    string base64 = Convert.ToBase64String(bytes); //convert the byte array to a string, this string is unrecognaizable compared to the string: 'data'
-        //    File.WriteAllText(path, base64); //Write the obfuscated string to the save file on the device 
-        //}
+        if (File.Exists(path))
+        {
+            // Encode
+            string data = String.Join("|", File.ReadAllLines(path));//The data in the save file on the device is saved as a stringarray, convert this to a string
+            byte[] bytes = Encoding.UTF8.GetBytes(data); //convert the string into a byte array
+            string base64 = Convert.ToBase64String(bytes); //convert the byte array to a string, this string is unrecognaizable compared to the string: 'data'
+            File.WriteAllText(path, base64); //Write the obfuscated string to the save file on the device 
+        }
     }
 
     public void Decode (string path)
     {
-        //if (File.Exists(path))
-        //{
-        //    // Decode
-        //    string base64 = File.ReadAllText(path); // Read the obfuscated string from the save file on the device
-        //    byte[] data = Convert.FromBase64String(base64);//Convert the obfuscated string into an byte array
-        //    string decodedString = Encoding.UTF8.GetString(data); //Create the original string from the byte array
-        //    File.WriteAllLines(path, decodedString.Split('|')); //Split the string and save it as an string array to the save file on the device
-        //}
+        if (File.Exists(path))
+        {
+            // Decode
+            string base64 = File.ReadAllText(path); // Read the obfuscated string from the save file on the device
+            byte[] data = Convert.FromBase64String(base64);//Convert the obfuscated string into an byte array
+            string decodedString = Encoding.UTF8.GetString(data); //Create the original string from the byte array
+            File.WriteAllLines(path, decodedString.Split('|')); //Split the string and save it as an string array to the save file on the device
+        }
     }
 
     //Post score to leaderboard
