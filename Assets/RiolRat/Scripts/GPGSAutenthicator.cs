@@ -78,10 +78,10 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[28] = Level9 Best Time (default: "99:99:99")
          * AstroRun[29] = Total amount of coins collected in Level 9 (default: "0")
          * AstroRun[30] = TimeInMiliseconds for Level 9 that still need to be submitted (default: "0")
-         * AstroRun[31] = Quality settings blxxxxxxxtrue = high quality, blxxxxxxxfalse = low quality
+         * AstroRun[31] = Quality settings true = high quality, false = low quality
          */
 
-        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "blxxxxxxxtrue" };// Create an array with default values
+        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "true" };// Create an array with default values
 
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
@@ -239,37 +239,64 @@ public class GPGSAutenthicator : MonoBehaviour
     }
 
 
-    //Check what kind of data type we are loading
-    public dynamic Load(int KeyIndex)
+
+    #region Old Dynamic Load
+    ////Check what kind of data type we are loading
+    ////'Dynamic' doesn't work with il2cpp
+    //public dynamic Load(int KeyIndex)
+    //{
+    //    string prefix;
+    //    string data;
+
+    //    prefix = LoadString(KeyIndex).Substring(0,9);// this contains the identifier of what type it is e.g. 'strstrxxx' for a string
+    //    data = LoadString(KeyIndex).Substring(9);// the actual data we want to load
+
+    //    switch (prefix)
+    //    {
+    //        case "strngrrxx":
+    //            return data.Split('#');
+
+    //        case "intxxxxxx":
+    //            return int.Parse(data);
+
+    //        case "fltxxxxxx":
+    //            return float.Parse(data);
+
+    //        case "blxxxxxxx":
+    //            return bool.Parse(data);
+
+    //        case "strstrxxx":
+    //            return data;
+
+    //        default:
+    //            return "Error, couldnt recognize variable type";
+    //    }
+
+    //}
+    #endregion
+
+    public string[] LoadStringArray(int KeyIndex)
     {
-        string prefix;
-        string data;
+        return LoadString(KeyIndex).Split('#');// this contains the identifier of what type it is e.g. 'strstrxxx' for a string
+    }
 
-        prefix = LoadString(KeyIndex).Substring(0,9);// this contains the identifier of what type it is e.g. 'strstrxxx' for a string
-        data = LoadString(KeyIndex).Substring(9);// the actual data we want to load
-
-        switch (prefix)
-        {
-            case "strngrrxx":
-                return data.Split('#');
-
-            case "intxxxxxx":
-                return int.Parse(data);
-
-            case "fltxxxxxx":
-                return float.Parse(data);
-
-            case "blxxxxxxx":
-                return bool.Parse(data);
-
-            case "strstrxxx":
-                return data;
-
-            default:
-                return "Error, couldnt recognize variable type";
-        }
+    public int LoadInt(int KeyIndex)
+    {
+        return int.Parse(LoadString(KeyIndex));// this contains the identifier of what type it is e.g. 'strstrxxx' for a string
 
     }
+
+    public float LoadFloat(int KeyIndex)
+    {
+        return float.Parse(LoadString(KeyIndex));// this contains the identifier of what type it is e.g. 'strstrxxx' for a string
+    }
+
+    public bool LoadBool(int KeyIndex)
+    {
+        return bool.Parse(LoadString(KeyIndex));// this contains the identifier of what type it is e.g. 'strstrxxx' for a string
+    }
+
+
 
     #region SaveToGooglePlay
     // This should be called when we launch the application, to download any changes from the cloud
