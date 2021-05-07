@@ -48,12 +48,12 @@ public class Options : MonoBehaviour
         #endregion
 
         #region Quality Settings
-        if (GPGSAutenthicator.GPGSZelf.Load(31))//If true, it means we want to use high quality settings AKA use post processing
+        if (GPGSAutenthicator.GPGSZelf.LoadBool(31))//If true, it means we want to use high quality settings AKA use post processing
         {
             Quality.text = "Graphics: High Quality";
         }
 
-        else if (!GPGSAutenthicator.GPGSZelf.Load(31))//If false, it means we dont want to use high quality settings AKA use post processing
+        else if (!GPGSAutenthicator.GPGSZelf.LoadBool(31))//If false, it means we dont want to use high quality settings AKA use post processing
         {
             Quality.text = "Graphics: Performance";
         }
