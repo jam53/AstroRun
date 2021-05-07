@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 1024
+      m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 2
@@ -55,14 +55,24 @@ SpriteAtlas:
     - {fileID: 2800000, guid: ecefdfa101c8c5a4a9fb6620b14fb5fd, type: 3}
     - {fileID: 2800000, guid: 114816ae8ebd3d44aaa033ebb651b6e0, type: 3}
     - {fileID: 2800000, guid: a7f78fb832efe3447ad75b75f7fe3f7d, type: 3}
+    - {fileID: 2800000, guid: 37313f14584944c45b1b09363a3c20a7, type: 3}
+    - {fileID: 2800000, guid: 76dd93b2f594196409d92b87b97adc5f, type: 3}
+    - {fileID: 2800000, guid: 6c78a2bc6c8358240a9c72fd0edabb0b, type: 3}
+    - {fileID: 2800000, guid: fd34a2a65254b0a4c8c9d50f5f6b18ff, type: 3}
+    - {fileID: 2800000, guid: f1c878ad6e8daf54d8951f8891a32fb1, type: 3}
+    - {fileID: 2800000, guid: 401bf6a30ec42a9418b4f912b62c6ecb, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ecefdfa101c8c5a4a9fb6620b14fb5fd, type: 3}
+  - {fileID: 21300000, guid: 76dd93b2f594196409d92b87b97adc5f, type: 3}
   - {fileID: 21300000, guid: 010a6e5305fa7004f89c5d317b7b47d4, type: 3}
+  - {fileID: 21300000, guid: 401bf6a30ec42a9418b4f912b62c6ecb, type: 3}
+  - {fileID: 21300000, guid: 37313f14584944c45b1b09363a3c20a7, type: 3}
   - {fileID: 21300000, guid: 8a0f6b4543934e749afdd21c5867c415, type: 3}
+  - {fileID: 21300000, guid: fd34a2a65254b0a4c8c9d50f5f6b18ff, type: 3}
   - {fileID: 21300000, guid: c1ce1be65fa901744898a224b57aa5aa, type: 3}
   - {fileID: 2279773086328250220, guid: a7f78fb832efe3447ad75b75f7fe3f7d, type: 3}
   - {fileID: 3212425294469108172, guid: a7f78fb832efe3447ad75b75f7fe3f7d, type: 3}
@@ -91,6 +101,7 @@ SpriteAtlas:
   - {fileID: -7479277761260871200, guid: 5c402bdb74f49f84e825cf0f7f623cc0, type: 3}
   - {fileID: 667471728563035604, guid: 5c402bdb74f49f84e825cf0f7f623cc0, type: 3}
   - {fileID: -269471364710399764, guid: 5c402bdb74f49f84e825cf0f7f623cc0, type: 3}
+  - {fileID: 21300000, guid: 6c78a2bc6c8358240a9c72fd0edabb0b, type: 3}
   - {fileID: -1367842023607648389, guid: 9ccd8d5de8d5bbd4b827fb2881e498f1, type: 3}
   - {fileID: -1558732491534133438, guid: 9ccd8d5de8d5bbd4b827fb2881e498f1, type: 3}
   - {fileID: -3311437503591314278, guid: 9ccd8d5de8d5bbd4b827fb2881e498f1, type: 3}
@@ -107,12 +118,19 @@ SpriteAtlas:
   - {fileID: -7180727909465804862, guid: 9ccd8d5de8d5bbd4b827fb2881e498f1, type: 3}
   - {fileID: 8276729213299914824, guid: 9ccd8d5de8d5bbd4b827fb2881e498f1, type: 3}
   - {fileID: 7087219508014492419, guid: 9ccd8d5de8d5bbd4b827fb2881e498f1, type: 3}
+  - {fileID: -6799718307204800640, guid: f1c878ad6e8daf54d8951f8891a32fb1, type: 3}
+  - {fileID: -2972874608040284026, guid: f1c878ad6e8daf54d8951f8891a32fb1, type: 3}
+  - {fileID: -5229324886373490009, guid: f1c878ad6e8daf54d8951f8891a32fb1, type: 3}
   - {fileID: 21300000, guid: 114816ae8ebd3d44aaa033ebb651b6e0, type: 3}
   - {fileID: 21300000, guid: 26fb348faeffcf741b764a1f02cbb8a9, type: 3}
   m_PackedSpriteNamesToIndex:
   - Mace
+  - TurretGun
   - Handle_Plain
+  - ArrowTransparant
+  - TurretBase
   - Spike_Up
+  - Crate
   - Coin
   - Flag_13
   - Flag_12
@@ -141,6 +159,7 @@ SpriteAtlas:
   - menu_game_MOOIE_VERSIE_6
   - menu_game_MOOIE_VERSIE_5
   - menu_game_MOOIE_VERSIE_4
+  - Water
   - 2048x256_3
   - 2048x256_2
   - 2048x256_1
@@ -157,6 +176,9 @@ SpriteAtlas:
   - 2048x256_13
   - 2048x256_10
   - 2048x256_11
+  - SprinBoardTransparentRedOnly_2
+  - SprinBoardTransparentRedOnly_1
+  - SprinBoardTransparentRedOnly_0
   - Stick
   - SkullWhite
   m_RenderDataMap: {}
