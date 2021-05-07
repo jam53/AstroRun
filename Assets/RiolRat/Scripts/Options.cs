@@ -13,9 +13,13 @@ public class Options : MonoBehaviour
     public TextMeshProUGUI SFX;
 
     private int Stand;
+
+
+    public TextMeshProUGUI Quality;
     // Start is called before the first frame update
     void Start()
     {
+        #region Music & SFX settings
         Stand = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11));
 
         if (Stand == 0)
@@ -41,6 +45,19 @@ public class Options : MonoBehaviour
             BackgroundMusic.Stop();
             SFXs.SetActive(false);
         }
+        #endregion
+
+        #region Quality Settings
+        if (GPGSAutenthicator.GPGSZelf.Load(31))//If true, it means we want to use high quality settings AKA use post processing
+        {
+            Quality.text = "Graphics: High Quality";
+        }
+
+        else if (!GPGSAutenthicator.GPGSZelf.Load(31))//If false, it means we dont want to use high quality settings AKA use post processing
+        {
+            Quality.text = "Graphics: Performance";
+        }
+        #endregion
     }
 
     // Update is called once per frame
@@ -91,6 +108,21 @@ public class Options : MonoBehaviour
             BackgroundMusic.Stop();
         }
         Save();
+    }
+
+    public void Qualityy ()
+    {
+        if (Quality.text == "Graphics: High Quality")
+        {
+            Quality.text = "Graphics: Performance";
+            GPGSAutenthicator.GPGSZelf.Save(31, false);
+        }
+
+        else if (Quality.text == "Graphics: Performance")
+        {
+            Quality.text = "Graphics: High Quality";
+            GPGSAutenthicator.GPGSZelf.Save(31, true);
+        }
     }
 
     private void Save()
