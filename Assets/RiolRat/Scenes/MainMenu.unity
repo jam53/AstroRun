@@ -12664,8 +12664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8412331968519162098, guid: ada5015c7d4a65748b24ca5cc3a2689c,
-    type: 3}
+  m_Sprite: {fileID: 60928290113672176, guid: 6b15db219a9b0714eacd9074d18eb61f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -39548,7 +39547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8412331968519162098, guid: ada5015c7d4a65748b24ca5cc3a2689c,
+  m_Sprite: {fileID: -7496077737396735874, guid: fceb4a010494c0c43b7c1d62cdbdd17f,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -51995,9 +51994,9 @@ MonoBehaviour:
   - {fileID: 2057003898}
   - {fileID: 36949090}
   CharacterThumbnails:
-  - {fileID: 8412331968519162098, guid: ada5015c7d4a65748b24ca5cc3a2689c, type: 3}
-  - {fileID: -7496077737396735874, guid: fceb4a010494c0c43b7c1d62cdbdd17f, type: 3}
-  - {fileID: 60928290113672176, guid: 6b15db219a9b0714eacd9074d18eb61f, type: 3}
+  - {fileID: 348388995}
+  - {fileID: 1864123117}
+  - {fileID: 558885238}
   Prices:
   - FREE
   - x
