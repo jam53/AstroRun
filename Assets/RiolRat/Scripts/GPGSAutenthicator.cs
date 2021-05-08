@@ -215,27 +215,27 @@ public class GPGSAutenthicator : MonoBehaviour
 
     public void Save(int KeyIndex, string DataTooSave)
     {
-        SaveString(KeyIndex, "strstrxxx" + DataTooSave);
+        SaveString(KeyIndex, DataTooSave);
     }
 
     public void Save(int KeyIndex, string[] DataTooSave)
     {
-        SaveString(KeyIndex, "strngrrxx" + String.Join("#", DataTooSave));
+        SaveString(KeyIndex, String.Join("#", DataTooSave));
     }
 
     public void Save(int KeyIndex, int DataTooSave)
     {
-        SaveString(KeyIndex, "intxxxxxx" + DataTooSave.ToString());
+        SaveString(KeyIndex, DataTooSave.ToString());
     }
 
     public void Save(int KeyIndex, float DataTooSave)
     {
-        SaveString(KeyIndex, "fltxxxxxx" + DataTooSave.ToString());
+        SaveString(KeyIndex, DataTooSave.ToString());
     }
 
     public void Save(int KeyIndex, bool DataTooSave)
     {
-        SaveString(KeyIndex, "blxxxxxxx" + DataTooSave.ToString());
+        SaveString(KeyIndex, DataTooSave.ToString());
     }
 
 
