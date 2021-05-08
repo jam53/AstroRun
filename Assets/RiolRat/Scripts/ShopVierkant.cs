@@ -12,7 +12,9 @@ public class ShopVierkant : MonoBehaviour
 
     public GameObject[] Buttons;
 
-    public Sprite[] CharacterThumbnails;
+    public Image[] CharacterThumbnails;
+    private Color DefaultColor;
+
     public string[] Prices;
     public string[] Descriptions;
 
@@ -35,14 +37,19 @@ public class ShopVierkant : MonoBehaviour
         //CurrentItem = 0;
         //Display.sprite = SkinThumbnail[CurrentItem];
         //Price.text = SkinPrice[CurrentItem];
-        int Counter = 0;
-        foreach (var item in Buttons)
-        {
-            item.GetComponentInChildren<Image>().sprite = CharacterThumbnails[Counter];
-            Counter++;
-        }
 
-        SelectedCharacter.sprite = CharacterThumbnails[0];
+        DefaultColor = CharacterThumbnails[0].color;
+
+        //int Counter = 0;
+        //foreach (var item in Buttons)
+        //{
+        //    item.GetComponentInChildren<Image>().sprite = CharacterThumbnails[Counter].sprite;
+        //    Counter++;
+        //}
+
+        CharacterThumbnails[0].color = Color.white;
+
+        SelectedCharacter.sprite = CharacterThumbnails[0].sprite;
         Price.text = Prices[0];
         Description.text = Descriptions[0];
     }
@@ -113,7 +120,14 @@ public class ShopVierkant : MonoBehaviour
 
     public void ChangeCharacter (int buttonIndex)
     {
-        SelectedCharacter.sprite = CharacterThumbnails[buttonIndex];
+        foreach (var sprite in CharacterThumbnails)
+        {
+            sprite.color = DefaultColor;
+        }
+
+        CharacterThumbnails[buttonIndex].color = Color.white;
+
+        SelectedCharacter.sprite = CharacterThumbnails[buttonIndex].sprite;
         Price.text = Prices[buttonIndex].ToString();
         Description.text = Descriptions[buttonIndex];
     }
