@@ -10,6 +10,8 @@ public class ShopVierkant : MonoBehaviour
     public TextMeshProUGUI Price;
     public TextMeshProUGUI Description;
 
+    public float[] YposSelectedCharacterImage;
+
     public GameObject[] Buttons;
 
     public Image[] CharacterThumbnails;
@@ -50,6 +52,12 @@ public class ShopVierkant : MonoBehaviour
         CharacterThumbnails[0].color = Color.white;
 
         SelectedCharacter.sprite = CharacterThumbnails[0].sprite;
+        SelectedCharacter.transform.localScale = CharacterThumbnails[0].transform.localScale;
+
+        Vector3 TempPosition = SelectedCharacter.rectTransform.anchoredPosition;
+        TempPosition.y = YposSelectedCharacterImage[0];
+        SelectedCharacter.rectTransform.anchoredPosition = TempPosition;
+
         Price.text = Prices[0];
         Description.text = Descriptions[0];
     }
@@ -128,6 +136,12 @@ public class ShopVierkant : MonoBehaviour
         CharacterThumbnails[buttonIndex].color = Color.white;
 
         SelectedCharacter.sprite = CharacterThumbnails[buttonIndex].sprite;
+        SelectedCharacter.transform.localScale = CharacterThumbnails[buttonIndex].transform.localScale;
+
+        Vector3 TempPosition = SelectedCharacter.rectTransform.anchoredPosition;
+        TempPosition.y = YposSelectedCharacterImage[buttonIndex];
+        SelectedCharacter.rectTransform.anchoredPosition = TempPosition;
+            
         Price.text = Prices[buttonIndex].ToString();
         Description.text = Descriptions[buttonIndex];
     }
