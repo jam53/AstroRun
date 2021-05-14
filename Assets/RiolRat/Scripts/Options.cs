@@ -19,7 +19,6 @@ public class Options : MonoBehaviour
     private int Stand;
 
     private bool Startup;
-    private bool AnimatedMusicOnce;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +35,7 @@ public class Options : MonoBehaviour
             //SFX.isOn = true;
             //SFX.AnimateSwitch();
 
-            print("called");
+            StartCoroutine(LateAnimate(false, false));
 
             BackgroundMusic.Play();
             SFXs.SetActive(true);
@@ -52,7 +51,6 @@ public class Options : MonoBehaviour
             //Music.isOn = false;
             //Music.AnimateSwitch();
             StartCoroutine(LateAnimate(true, false));
-            print("called");
 
             //SFX.isOn = true;
             //SFX.AnimateSwitch();
@@ -73,8 +71,6 @@ public class Options : MonoBehaviour
 
             //SFX.isOn = false;
             //SFX.AnimateSwitch();
-
-            print("called");
             StartCoroutine(LateAnimate(true, true));
 
             BackgroundMusic.Stop();
@@ -103,7 +99,7 @@ public class Options : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Musicc()
@@ -113,10 +109,7 @@ public class Options : MonoBehaviour
             //Music.isOn = false;
             //Music.AnimateSwitch();
 
-            if (AnimatedMusicOnce)
-            {
-                BackgroundMusic.Stop();
-            }
+            BackgroundMusic.Stop();
         }
 
         else if (!Music.isOn)
@@ -139,13 +132,6 @@ public class Options : MonoBehaviour
                 source.enabled = true;
             }
         }
-
-        if (!AnimatedMusicOnce && Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11)) == 1 || !AnimatedMusicOnce && Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11)) == 2)
-        {
-            StartCoroutine(LateAnimate(true, false));
-        }
-        AnimatedMusicOnce = true;
-
         StartCoroutine(Save());
     }
 
@@ -162,6 +148,7 @@ public class Options : MonoBehaviour
             {
                 source.enabled = false;
             }
+
             
         }
 
@@ -186,19 +173,12 @@ public class Options : MonoBehaviour
             BackgroundMusic.Stop();
         }
 
-        if (!Startup)//runt de eerste keer
-        {
-            Startup = true;
-            SFX.AnimateSwitch();
-            SFX.AnimateSwitch();
-        }
-
-    
+        
 
         StartCoroutine(Save());
     }
 
-    public void Qualityy ()
+    public void Qualityy()
     {
         if (Quality.text == "High Quality")
         {
@@ -213,9 +193,16 @@ public class Options : MonoBehaviour
         }
     }
 
+    private bool OptionsMenuOpen()
+    {
+        return Music.gameObject.activeInHierarchy;
+    }
+
     IEnumerator LateAnimate(bool AnimateMusic, bool AnimateSFX)
     {
-        yield return new WaitForSeconds(1);
+        //yield return new WaitForSeconds(5);
+
+        yield return new WaitUntil(OptionsMenuOpen);
 
         if (AnimateMusic)
         {
@@ -227,9 +214,26 @@ public class Options : MonoBehaviour
             SFX.AnimateSwitch();
         }
 
-        Debug.Log("aniamte musc" + AnimateMusic);
-        Debug.Log("aniamte sfx" + AnimateSFX);
-        
+        if (!Startup && !AnimateMusic)
+        {
+            Startup = true;
+            print("hit");
+            Music.AnimateSwitch();
+            
+            SFX.AnimateSwitch();
+            SFX.AnimateSwitch();
+
+            Music.AnimateSwitch();
+        }
+
+        else if (!Startup)
+        {
+            Startup = true;
+            SFX.AnimateSwitch();
+
+            SFX.AnimateSwitch();
+        }
+
     }
 
     IEnumerator Save()
