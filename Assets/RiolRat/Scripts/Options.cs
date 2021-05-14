@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Michsky.UI.Zone;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,53 +10,87 @@ public class Options : MonoBehaviour
     public AudioSource BackgroundMusic;
     public GameObject SFXs;
 
-    public TextMeshProUGUI Music;
-    public TextMeshProUGUI SFX;
+    public TextMeshProUGUI Quality;
+    public SwitchManager Music;
+    public SwitchManager SFX;
+
+    public AudioSource[] SourcesInOptions;
 
     private int Stand;
 
+    private bool Startup;
 
-    public TextMeshProUGUI Quality;
     // Start is called before the first frame update
     void Start()
     {
         #region Music & SFX settings
         Stand = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11));
 
+
         if (Stand == 0)
         {
-            Music.text = "Music: On";
-            SFX.text = "Sound Effects: On";
+            //Music.isOn = true;
+            //Music.AnimateSwitch();
+
+            //SFX.isOn = true;
+            //SFX.AnimateSwitch();
+
             BackgroundMusic.Play();
             SFXs.SetActive(true);
+
+            foreach (AudioSource source in SourcesInOptions)
+            {
+                source.enabled = true;
+            }
         }
 
         else if (Stand == 1)
         {
-            Music.text = "Music: Off";
-            SFX.text = "Sound Effects: On";
+            //Music.isOn = false;
+            //Music.AnimateSwitch();
+            StartCoroutine(LateEnableOrDisable(false, true));
+
+            //SFX.isOn = true;
+            //SFX.AnimateSwitch();
+
             BackgroundMusic.Stop();
             SFXs.SetActive(true);
+
+            foreach (AudioSource source in SourcesInOptions)
+            {
+                source.enabled = true;
+            }
         }
 
         else
         {
-            Music.text = "Music: Off";
-            SFX.text = "Sound Effects: Off";
+            //Music.isOn = false;
+            //Music.AnimateSwitch();
+
+            //SFX.isOn = false;
+            //SFX.AnimateSwitch();
+
+            StartCoroutine(LateEnableOrDisable(false, false));
+
             BackgroundMusic.Stop();
             SFXs.SetActive(false);
+
+            foreach (AudioSource source in SourcesInOptions)
+            {
+                source.enabled = false;
+            }
         }
         #endregion
 
         #region Quality Settings
         if (GPGSAutenthicator.GPGSZelf.LoadBool(31))//If true, it means we want to use high quality settings AKA use post processing
         {
-            Quality.text = "Graphics: High Quality";
+            Quality.text = "High Quality";
         }
 
         else if (!GPGSAutenthicator.GPGSZelf.LoadBool(31))//If false, it means we dont want to use high quality settings AKA use post processing
         {
-            Quality.text = "Graphics: Performance";
+            Quality.text = "Performance";
         }
         #endregion
     }
@@ -68,71 +103,123 @@ public class Options : MonoBehaviour
 
     public void Musicc()
     {
-        if (Music.text == "Music: On")
+        if (Music.isOn)
         {
-            Music.text = "Music: Off";
+            //Music.isOn = false;
+            //Music.AnimateSwitch();
+
             BackgroundMusic.Stop();
         }
 
-        else if (Music.text == "Music: Off")
+        else if (!Music.isOn)
         {
-            Music.text = "Music: On";
+            //Music.isOn = true;
+            //Music.AnimateSwitch();
+
             BackgroundMusic.Play();
         }
 
-        if (Music.text == "Music: On" && SFX.text == "Sound Effects: Off")
+        if (!Music.isOn && !SFX.isOn)
         {
-            SFX.text = "Sound Effects: On";
+            //SFX.isOn = true;
+            SFX.AnimateSwitch();
+
             SFXs.SetActive(true);
+
+            foreach (AudioSource source in SourcesInOptions)
+            {
+                source.enabled = true;
+            }
         }
-        Save();
+        StartCoroutine(Save());
     }
 
     public void SFXX()
     {
-        if (SFX.text == "Sound Effects: On")
+        if (SFX.isOn)
         {
-            SFX.text = "Sound Effects: Off";
+            //SFX.isOn = false;
+            //SFX.AnimateSwitch();
+
             SFXs.SetActive(false);
+
+            foreach (AudioSource source in SourcesInOptions)
+            {
+                source.enabled = false;
+            }
+
+            if (!Startup)
+            {
+                Startup = true;
+                SFX.AnimateSwitch();
+                SFX.AnimateSwitch();
+            }
         }
 
-        else if (SFX.text == "Sound Effects: Off")
+        else if (!SFX.isOn)
         {
-            SFX.text = "Sound Effects: On";
+            //SFX.isOn = true;
+            //SFX.AnimateSwitch();
+
             SFXs.SetActive(true);
+
+            foreach (AudioSource source in SourcesInOptions)
+            {
+                source.enabled = true;
+            }
         }
 
-        if (Music.text == "Music: On" && SFX.text == "Sound Effects: Off")
+        if (Music.isOn && SFX.isOn)
         {
-            Music.text = "Music: Off";
+            //Music.isOn = false;
+            Music.AnimateSwitch();
+
             BackgroundMusic.Stop();
         }
-        Save();
+        StartCoroutine(Save());
     }
 
     public void Qualityy ()
     {
-        if (Quality.text == "Graphics: High Quality")
+        if (Quality.text == "High Quality")
         {
-            Quality.text = "Graphics: Performance";
+            Quality.text = "Performance";
             GPGSAutenthicator.GPGSZelf.Save(31, false);
         }
 
-        else if (Quality.text == "Graphics: Performance")
+        else if (Quality.text == "Performance")
         {
-            Quality.text = "Graphics: High Quality";
+            Quality.text = "High Quality";
             GPGSAutenthicator.GPGSZelf.Save(31, true);
         }
     }
 
-    private void Save()
+    IEnumerator LateEnableOrDisable(bool IsEnabledMusic, bool IsEnabledSFX)
     {
-        if (Music.text == "Music: On" && SFX.text == "Sound Effects: On")
+        yield return new WaitForSeconds(1);
+
+        if (!IsEnabledMusic)
+        {
+            Music.AnimateSwitch();
+        }
+
+        if (!IsEnabledSFX)
+        {
+            SFX.AnimateSwitch();
+        }
+        
+    }
+
+    IEnumerator Save()
+    {
+        yield return new WaitForSeconds(1);
+
+        if (Music.isOn && SFX.isOn)
         {
             GPGSAutenthicator.GPGSZelf.SaveString(11, "0");
         }
 
-        else if (Music.text == "Music: Off" && SFX.text == "Sound Effects: On")
+        else if (!Music.isOn && SFX.isOn)
         {
             GPGSAutenthicator.GPGSZelf.SaveString(11, "1");
         }
