@@ -36,6 +36,7 @@ namespace Michsky.UI.Zone
 
         public void AnimateSwitch()
         {
+            Debug.Log(gameObject.transform.parent.name);
             if (isOn == true)
             {
                 switchAnimator.Play(offTransition);
