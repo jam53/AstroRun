@@ -24,6 +24,8 @@ in het LoadDataInToText script van onder if statement toevoegen
 
 In the ResetCoins script, in the ResettCoins method, add the variable which should be deleted to reset the coins
 
+On the main menu > shop_items > BuyButton > BuyNewLevel.cs. Hier 'AmountOfLevels' veranderen naar hoeveel levels er zijn in de game.
+
 ---
 On the main menu with the level selection buttons
 Take a thumbnail image and assign it to the button on the main menu
