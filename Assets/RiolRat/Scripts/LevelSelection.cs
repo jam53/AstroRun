@@ -11,9 +11,18 @@ public class LevelSelection : MonoBehaviour
     public Sprite LockedIcon;
 
     private int LevelAt;
+
+    private Sprite[] OriginalSprites;
     // Start is called before the first frame update
     void Start()
     {
+        OriginalSprites = new Sprite[LevelButtons.Length];
+        for (int i = 0; i < OriginalSprites.Length; i++)
+        {
+            OriginalSprites[i] = LevelButtons[i].image.sprite;
+        }
+
+
         LevelAt = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(10));
         Debug.Log(GPGSAutenthicator.GPGSZelf.LoadString(10));
 
@@ -28,5 +37,14 @@ public class LevelSelection : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void EnableHighestUnlockedLevel()
+    {
+        LevelAt = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(10)) - 1;
+        Debug.Log(GPGSAutenthicator.GPGSZelf.LoadString(10));
+
+        LevelButtons[LevelAt].interactable = true;
+        LevelButtons[LevelAt].image.sprite = OriginalSprites[LevelAt];
     }
 }
