@@ -8,7 +8,10 @@ public class ShopVierkant : MonoBehaviour
 {
     public Image SelectedCharacter;
     public TextMeshProUGUI Price;
+    public TextMeshProUGUI PriceHighLighted;
     public TextMeshProUGUI Description;
+
+    public GameObject BuyButton;
 
     public float[] YposSelectedCharacterImage;
 
@@ -59,6 +62,7 @@ public class ShopVierkant : MonoBehaviour
         SelectedCharacter.rectTransform.anchoredPosition = TempPosition;
 
         Price.text = Prices[0];
+        PriceHighLighted.text = Prices[0];
         Description.text = Descriptions[0];
     }
 
@@ -143,6 +147,10 @@ public class ShopVierkant : MonoBehaviour
         SelectedCharacter.rectTransform.anchoredPosition = TempPosition;
             
         Price.text = Prices[buttonIndex].ToString();
+        PriceHighLighted.text = Prices[buttonIndex].ToString();
+        BuyButton.SetActive(false);//We doen het eens aan en uit, zodat de grootte van de button wordt aangepast,
+        BuyButton.SetActive(true); //Anders verandert de tekst, maar is de button zelf soms te klein
+
         Description.text = Descriptions[buttonIndex];
     }
 }
