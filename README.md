@@ -53,9 +53,18 @@ After the project has been reimported for Android, you will be greeted by a mess
 asking you if you want to enable **Android Auto-resolution**, press **enable.**
 
 ### Google Play Games Plugins for Unity
-After the project has been reimported for Android, navigate to:
+~~After the project has been reimported for Android, navigate to:~~
 
-*Windows > Google Play Games > Setup > Android Setup*
+~~*Windows > Google Play Games > Setup > Android Setup*~~
+> Google shut down some packages after may 20th. Check your package manager and look in the 'in project' packages. Remove my external dependency manager, should already be done if you cloned the latest version of this repo.
+
+This package should from now on be included in the project. However, if you decide to upgrade to a newer version of **External Dependency Manager for Unity** follow the steps described below:
+
+Go to: https://developers.google.com/unity/archive#external_dependency_manager_for_unity
+
+Download the latest version of **External Dependency Manager for Unity** as a unitypackage
+
+Then import the package into AstroRun. (Maybe delete the old version first?)
 
 Under **Resources Definition**, you should paste the **resources** from the **Google Play** leaderboards.
 
