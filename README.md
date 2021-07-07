@@ -68,6 +68,11 @@ Then import the package into AstroRun. (Maybe delete the old version first?)
 
 Under **Resources Definition**, you should paste the **resources** from the **Google Play** leaderboards.
 
+### JAVA_HOME is not set and no 'java' command could be found in your PATH
+Inside Unity copy paste the path inside: Edit > Preferences > External Tools > JDK Installed with Unity > Copy Path
+
+Inside Windows open: System > Advanced system settings > Advanced > PATH > New > Name: JAVA_HOME > Copy paste the path from the previous step > OK
+
 ### Android SDK not found
 If you get this error go to:
 
