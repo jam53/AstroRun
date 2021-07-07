@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.google.external-dependency-manager": {
-      "version": "1.2.164",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://unityregistry-pa.googleapis.com"
-    },
     "com.unity.2d.animation": {
       "version": "6.0.3",
       "depth": 0,
