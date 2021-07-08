@@ -56,7 +56,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: BalooDa2-Regular SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: UNDERLAY_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -160,11 +160,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: BalooDa2-Regular SDF
+  m_Name: NoShadowsBalooDa2-Regular SDF
   m_EditorClassIdentifier: 
-  hashCode: 1536810462
+  hashCode: -1232150742
   material: {fileID: -3546942940648577050}
-  materialHashCode: -357681858
+  materialHashCode: 320985802
   m_Version: 1.1.0
   m_SourceFontFileGUID: f99001033a97cf44cab254397150f21b
   m_SourceFontFile_EditorRef: {fileID: 0}
