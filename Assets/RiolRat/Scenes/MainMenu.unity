@@ -8519,6 +8519,7 @@ RectTransform:
   m_Children:
   - {fileID: 322206845}
   - {fileID: 819351311}
+  - {fileID: 1809013140}
   m_Father: {fileID: 1029970477}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19343,7 +19344,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 836244692}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+        m_MethodName: TriggerDialogueCheckIfRanBefore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19373,8 +19374,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cfee62fb56259643abb1c24d7903b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RunOnlyOnce: 1
+  RunWhenActivedInHierachy: 1
+  SavingID: 33
   dialogue:
-    title: Buy New Levels
+    title: Buying New Levels
     sentences:
     - If you collect enough coins, you can buy new levels.
     - "New levels can be bought when you are stuck on a particulair level. \nThis
@@ -23836,7 +23840,6 @@ RectTransform:
   - {fileID: 707172287}
   - {fileID: 1577496668658573590}
   - {fileID: 373471833}
-  - {fileID: 1809013140}
   m_Father: {fileID: 1458500088}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39416,6 +39419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cfee62fb56259643abb1c24d7903b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RunOnlyOnce: 0
+  RunWhenActivedInHierachy: 0
+  SavingID: 0
   dialogue:
     title: Coin's reset timer
     sentences:
@@ -39727,15 +39733,15 @@ RectTransform:
   m_GameObject: {fileID: 1809013139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1029970477}
-  m_RootOrder: 4
+  m_Father: {fileID: 373471833}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 652.5342, y: 460.0382}
-  m_SizeDelta: {x: -1047.2961, y: -832.423}
+  m_AnchoredPosition: {x: 122.55676, y: 33.397125}
+  m_SizeDelta: {x: 772.70386, y: 161.57703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809013141
 MonoBehaviour:
@@ -39749,6 +39755,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cfee62fb56259643abb1c24d7903b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RunOnlyOnce: 1
+  RunWhenActivedInHierachy: 1
+  SavingID: 32
   dialogue:
     title: Coin's reset timer
     sentences:

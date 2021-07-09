@@ -79,9 +79,11 @@ public class GPGSAutenthicator : MonoBehaviour
          * AstroRun[29] = Total amount of coins collected in Level 9 (default: "0")
          * AstroRun[30] = TimeInMiliseconds for Level 9 that still need to be submitted (default: "0")
          * AstroRun[31] = Quality settings true = high quality, false = low quality
+         * AstroRun[32] = Has this dialogue box(Coin's reset timer) ran before? false = no | true = yes
+         * AstroRun[33] = Has this dialogue box(Buying new levels) ran before? false = no | true = yes
          */
 
-        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "true" };// Create an array with default values
+        string[] DefaultValues = { "99:99:99", "99:99:99", "99:99:99", "99:99:99", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "99:99:99", "0", "0", "true", "false", "false" };// Create an array with default values
 
         // Check if the user has a save file, if not do the following:
         if (PlayerPrefsX.GetStringArray("AstroRun").Length <= 0)
