@@ -60977,6 +60977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f30de6ef8fd743b07040f46b14a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buyStuffInShop: {fileID: 6938871558881888989}
   SelectedCharacter: {fileID: 6842801113083837707}
   Price: {fileID: 7050484642381556348}
   PriceHighLighted: {fileID: 7050029183878185778}
@@ -61197,8 +61198,8 @@ MonoBehaviour:
   AmountOfLevels: 9
   PricePerLevel: 500
   TotalCoins: {fileID: 1420538289}
-  LevelSelection: {fileID: 224949097}
-  SlechteTijdelijkeOplossing: {fileID: 1015021070}
+  LevelSelectionWorld1: {fileID: 224949097}
+  buttonIndex: 0
 --- !u!1 &6939213076318598216
 GameObject:
   m_ObjectHideFlags: 0
@@ -61715,8 +61716,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6938871558881888989}
-        m_TargetAssemblyTypeName: BuyNewLevel, Assembly-CSharp
-        m_MethodName: UnlockOneLevel
+        m_TargetAssemblyTypeName: BuyStuffInShop, Assembly-CSharp
+        m_MethodName: CheckWhatBuyActionToPerform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
