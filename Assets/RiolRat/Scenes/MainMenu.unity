@@ -19855,7 +19855,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 1000, y: 50}
+  m_SizeDelta: {x: 1300, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &862828060
 MonoBehaviour:
@@ -19877,7 +19877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Acount Recovery
+  m_text: Transfer Account Progress
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 318dcbed841a1a04b97331594198d0f2, type: 2}
   m_sharedMaterial: {fileID: -3546942940648577050, guid: 318dcbed841a1a04b97331594198d0f2,
