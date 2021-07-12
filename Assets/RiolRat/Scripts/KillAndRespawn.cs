@@ -25,11 +25,34 @@ public class KillAndRespawn : MonoBehaviour
 
     private bool ReachedCheckpoint = false;
 
+    //This list doesn't need to be public
+    //But if we put it to private it doesn't work on line 'ActivationCircleColliders.Add(objectActivator.gameObject.GetComponent<CircleCollider2D>());'
+    public List<CircleCollider2D> ActivationCircleColliders;//This is a list of all the CircleCollider2D objects in the scene, that are used for detecting
+    //Whether or not the player is in the range of that object. If the player isn't in range, that object gets disabled to save on resources.
+    //This however, leads to a bug. If the player dies and respanws within the radius of one of those CircleCollider2Ds.
+    //Then the object will get deactivated when the player dies, cuz the script sees that the player left the detection area AKA the CircleCollider2D
+    //But because the player immediately gets respawned within that CircleCollider2D, it doesn't detect that the player has entered the detection area.
+    //And therefore doesn't enable the object.
+    //---
+    //To solve this, we will quickly enable and disable only all of the CircleCollider2Ds that are used for detecting and enabling/disabeling an object depending
+    //on whether or not the player is near. This quick enable/disable will make it so that the player does get detected, and therefore the object in question
+    //gets activated
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         PlayerAnimator = this.GetComponent<Animator>();
         rigidbodyy = this.GetComponent<Rigidbody2D>();
+
+
+
+        ObjectActivator[] temp = FindObjectsOfType<ObjectActivator>();
+        foreach (ObjectActivator objectActivator in temp)
+        {
+            ActivationCircleColliders.Add(objectActivator.gameObject.GetComponent<CircleCollider2D>());
+        }
     }
 
 
@@ -87,6 +110,10 @@ public class KillAndRespawn : MonoBehaviour
         yield return new WaitForSeconds(DeathTime);
 
         RespawnPlayer();
+
+        //If we enable/disable the CircleCollider2Ds to quick, it still wont detect the player. And therefore still wont enable the object
+        yield return new WaitForSeconds(0.1f);
+        EnableDisableActivationColliders();
     }
 
     private void RespawnPlayer()
@@ -125,5 +152,26 @@ public class KillAndRespawn : MonoBehaviour
         rigidbodyy.constraints = RigidbodyConstraints2D.FreezeRotation; //ReFreeze the rotation
 
         this.transform.rotation = Quaternion.identity;//During the death animation, the rotation of the character changes, because we fall onto the surface. But if we respawn we want to stand straight up, so we put the rotation to x=y=z=0 here
+    }
+
+    private void EnableDisableActivationColliders()
+    {
+        //Used to fix the bug
+        for (int i = 0; i < ActivationCircleColliders.Count; i++)
+        {
+            if (ActivationCircleColliders[i] == null)//If the player for example has collected a coin, which does have an object activator/deactivator
+                                                     //script on it, and therefor also a CircleCollider2D. The coin will get deleted after the player has picked it up. But if we then
+                                                     //try to enable and disable the CircleCollider2D on that object, we will get an error because it no longer exists. So in order to 
+                                                     //prevent that, we remove that particulair (no longer existing object) from the list
+            {
+                ActivationCircleColliders.RemoveAt(i);
+            }
+
+            else
+            {
+                ActivationCircleColliders[i].enabled = false;//This is done to fix a bug, in which the object wouldn't get reactivated,
+                ActivationCircleColliders[i].enabled = true;//If the player respawned within the radious of this object
+            }
+        }
     }
 }
