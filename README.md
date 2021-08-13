@@ -17,7 +17,7 @@ To get the project folder you will need to clone the project.
 After you installed both Git LFS and GitHub Desktop you can start cloning the project.
 
 ### How do I clone AstroRun
-Open *GitHub Desktop > file > Clone repository > URL >* enter the following url: https://github.com/jam53/FPSSample.git and press Clone
+Open *GitHub Desktop > file > Clone repository > URL >* enter the following url: https://github.com/jam53/AstroRun.git and press Clone
 
 After cloning the project you will see the following message:
 > This repository uses Git LFS. To contribute to it, Git LFS must first be initialilzed. Would you like to do so now?
