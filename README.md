@@ -1,7 +1,7 @@
 ![](Assets/RiolRat/Textures/MainMenu/AstrorRunLogo.png)
 
 # AstroRun
-AstroRun is an indie game developed by a small team of three people. It's about a lost adventurer in space, that has to complete different levels which are all part from a diverse collection of worlds. Each world is based around a certain theme and has its own unique intractable objects such as trampolines, falling spikes, enemies, turrets and much more for you to discover. On his way, the adventurer can collect a variety of items which can be used to buy new packages and accessories.
+AstroRun is an indie game developed by a small team of three people. It's about a lost adventurer in space, who must complete various levels that are all part of a diverse collection of worlds. Each world is based around a certain theme and has its own unique intractable objects such as trampolines, falling spikes, enemies, turrets and much more. Along the way, the adventurer can collect various items which can be used to purchase new packages and accessories.
 
 # Playing the game
 You can try out the game for yourself by downloading it from the [Play Store](https://play.google.com/store/apps/details?id=com.jam54.AstroRun)
