@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -71,9 +72,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -157,7 +158,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 701f82ef2ba620b00800000000000000
-      internalID: 793313801371447559
+      internalID: 2358152690524942616
       vertices: []
       indices: 
       edges: []
@@ -178,7 +179,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fce6d61f686f74f40800000000000000
-      internalID: 5712805711779294927
+      internalID: 6142158634057161117
       vertices: []
       indices: 
       edges: []
@@ -199,7 +200,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fd3b628a3df75b480800000000000000
-      internalID: -8884054142882499617
+      internalID: -6158364883930281444
       vertices: []
       indices: 
       edges: []
@@ -220,7 +221,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f6ffb974ba713de80800000000000000
-      internalID: -8155148475829584017
+      internalID: 9115208479090795546
       vertices: []
       indices: 
       edges: []
@@ -241,7 +242,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9bc2647708f095d20800000000000000
-      internalID: 3267660049065323705
+      internalID: -269471364710399764
       vertices: []
       indices: 
       edges: []
@@ -262,7 +263,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 023a5809da6b276d0800000000000000
-      internalID: -2994129945677683936
+      internalID: 667471728563035604
       vertices: []
       indices: 
       edges: []
@@ -298,6 +299,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      menu_game_MOOIE_VERSIE_4: -269471364710399764
+      menu_game_MOOIE_VERSIE_1: 6142158634057161117
+      menu_game_MOOIE_VERSIE_5: 667471728563035604
+      menu_game_MOOIE_VERSIE_6: -7479277761260871200
+      menu_game_MOOIE_VERSIE_2: -6158364883930281444
+      menu_game_MOOIE_VERSIE_3: 9115208479090795546
+      menu_game_MOOIE_VERSIE_0: 2358152690524942616
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
