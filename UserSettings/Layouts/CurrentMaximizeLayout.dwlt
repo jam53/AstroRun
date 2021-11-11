@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 2358
+  controlID: 10959
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 2359
+  controlID: 10960
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,7 +425,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -453,9 +453,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 194.46619, y: 20.21614, z: -7.1590204}
+    m_Target: {x: 224.5693, y: 29.146545, z: -7.3441143}
     speed: 2
-    m_Value: {x: 194.46619, y: 20.21614, z: -7.1590204}
+    m_Value: {x: 224.5693, y: 29.146545, z: -7.3441143}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -506,9 +506,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.738635
+    m_Target: 5.636884
     speed: 2
-    m_Value: 13.738635
+    m_Value: 5.636884
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -688,7 +688,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -90528
+  m_LastSelectedObjectID: -120686
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 2313
+  controlID: 10909
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 40a1feff
-      m_LastClickedID: -89792
-      m_ExpandedIDs: d26cffffda6cffff0275ffff3877ffff
+      m_SelectedIDs: 5c250100
+      m_LastClickedID: 0
+      m_ExpandedIDs: 64abfcfff2bbfcff2828feff9c28feffa428feffcc30fefffa3dfeff7a45feff8245feff3849fefff84cfeff004dfeff6a55feffae62feffb662feff4864feffdc6afeffe46afeffae6ffeff887afeff9685feffd26cffffda6cffff0275ffff3877ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -867,22 +867,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/RiolRat/Shaders/FireWork
+    - Assets/RiolRat/Scenes/World 1
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/RiolRat/Shaders/FireWork
+  - Assets/RiolRat/Scenes/World 1
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Deniz\Unity\AstroRun
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: a64b0100
-    m_LastClickedID: 84902
-    m_ExpandedIDs: 00000000ea240100f82401004425010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 105}
+    m_SelectedIDs: 56250100
+    m_LastClickedID: 75094
+    m_ExpandedIDs: 00000000ea240100f82401004025010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -935,10 +935,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 40a1feff
-    m_LastClickedInstanceID: -89792
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 
+    m_SelectedInstanceIDs: 5c250100
+    m_LastClickedInstanceID: 75100
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 0000000036b90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
