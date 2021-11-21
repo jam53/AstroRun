@@ -168,7 +168,7 @@ public class GPGSAutenthicator : MonoBehaviour
         }
 
         //DIT VERWIJDEREN TIJDENS RELEASE-----------------
-        GPGSAutenthicator.GPGSZelf.SaveString(10, "9");
+        //GPGSAutenthicator.GPGSZelf.SaveString(10, "9");
         //DIT UNLOCKED ALLE LEVELS, handig tijdens testen--------------------------
     }
 
