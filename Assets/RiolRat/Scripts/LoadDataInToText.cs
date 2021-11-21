@@ -80,7 +80,7 @@ public class LoadDataInToText : MonoBehaviour
 
         if (GPGSAutenthicator.GPGSZelf.LoadString(30) != "0")
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(27)));
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(30)));
             GPGSAutenthicator.GPGSZelf.SaveString(30, "0");
         }
     }
