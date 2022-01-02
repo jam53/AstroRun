@@ -48,19 +48,19 @@ public class ResetCoins : MonoBehaviour
             PlayerPrefs.SetString("AdTime", Convert.ToString(DateTime.Now));
 
             // Reset the collected coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_1 = 0; //Level 1 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_2 = 0; //Level 2 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_3 = 0; //Level 3 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_4 = 0; //Level 4 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_5 = 0; //Level 5 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_6 = 0; //Level 6 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_7 = 0; //Level 7 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_8 = 0; //Level 8 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel1_9 = 0; //Level 9 coins
 
-            GPGSAutenthicator.GPGSZelf.SaveString(5, "0");//Level 1 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(6, "0");//Level 2 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(7, "0");//Level 3 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(8, "0");//Level 4 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(18, "0");//Level 5 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(21, "0");//Level 6 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(23, "0");//Level 7 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(26, "0");//Level 8 coins
-            GPGSAutenthicator.GPGSZelf.SaveString(29, "0");//Level 9 coins
+            SaveLoadManager.slm.astroRunData.coinsWorld1 = 0; //World 1 coins
 
-
-            GPGSAutenthicator.GPGSZelf.SaveString(9, "0");//World 1 coins
+            SaveLoadManager.slm.SaveJSONToDisk();
         }
     }
 

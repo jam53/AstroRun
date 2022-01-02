@@ -9,12 +9,12 @@ public class EnableDisablePP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GPGSAutenthicator.GPGSZelf.LoadBool(31))//if true, use post processing
+        if (SaveLoadManager.slm.astroRunData.qualitySettings)//if true, use post processing
         {
             MainCamera.GetUniversalAdditionalCameraData().renderPostProcessing = true;
         }
 
-        else if (!GPGSAutenthicator.GPGSZelf.LoadBool(31))//if false, dont use post processing
+        else if (!SaveLoadManager.slm.astroRunData.qualitySettings)//if false, dont use post processing
         {
             MainCamera.GetUniversalAdditionalCameraData().renderPostProcessing = false;
         }

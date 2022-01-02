@@ -41,8 +41,8 @@ public class BuyStuffInShop : MonoBehaviour
 
     private void UnlockOneLevel()
     {
-        int HighestUnlockedLevel = GPGSAutenthicator.GPGSZelf.LoadInt(10);//The highest unlocked level by the user
-        int UserBalance = GPGSAutenthicator.GPGSZelf.LoadInt(4);//The amount of coins the user has
+        int HighestUnlockedLevel = SaveLoadManager.slm.astroRunData.highestUnlockedLevel;//The highest unlocked level by the user
+        int UserBalance = SaveLoadManager.slm.astroRunData.totalCoins;//The amount of coins the user has
 
         Dialogue dialogue = new Dialogue();//Create a new dialogue to display information to the user
         string[] sentences = new string[1];
@@ -70,10 +70,11 @@ public class BuyStuffInShop : MonoBehaviour
 
         else if (HighestUnlockedLevel < AmountOfLevels && UserBalance >= PricePerLevel)
         {
-            GPGSAutenthicator.GPGSZelf.Save(10, HighestUnlockedLevel + 1);//Unlock one level
-            GPGSAutenthicator.GPGSZelf.Save(4, UserBalance - PricePerLevel);//Deducted x coins from the users balance
+            SaveLoadManager.slm.astroRunData.highestUnlockedLevel = HighestUnlockedLevel + 1; //Unlock one level
+            SaveLoadManager.slm.astroRunData.totalCoins = UserBalance - PricePerLevel; //Deducted x coins from the users balance
+            SaveLoadManager.slm.SaveJSONToDisk();
 
-            TotalCoins.text = GPGSAutenthicator.GPGSZelf.LoadString(4);//Update the User's coins in the UI
+            TotalCoins.text = "" + SaveLoadManager.slm.astroRunData.totalCoins; //Update the User's coins in the UI
 
             LevelSelectionWorld1.EnableHighestUnlockedLevel();//Update the level selection screen, so that the new level is unlocked
 

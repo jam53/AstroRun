@@ -26,6 +26,7 @@ public class LevelLoader : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Level" + GPGSAutenthicator.GPGSZelf.LoadString(10));
+        
+        SceneManager.LoadScene("Level" + SaveLoadManager.slm.astroRunData.highestUnlockedLevel);
     }
 }

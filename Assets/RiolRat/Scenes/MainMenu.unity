@@ -3537,7 +3537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1420538289}
   AdittionalText: 
-  KeyIndex: 4
+  keyName: totalCoins
   LevelTimeButton: 0
 --- !u!1 &149223329
 GameObject:
@@ -10005,7 +10005,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Internal storage > Android > Data > \ncom. jam54. AstroRun > files > AstroRun.
-    dat"
+    json"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 318dcbed841a1a04b97331594198d0f2, type: 2}
   m_sharedMaterial: {fileID: -3546942940648577050, guid: 318dcbed841a1a04b97331594198d0f2,
@@ -11851,7 +11851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1790932986}
   AdittionalText: /1000
-  KeyIndex: 9
+  keyName: coinsWorld1
   LevelTimeButton: 0
 --- !u!1 &495449900
 GameObject:
@@ -12514,7 +12514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 449502248}
   AdittionalText: 
-  KeyIndex: 2
+  keyName: bestTimeLevel1_3
   LevelTimeButton: 1
 --- !u!1 &528126772
 GameObject:
@@ -13647,7 +13647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 932935304}
   AdittionalText: 
-  KeyIndex: 22
+  keyName: bestTimeLevel1_7
   LevelTimeButton: 1
 --- !u!1 &591475492
 GameObject:
@@ -16117,7 +16117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1613504066}
   AdittionalText: 
-  KeyIndex: 16
+  keyName: bestTimeLevel1_5
   LevelTimeButton: 1
 --- !u!1 &706529543
 GameObject:
@@ -16384,7 +16384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 557952373}
   AdittionalText: 
-  KeyIndex: 19
+  keyName: bestTimeLevel1_6
   LevelTimeButton: 1
 --- !u!1 &716866091
 GameObject:
@@ -17642,7 +17642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1932954838}
   AdittionalText: /100
-  KeyIndex: 29
+  keyName: coinsLevel1_9
   LevelTimeButton: 0
 --- !u!1 &769932678
 GameObject:
@@ -18211,7 +18211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 720026272}
   AdittionalText: /100
-  KeyIndex: 8
+  keyName: coinsLevel1_4
   LevelTimeButton: 0
 --- !u!114 &794578703
 MonoBehaviour:
@@ -19400,7 +19400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 217045318}
   AdittionalText: /100
-  KeyIndex: 26
+  keyName: coinsLevel1_8
   LevelTimeButton: 0
 --- !u!1 &836244687
 GameObject:
@@ -19566,7 +19566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunOnlyOnce: 1
   RunWhenActivedInHierachy: 1
-  SavingID: 33
+  keyName: dialogueBuyingNewLevels
   dialogue:
     title: Buying New Levels
     sentences:
@@ -21354,7 +21354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 194235824}
   AdittionalText: /100
-  KeyIndex: 7
+  keyName: coinsLevel1_3
   LevelTimeButton: 0
 --- !u!114 &927157815
 MonoBehaviour:
@@ -25169,7 +25169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 275811176}
   AdittionalText: 
-  KeyIndex: 0
+  keyName: bestTimeLevel1_1
   LevelTimeButton: 1
 --- !u!1 &1078764804
 GameObject:
@@ -26824,7 +26824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1260916361}
   AdittionalText: 
-  KeyIndex: 25
+  keyName: bestTimeLevel1_8
   LevelTimeButton: 1
 --- !u!1 &1175377001
 GameObject:
@@ -27372,7 +27372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1240821749}
   AdittionalText: 
-  KeyIndex: 3
+  keyName: bestTimeLevel1_4
   LevelTimeButton: 1
 --- !u!1 &1189140445
 GameObject:
@@ -28411,7 +28411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1040771163}
   AdittionalText: 
-  KeyIndex: 4
+  keyName: totalCoins
   LevelTimeButton: 0
 --- !u!1 &1256582642
 GameObject:
@@ -29429,7 +29429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 487840145}
   AdittionalText: /100
-  KeyIndex: 23
+  keyName: coinsLevel1_7
   LevelTimeButton: 0
 --- !u!1 &1276573651
 GameObject:
@@ -29484,7 +29484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 850773699}
   AdittionalText: 
-  KeyIndex: 28
+  keyName: bestTimeLevel1_9
   LevelTimeButton: 1
 --- !u!1 &1278713392
 GameObject:
@@ -29905,7 +29905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 528126774}
   AdittionalText: /100
-  KeyIndex: 6
+  keyName: coinsLevel1_2
   LevelTimeButton: 0
 --- !u!114 &1293213015
 MonoBehaviour:
@@ -30049,7 +30049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 36969072}
   AdittionalText: 
-  KeyIndex: 1
+  keyName: bestTimeLevel1_2
   LevelTimeButton: 1
 --- !u!1 &1300556187
 GameObject:
@@ -30421,7 +30421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 999540654}
   AdittionalText: /100
-  KeyIndex: 21
+  keyName: coinsLevel1_6
   LevelTimeButton: 0
 --- !u!1 &1324534353
 GameObject:
@@ -34054,7 +34054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 1421782383}
   AdittionalText: /100
-  KeyIndex: 5
+  keyName: coinsLevel1_1
   LevelTimeButton: 0
 --- !u!114 &1512154763
 MonoBehaviour:
@@ -34761,7 +34761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 876567634}
   AdittionalText: /100
-  KeyIndex: 18
+  keyName: coinsLevel1_5
   LevelTimeButton: 0
 --- !u!1 &1567751977
 GameObject:
@@ -39814,9 +39814,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cfee62fb56259643abb1c24d7903b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunOnlyOnce: 0
-  RunWhenActivedInHierachy: 0
-  SavingID: 0
+  RunOnlyOnce: 1
+  RunWhenActivedInHierachy: 1
+  keyName: dialogueBoxCoinsResetTimer
   dialogue:
     title: Coin's reset timer
     sentences:
@@ -40155,7 +40155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunOnlyOnce: 1
   RunWhenActivedInHierachy: 1
-  SavingID: 32
+  keyName: dialogueBoxCoinsResetTimer
   dialogue:
     title: Coin's reset timer
     sentences:
@@ -40396,7 +40396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "3) Copy the file called \u201CAstroRun.dat\u201D\r\n\n4) Paste the file
+  m_text: "3) Copy the file called \u201CAstroRun.json\u201D\r\n\n4) Paste the file
     you got from the previous step to the following location on the new device: "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 318dcbed841a1a04b97331594198d0f2, type: 2}
@@ -45900,7 +45900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 2026485686}
   AdittionalText: 
-  KeyIndex: 4
+  keyName: totalCoins
   LevelTimeButton: 0
 --- !u!1 &2062649330
 GameObject:

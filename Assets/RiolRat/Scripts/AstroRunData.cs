@@ -50,16 +50,4 @@ public class AstroRunData
     public bool dialogueBoxCoinsResetTimer = false; //Has this dialogue box(Coin's reset timer) been shown to the player? false = no | true = yes
 
     public bool dialogueBuyingNewLevels = false; //Has this dialogue box(Coin's reset timer) been shown to the player? false = no | true = yes
-
-
-
-
-
-    public bool bool1 = true; //uitleg over value
-    
-    public string string1 = "ok";
-
-    public string nogeen = "hello world";
-
-    public int int1 = 1;
 }

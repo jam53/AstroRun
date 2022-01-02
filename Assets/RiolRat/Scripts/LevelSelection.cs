@@ -23,8 +23,7 @@ public class LevelSelection : MonoBehaviour
         }
 
 
-        LevelAt = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(10));
-        Debug.Log(GPGSAutenthicator.GPGSZelf.LoadString(10));
+        LevelAt = SaveLoadManager.slm.astroRunData.highestUnlockedLevel;
 
         for (int i = LevelAt; i < LevelButtons.Length; i++)
         {
@@ -41,8 +40,7 @@ public class LevelSelection : MonoBehaviour
 
     public void EnableHighestUnlockedLevel()
     {
-        LevelAt = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(10)) - 1;
-        Debug.Log(GPGSAutenthicator.GPGSZelf.LoadString(10));
+        LevelAt = SaveLoadManager.slm.astroRunData.highestUnlockedLevel - 1;
 
         LevelButtons[LevelAt].interactable = true;
         LevelButtons[LevelAt].image.sprite = OriginalSprites[LevelAt];

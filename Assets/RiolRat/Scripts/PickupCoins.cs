@@ -5,8 +5,8 @@ using System;
 
 public class PickupCoins : MonoBehaviour
 {
-    public int KeyIndex;
-    public int KeyIndexWorld;
+    public string keyName;
+    public string keyNameWorld;
 
     public TextMeshProUGUI CoinsText;
 
@@ -21,8 +21,8 @@ public class PickupCoins : MonoBehaviour
     private void Start()
     {
         amountOfCoins = CoinsHolder.transform.childCount;
-
-        for (int i = 0; i < Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex)); i++)
+        
+        for (int i = 0; i < (int)typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData) ; i++)
         {
             int randomChildIdx = UnityEngine.Random.Range(0, CoinsHolder.transform.childCount);
             Transform randomChild = CoinsHolder.transform.GetChild(randomChildIdx);
@@ -39,7 +39,7 @@ public class PickupCoins : MonoBehaviour
             }
         }
 
-        Coins = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex));
+        Coins = (int)typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData);
         CoinsText.text = Convert.ToString(Coins) + "/" + amountOfCoins.ToString();
     }
 
@@ -53,11 +53,64 @@ public class PickupCoins : MonoBehaviour
             Source.clip = CoinGeluid;
             Source.Play();
             Coins++;
-            Debug.Log("Player has: " + Coins + " coins.");
             CoinsText.text = Convert.ToString(Coins) +"/" + amountOfCoins.ToString();
-            GPGSAutenthicator.GPGSZelf.SaveString(4, Convert.ToString(Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(4)) + 1));// Total coins +1
-            GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, Convert.ToString(Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex)) + 1));// Level coins +1
-            GPGSAutenthicator.GPGSZelf.SaveString(KeyIndexWorld, Convert.ToString(Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(KeyIndexWorld)) + 1));// World coins +1
+
+            SaveLoadManager.slm.astroRunData.totalCoins += 1; //Total coins +1
+
+            switch (keyName)
+            {//Increase the coins for this level by one
+                case "coinsLevel1_1":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_1 += 1;
+                    break;
+
+                case "coinsLevel1_2":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_2 += 1;
+                    break;
+
+                case "coinsLevel1_3":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_3 += 1;
+                    break;
+
+                case "coinsLevel1_4":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_4 += 1;
+                    break;
+
+                case "coinsLevel1_5":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_5 += 1;
+                    break;
+
+                case "coinsLevel1_6":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_6 += 1;
+                    break;
+
+                case "coinsLevel1_7":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_7 += 1;
+                    break;
+
+                case "coinsLevel1_8":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_8 += 1;
+                    break;
+
+                case "coinsLevel1_9":
+                    SaveLoadManager.slm.astroRunData.coinsLevel1_9 += 1;
+                    break;
+                default:
+                    Debug.LogWarning("Couldn't increment amount of coins collected for level: " + keyName);
+                    break;
+            }
+
+            switch (keyNameWorld)
+            {//Increase the coins for this world by one
+                case "coinsWorld1":
+                    SaveLoadManager.slm.astroRunData.coinsWorld1 += 1;
+                    break;
+
+                default:
+                    Debug.LogWarning("Couldn't increment amount of coins collected for world: " + keyNameWorld);
+                    break;
+            }
+
+            SaveLoadManager.slm.SaveJSONToDisk();
         }
         
     }

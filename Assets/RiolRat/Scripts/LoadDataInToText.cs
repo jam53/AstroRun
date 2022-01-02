@@ -7,7 +7,7 @@ public class LoadDataInToText : MonoBehaviour
 {
     public TextMeshProUGUI TextObject;
     public string AdittionalText;
-    public int KeyIndex;
+    public string keyName;
 
     public bool LevelTimeButton;
 
@@ -18,76 +18,71 @@ public class LoadDataInToText : MonoBehaviour
         {
             AdittionalText = "";
         }
+        
+        TextObject.text = "" + typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData);
 
-        TextObject.text = GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex) + AdittionalText;
 
-
-
-        if (LevelTimeButton && GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex) == "99:99:99")
+        if ("" + typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData) == "99:99:99")
         {
             TextObject.text = "No Time";
         }
 
 
-
-        if (GPGSAutenthicator.GPGSZelf.LoadString(12) != "0")
+        
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_1 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel1(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(12)));
-            GPGSAutenthicator.GPGSZelf.SaveString(12, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel1(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_1);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_1 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(13) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_2 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel2(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(13)));
-            GPGSAutenthicator.GPGSZelf.SaveString(13, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel2(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_2);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_2 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(14) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_3 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel3(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(14)));
-            GPGSAutenthicator.GPGSZelf.SaveString(14, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel3(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_3);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_3 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(15) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_4 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(15)));
-            GPGSAutenthicator.GPGSZelf.SaveString(15, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel4(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_4);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_4 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(17) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_5 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel5(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(17)));
-            GPGSAutenthicator.GPGSZelf.SaveString(17, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel5(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_5);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_5 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(20) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_6 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel6(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(20)));
-            GPGSAutenthicator.GPGSZelf.SaveString(20, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel6(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_6);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_6 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(24) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_7 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel7(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(24)));
-            GPGSAutenthicator.GPGSZelf.SaveString(24, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel7(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_7);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_7 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(27) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_8 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel8(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(27)));
-            GPGSAutenthicator.GPGSZelf.SaveString(27, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel8(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_8);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_8 = 0;
         }
 
-        if (GPGSAutenthicator.GPGSZelf.LoadString(30) != "0")
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_9 != 0)
         {
-            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9(long.Parse(GPGSAutenthicator.GPGSZelf.LoadString(30)));
-            GPGSAutenthicator.GPGSZelf.SaveString(30, "0");
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_9);
+            SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_9 = 0;
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        SaveLoadManager.slm.SaveJSONToDisk();
     }
 }

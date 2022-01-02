@@ -24,7 +24,7 @@ public class Options : MonoBehaviour
     void Start()
     {
         #region Music & SFX settings
-        Stand = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11));
+        Stand = SaveLoadManager.slm.astroRunData.audioSettings;
 
 
         if (Stand == 0)
@@ -84,12 +84,12 @@ public class Options : MonoBehaviour
         #endregion
 
         #region Quality Settings
-        if (GPGSAutenthicator.GPGSZelf.LoadBool(31))//If true, it means we want to use high quality settings AKA use post processing
+        if (SaveLoadManager.slm.astroRunData.qualitySettings)//If true, it means we want to use high quality settings AKA use post processing
         {
             Quality.text = "High Quality";
         }
 
-        else if (!GPGSAutenthicator.GPGSZelf.LoadBool(31))//If false, it means we dont want to use high quality settings AKA use post processing
+        else if (!SaveLoadManager.slm.astroRunData.qualitySettings)//If false, it means we dont want to use high quality settings AKA use post processing
         {
             Quality.text = "Performance";
         }
@@ -183,14 +183,16 @@ public class Options : MonoBehaviour
         if (Quality.text == "High Quality")
         {
             Quality.text = "Performance";
-            GPGSAutenthicator.GPGSZelf.Save(31, false);
+            SaveLoadManager.slm.astroRunData.qualitySettings = false;
         }
 
         else if (Quality.text == "Performance")
         {
             Quality.text = "High Quality";
-            GPGSAutenthicator.GPGSZelf.Save(31, true);
+            SaveLoadManager.slm.astroRunData.qualitySettings = true;
         }
+
+        SaveLoadManager.slm.SaveJSONToDisk();
     }
 
     private bool OptionsMenuOpen()
@@ -242,17 +244,19 @@ public class Options : MonoBehaviour
 
         if (Music.isOn && SFX.isOn)
         {
-            GPGSAutenthicator.GPGSZelf.SaveString(11, "0");
+            SaveLoadManager.slm.astroRunData.audioSettings = 0;
         }
 
         else if (!Music.isOn && SFX.isOn)
         {
-            GPGSAutenthicator.GPGSZelf.SaveString(11, "1");
+            SaveLoadManager.slm.astroRunData.audioSettings = 1;
         }
 
         else
         {
-            GPGSAutenthicator.GPGSZelf.SaveString(11, "2");
+            SaveLoadManager.slm.astroRunData.audioSettings = 2;
         }
+
+        SaveLoadManager.slm.SaveJSONToDisk();
     }
 }

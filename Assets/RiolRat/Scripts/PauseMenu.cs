@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HoeveelsteFoto = Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(11));
+        HoeveelsteFoto = SaveLoadManager.slm.astroRunData.audioSettings;
         //GeluidButton.sprite = GeluidStanden[HoeveelsteFoto];
         HoeveelsteFoto--;
         Geluid();
@@ -60,18 +60,18 @@ public class PauseMenu : MonoBehaviour
             case 0:
                 BackgroundMusic.mute = false;
                 AudioListener.volume = 1f;
-                GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
             case 1:
                 BackgroundMusic.mute = true;
-                GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
             case 2:
                 BackgroundMusic.mute = true;
                 AudioListener.volume = 0f;
-                GPGSAutenthicator.GPGSZelf.SaveString(11, HoeveelsteFoto.ToString());
                 break;
         }
+        SaveLoadManager.slm.astroRunData.audioSettings = HoeveelsteFoto;
+        SaveLoadManager.slm.SaveJSONToDisk();
+
         GeluidButton.sprite = GeluidStanden[HoeveelsteFoto];
     }
 

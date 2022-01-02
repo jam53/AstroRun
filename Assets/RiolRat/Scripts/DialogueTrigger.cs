@@ -8,7 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public bool RunWhenActivedInHierachy;
 
-    public int SavingID;
+    public string keyName;
 
 
 
@@ -27,16 +27,16 @@ public class DialogueTrigger : MonoBehaviour
 
             else if (RunOnlyOnce)//Show the dialogue window only one time, then never show it again to the user
             {
-                if (!GPGSAutenthicator.GPGSZelf.LoadBool(SavingID))
+                if (!(bool)typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData))
                 {
                     DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
 
                     dialogueManager.StartDialogue(dialogue);
 
-                    GPGSAutenthicator.GPGSZelf.Save(SavingID, true);
+                    save();
                 }
 
-                else if (GPGSAutenthicator.GPGSZelf.LoadBool(SavingID))
+                else if ((bool)typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData))
                 {
                     return;
                 }
@@ -56,16 +56,16 @@ public class DialogueTrigger : MonoBehaviour
 
         else if (RunOnlyOnce)//Show the dialogue window only one time, then never show it again to the user
         {
-            if (!GPGSAutenthicator.GPGSZelf.LoadBool(SavingID))
+            if (!(bool)typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData))
             {
                 DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
 
                 dialogueManager.StartDialogue(dialogue);
 
-                GPGSAutenthicator.GPGSZelf.Save(SavingID, true);
+                save();
             }
 
-            else if (GPGSAutenthicator.GPGSZelf.LoadBool(SavingID))
+            else if ((bool)typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData))
             {
                 return;
             }
@@ -77,5 +77,25 @@ public class DialogueTrigger : MonoBehaviour
         DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
 
         dialogueManager.StartDialogue(dialogue);
+    }
+
+    private void save()
+    {
+        switch (keyName)
+        {//Load the best time for this level
+            case "dialogueBoxCoinsResetTimer":
+                SaveLoadManager.slm.astroRunData.dialogueBoxCoinsResetTimer = true;
+                break;
+
+            case "dialogueBuyingNewLevels":
+                SaveLoadManager.slm.astroRunData.dialogueBuyingNewLevels = true;
+                break;
+
+            default:
+                Debug.LogWarning("Couldn't save that the dialogue box has been showed: " + keyName);
+                break;
+        }
+
+        SaveLoadManager.slm.SaveJSONToDisk();
     }
 }

@@ -10,7 +10,6 @@ public class NextLevelLoader : MonoBehaviour
     public Animator BlackLevelFadeAnimator;
     public string NameSceneToLoad;
 
-    public int KeyIndex;
     public int LevelToUnlock;
 
     private Collider2D colllider;
@@ -45,9 +44,10 @@ public class NextLevelLoader : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (LevelToUnlock > Convert.ToInt32(GPGSAutenthicator.GPGSZelf.LoadString(KeyIndex)))
+            if (LevelToUnlock > SaveLoadManager.slm.astroRunData.highestUnlockedLevel)
             {
-                GPGSAutenthicator.GPGSZelf.SaveString(KeyIndex, LevelToUnlock.ToString());
+                SaveLoadManager.slm.astroRunData.highestUnlockedLevel = LevelToUnlock;
+                SaveLoadManager.slm.SaveJSONToDisk();
             }
             colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoogs
             FadeToLevel();
