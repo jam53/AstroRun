@@ -208,6 +208,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_1 = 0;
             }
 
             else if (!success)
@@ -225,6 +226,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_2 = 0;
             }
 
             else if (!success)
@@ -242,6 +244,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_3 = 0;
             }
 
             else if (!success)
@@ -259,6 +262,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_4 = 0;
             }
 
             else if (!success)
@@ -276,6 +280,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_5 = 0;
             }
 
             else if (!success)
@@ -293,6 +298,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_6 = 0;
             }
 
             else if (!success)
@@ -310,6 +316,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_7 = 0;
             }
 
             else if (!success)
@@ -327,6 +334,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_8 = 0;
             }
 
             else if (!success)
@@ -344,6 +352,7 @@ public class GPGSAutenthicator : MonoBehaviour
             if (success)
             {
                 Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_9 = 0;
             }
 
             else if (!success)
