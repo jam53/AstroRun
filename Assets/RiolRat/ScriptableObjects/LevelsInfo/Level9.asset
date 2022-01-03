@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d2fea21ffe14b48baaf74dc2f2899c, type: 3}
+  m_Name: Level9
+  m_EditorClassIdentifier: 
+  displayName: Level 9
+  nameSceneToLoad: Level9
+  sceneIndex: 9
+  coinsKeyName: coinsLevel1_9
+  timeKeyName: bestTimeLevel1_9
+  ImageUnlocked: {fileID: 21300000, guid: a9df501523b90cb4fa5ecfbe587e7c2e, type: 3}
