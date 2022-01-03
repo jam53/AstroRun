@@ -11598,7 +11598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1da79ef61b949ca4bae8f6a577e443ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12616,7 +12616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1da79ef61b949ca4bae8f6a577e443ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24771,6 +24771,7 @@ GameObject:
   - component: {fileID: 1229413480}
   - component: {fileID: 1229413479}
   - component: {fileID: 1229413478}
+  - component: {fileID: 1229413481}
   m_Layer: 5
   m_Name: Level3_Button
   m_TagString: Untagged
@@ -24876,6 +24877,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1229413481}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1229413480
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24884,6 +24897,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229413476}
   m_CullTransparentMesh: 0
+--- !u!114 &1229413481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229413476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: WordtIngevuldDoorOpenLevelSelection
 --- !u!114 &1232466632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37919,6 +37945,7 @@ GameObject:
   - component: {fileID: 1862649347}
   - component: {fileID: 1862649346}
   - component: {fileID: 1862649345}
+  - component: {fileID: 1862649348}
   m_Layer: 5
   m_Name: Level1_Button
   m_TagString: Untagged
@@ -38024,6 +38051,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1862649348}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1862649347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38032,6 +38071,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862649343}
   m_CullTransparentMesh: 0
+--- !u!114 &1862649348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862649343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: WordtIngevuldDoorOpenLevelSelection
 --- !u!1 &1863563979
 GameObject:
   m_ObjectHideFlags: 0
@@ -39695,6 +39747,7 @@ GameObject:
   - component: {fileID: 1955416482}
   - component: {fileID: 1955416481}
   - component: {fileID: 1955416480}
+  - component: {fileID: 1955416483}
   m_Layer: 5
   m_Name: Level2_Button
   m_TagString: Untagged
@@ -39800,6 +39853,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1955416483}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1955416482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39808,6 +39873,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955416478}
   m_CullTransparentMesh: 0
+--- !u!114 &1955416483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955416478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40e431894a14249b7f2d2aff84463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSceneToLoad: WordtIngevuldDoorOpenLevelSelection
 --- !u!1 &1958312001
 GameObject:
   m_ObjectHideFlags: 0
@@ -50668,7 +50746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfLevels: 9
-  PricePerLevel: 5
+  PricePerLevel: 500
   TotalCoins: {fileID: 1420538289}
   buttonIndex: 0
 --- !u!1 &6939213076318598216
