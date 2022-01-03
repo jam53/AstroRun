@@ -10,7 +10,6 @@ public class BuyStuffInShop : MonoBehaviour
     public int AmountOfLevels;//The amount of levels that are currently in the game
     public int PricePerLevel;
     public TextMeshProUGUI TotalCoins;//Displayed at the right upper corner of the screen, how many coins the user has
-    public LevelSelection LevelSelectionWorld1;//Used to update the buttons on the level selection screen, after a new level has been purchased
     public int buttonIndex;//This gets updated through ShopVierkant. This way we will know what button the user clicked, and  
     //what action we should perform. e.g. show an ad, or unlock a new level, ..
 
@@ -76,7 +75,6 @@ public class BuyStuffInShop : MonoBehaviour
 
             TotalCoins.text = "" + SaveLoadManager.slm.astroRunData.totalCoins; //Update the User's coins in the UI
 
-            LevelSelectionWorld1.EnableHighestUnlockedLevel();//Update the level selection screen, so that the new level is unlocked
 
 
             #region Logic to show a dialogue to inform user about the purchase

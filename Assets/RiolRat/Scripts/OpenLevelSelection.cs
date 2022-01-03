@@ -23,6 +23,7 @@ public class OpenLevelSelection : MonoBehaviour
             if(LevelsInfo[i].sceneIndex <= SaveLoadManager.slm.astroRunData.highestUnlockedLevel )
             {//Only display the thumbnail of this level, if the user has unlocked it. Other wise it will display the default lock icon
                 Level_Buttons[i].transform.Find("Background_Image").GetComponent<Image>().sprite = LevelsInfo[i].ImageUnlocked;
+                Level_Buttons[i].GetComponent<Button>().interactable = true;
             }
 
             Level_Buttons[i].GetComponent<LevelLoader>().NameSceneToLoad = LevelsInfo[i].nameSceneToLoad;
