@@ -40,6 +40,7 @@ namespace Michsky.UI.Zone
             labeHelper = transform.Find("Text Helper").GetComponent<TextMeshProUGUI>();
             label.text = elements[defaultIndex];
             labeHelper.text = label.text;
+            index = defaultIndex;
 
             if(invokeEventAtStart == true)
             {
