@@ -29824,6 +29824,7 @@ MonoBehaviour:
   - {fileID: 342551024326595911}
   - {fileID: 4111944442440254250}
   - {fileID: 1794736377659288988}
+  LanguageSelector: {fileID: 2712009370651958697}
 --- !u!114 &1458500091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47305,20 +47306,37 @@ MonoBehaviour:
   useGamepadButtons: 1
   previousButton: 332
   forwardButton: 333
+  index: 0
   defaultIndex: 0
   invokeEventAtStart: 0
   disableAtStart: 1
   elements:
   - ENGLISH
+  - "\u6C49\u8BED"
+  - "ESPA\xD1OL"
+  - "PORTUGU\xC9S"
   - "\u0420\u0423\u0421\u0421\u041A\u0418\u0419"
-  - DEUTSCHE
-  - "FRAN\xC7AIS"
+  - "\u65E5\u672C\u8A9E"
   - "T\xDCRK\xC7E"
+  - "FRAN\xC7AIS"
+  - DEUTSCHE
   - NEDERLANDS
   - EESTI
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1458500090}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: LanguageSelector_Dropdown_ValueChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2712049392587655287
 MonoBehaviour:
   m_ObjectHideFlags: 0

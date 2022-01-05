@@ -53,4 +53,7 @@ public class AstroRunData
     public bool dialogueBoxCoinsResetTimer = false; //Has this dialogue box(Coin's reset timer) been shown to the player? false = no | true = yes
 
     public bool dialogueBuyingNewLevels = false; //Has this dialogue box(Coin's reset timer) been shown to the player? false = no | true = yes
+
+    public int language = 0; //This index represents a language in which the UI is displayed. English - 0, Chinese - 1, Spanish - 2, Portuguese - 3, Russian - 4, Japanese - 5, Turkish - 6, French - 7, German - 8, Dutch - 9, Estonian - 10
+    //To ensure that 0 is indeed English, 1 is Chinese etc. The order of the languages should be the same as the languages listed under Project settings > Localization > Available locales
 }

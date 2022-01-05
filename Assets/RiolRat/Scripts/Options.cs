@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class Options : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class Options : MonoBehaviour
     private int Stand;
 
     private bool Startup;
+
+
+    public HorizontalSelector LanguageSelector;
 
     // Start is called before the first frame update
     void Start()
@@ -94,12 +98,8 @@ public class Options : MonoBehaviour
             Quality.text = "Performance";
         }
         #endregion
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        LanguageSelector.defaultIndex = SaveLoadManager.slm.astroRunData.language; //Load in the correct index of the dropdown menu, so the last selected language is selected
     }
 
     public void Musicc()
@@ -219,7 +219,6 @@ public class Options : MonoBehaviour
         if (!Startup && !AnimateMusic)
         {
             Startup = true;
-            print("hit");
             Music.AnimateSwitch();
             
             SFX.AnimateSwitch();
@@ -258,5 +257,17 @@ public class Options : MonoBehaviour
         }
 
         SaveLoadManager.slm.SaveJSONToDisk();
+    }
+
+    public void LanguageSelector_Dropdown_ValueChanged()
+    {
+        //English - 0, Chinese - 1, Spanish - 2, Portuguese - 3, Russian - 4, Japanese - 5, Turkish - 6, French - 7, German - 8, Dutch - 9, Estonian - 10
+
+        SaveLoadManager.slm.astroRunData.language = LanguageSelector.index; //Get the index of the selected value in the dropdown menu. The first element of the dropdown menu is 0, and the first language in our locales is also 0 (being English)
+        SaveLoadManager.slm.SaveJSONToDisk();
+        
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[LanguageSelector.index]; //Load in the selected language
+        //To ensure that 0 is indeed English, 1 is Chinese etc. The order of the languages in the dropdown menu should be the same as the languages listed under Project settings > Localization > Available locales
+
     }
 }

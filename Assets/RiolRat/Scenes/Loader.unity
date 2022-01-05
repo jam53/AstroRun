@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 200704184}
   - component: {fileID: 200704187}
   - component: {fileID: 200704188}
+  - component: {fileID: 200704189}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -258,6 +259,18 @@ MonoBehaviour:
   SceneToLoad: MainMenu
   slider: {fileID: 1454895726}
   InAppUpdates: {fileID: 1886747927105785768}
+--- !u!114 &200704189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200704183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48cc083ef1e3dc54fa5f9cb671ed1694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   GameFPS: 60
 --- !u!1 &280537536
 GameObject:
@@ -1008,6 +1021,7 @@ MonoBehaviour:
     qualitySettings: 1
     dialogueBoxCoinsResetTimer: 0
     dialogueBuyingNewLevels: 0
+    language: 0
 --- !u!1 &691048577
 GameObject:
   m_ObjectHideFlags: 0

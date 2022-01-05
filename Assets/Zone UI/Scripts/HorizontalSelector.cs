@@ -18,7 +18,7 @@ namespace Michsky.UI.Zone
         public KeyCode forwardButton;
 
         [Header("SETTINGS")]
-        private int index = 0;
+        public int index = 0;
         public int defaultIndex = 0;
         public bool invokeEventAtStart = false;
         public bool disableAtStart = true;
