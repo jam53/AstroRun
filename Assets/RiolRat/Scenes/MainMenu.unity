@@ -47316,7 +47316,6 @@ MonoBehaviour:
   - "T\xDCRK\xC7E"
   - NEDERLANDS
   - EESTI
-  - ALIEN
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
