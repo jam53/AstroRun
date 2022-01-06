@@ -19,6 +19,34 @@ MonoBehaviour:
     m_Key: Loading
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Key: Level Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Key: Leaderboards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Key: Achievements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Key: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Key: About
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

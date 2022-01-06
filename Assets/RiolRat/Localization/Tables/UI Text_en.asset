@@ -22,6 +22,34 @@ MonoBehaviour:
     m_Localized: LOADING
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Localized: Level Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Localized: Leaderboards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Localized: Achievements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Localized: About AstroRun
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

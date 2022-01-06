@@ -22,6 +22,34 @@ MonoBehaviour:
     m_Localized: LAADIMINE
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Localized: "M\xE4ngi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Localized: Taseme valik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Localized: Edetabelid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Localized: Saavutused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Localized: Kauplus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Localized: Seaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Localized: AstroRuni kohta
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

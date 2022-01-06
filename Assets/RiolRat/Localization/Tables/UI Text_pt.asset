@@ -22,6 +22,34 @@ MonoBehaviour:
     m_Localized: CARREGAMENTO
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Localized: Reproduzir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Localized: "Selec\xE7\xE3o de N\xEDvel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Localized: "Quadros de lideran\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Localized: "Realiza\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Localized: Loja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Localized: "Defini\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Localized: Sobre a AstroRun
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

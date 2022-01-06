@@ -22,6 +22,34 @@ MonoBehaviour:
     m_Localized: LADEN
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Localized: Level-Auswahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Localized: Bestenlisten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Localized: Errungenschaften
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Localized: Laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Localized: "\xDCber AstroRun"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

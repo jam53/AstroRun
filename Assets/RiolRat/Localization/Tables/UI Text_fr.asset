@@ -22,6 +22,34 @@ MonoBehaviour:
     m_Localized: CHARGEMENT
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Localized: "S\xE9lection des niveaux"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Localized: Classements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Localized: "R\xE9alisations"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Localized: Boutique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Localized: "\xC0 propos d'AstroRun"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

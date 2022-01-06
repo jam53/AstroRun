@@ -22,6 +22,34 @@ MonoBehaviour:
     m_Localized: "Y\xDCKLEN\u0130YOR"
     m_Metadata:
       m_Items: []
+  - m_Id: 266296612671488
+    m_Localized: Oyna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267279434567680
+    m_Localized: "Seviye Se\xE7imi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267966876798976
+    m_Localized: "Skor tablolar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268476656701440
+    m_Localized: "Ba\u015Far\u0131lar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268937426161664
+    m_Localized: "Ma\u011Faza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269903122714624
+    m_Localized: Ayarlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270153572995072
+    m_Localized: "AstroRun Hakk\u0131nda"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
