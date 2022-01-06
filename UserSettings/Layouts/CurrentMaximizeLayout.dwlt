@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5625
+  controlID: 6205
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 5616
+  controlID: 6197
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 5555
+  controlID: 6206
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -792,10 +792,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 92d60000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6cd7feff8edafeff8eeafeff3ef5feff70f8feff5c62ffff3a7c0100887c01006e7f0100e47f0100be800100a6830100e8840100b2850100a0860100bace010074d00100
+      scrollPos: {x: 0, y: 60}
+      m_SelectedIDs: 20220200
+      m_LastClickedID: 139808
+      m_ExpandedIDs: bcccfeff6cd7feff8edafeff8eeafeff3ef5feff70f8feff5c62ffff3a7c0100887c01006e7f0100e47f0100be800100a6830100e8840100b2850100a0860100bace010074d001008c1d020032210200e6240200ec2402002c250200322602005a29020078290200c4290200cc290200e2290200f6290200802b0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -888,22 +888,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/RiolRat/Localization/Tables
+    - Assets/RiolRat/Textures/Icons/ZelfEnExtra
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/RiolRat/Localization/Tables
+  - Assets/RiolRat/Textures/Icons/ZelfEnExtra
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Deniz\Unity\AstroRun
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 68670100
-    m_LastClickedID: 92008
-    m_ExpandedIDs: 00000000ac470100bc4701008657010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 90}
+    m_SelectedIDs: 00640100
+    m_LastClickedID: 91136
+    m_ExpandedIDs: 00000000ac470100bc47010086570100985701002268010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -956,8 +956,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 92d60000
-    m_LastClickedInstanceID: 54930
+    m_SelectedInstanceIDs: 20220200
+    m_LastClickedInstanceID: 139808
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: -393
+    m_CachedPref: 393
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
