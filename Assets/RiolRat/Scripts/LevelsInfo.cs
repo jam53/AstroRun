@@ -9,7 +9,7 @@ public class LevelsInfo : ScriptableObject
 
     public string nameSceneToLoad;
 
-    public int sceneIndex;
+    public int levelIndex;
 
     public string coinsKeyName;
 

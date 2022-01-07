@@ -50,6 +50,181 @@ MonoBehaviour:
     m_Localized: "\xC0 propos d'AstroRun"
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: "S\xE9lection mondiale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: Monde 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: Monde 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: Monde 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: Monde 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: Monde 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: Monde 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: Monde 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: Monde 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: Monde 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: "S\xE9lection des niveaux"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: Niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: Pas de temps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: Objets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: Tenues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: GRATUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: "500 pi\xE8ces"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: "Regardez une publicit\xE9 pour recevoir un c\u0153ur gratuit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: "Payez avec quelques pi\xE8ces pour recharger vos c\u0153urs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "Payez 0,99 \u20AC pour recevoir un nombre illimit\xE9 de c\u0153urs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: "D\xE9verrouillez le niveau suivant"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: "VID\xC9O"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: "QUALIT\xC9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: L'AUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: MUSIQUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: EFFETS SONORES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: LANGUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: AUTRE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: Transfert De Compte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: "FAITES D\xC9FILER POUR EN SAVOIR PLUS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: "Basse Qualit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: "Haute Qualit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "AstroRun vous permet de faire une sauvegarde de votre progression
+      en jeu. En cas de perte ou de nouvel appareil, vous pourrez ainsi conserver
+      votre progression. \r\n\r\nSauvegarde de vos donn\xE9es :\r\n1) Naviguez jusqu'au
+      fichier de sauvegarde d'AstroRun \xE0 l'aide de l'explorateur de fichiers de
+      votre t\xE9l\xE9phone. AstroRun enregistre ses donn\xE9es sous l'emplacement
+      suivant :\r\n\r\n<u>Enregistrement interne > Android > Data > </u>\r\n<u>com.
+      jam54. AstroRun > files > AstroRun. json </u>\r\n\r\n2) Faites une copie du
+      fichier appel\xE9 \"AstroRun.json\" et enregistrez-le quelque part. Cette copie
+      pourra \xEAtre utilis\xE9e ult\xE9rieurement pour restaurer votre progression
+      dans AstroRun.\r\n\r\n\r\nRestauration de vos donn\xE9es :\r\n1) Naviguez vers
+      le r\xE9pertoire suivant \xE0 l'aide de l'explorateur de fichiers de votre
+      t\xE9l\xE9phone :\r\n\r\n<u>Stockage interne > Android > Data > </u>\r\n<u>com.
+      jam54. AstroRun > files </u>\r\n\r\n2) Collez le fichier que vous avez sauvegard\xE9
+      pr\xE9c\xE9demment, dans ce dossier. Si le fichier existe d\xE9j\xE0, choisissez
+      pour l'option de l'\xE9craser."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "Un jeu de Deniz G\xFCnd\xFCz Callens, Maaren Maes et Gilles De
+      Baets.\r\n\r\nMerci beaucoup d'avoir jou\xE9 \xE0 AstroRun !\r\n\r\nAstroRun
+      a \xE9t\xE9 cr\xE9\xE9 par un petit groupe d'amis. Dans lequel chacun a contribu\xE9
+      \xE0 ce qu'il excelle le plus. Le level design de Maaren a donn\xE9 lieu \xE0
+      des niveaux super amusants et parfois ennuyeux, ce qui a rendu le jeu encore
+      plus gratifiant et meilleur par moments. Gilles a rempli son r\xF4le de concepteur
+      audio en cr\xE9ant des bandes sonores incroyables et en donnant au jeu un petit
+      plus gr\xE2ce \xE0 ses effets sonores \xE9tonnants. Deniz a rassembl\xE9 tout
+      cela dans Unity. Et avec l'aide de quelques codes, il a cr\xE9\xE9 ce jeu fantastique.\r\n\r\nBien
+      s\xFBr, tout cela n'aurait pas \xE9t\xE9 possible sans l'aide de quelques testeurs
+      g\xE9niaux. Ils ont donn\xE9 un feedback constructif et des id\xE9es utiles
+      pour faire d'AstroRun un jeu encore meilleur.\r\n\r\nUn grand merci \xE0 :\r\nConception
+      des niveaux et id\xE9es de jeu : Maaren Maes\r\nCompositeur de musique et d'effets
+      sp\xE9ciaux : Gilles De Baets\r\nTout le reste : Deniz G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: "Remerciements sp\xE9ciaux \xE0 :\nAnynomouse\nBob\nBrum\nDreis\nFaxa\nIpoker\nJfrost\nLarvia\nLightning\nLionmilk\nLizewieze\nMilanZezer\nNovitiate\nPinQuin420\nPonPonPanPan\nRyza\nThoomsen12\nWhaylin\nXaaf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: Licence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: Fermer
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

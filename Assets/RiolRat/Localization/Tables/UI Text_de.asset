@@ -50,6 +50,218 @@ MonoBehaviour:
     m_Localized: "\xDCber AstroRun"
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: Weltauswahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: Welt 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: Welt 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: Welt 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: Welt 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: Welt 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: Welt 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: Welt 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: Welt 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: Welt 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: Auswahl der Ebene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: Ebene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: Keine Zeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: "Gegen-\nst\xE4nde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: Outfits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: KOSTENLOS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: "500 M\xFCnzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: Sehen Sie sich eine Anzeige an, um ein kostenloses Herz zu erhalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: "Bezahlen Sie mit einigen M\xFCnzen, um Ihre Herzen aufzuf\xFCllen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "Zahlen Sie 0,99 \u20AC, um eine unbegrenzte Anzahl von Herzen zu
+      erhalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: "Schalten Sie die n\xE4chste Stufe frei"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: VIDEO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: "QUALIT\xC4T"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: AUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: MUSIK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: TON-EFFEKTE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: SPRACHE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: ANDERE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: "Konto\xFCbertragung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: "SCROLLEN F\xDCR MEHR"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: "Geringe Qualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: "Hohe Qualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "AstroRun erm\xF6glicht es Ihnen, eine Sicherungskopie Ihres Spielverlaufs
+      zu erstellen. Im Falle eines Verlusts oder eines neuen Ger\xE4ts k\xF6nnen
+      Sie so Ihren Spielverlauf bewahren. \r\n\r\nSichern Sie Ihre Daten:\r\n1) Navigiere
+      mit dem Dateiexplorer deines Handys zu der Speicherdatei von AstroRun. AstroRun
+      speichert seine Daten an folgendem Ort:\r\n\r\n<u>Interner Speicher > Android
+      > Data > </u>\r\n<u>com.jam54. AstroRun > files > AstroRun. json </u>\r\n\r\n2)
+      Erstellen Sie eine Kopie der Datei mit dem Namen \"AstroRun.json\" und speichern
+      Sie diese irgendwo. Diese Kopie kann sp\xE4ter verwendet werden, um Ihren Verlauf
+      in AstroRun wiederherzustellen.\r\n\r\n\r\nWiederherstellen Ihrer Daten:\r\n1)
+      Navigiere mit dem Dateiexplorer deines Telefons zum folgenden Verzeichnis:\r\n\r\n<u>Interner
+      Speicher > Android > Data > </u>\r\n<u>com.jam54. AstroRun > files </u>\r\n\r\n2)
+      F\xFCgen Sie die Datei, die Sie zuvor gesichert haben, in diesen Ordner ein.
+      Wenn die Datei bereits existiert, w\xE4hlen Sie die Option, sie zu \xFCberschreiben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "Ein Spiel von Deniz G\xFCnd\xFCz Callens, Maaren Maes und Gilles
+      De Baets.\r\n\r\nVielen Dank f\xFCr das Spielen von AstroRun!\r\n\r\nAstroRun
+      wurde von einer kleinen Gruppe von Freunden entwickelt. Dabei hat jeder das
+      beigetragen, was er am besten kann. Maarens Leveldesign sorgte f\xFCr einige
+      super lustige und manchmal auch nervige Level, die das Spiel noch lohnender
+      und besser machten. Gilles erf\xFCllte seine Rolle als Audiodesigner und schuf
+      einige unglaubliche Soundtracks und gab dem Spiel mit seinen atemberaubenden
+      Soundeffekten das gewisse Extra. Deniz hat all dies in Unity zusammengef\xFChrt.
+      Und mit Hilfe von ein paar Programmierungen hat er dieses fantastische Spiel
+      geschaffen.\r\n\r\nNat\xFCrlich w\xE4re das alles nicht m\xF6glich gewesen
+      ohne die Hilfe einiger gro\xDFartiger Tester. Diese gaben konstruktives Feedback
+      und einige hilfreiche Ideen, um AstroRun zu einem noch besseren Spiel zu machen.\r\n\r\nEin
+      gro\xDFes Dankesch\xF6n an:\r\nLeveldesign und Spielideen: Maaren Maes\r\nMusik
+      und SFX Komponist: Gilles De Baets\r\nAlles andere: Deniz G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: 'Besonderen Dank an:
+
+      Anynomouse
+
+      Bob
+
+      Brum
+
+      Dreis
+
+      Faxa
+
+      Ipoker
+
+      Jfrost
+
+      Larvia
+
+      Lightning
+
+      Lionmilk
+
+      Lizewieze
+
+      MilanZezer
+
+      Novitiate
+
+      PinQuin420
+
+      PonPonPanPan
+
+      Ryza
+
+      Thoomsen12
+
+      Whaylin
+
+      Xaaf'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: Lizenz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

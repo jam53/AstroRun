@@ -87,17 +87,7 @@ public class Options : MonoBehaviour
         }
         #endregion
 
-        #region Quality Settings
-        if (SaveLoadManager.slm.astroRunData.qualitySettings)//If true, it means we want to use high quality settings AKA use post processing
-        {
-            Quality.text = "High Quality";
-        }
-
-        else if (!SaveLoadManager.slm.astroRunData.qualitySettings)//If false, it means we dont want to use high quality settings AKA use post processing
-        {
-            Quality.text = "Performance";
-        }
-        #endregion
+        UpdateQualitySettingsText();
 
         LanguageSelector.defaultIndex = SaveLoadManager.slm.astroRunData.language; //Load in the correct index of the dropdown menu, so the last selected language is selected
     }
@@ -180,15 +170,15 @@ public class Options : MonoBehaviour
 
     public void Qualityy()
     {
-        if (Quality.text == "High Quality")
+        if (SaveLoadManager.slm.astroRunData.qualitySettings)
         {
-            Quality.text = "Performance";
+            Quality.text = LocalizeString("Low Quality");
             SaveLoadManager.slm.astroRunData.qualitySettings = false;
         }
 
-        else if (Quality.text == "Performance")
+        else if (!SaveLoadManager.slm.astroRunData.qualitySettings)
         {
-            Quality.text = "High Quality";
+            Quality.text = LocalizeString("High Quality");
             SaveLoadManager.slm.astroRunData.qualitySettings = true;
         }
 
@@ -267,7 +257,32 @@ public class Options : MonoBehaviour
         SaveLoadManager.slm.SaveJSONToDisk();
         
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[LanguageSelector.index]; //Load in the selected language
-        //To ensure that 0 is indeed English, 1 is Chinese etc. The order of the languages in the dropdown menu should be the same as the languages listed under Project settings > Localization > Available locales
+                                                                                                                     //To ensure that 0 is indeed English, 1 is Chinese etc. The order of the languages in the dropdown menu should be the same as the languages listed under Project settings > Localization > Available locales
 
+        LocalizationSettings.InitializationOperation.WaitForCompletion(); //Wait until the language/local has been changed
+        UpdateQualitySettingsText(); //After changing the language, we should update the text displayed in the quality section of the main menu. 
+    }
+
+    private void UpdateQualitySettingsText()
+    {
+        if (SaveLoadManager.slm.astroRunData.qualitySettings)//If true, it means we want to use high quality settings AKA use post processing
+        {
+            Quality.text = LocalizeString("High Quality");
+        }
+
+        else if (!SaveLoadManager.slm.astroRunData.qualitySettings)//If false, it means we dont want to use high quality settings AKA use post processing
+        {
+            Quality.text = LocalizeString("Low Quality");
+        }
+    }
+
+    private string LocalizeString(string key)
+    {//https://forum.unity.com/threads/localizating-strings-on-script.847000/
+        var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI Text", key);
+        if (op.IsDone)
+            return op.Result;
+        else
+            op.Completed += (op) => Debug.LogWarning(op.Result);
+        return "Couldn't get translation for key: " + key;
     }
 }

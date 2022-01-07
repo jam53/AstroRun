@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class ShopVierkant : MonoBehaviour
@@ -26,34 +27,11 @@ public class ShopVierkant : MonoBehaviour
     public string[] Prices;
     public string[] Descriptions;
 
-    //public Image Display;
-    //public TextMeshProUGUI Price;
 
-    //public Sprite[] SkinThumbnail;
-    //public string[] SkinPrice;
-
-    //public GameObject Coins;
-    //public GameObject Owned_Text;
-
-    //private int CurrentItem;
-
-    //public bool Owned;
-
-    // Start is called before the first frame update
-    void Start()
+    // OnEnable is called every time the object gets enabled in the hierarchy
+    void OnEnable()
     {
-        //CurrentItem = 0;
-        //Display.sprite = SkinThumbnail[CurrentItem];
-        //Price.text = SkinPrice[CurrentItem];
-
         DefaultColor = CharacterThumbnails[0].color;//Save the original color of the image/button
-
-        //int Counter = 0;
-        //foreach (var item in Buttons)
-        //{
-        //    item.GetComponentInChildren<Image>().sprite = CharacterThumbnails[Counter].sprite;
-        //    Counter++;
-        //}
 
         CharacterThumbnails[0].color = Color.white;//Make the color of the image/button white so it makes it clear that it is clicked/selected
 
@@ -64,70 +42,13 @@ public class ShopVierkant : MonoBehaviour
         TempPosition.y = YposSelectedCharacterImage[0];
         SelectedCharacter.rectTransform.anchoredPosition = TempPosition;//Put it on the correct height, according to the first image/button in the array
 
-        Price.text = Prices[0];//Put the correct price from the first image/button in the array
-        PriceHighLighted.text = Prices[0];//Put the correct price from the first image/button in the array
-        Description.text = Descriptions[0];//Put the correct description from the first image/button in the array
+        Price.text = LocalizeString(Prices[0]);//Put the correct price from the first image/button in the array
+        PriceHighLighted.text = LocalizeString(Prices[0]);//Put the correct price from the first image/button in the array
+        Description.text = LocalizeString(Descriptions[0]);//Put the correct description from the first image/button in the array
 
         buyStuffInShop.buttonIndex = 0; //Update the currently selected buttons
     }
 
-    //public void GoRight()
-    //{
-    //    if (CurrentItem == SkinThumbnail.Length - 1)
-    //    {
-    //        CurrentItem = 0;
-    //        Display.sprite = SkinThumbnail[CurrentItem];
-    //        Price.text = SkinPrice[CurrentItem];
-    //    }
-
-    //    else
-    //    {
-    //        CurrentItem++;
-    //        Display.sprite = SkinThumbnail[CurrentItem];
-    //        Price.text = SkinPrice[CurrentItem];
-    //    }
-
-    //    if (Owned)
-    //    {
-    //        Coins.SetActive(false);
-    //        Owned_Text.SetActive(true);
-    //    }
-
-    //    else
-    //    {
-    //        Coins.SetActive(true);
-    //        Owned_Text.SetActive(false);
-    //    }
-    //}
-
-    //public void GoLeft()
-    //{
-    //    if (CurrentItem == 0)
-    //    {
-    //        CurrentItem = SkinThumbnail.Length - 1;
-    //        Display.sprite = SkinThumbnail[CurrentItem];
-    //        Price.text = SkinPrice[CurrentItem];
-    //    }
-
-    //    else
-    //    {
-    //        CurrentItem--;
-    //        Display.sprite = SkinThumbnail[CurrentItem];
-    //        Price.text = SkinPrice[CurrentItem];
-    //    }
-
-    //    if (Owned)
-    //    {
-    //        Coins.SetActive(false);
-    //        Owned_Text.SetActive(true);
-    //    }
-
-    //    else
-    //    {
-    //        Coins.SetActive(true);
-    //        Owned_Text.SetActive(false);
-    //    }
-    //}
 
     public void ChangeCharacter (int buttonIndex)//Change the main image
     {
@@ -148,11 +69,27 @@ public class ShopVierkant : MonoBehaviour
         TempPosition.y = YposSelectedCharacterImage[buttonIndex];
         SelectedCharacter.rectTransform.anchoredPosition = TempPosition;//Put it on the correct height, as not all images are the same size
 
-        Price.text = Prices[buttonIndex].ToString();//Put the correct price
-        PriceHighLighted.text = Prices[buttonIndex].ToString();//Put the correct price
+        Price.text = LocalizeString(Prices[buttonIndex].ToString());//Put the correct price
+        PriceHighLighted.text = LocalizeString(Prices[buttonIndex].ToString());//Put the correct price
         BuyButton.SetActive(false);//We doen het eens aan en uit, zodat de grootte van de button wordt aangepast,
         BuyButton.SetActive(true); //Anders verandert de tekst, maar is de button zelf soms te klein
 
-        Description.text = Descriptions[buttonIndex];//Put the correct description
+        Description.text = LocalizeString(Descriptions[buttonIndex]);//Put the correct description
+    }
+
+    private string LocalizeString(string key)
+    {//https://forum.unity.com/threads/localizating-strings-on-script.847000/
+
+        if(key[0] != '#')
+        {//We only want to translate certain strings, strings that don't start with a '#', don't need to be translated
+            return key;
+        }
+
+        var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI Text", key);
+        if (op.IsDone)
+            return op.Result;
+        else
+            op.Completed += (op) => Debug.LogWarning(op.Result);
+        return "Couldn't get translation for key: " + key;
     }
 }

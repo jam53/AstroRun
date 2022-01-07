@@ -50,6 +50,217 @@ MonoBehaviour:
     m_Localized: Sobre a AstroRun
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: "Selec\xE7\xE3o Mundial"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: Mundo 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: Mundo 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: Mundo 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: Mundo 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: Mundo 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: Mundo 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: Mundo 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: Mundo 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: Mundo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: "Selec\xE7\xE3o de N\xEDvel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: "N\xEDvel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: Sem tempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: Itens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: Roupas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: GRATUITO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: 500 moedas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: "Ver um an\xFAncio para receber um cora\xE7\xE3o livre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: "Paguem com algumas moedas para recarregar os vossos cora\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "Pagar 0,99 euros para receber um n\xFAmero ilimitado de cora\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: "Desbloquear o n\xEDvel seguinte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: "V\xCDDEO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: QUALIDADE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: "\xC1UDIO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: "M\xDASICA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: EFEITOS SONOROS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: "L\xCDNGUA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: OUTROS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: "Transfer\xEAncia De Conta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: ROLAR PARA MAIS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: Baixa Qualidade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: Alta Qualidade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "O AstroRun permite-lhe fazer um backup da sua progress\xE3o no
+      jogo. Em caso de perda ou de um novo dispositivo, ser\xE1 capaz de preservar
+      a sua progress\xE3o. \r\nFazer uma c\xF3pia de seguran\xE7a dos seus dados:\r\n1)
+      Navegue para o ficheiro de salvaguarda do AstroRun utilizando o explorador
+      de ficheiros do seu telefone. O AstroRun guarda os seus dados na seguinte localiza\xE7\xE3o:\r\n\r\n<u>Armazenamento
+      interno > Android > Data > </u>\r\n<u>com. jam54. AstroRun > files > AstroRun.
+      json </u>\r\n\r\n2) Fa\xE7a uma c\xF3pia do ficheiro chamado \"AstroRun.json\"
+      e guarde-o algures. Esta c\xF3pia pode mais tarde ser utilizada para restaurar
+      a sua progress\xE3o no AstroRun.\r\n\r\n\r\nRestaurar os seus dados:\r\n1)
+      Navegue para a seguinte directoria utilizando o explorador de ficheiros do
+      seu telefone:\r\n\r\n<u>Armazenamento interno > Android > Data > </u>\r\n<u>com.
+      jam54. AstroRun > files </u>\r\n\r\n2) Cole o ficheiro que fez backup anteriormente,
+      nesta pasta. Se o ficheiro j\xE1 existir, escolha a op\xE7\xE3o de o sobregravar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "Um jogo de Deniz G\xFCnd\xFCz Callens, Maaren Maes e Gilles De
+      Baets.\r\n\r\nMuito obrigado por jogar AstroRun!\r\n\r\nO AstroRun foi feito
+      por um pequeno grupo de amigos. No qual todos contribu\xEDram no que mais se
+      destacaram. O design de n\xEDveis da Maaren foi feito para alguns n\xEDveis
+      super divertidos e por vezes irritantes, o que fez com que o jogo se sentisse
+      ainda mais gratificante e melhor por vezes. Gilles cumpriu o seu papel como
+      designer de \xE1udio e fez algumas bandas sonoras incr\xEDveis e deu ao jogo
+      aquele pequeno extra com os seus espantosos efeitos sonoros. Deniz juntou tudo
+      isto em Unity. E com a ajuda de alguma codifica\xE7\xE3o, ele criou este fant\xE1stico
+      jogo.\r\n\r\n\xC9 claro que tudo isto n\xE3o teria sido poss\xEDvel sem a ajuda
+      de alguns fant\xE1sticos testadores. O que deu um feedback construtivo e algumas
+      ideias \xFAteis para tornar o AstroRun num jogo ainda melhor.\r\n\r\nUm grande
+      obrigado a:\r\nConcep\xE7\xE3o de n\xEDveis e ideias de jogo: Maaren Maes\r\nM\xFAsica
+      e compositor de SFX: Gilles De Baets\r\nTudo o resto: Deniz G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: 'Um agradecimento especial a:
+
+      Anynomouse
+
+      Bob
+
+      Brum
+
+      Dreis
+
+      Faxa
+
+      Ipoker
+
+      Jfrost
+
+      Larvia
+
+      Lightning
+
+      Lionmilk
+
+      Lizewieze
+
+      MilanZezer
+
+      Novitiate
+
+      PinQuin420
+
+      PonPonPanPan
+
+      Ryza
+
+      Thoomsen12
+
+      Whaylin
+
+      Xaaf'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: "Licen\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: Fechar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -47,6 +47,154 @@ MonoBehaviour:
     m_Key: About
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Key: World Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Key: World 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Key: World 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Key: World 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Key: World 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Key: World 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Key: World 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Key: World 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Key: World 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Key: World 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Key: Level Selectio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Key: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Key: No Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Key: Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Key: Skins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Key: '#FREE'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Key: '#500 coins'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Key: '#WatchAd'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Key: '#PayCoins'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Key: '#PayMoney'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Key: '#UnlockOneLevel'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Key: RENDERER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Key: QUALITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Key: AUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Key: MUSIC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Key: SOUND EFFECTS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Key: LANGUAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Key: OTHER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Key: TRANSFER ACCOUNT PROGRESS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Key: SCROLL FOR MORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Key: Low Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Key: High Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Key: Transfer Account Explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Key: About Part 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Key: About Part 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Key: License
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Key: Close
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

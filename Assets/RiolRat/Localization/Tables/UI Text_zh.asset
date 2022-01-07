@@ -50,6 +50,161 @@ MonoBehaviour:
     m_Localized: "\u5173\u4E8EAstroRun"
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: "\u4E16\u754C\u9009\u62E9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: "\u4E16\u754C 1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: "\u4E16\u754C 2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: "\u4E16\u754C 3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: "\u4E16\u754C 4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: "\u4E16\u754C 5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: "\u4E16\u754C 6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: "\u4E16\u754C 7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: "\u4E16\u754C 8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: "\u4E16\u754C 9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: "\u7B49\u7EA7\u9009\u62E9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: "\u7EA7\u522B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: "\u6CA1\u6709\u65F6\u95F4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: "\u9879\u76EE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: "\u670D\u88C5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: "\u514D\u8D39"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: "500\u4E2A\u786C\u5E01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: "\u89C2\u770B\u5E7F\u544A\u53EF\u83B7\u5F97\u514D\u8D39\u5FC3\u810F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: "\u7528\u4E00\u4E9B\u786C\u5E01\u652F\u4ED8\uFF0C\u4EE5\u8865\u5145\u4F60\u7684\u5FC3\u810F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "\u652F\u4ED80.99\u6B27\u5143\u5373\u53EF\u83B7\u5F97\u65E0\u9650\u6570\u91CF\u7684\u7231\u5FC3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: "\u89E3\u9501\u4E0B\u4E00\u4E2A\u7EA7\u522B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: "\u89C6\u9891"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: "\u8D28\u91CF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: "\u97F3\u9891"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: "\u97F3\u4E50"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: "\u97F3\u54CD\u6548\u679C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: "\u8BED\u8A00"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: "\u5176\u4ED6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: "\u8D26\u6237\u8F6C\u79FB"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: "\u6EDA\u52A8\u67E5\u770B\u66F4\u591A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: "\u4F4E\u8D28\u91CF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: "\u9AD8\u8D28\u91CF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "AstroRun\u5141\u8BB8\u4F60\u5BF9\u4F60\u7684\u6E38\u620F\u8FDB\u7A0B\u8FDB\u884C\u5907\u4EFD\u3002\u5728\u4E22\u5931\u6216\u66F4\u6362\u8BBE\u5907\u7684\u60C5\u51B5\u4E0B\uFF0C\u4F60\u5C06\u80FD\u591F\u4FDD\u7559\u4F60\u7684\u8FDB\u5C55\u3002\r\n\r\n\u5907\u4EFD\u4F60\u7684\u6570\u636E\u3002\r\n1\uFF09\u4F7F\u7528\u624B\u673A\u7684\u6587\u4EF6\u8D44\u6E90\u7BA1\u7406\u5668\u5BFC\u822A\u5230AstroRun\u7684\u4FDD\u5B58\u6587\u4EF6\u3002AstroRun\u5C06\u5176\u6570\u636E\u4FDD\u5B58\u5728\u4EE5\u4E0B\u4F4D\u7F6E\u3002\r\n\r\n<u>\u5185\u90E8\u5B58\u50A8
+      > Android > Data > </u>\r\n<u>com. jam54. AstroRun > files > AstroRun. json
+      </u>\r\n\r\n2) \u590D\u5236\u4E00\u4E2A\u540D\u4E3A \"AstroRun.json \"\u7684\u6587\u4EF6\uFF0C\u5E76\u5C06\u5176\u4FDD\u5B58\u5728\u67D0\u4E2A\u5730\u65B9\u3002\u8FD9\u4E2A\u526F\u672C\u4EE5\u540E\u53EF\u4EE5\u7528\u6765\u6062\u590D\u4F60\u5728AstroRun\u7684\u8FDB\u5C55\u3002\r\n\r\n\r\n\u6062\u590D\u4F60\u7684\u6570\u636E\u3002\r\n1)
+      \u4F7F\u7528\u4F60\u7684\u624B\u673A\u7684\u6587\u4EF6\u8D44\u6E90\u7BA1\u7406\u5668\u5BFC\u822A\u5230\u4EE5\u4E0B\u76EE\u5F55\u3002\r\n\r\n<u>\u5185\u90E8\u5B58\u50A8
+      > Android > Data > </u>\u3002\r\n<u>com. jam54. AstroRun > files</u>\r\n\r\n2)
+      \u628A\u4F60\u4E4B\u524D\u5907\u4EFD\u7684\u6587\u4EF6\uFF0C\u7C98\u8D34\u5230\u8FD9\u4E2A\u6587\u4EF6\u5939\u4E2D\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u9009\u62E9\u8986\u76D6\u5B83\u7684\u9009\u9879\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "Deniz G\xFCnd\xFCz Callens\u3001Maaren Maes\u548CGilles De Baets\u7684\u6E38\u620F\u3002\r\n\r\n\u975E\u5E38\u611F\u8C22\u4F60\u73A9AstroRun!\r\n\r\nAstroRun\u662F\u7531\u4E00\u5C0F\u7FA4\u670B\u53CB\u5236\u4F5C\u7684\u3002\u5176\u4E2D\u6BCF\u4E2A\u4EBA\u90FD\u5728\u81EA\u5DF1\u6700\u64C5\u957F\u7684\u65B9\u9762\u505A\u51FA\u4E86\u8D21\u732E\u3002Maaren\u7684\u5173\u5361\u8BBE\u8BA1\u4F7F\u5F97\u4E00\u4E9B\u8D85\u7EA7\u6709\u8DA3\u7684\u5173\u5361\uFF0C\u6709\u65F6\u4E5F\u5F88\u70E6\u4EBA\uFF0C\u8FD9\u4F7F\u5F97\u6E38\u620F\u6709\u65F6\u611F\u89C9\u66F4\u6709\u4EF7\u503C\uFF0C\u66F4\u6709\u610F\u4E49\u3002Gilles\u5C65\u884C\u4E86\u4ED6\u4F5C\u4E3A\u97F3\u9891\u8BBE\u8BA1\u5E08\u7684\u804C\u8D23\uFF0C\u5236\u4F5C\u4E86\u4E00\u4E9B\u4EE4\u4EBA\u96BE\u4EE5\u7F6E\u4FE1\u7684\u914D\u4E50\uFF0C\u5E76\u4EE5\u5176\u4EE4\u4EBA\u60CA\u53F9\u7684\u58F0\u97F3\u6548\u679C\u7ED9\u6E38\u620F\u5E26\u6765\u4E86\u4E00\u4E9B\u989D\u5916\u7684\u4E1C\u897F\u3002Deniz\u5728Unity\u4E2D\u628A\u6240\u6709\u8FD9\u4E9B\u90FD\u96C6\u4E2D\u8D77\u6765\u3002\u5728\u4E00\u4E9B\u7F16\u7801\u7684\u5E2E\u52A9\u4E0B\uFF0C\u4ED6\u521B\u9020\u4E86\u8FD9\u4E2A\u5947\u5999\u7684\u6E38\u620F\u3002\r\n\r\n\u5F53\u7136\uFF0C\u5982\u679C\u6CA1\u6709\u4E00\u4E9B\u51FA\u8272\u7684\u6D4B\u8BD5\u4EBA\u5458\u7684\u5E2E\u52A9\uFF0C\u8FD9\u4E00\u5207\u90FD\u4E0D\u53EF\u80FD\u5B9E\u73B0\u3002\u4ED6\u4EEC\u63D0\u4F9B\u4E86\u5EFA\u8BBE\u6027\u7684\u53CD\u9988\u548C\u4E00\u4E9B\u6709\u7528\u7684\u60F3\u6CD5\uFF0C\u4F7FAstroRun\u6210\u4E3A\u4E00\u4E2A\u66F4\u597D\u7684\u6E38\u620F\u3002\r\n\r\n\u5728\u6B64\u975E\u5E38\u611F\u8C22\u3002\r\n\u5173\u5361\u8BBE\u8BA1\u548C\u6E38\u620F\u521B\u610F\u3002Maaren
+      Maes\r\n\u97F3\u4E50\u548CSFX\u4F5C\u66F2\u5BB6\u3002Gilles De Baets\r\n\u5176\u4ED6\u4E00\u5207\u3002Deniz
+      G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: "\u7279\u522B\u611F\u8C22\u3002\nAnynomouse\nBob\nBrum\nDreis\nFaxa\nIpoker\nJfrost\nLarvia\nLightning\nLionmilk\nLizewieze\nMilanZezer\nNovitiate\nPinQuin420\nPonPonPanPan\nRyza\nThoomsen12\nWhaylin\nXaaf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: "\u8BB8\u53EF\u8BC1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: "\u5173\u95ED"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -50,6 +50,185 @@ MonoBehaviour:
     m_Localized: "AstroRun Hakk\u0131nda"
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: "D\xFCnya Se\xE7imi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: "D\xFCnya 1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: "D\xFCnya 2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: "D\xFCnya 3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: "D\xFCnya 4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: "D\xFCnya 5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: "D\xFCnya 6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: "D\xFCnya 7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: "D\xFCnya 8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: "D\xFCnya 9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: "Seviye Se\xE7imi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: Seviye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: Zaman yok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: "E\u015Fyalar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: "K\u0131yafetler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: BEDAVA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: "500 alt\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: "\xDCcretsiz bir kalp almak i\xE7in, reklam izleyin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: "Kalplerinizi doldurmak i\xE7in, bir ka\xE7 tane alt\u0131n \xF6deyin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "S\u0131n\u0131rs\u0131z say\u0131da kalp kullanmak i\xE7in 0,99
+      \u20AC \xF6deyin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: "Bir sonraki seviyenin kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: "G\xD6R\xDCNT\xDC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: "KAL\u0130TE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: SES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: "M\xDCZ\u0130K"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: "SES EFEKTLER\u0130"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: "D\u0130L"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: "D\u0130\u011EER"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: Hesap Aktarma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: "DAHA FAZLASI \u0130\xC7\u0130N KAYDIRIN"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: "D\xFC\u015F\xFCk Kalite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: "Y\xFCksek Kalite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "AstroRun, oyun i\xE7i ilerlemenizin yede\u011Fini alman\u0131za
+      olanak tan\u0131r. Bir cihaz\u0131n kaybolmas\u0131 veya yeni bir cihaz olmas\u0131
+      durumunda ilerlemenizi koruyabileceksiniz.\r\n\r\nVerilerinizi kopyalamak:\r\n1)
+      Telefonunuzun dosya gezginini kullanarak AstroRun'un veri kaydetme dosyas\u0131na
+      gidin. AstroRun, verilerini a\u015Fa\u011F\u0131daki dosyaya kaydeder:\r\n\r\n<u>Dahili
+      depolama > Android > Data > </u>\r\n<u>com.jam54. AstroRun > dosyalar > AstroRun.
+      json </u>\r\n\r\n2) \u201CAstroRun.json\u201D adl\u0131 dosyan\u0131n bir kopyas\u0131n\u0131
+      al\u0131n ve bir yere kaydedin. Bu kopya daha sonra AstroRun'daki ilerlemenizi
+      geri y\xFCklemek i\xE7in kullan\u0131labilir.\r\n\r\n\r\nVerilerinizi geri
+      y\xFCklemek:\r\n1) Telefonunuzun dosya gezginini kullanarak a\u015Fa\u011F\u0131daki
+      dosyaya gidiniz:\r\n\r\n<u>Dahili depolama > Android > Data > </u>\r\n<u>com.jam54.
+      AstroRun > dosyalar </u>\r\n\r\n2) Daha \xF6nce yedekledi\u011Finiz dosyay\u0131
+      bu dosyaya Kopyalay\u0131n. Dosya zaten mevcutsa, \xFCzerine yazma se\xE7ene\u011Fini
+      se\xE7in."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "Deniz G\xFCnd\xFCz Callens, Maaren Maes ve Gilles De Baets'in oyunu.\r\n\r\nAstroRun'u
+      oynad\u0131\u011F\u0131n\u0131z i\xE7in \xE7ok te\u015Fekk\xFCrler!\r\n\r\nAstroRun,
+      k\xFC\xE7\xFCk bir arkada\u015F grubu taraf\u0131ndan yap\u0131ld\u0131. Herkesin
+      en iyi oldu\u011Fu \u015Feye katk\u0131da bulundu\u011Fu. Maaren'in seviye
+      tasar\u0131m\u0131, baz\u0131 s\xFCper e\u011Flenceli ve bazen sinir bozucu
+      seviyeler i\xE7in yap\u0131lm\u0131\u015F, bu da oyunu zaman zaman daha da
+      \xF6d\xFCllendirilebilir ve daha iyi hissettirmi\u015Ftir. Gilles bir ses tasar\u0131mc\u0131s\u0131
+      olarak rol\xFCn\xFC yerine getirdi ve baz\u0131 inan\u0131lmaz film m\xFCzikleri
+      yapt\u0131 ve oyuna \xE7arp\u0131c\u0131 ses efektleriyle biraz ekstra kazand\u0131rd\u0131.
+      Deniz b\xFCt\xFCn bunlar\u0131 Unity'de bir araya getirdi. Ve baz\u0131 kodlamalar\u0131n
+      yard\u0131m\u0131yla bu harika oyunu yaratt\u0131.\r\n\r\nElbette t\xFCm bunlar,
+      baz\u0131 harika test uzmanlar\u0131n\u0131n yard\u0131m\u0131 olmadan m\xFCmk\xFCn
+      olmazd\u0131. Bu, AstroRun'u daha da iyi bir oyuna d\xF6n\xFC\u015Ft\xFCrmek
+      i\xE7in yap\u0131c\u0131 geri bildirimler ve baz\u0131 yararl\u0131 fikirler
+      verdi.\r\n\r\nB\xFCy\xFCk bir te\u015Fekk\xFCr:\r\nSeviye tasar\u0131m\u0131
+      ve oyun fikirleri: Maaren Maes\r\nM\xFCzik ve SFX bestecisi: Gilles De Baets\r\nDi\u011Fer
+      her \u015Fey: Deniz G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: "A\u015Fa\u011F\u0131daki ki\u015Filere \xF6zellikle te\u015Fekk\xFCr
+      ederiz:\nAnynomouse\nBob\nBrum\nDreis\nFaxa\nIpoker\nJfrost\nLarvia\nLightning\nLionmilk\nLizewieze\nMilanZezer\nNovitiate\nPinQuin420\nPonPonPanPan\nRyza\nThoomsen12\nWhaylin\nXaaf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: Lisans
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: Kapat
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Localization.Tables;
+using UnityEngine.Localization.Settings;
 
 public class OpenLevelSelection : MonoBehaviour
 {
@@ -14,13 +16,13 @@ public class OpenLevelSelection : MonoBehaviour
     {
         for (int i = 0; i < Level_Buttons.Length; i++)
         {
-            Level_Buttons[i].transform.Find("Text_Play").GetComponent<TextMeshProUGUI>().text = LevelsInfo[i].displayName;
+            Level_Buttons[i].transform.Find("Text_Play").GetComponent<TextMeshProUGUI>().text = LocalizeString("Level") + " " + LevelsInfo[i].levelIndex;
 
             Level_Buttons[i].transform.Find("Coins").transform.Find("Text_Coins").GetComponent<TextMeshProUGUI>().text = LoadText(LevelsInfo[i].coinsKeyName, "/100");
 
             Level_Buttons[i].transform.Find("Time").transform.Find("Text_Time").GetComponent<TextMeshProUGUI>().text = LoadText(LevelsInfo[i].timeKeyName, "");
         
-            if(LevelsInfo[i].sceneIndex <= SaveLoadManager.slm.astroRunData.highestUnlockedLevel )
+            if(LevelsInfo[i].levelIndex <= SaveLoadManager.slm.astroRunData.highestUnlockedLevel )
             {//Only display the thumbnail of this level, if the user has unlocked it. Other wise it will display the default lock icon
                 Level_Buttons[i].transform.Find("Background_Image").GetComponent<Image>().sprite = LevelsInfo[i].ImageUnlocked;
                 Level_Buttons[i].GetComponent<Button>().interactable = true;
@@ -36,10 +38,20 @@ public class OpenLevelSelection : MonoBehaviour
     {
         if ("" + typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData) == "99:99:99")
         {
-            return "No Time";
+            return LocalizeString("No Time");
         }
 
         return typeof(AstroRunData).GetField(keyName).GetValue(SaveLoadManager.slm.astroRunData) + additionalText;
+    }
+
+    private string LocalizeString(string key)
+    {//https://forum.unity.com/threads/localizating-strings-on-script.847000/
+        var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI Text", key);
+        if (op.IsDone)
+            return op.Result;
+        else
+            op.Completed += (op) => Debug.LogWarning(op.Result);
+            return "Couldn't get translation for key: " + key;
     }
 
     private void SubmitTimes()

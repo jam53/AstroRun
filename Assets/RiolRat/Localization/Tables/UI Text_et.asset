@@ -50,6 +50,176 @@ MonoBehaviour:
     m_Localized: AstroRuni kohta
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: Maailma valik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: Maailm 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: Maailm 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: Maailm 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: Maailm 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: Maailm 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: Maailm 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: Maailm 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: Maailm 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: Maailm 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: Taseme valik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: Tasand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: Ei ole aega
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: Esemed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: Varustus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: TASUTA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: "500 m\xFCnti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: "Vaata reklaami, et saada tasuta s\xFCda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: "Maksa m\xF5ne m\xFCndiga, et oma s\xFCdamed uuesti t\xE4ita"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "Maksa 0,99 eurot, et saada piiramatu arv s\xFCdameid"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: "Ava j\xE4rgmine tase"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: VIDEO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: KVALITEET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: AUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: MUSIKA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: HELIEFEKTID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: KEELED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: MUUD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: "Konto \xDClekandmine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: KERIDA ROHKEM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: Madal Kvaliteet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: "K\xF5rge Kvaliteet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "AstroRun v\xF5imaldab teil teha varukoopia oma m\xE4ngu edenemisest.
+      Kaotuse v\xF5i uue seadme korral saate s\xE4ilitada oma progressiooni. \r\n\r\nAndmete
+      varundamine:\r\n1) Navigeerige AstroRuni salvestusfaili juurde, kasutades oma
+      telefoni failiotsingufaili. AstroRun salvestab oma andmed j\xE4rgmises kohas:\r\n\r\n<u>Sisene
+      m\xE4lu > Android > Data > </u>.\r\n<u>com. jam54. AstroRun > files > AstroRun.
+      json </u>\r\n\r\n2) Tehke failist \"AstroRun.json\" koopia ja salvestage see
+      kuhugi. Seda koopiat saab hiljem kasutada AstroRunis oma progressiooni taastamiseks.\r\n\r\n\r\nAndmete
+      taastamine:\r\n1) Navigeerige telefoni failiotsingu abil j\xE4rgmisesse kataloogi:\r\n\r\n<u>Sisene
+      salvestusruum > Android > Data > </u>.\r\n<u>com. jam54. AstroRun > files </u>\r\n\r\n2)
+      Sisestage eelnevalt varundatud fail sellesse kausta. Kui fail on juba olemas,
+      valige selle \xFClekirjutamise v\xF5imalus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "Deniz G\xFCnd\xFCz Callens, Maaren Maes ja Gilles De Baets m\xE4ng.\r\n\r\nSuur
+      t\xE4nu AstroRun'i m\xE4ngimise eest!\r\n\r\nAstroRun on tehtud v\xE4ikese
+      s\xF5pruskonna poolt. Kus iga\xFCks aitas kaasa selles, milles ta k\xF5ige
+      paremini silma paistab. Maaren Maareni tasemedisain tegi m\xF5ned super l\xF5busad
+      ja m\xF5nikord t\xFC\xFCtud tasemed, mis muutsid m\xE4ngu kohati veelgi tasuvamaks
+      ja paremaks. Gilles t\xE4itis oma rolli audiodisainerina ja tegi m\xF5ned uskumatud
+      heliribad ning andis m\xE4ngule selle v\xE4ikese lisa oma uimastavate heliefektidega.
+      Deniz t\xF5i selle k\xF5ik kokku Unity's. Ja m\xF5ningase kodeerimise abil
+      l\xF5i ta selle fantastilise m\xE4ngu .\r\n\r\nLoomulikult poleks see k\xF5ik
+      olnud v\xF5imalik ilma m\xF5ne suurep\xE4rase testija abita. Kes andsid konstruktiivset
+      tagasisidet ja m\xF5ned kasulikud ideed, et AstroRunist saaks veelgi parem
+      m\xE4ng.\r\n\r\nSuur t\xE4nu:\r\nTasemedisain ja m\xE4nguideed: Maaren Maes\r\nMuusika
+      ja SFX helilooja: Gilles De Baets\r\nK\xF5ik muu: Deniz G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: "Eriline t\xE4nu:\nAnynomouse\nBob\nBrum\nDreis\nFaxa\nIpoker\nJfrost\nLarvia\nLightning\nLionmilk\nLizewieze\nMilanZezer\nNovitiate\nPinQuin420\nPonPonPanPan\nRyza\nThoomsen12\nWhaylin\nXaaf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: Litsents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: Sulge
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

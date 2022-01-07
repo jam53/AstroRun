@@ -50,6 +50,215 @@ MonoBehaviour:
     m_Localized: About AstroRun
     m_Metadata:
       m_Items: []
+  - m_Id: 613710515195904
+    m_Localized: World Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614612961644544
+    m_Localized: World 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614640111374336
+    m_Localized: World 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614651100450816
+    m_Localized: World 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614708772130816
+    m_Localized: World 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614714501550080
+    m_Localized: World 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614721581535232
+    m_Localized: World 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614856101253120
+    m_Localized: World 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614829547114496
+    m_Localized: World 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614788778479616
+    m_Localized: World 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638143829168128
+    m_Localized: Level Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 638994807312384
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641710149390336
+    m_Localized: No Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645197063049216
+    m_Localized: Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648250709299200
+    m_Localized: Outfit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692132545351680
+    m_Localized: FREE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692159711858688
+    m_Localized: 500 coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692244898172928
+    m_Localized: Watch an ad to receive a free heart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692256726110208
+    m_Localized: Pay with some coins to refill your hearts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692259343355904
+    m_Localized: "Pay \u20AC0.99 to receive an unlimited number of hearts"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 692260618424320
+    m_Localized: Unlock the next level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721646516228096
+    m_Localized: VIDEO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729026896662528
+    m_Localized: QUALITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729516946558976
+    m_Localized: AUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729563813711872
+    m_Localized: MUSIC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729585154330624
+    m_Localized: SOUND EFFECTS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729636953985024
+    m_Localized: LANGUAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729690389417984
+    m_Localized: Transfer Account Progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729784023060480
+    m_Localized: SCROLL FOR MORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729676107812864
+    m_Localized: OTHER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750199399321600
+    m_Localized: Low Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750326084079616
+    m_Localized: High Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765835953377280
+    m_Localized: "AstroRun allows you to take a backup of your in game progression.
+      In case of a loss or a new device, you will be able to preserve your progression.
+      \r\n\r\nBacking up your data:\r\n1) Navigate to AstroRun\u2019s save file using
+      your phone\u2019s file explorer. AstroRun saves its data under the following
+      location:\r\n\r\n<u>Internal storage > Android > Data > </u>\r\n<u>com. jam54.
+      AstroRun > files > AstroRun. json </u>\r\n\r\n2) Make a copy of the file called
+      \u201CAstroRun.json\u201D and save it somewhre. This copy can later be used
+      to restore your progression in AstroRun.\r\n\r\n\r\nRestoring your data:\r\n1)
+      Navigate to the following directory using your phone\u2019s file explorer:\r\n\r\n<u>Internal
+      storage > Android > Data > </u>\r\n<u>com. jam54. AstroRun > files </u>\r\n\r\n2)
+      Paste the file you backed up previously, in this folder. If the file already
+      exists, choose for the option to overwrite it."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788482695172096
+    m_Localized: "A game by Deniz G\xFCnd\xFCz Callens, Maaren Maes and Gilles De
+      Baets.\n\nThanks so much for playing AstroRun!\n\nAstroRun was made by a small
+      group of friends. In which everyone contributed at what they excel the most.
+      Maaren's level design made for some super fun and sometimes annoying levels,
+      which made the game feel even more rewardable and better at times. Gilles fulfilled
+      his role as an audio designer and made some incredible soundtracks and gave
+      the game that little extra with his stunning sound effects. Deniz brought all
+      of this together in Unity. And with the help of some coding, he created this
+      fantastic game .\n\nOf course all of this wouldn't have been possible without
+      the help of some awesome testers. Which gave constructive feedback and some
+      helpful ideas to make AstroRun into an even better game.\n\nA big thanks to:\nLevel
+      design and game ideas: Maaren Maes\nMusic and SFX composer: Gilles De Baets\nEverything
+      else: Deniz G\xFCnd\xFCz Callens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788526273990656
+    m_Localized: 'Special thanks to:
+
+      Anynomouse
+
+      Bob
+
+      Brum
+
+      Dreis
+
+      Faxa
+
+      Ipoker
+
+      Jfrost
+
+      Larvia
+
+      Lightning
+
+      Lionmilk
+
+      Lizewieze
+
+      MilanZezer
+
+      Novitiate
+
+      PinQuin420
+
+      PonPonPanPan
+
+      Ryza
+
+      Thoomsen12
+
+      Whaylin
+
+      Xaaf'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791586249445376
+    m_Localized: License
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791606113669120
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

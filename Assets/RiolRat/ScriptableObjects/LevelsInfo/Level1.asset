@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Level 1
   nameSceneToLoad: Level1
-  sceneIndex: 1
+  levelIndex: 1
   coinsKeyName: coinsLevel1_1
   timeKeyName: bestTimeLevel1_1
   ImageUnlocked: {fileID: 21300000, guid: 1da79ef61b949ca4bae8f6a577e443ed, type: 3}
