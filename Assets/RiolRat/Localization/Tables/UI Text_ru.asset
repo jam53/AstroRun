@@ -395,6 +395,25 @@ MonoBehaviour:
       \u0443\u0440\u043E\u0432\u043D\u0435\u0439"
     m_Metadata:
       m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C AstroRun?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: "\u0414\u043E\u0441\u0442\u0443\u043F\u043D\u0430 \u043D\u043E\u0432\u0430\u044F
+      \u0432\u0435\u0440\u0441\u0438\u044F. AstroRun \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u0442
+      \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C \u0435\u0435 \u0434\u043E
+      \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439 \u0432\u0435\u0440\u0441\u0438\u0438."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: "\u041D\u0435\u0442"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

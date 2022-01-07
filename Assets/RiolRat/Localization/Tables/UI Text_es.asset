@@ -269,8 +269,8 @@ MonoBehaviour:
   - m_Id: 795261088894976
     m_Localized: 'Cada nivel de AstroRun tiene 100 monedas.
 
-      Sin embargo,
-      una vez que has recogido una moneda, no puedes volver a recoger esa misma moneda.'
+      Sin embargo, una
+      vez que has recogido una moneda, no puedes volver a recoger esa misma moneda.'
     m_Metadata:
       m_Items: []
   - m_Id: 795301610065920
@@ -333,6 +333,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 805831158599680
     m_Localized: Compra de nuevos niveles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "\xBFActualizar AstroRun?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: "Hay una nueva versi\xF3n disponible. AstroRun recomienda que se
+      actualice a la \xFAltima versi\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: "Actualizaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: No
     m_Metadata:
       m_Items: []
   references:

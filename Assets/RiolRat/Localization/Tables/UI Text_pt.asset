@@ -332,6 +332,23 @@ MonoBehaviour:
     m_Localized: "Compra de novos n\xEDveis"
     m_Metadata:
       m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "Actualiza\xE7\xE3o AstroRun?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: "H\xE1 uma nova vers\xE3o dispon\xEDvel. A AstroRun recomenda que
+      se actualize para a vers\xE3o mais recente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: "Actualiza\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: "N\xE3o"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

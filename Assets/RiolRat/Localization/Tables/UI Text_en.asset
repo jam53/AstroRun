@@ -331,6 +331,23 @@ MonoBehaviour:
     m_Localized: Buying New Levels
     m_Metadata:
       m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: Update AstroRun?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: There is a new version available. AstroRun recommends that you update
+      to the latest version.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: Update
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

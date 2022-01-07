@@ -268,8 +268,8 @@ MonoBehaviour:
   - m_Id: 795261088894976
     m_Localized: 'Elk level in AstroRun heeft 100 munten.
 
-      Echter, als je
-      eenmaal een munt hebt verzameld, kun je diezelfde munt niet nog een keer verzamelen.'
+      Echter, als je eenmaal
+      een munt hebt verzameld, kun je diezelfde munt niet nog een keer verzamelen.'
     m_Metadata:
       m_Items: []
   - m_Id: 795301610065920
@@ -330,6 +330,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 805831158599680
     m_Localized: Nieuwe niveaus kopen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "AstroRun updaten?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: Er is een nieuwe versie beschikbaar. AstroRun raadt u aan om te
+      updaten naar de nieuwste versie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: Update
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: Nee
     m_Metadata:
       m_Items: []
   references:

@@ -334,6 +334,23 @@ MonoBehaviour:
     m_Localized: Neue Levels kaufen
     m_Metadata:
       m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "AstroRun aktualisieren?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: "Es ist eine neue Version verf\xFCgbar. AstroRun empfiehlt, dass
+      Sie auf die neueste Version aktualisieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: Update
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: Nein
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

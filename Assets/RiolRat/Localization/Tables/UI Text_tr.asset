@@ -303,6 +303,23 @@ MonoBehaviour:
     m_Localized: "Yeni Seviyeler Sat\u0131n Alma"
     m_Metadata:
       m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "AstroRun'u g\xFCncelle?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: "Yeni bir g\xFCncelleme mevcut. AstroRun, en son s\xFCr\xFCme g\xFCncellemenizi
+      \xF6nerir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: "G\xFCncelleme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: "Hay\u0131r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

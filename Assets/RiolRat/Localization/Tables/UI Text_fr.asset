@@ -298,6 +298,23 @@ MonoBehaviour:
     m_Localized: Acheter de nouveaux niveaux
     m_Metadata:
       m_Items: []
+  - m_Id: 810169898422272
+    m_Localized: "Mise \xE0 jour d'AstroRun ?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810287284408320
+    m_Localized: "Une nouvelle version est disponible. AstroRun vous recommande d'effectuer
+      la mise \xE0 jour vers la derni\xE8re version."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810364195360768
+    m_Localized: "Mise \xE0 jour"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810383224918016
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
