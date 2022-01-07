@@ -13434,17 +13434,11 @@ MonoBehaviour:
   RunWhenActivedInHierachy: 1
   keyName: dialogueBoxCoinsResetTimer
   dialogue:
-    title: Coin's reset timer
+    title: '#Coins reset timer'
     sentences:
-    - 'Every level in AstroRun has 100 coins.
-
-      However, once you collected
-      a coin, you can''t collect that same coin again.'
-    - "This is where the coin's reset timer comes into play. \nEvery 24 hours, the
-      previously collected coins will be reset. Which allows them to be collected
-      again."
-    - The timer at the right upper corner of your screen shows how much time is left
-      until the next reset.
+    - '#DialogueCoinsResetTimer1'
+    - '#DialogueCoinsResetTimer2'
+    - '#DialogueCoinsResetTimer3'
 --- !u!114 &611997435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13652,7 +13646,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 61.1, y: -63.8}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 410, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &622792788
 MonoBehaviour:
@@ -13714,7 +13708,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -73.3
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -18851,15 +18845,11 @@ MonoBehaviour:
   RunWhenActivedInHierachy: 1
   keyName: dialogueBuyingNewLevels
   dialogue:
-    title: Buying New Levels
+    title: '#Buying New Levels'
     sentences:
-    - If you collect enough coins, you can buy new levels.
-    - "New levels can be bought when you are stuck on a particulair level. \nThis
-      way you will still be able to progress in the game, without actually needing
-      to complete every single level."
-    - "Buying a new level, unlocks the next available level. So if you had unlocked
-      Level 3 in World 1 (Level 1-3). \nBuying a new level would unlock Level 4 in
-      World 1 (Level 1-4)."
+    - '#DialogueBuyingNewLevels1'
+    - '#DialogueBuyingNewLevels2'
+    - '#DialogueBuyingNewLevels3'
 --- !u!1 &846929867
 GameObject:
   m_ObjectHideFlags: 0
@@ -37967,17 +37957,11 @@ MonoBehaviour:
   RunWhenActivedInHierachy: 1
   keyName: dialogueBoxCoinsResetTimer
   dialogue:
-    title: Coin's reset timer
+    title: '#Coins reset timer'
     sentences:
-    - 'Every level in AstroRun has 100 coins.
-
-      However, once you collected
-      a coin, you can''t collect that same coin again.'
-    - "This is where the coin's reset timer comes into play. \nEvery 24 hours, the
-      previously collected coins will be reset. Which allows them to be collected
-      again."
-    - The timer at the right upper corner of your screen shows how much time is left
-      until the next reset.
+    - '#DialogueCoinsResetTimer1'
+    - '#DialogueCoinsResetTimer2'
+    - '#DialogueCoinsResetTimer3'
 --- !u!114 &1809013142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39023,8 +39007,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05, y: 0}
   m_AnchorMax: {x: 0.95, y: 0.775}
-  m_AnchoredPosition: {x: 1.0999146, y: 70.25}
-  m_SizeDelta: {x: 123.79988, y: 140.5}
+  m_AnchoredPosition: {x: 1.0999146, y: 58.35}
+  m_SizeDelta: {x: 123.79988, y: 116.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851409960
 MonoBehaviour:

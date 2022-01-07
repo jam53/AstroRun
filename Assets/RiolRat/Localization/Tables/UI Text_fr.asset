@@ -225,6 +225,79 @@ MonoBehaviour:
     m_Localized: Fermer
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: "pi\xE8ces"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: "Chaque niveau d'AstroRun comporte 100 pi\xE8ces.\r\nCependant,
+      une fois que vous avez collect\xE9 une pi\xE8ce, vous ne pouvez plus collecter
+      cette m\xEAme pi\xE8ce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "C'est l\xE0 que le minuteur de remise \xE0 z\xE9ro des pi\xE8ces
+      entre en jeu. \r\nToutes les 24 heures, les pi\xE8ces pr\xE9c\xE9demment collect\xE9es
+      sont remises \xE0 z\xE9ro. Ce qui permet de les collecter \xE0 nouveau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: "Le minuteur situ\xE9 dans le coin sup\xE9rieur droit de votre \xE9cran
+      indique le temps restant jusqu'\xE0 la prochaine r\xE9initialisation."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: "Si vous collectez suffisamment de pi\xE8ces, vous pouvez acheter
+      de nouveaux niveaux."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "De nouveaux niveaux peuvent \xEAtre achet\xE9s lorsque vous \xEAtes
+      bloqu\xE9 sur un niveau particulier. \r\nAinsi, vous pourrez continuer \xE0
+      progresser dans le jeu, sans avoir besoin de terminer tous les niveaux."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "L'achat d'un nouveau niveau d\xE9bloque le niveau suivant disponible.
+      Ainsi, si vous aviez d\xE9bloqu\xE9 le niveau 3 dans le Monde 1 (niveau 1-3).
+      \r\nL'achat d'un nouveau niveau d\xE9bloquerait le niveau 4 du Monde 1 (niveau
+      1-4)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: "Niveau d\xE9bloqu\xE9 : "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: "Vous avez maintenant d\xE9bloqu\xE9 le niveau : "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: "Tous les niveaux d\xE9bloqu\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: "Vous avez d\xE9j\xE0 d\xE9bloqu\xE9 tous les niveaux, d'autres
+      seront bient\xF4t disponibles !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: Solde trop faible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: "Vous n'avez pas assez de pi\xE8ces, revenez plus tard quand vous
+      en aurez au moins : "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: "Minuterie de remise \xE0 z\xE9ro de la pi\xE8ce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: Acheter de nouveaux niveaux
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

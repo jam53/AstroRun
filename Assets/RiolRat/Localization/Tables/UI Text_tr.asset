@@ -229,6 +229,80 @@ MonoBehaviour:
     m_Localized: Kapat
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: "alt\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: "Her seviyede 100 jeton vard\u0131r.\r\nAncak, bir kez bir jeton
+      toplad\u0131\u011F\u0131n\u0131zda, ayn\u0131 jetonu bir daha toplayamazs\u0131n\u0131z."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "Paran\u0131n s\u0131f\u0131rlama zamanlay\u0131c\u0131s\u0131n\u0131n
+      devreye girdi\u011Fi yer buras\u0131d\u0131r.\r\nHer 24 saatte bir, daha \xF6nce
+      toplanan paralar s\u0131f\u0131rlanacak. Bu da onlar\u0131n tekrar toplanmas\u0131n\u0131
+      sa\u011Flar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: "Ekran\u0131n\u0131z\u0131n sa\u011F \xFCst k\xF6\u015Fesindeki
+      zamanlay\u0131c\u0131, bir sonraki s\u0131f\u0131rlamaya ne kadar zaman kald\u0131\u011F\u0131n\u0131
+      g\xF6sterir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: "Yeterince jeton toplarsan\u0131z, yeni seviyeler sat\u0131n alabilirsiniz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "Belirli bir seviyede tak\u0131l\u0131p kald\u0131\u011F\u0131n\u0131zda
+      yeni seviyeler sat\u0131n al\u0131nabilir.\r\nBu \u015Fekilde, asl\u0131nda
+      her bir seviyeyi tamamlaman\u0131za gerek kalmadan oyunda ilerlemeye devam
+      edebileceksiniz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Yeni bir seviye sat\u0131n almak, bir sonraki mevcut seviyenin
+      kilidini a\xE7ar. Yani 1. D\xFCnya'da (Seviye 1-3) Seviye 3'\xFCn kilidini
+      a\xE7m\u0131\u015F olsayd\u0131n\u0131z.\r\nYeni bir seviye sat\u0131n almak,
+      1. D\xFCnya'da (Seviye 1-4) Seviye 4'\xFCn kilidini a\xE7ar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: "Seviye a\xE7\u0131ld\u0131: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: "\u015Eimdi bu seviyenin kilidini a\xE7t\u0131n\u0131z: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: "T\xFCm seviyelerin kilidi a\xE7\u0131ld\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: "Her bir seviyenin kilidini zaten a\xE7t\u0131n\u0131z, yak\u0131nda
+      daha fazla seviye gelecek!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: "Bakiye \xE7ok d\xFC\u015F\xFCk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: "Yeterli jetonunuz yok, en az\u0131ndan a\u015Fa\u011F\u0131dakilere
+      sahip oldu\u011Funuzda tekrar gelin: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: "Alt\u0131n'in s\u0131f\u0131rlama zamanlay\u0131c\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: "Yeni Seviyeler Sat\u0131n Alma"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -262,6 +262,79 @@ MonoBehaviour:
     m_Localized: Cerrar
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: monedas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: 'Cada nivel de AstroRun tiene 100 monedas.
+
+      Sin embargo,
+      una vez que has recogido una moneda, no puedes volver a recoger esa misma moneda.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "Aqu\xED es donde entra en juego el temporizador de restablecimiento
+      de monedas. \r\nCada 24 horas, las monedas recogidas anteriormente se restablecen.
+      Permitiendo que sean recogidas de nuevo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: "El temporizador situado en la esquina superior derecha de la pantalla
+      muestra el tiempo que queda hasta el pr\xF3ximo reinicio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: Si recoges suficientes monedas, puedes comprar nuevos niveles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "Se pueden comprar nuevos niveles cuando est\xE9s atascado en un
+      nivel concreto. \r\nDe este modo, podr\xE1s seguir avanzando en el juego, sin
+      necesidad de completar todos los niveles."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Al comprar un nuevo nivel, se desbloquea el siguiente nivel disponible.
+      As\xED que si has desbloqueado el nivel 3 en el mundo 1 (nivel 1-3). \r\nAl
+      comprar un nuevo nivel se desbloquear\xEDa el nivel 4 en el Mundo 1 (Nivel
+      1-4)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: 'Nivel desbloqueado: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: 'Ya has desbloqueado el nivel: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: Todos los niveles desbloqueados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: "Ya has desbloqueado todos los niveles, \xA1pronto habr\xE1 m\xE1s
+      niveles!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: Saldo demasiado bajo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: "No tienes suficientes monedas, vuelve m\xE1s tarde cuando tengas
+      al menos: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: El temporizador de reinicio de la moneda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: Compra de nuevos niveles
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

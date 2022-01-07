@@ -195,6 +195,66 @@ MonoBehaviour:
     m_Key: Close
     m_Metadata:
       m_Items: []
+  - m_Id: 795261088894976
+    m_Key: '#DialogueCoinsResetTimer1'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Key: '#DialogueCoinsResetTimer2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Key: '#DialogueCoinsResetTimer3'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Key: '#DialogueBuyingNewLevels1'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Key: '#DialogueBuyingNewLevels2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Key: '#DialogueBuyingNewLevels3'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Key: DialogueUnlockedLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Key: DialogueYouHaveNowUnlockedLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Key: All levels unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Key: All Levels Already Unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Key: Balance too low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Key: Not Enough Coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798448369864704
+    m_Key: coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Key: '#Coins reset timer'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Key: '#Buying New Levels'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

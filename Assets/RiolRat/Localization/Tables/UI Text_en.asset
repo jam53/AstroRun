@@ -259,6 +259,78 @@ MonoBehaviour:
     m_Localized: Close
     m_Metadata:
       m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: 'Every level in AstroRun has 100 coins.
+
+      However, once you
+      collected a coin, you can''t collect that same coin again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "This is where the coin's reset timer comes into play. \nEvery 24
+      hours, the previously collected coins will be reset. Which allows them to be
+      collected again."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: The timer at the right upper corner of your screen shows how much
+      time is left until the next reset.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: If you collect enough coins, you can buy new levels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "New levels can be bought when you are stuck on a particular level.
+      \nThis way you will still be able to progress in the game, without actually
+      needing to complete every single level."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Buying a new level, unlocks the next available level. So if you
+      had unlocked Level 3 in World 1 (Level 1-3). \nBuying a new level would unlock
+      Level 4 in World 1 (Level 1-4)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: 'Unlocked level: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: 'You have now unlocked level: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: All levels unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: You have already unlocked every single level, more levels are coming
+      soon!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: Balance too low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: 'You don''t have enough coins, come back later when you have at
+      least: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: Coin's reset timer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: Buying New Levels
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

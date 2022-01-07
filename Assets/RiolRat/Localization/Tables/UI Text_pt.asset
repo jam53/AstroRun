@@ -261,6 +261,77 @@ MonoBehaviour:
     m_Localized: Fechar
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: moedas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: "Cada n\xEDvel na AstroRun tem 100 moedas.\r\nNo entanto, uma vez
+      recolhida uma moeda, n\xE3o se pode voltar a recolher essa mesma moeda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "\xC9 aqui que o temporizador de reinicializa\xE7\xE3o da moeda
+      entra em vigor. \r\nA cada 24 horas, as moedas previamente recolhidas s\xE3o
+      reiniciadas. Permitindo que sejam novamente recolhidas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: "O temporizador no canto superior direito do seu ecr\xE3 mostra
+      quanto tempo falta at\xE9 ao pr\xF3ximo reset."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: "Se recolherem moedas suficientes, podem comprar novos n\xEDveis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "Novos n\xEDveis podem ser comprados quando se est\xE1 preso a um
+      n\xEDvel de particulair. \r\nDesta forma, ainda ser\xE1 capaz de progredir
+      no jogo, sem precisar realmente de completar cada um dos n\xEDveis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Ao comprar um novo n\xEDvel, desbloqueia o pr\xF3ximo n\xEDvel
+      dispon\xEDvel. Assim, se tivesse desbloqueado o n\xEDvel 3 no Mundo 1 (N\xEDvel
+      1-3). \r\nComprar um novo n\xEDvel desbloqueia o n\xEDvel 4 no Mundo 1 (N\xEDvel
+      1-4)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: "N\xEDvel desbloqueado: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: "Agora desbloqueou o n\xEDvel: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: "Todos os n\xEDveis desbloqueados"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: "J\xE1 desbloqueou todos os n\xEDveis, mais n\xEDveis est\xE3o a
+      chegar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: "Equil\xEDbrio demasiado baixo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: "N\xE3o tem moedas suficientes, volte mais tarde quando tiver, pelo
+      menos: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: "Temporizador de reinicializa\xE7\xE3o de moedas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: "Compra de novos n\xEDveis"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

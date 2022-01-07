@@ -262,6 +262,78 @@ MonoBehaviour:
     m_Localized: "Schlie\xDFen"
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: "M\xFCnzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: "In jedem Level von AstroRun gibt es 100 M\xFCnzen.\r\nSobald du
+      eine M\xFCnze eingesammelt hast, kannst du diese M\xFCnze jedoch nicht noch
+      einmal einsammeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "Hier kommt der M\xFCnzr\xFCcksetzungs-Timer zum Tragen. \r\nAlle
+      24 Stunden werden die zuvor gesammelten M\xFCnzen zur\xFCckgesetzt. So k\xF6nnen
+      sie wieder eingesammelt werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: "Der Timer in der rechten oberen Ecke des Bildschirms zeigt an,
+      wie viel Zeit bis zum n\xE4chsten Zur\xFCcksetzen verbleibt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: "Wenn du genug M\xFCnzen sammelst, kannst du neue Levels kaufen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "Neue Level k\xF6nnen gekauft werden, wenn man in einem bestimmten
+      Level nicht weiterkommt. \r\nAuf diese Weise k\xF6nnen Sie immer noch im Spiel
+      vorankommen, ohne tats\xE4chlich jeden einzelnen Level abschlie\xDFen zu m\xFCssen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Durch den Kauf einer neuen Stufe wird die n\xE4chste verf\xFCgbare
+      Stufe freigeschaltet. Wenn Sie also Stufe 3 in Welt 1 (Stufe 1-3) freigeschaltet
+      haben. \r\nDer Kauf eines neuen Levels w\xFCrde Level 4 in Welt 1 (Level 1-4)
+      freischalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: 'Freigeschaltetes Level: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: 'Sie haben nun die Stufe freigeschaltet: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: Alle Levels freigeschaltet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: Du hast bereits jeden einzelnen Level freigeschaltet, weitere Levels
+      folgen bald!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: Saldo zu niedrig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: "Wenn Sie nicht genug M\xFCnzen haben, kommen Sie sp\xE4ter wieder,
+      wenn Sie mindestens genug haben: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: "M\xFCnzen timer zur\xFCcksetzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: Neue Levels kaufen
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

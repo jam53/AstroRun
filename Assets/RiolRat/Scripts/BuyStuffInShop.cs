@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
 
 public class BuyStuffInShop : MonoBehaviour
 {
@@ -49,8 +50,8 @@ public class BuyStuffInShop : MonoBehaviour
 
         if (HighestUnlockedLevel >= AmountOfLevels)//Check if the user already has unlocked all the levels
         {
-            dialogue.title = "All levels unlocked";
-            sentences[0] = "You have already unlocked every single level, more levels are coming soon!";
+            dialogue.title = LocalizeString("All levels unlocked");
+            sentences[0] = LocalizeString("All Levels Already Unlocked");
             dialogue.sentences = sentences;
 
             DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();//Find the dialogue in the scene
@@ -59,8 +60,8 @@ public class BuyStuffInShop : MonoBehaviour
 
         else if (HighestUnlockedLevel < AmountOfLevels && UserBalance < PricePerLevel)
         {
-            dialogue.title = "Balance too low";
-            sentences[0] = "You don't have enough coins, come back later when you have " + PricePerLevel.ToString() + " coins or more.";
+            dialogue.title = LocalizeString("Balance too low");
+            sentences[0] = LocalizeString("Not Enough Coins") + PricePerLevel.ToString() + " " + LocalizeString("coins");
             dialogue.sentences = sentences;
 
             DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();//Find the dialogue in the scene
@@ -79,13 +80,23 @@ public class BuyStuffInShop : MonoBehaviour
 
             #region Logic to show a dialogue to inform user about the purchase
 
-            dialogue.title = "Unlocked level " + (HighestUnlockedLevel + 1).ToString();
-            sentences[0] = "You have now unlocked level " + (HighestUnlockedLevel + 1).ToString() + " for " + PricePerLevel.ToString() + " coins.";
+            dialogue.title = LocalizeString("DialogueUnlockedLevel") + (HighestUnlockedLevel + 1).ToString();
+            sentences[0] = LocalizeString("DialogueYouHaveNowUnlockedLevel") + (HighestUnlockedLevel + 1).ToString();
             dialogue.sentences = sentences;
 
             DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();//Find the dialogue in the scene
             dialogueManager.StartDialogue(dialogue);//Show the dialogue
             #endregion
         }
+    }
+
+    private string LocalizeString(string key)
+    {//https://forum.unity.com/threads/localizating-strings-on-script.847000/
+        var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI Text", key);
+        if (op.IsDone)
+            return op.Result;
+        else
+            op.Completed += (op) => Debug.LogWarning(op.Result);
+        return "Couldn't get translation for key: " + key;
     }
 }

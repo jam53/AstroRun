@@ -261,6 +261,77 @@ MonoBehaviour:
     m_Localized: Sluiten
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: munten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: 'Elk level in AstroRun heeft 100 munten.
+
+      Echter, als je
+      eenmaal een munt hebt verzameld, kun je diezelfde munt niet nog een keer verzamelen.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "Dit is waar de munt reset timer in werking treedt. \r\nElke 24
+      uur worden eerder verzamelde munten gereset. Waardoor ze opnieuw kunnen worden
+      verzameld."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: De timer in de rechterbovenhoek van uw scherm geeft aan hoeveel
+      tijd er nog rest tot de volgende reset.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: Als je genoeg munten verzamelt, kun je nieuwe levels kopen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "New levels can be bought when you are stuck on a particulair level.
+      \r\nThis way you will still be able to progress in the game, without actually
+      needing to complete every single level."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Als je een nieuw level koopt, ontgrendel je het volgende beschikbare
+      level. Dus als je Level 3 had vrijgespeeld in Wereld 1 (Level 1-3). \r\nAls
+      je een nieuw level koopt, speel je Level 4 vrij in Wereld 1 (Level 1-4)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: 'Ontsloten level: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: 'Je hebt nu level vrijgespeeld: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: Alle levels ontgrendeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: Je hebt al elk level vrijgespeeld, meer levels komen binnenkort!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: Balans te laag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: 'Je hebt niet genoeg munten, kom later maar terug als je ze tenminste
+      hebt: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: Munt reset timer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: Nieuwe niveaus kopen
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

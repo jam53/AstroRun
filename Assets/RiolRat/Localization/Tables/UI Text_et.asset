@@ -220,6 +220,75 @@ MonoBehaviour:
     m_Localized: Sulge
     m_Metadata:
       m_Items: []
+  - m_Id: 798448369864704
+    m_Localized: "m\xFCnti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795261088894976
+    m_Localized: "Igal AstroRun'i tasandil on 100 m\xFCnti.\r\nKuid kui oled korra
+      m\xFCndi kogunud, ei saa sa seda sama m\xFCnti enam uuesti koguda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795301610065920
+    m_Localized: "Siinkohal tuleb m\xE4ngu m\xFCndi l\xE4htestamise taimer. \r\nIga
+      24 tunni j\xE4rel nullib varem kogutud m\xFCndid. See v\xF5imaldab neid uuesti
+      koguda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795314947952640
+    m_Localized: "Ekraani paremas \xFClanurgas olev taimer n\xE4itab, kui palju aega
+      on j\xE4\xE4nud j\xE4rgmise l\xE4htestamiseni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795614333177856
+    m_Localized: "Kui kogud piisavalt m\xFCnte, saad osta uusi tasemeid."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795661976276992
+    m_Localized: "Uusi tasemeid saab osta, kui oled mingisugusel tasemel kinni j\xE4\xE4nud.
+      \r\nNii saad m\xE4ngus edasi liikuda, ilma et peaksid tegelikult iga taset
+      l\xE4bima."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795677897854976
+    m_Localized: "Uue taseme ostmine avab j\xE4rgmise olemasoleva taseme. Seega,
+      kui teil oli maailmas 1 (tase 1-3) avanenud tase 3. \r\nUue taseme ostmine
+      avab maailma 1 taseme 4 (tase 1-4)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796485783719936
+    m_Localized: 'Avatud tase: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796517048061952
+    m_Localized: "Sa oled n\xFC\xFCd avanud taseme: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797806502940672
+    m_Localized: "K\xF5ik tasemed avatud"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797875943837696
+    m_Localized: "Sa oled juba avanud k\xF5ik tasemed, rohkem tasemeid on varsti
+      tulemas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798030461997056
+    m_Localized: Saldo liiga madal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 798211039367168
+    m_Localized: "Sul ei ole piisavalt m\xFCnte, tule hiljem tagasi, kui sul on v\xE4hemalt: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805032760250368
+    m_Localized: "M\xFCndi l\xE4htestamise taimer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805831158599680
+    m_Localized: Uute tasemete ostmine
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
