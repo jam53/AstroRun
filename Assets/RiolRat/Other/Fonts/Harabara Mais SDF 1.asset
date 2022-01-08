@@ -73,7 +73,7 @@ MonoBehaviour:
     m_FamilyName: Harabara Mais
     m_StyleName: Harabara Mais
     m_PointSize: 90
-    m_Scale: 0.8
+    m_Scale: 0.87
     m_LineHeight: 98.26172
     m_AscentLine: 75.9375
     m_CapLine: 62
@@ -312,6 +312,20 @@ MonoBehaviour:
       m_Y: 497
       m_Width: 10
       m_Height: 61
+    m_Scale: 1
+    m_AtlasIndex: 0
+  - m_Index: 128
+    m_Metrics:
+      m_Width: 38.140625
+      m_Height: 62.046875
+      m_HorizontalBearingX: 4.921875
+      m_HorizontalBearingY: 61.171875
+      m_HorizontalAdvance: 48.171875
+    m_GlyphRect:
+      m_X: 674
+      m_Y: 10
+      m_Width: 40
+      m_Height: 63
     m_Scale: 1
     m_AtlasIndex: 0
   - m_Index: 129
@@ -1644,20 +1658,6 @@ MonoBehaviour:
       m_Height: 64
     m_Scale: 1
     m_AtlasIndex: 0
-  - m_Index: 128
-    m_Metrics:
-      m_Width: 38.140625
-      m_Height: 62.046875
-      m_HorizontalBearingX: 4.921875
-      m_HorizontalBearingY: 61.171875
-      m_HorizontalAdvance: 48.171875
-    m_GlyphRect:
-      m_X: 674
-      m_Y: 10
-      m_Width: 40
-      m_Height: 63
-    m_Scale: 1
-    m_AtlasIndex: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
@@ -1722,6 +1722,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 161
     m_GlyphIndex: 98
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 191
+    m_GlyphIndex: 128
     m_Scale: 1
   - m_ElementType: 1
     m_Unicode: 192
@@ -2102,10 +2106,6 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 8364
     m_GlyphIndex: 291
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 191
-    m_GlyphIndex: 128
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: -1917680834073052361}
