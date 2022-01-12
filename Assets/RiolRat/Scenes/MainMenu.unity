@@ -588,16 +588,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Copyright (C) 2020 - 2022 by Deniz G\xFCnd\xFCz Callens - All Rights Reserved\nAstroRun
-    can not be copied and/or distributed without the express permission of Deniz
-    G\xFCnd\xFCz Callens.\nThe name jam54 and/or AstroRun shall not be used without
-    prior written authorization from Deniz G\xFCnd\xFCz Callens.\nThis software is
-    provided without any express or implied warranty. In no event shall Deniz G\xFCnd\xFCz
-    Callens be held liable for any damages arising from the use of this software.\r\nYou
-    must give appropriate credit, provide a link to the license.\nYou may not use
-    AstroRun for commercial purposes.\nIf you remix, transform, or build upon AstroRun,
-    you may not distribute the modified material.\nFor any questions, you can contact
-    me on jam54.help@outlook.com\n"
+  m_text: 'Copyright (C) 2020 - 2022 by Jam54 - All Rights Reserved
+
+    AstroRun
+    can not be copied and/or distributed without the express permission of Jam54.
+
+    The
+    name Jam54 and/or AstroRun shall not be used without prior written authorization
+    from Jam54.
+
+    This software is provided without any express or implied warranty.
+    In no event shall Jam54 be held liable for any damages arising from the use of
+    this software.
+
+    You must give appropriate credit, provide a link to the
+    license.
+
+    You may not use AstroRun for commercial purposes.
+
+    If you remix,
+    transform, or build upon AstroRun, you may not distribute the modified material.
+
+    For
+    any questions, you can contact me on jam54.help@outlook.com
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 318dcbed841a1a04b97331594198d0f2, type: 2}
   m_sharedMaterial: {fileID: -3546942940648577050, guid: 318dcbed841a1a04b97331594198d0f2,

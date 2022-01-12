@@ -195,19 +195,37 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 788482695172096
-    m_Localized: "A game by Deniz G\xFCnd\xFCz Callens, Maaren Maes and Gilles De
-      Baets.\n\nThanks so much for playing AstroRun!\n\nAstroRun was made by a small
-      group of friends. In which everyone contributed at what they excel the most.
-      Maaren's level design made for some super fun and sometimes annoying levels,
-      which made the game feel even more rewardable and better at times. Gilles fulfilled
-      his role as an audio designer and made some incredible soundtracks and gave
-      the game that little extra with his stunning sound effects. Deniz brought all
-      of this together in Unity. And with the help of some coding, he created this
-      fantastic game .\n\nOf course all of this wouldn't have been possible without
-      the help of some awesome testers. Which gave constructive feedback and some
-      helpful ideas to make AstroRun into an even better game.\n\nA big thanks to:\nLevel
-      design and game ideas: Maaren Maes\nMusic and SFX composer: Gilles De Baets\nEverything
-      else: Deniz G\xFCnd\xFCz Callens"
+    m_Localized: 'A game by Novitiate, Ryza and Jam54.
+
+
+      Thanks so much for
+      playing AstroRun!
+
+
+      AstroRun was made by a small group of friends. In
+      which everyone contributed at what they excel the most. Novitiate''s level
+      design made for some super fun and sometimes annoying levels, which made the
+      game feel even more rewardable and better at times. Ryza fulfilled his role
+      as an audio designer and made some incredible soundtracks and gave the game
+      that little extra with his stunning sound effects. Jam54 brought all of this
+      together in Unity. And with the help of some coding, he created this fantastic
+      game.
+
+
+      Of course all of this wouldn''t have been possible without the
+      help of some awesome testers. Which gave constructive feedback and some helpful
+      ideas to make AstroRun into an even better game.
+
+
+      A big thanks to:
+
+      Level
+      design and game ideas: Novitiate
+
+      Music and SFX composer: Ryza
+
+      Everything
+      else: Jam54'
     m_Metadata:
       m_Items: []
   - m_Id: 788526273990656
