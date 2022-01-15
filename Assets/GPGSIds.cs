@@ -24,6 +24,7 @@
 
 public static class GPGSIds
 {
+        public const string leaderboard_level_8 = "CggIjqvd8UMQAhAN"; // <GPGSID>
         public const string leaderboard_level_3 = "CggIjqvd8UMQAhAE"; // <GPGSID>
         public const string leaderboard_level_2 = "CggIjqvd8UMQAhAD"; // <GPGSID>
         public const string leaderboard_level_1 = "CggIjqvd8UMQAhAC"; // <GPGSID>
@@ -31,8 +32,13 @@ public static class GPGSIds
         public const string leaderboard_level_6 = "CggIjqvd8UMQAhAL"; // <GPGSID>
         public const string leaderboard_level_5 = "CggIjqvd8UMQAhAK"; // <GPGSID>
         public const string leaderboard_level_4 = "CggIjqvd8UMQAhAF"; // <GPGSID>
+        public const string achievement_immortal = "CggIjqvd8UMQAhAS"; // <GPGSID>
         public const string leaderboard_level_9 = "CggIjqvd8UMQAhAO"; // <GPGSID>
-        public const string leaderboard_level_8 = "CggIjqvd8UMQAhAN"; // <GPGSID>
+        public const string achievement_never_give_up = "CggIjqvd8UMQAhAQ"; // <GPGSID>
+        public const string achievement_hippity_hop = "CggIjqvd8UMQAhAR"; // <GPGSID>
+        public const string achievement_at_full_speed = "CggIjqvd8UMQAhAP"; // <GPGSID>
+        public const string achievement_fashionista = "CggIjqvd8UMQAhAU"; // <GPGSID>
+        public const string achievement_mr_moneybags = "CggIjqvd8UMQAhAT"; // <GPGSID>
 
 }
 

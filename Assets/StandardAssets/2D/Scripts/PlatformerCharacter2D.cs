@@ -21,6 +21,8 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+        private int timesJumped = 0; //Used for an achievement
+
         private void Awake()
         {
             // Setting up references.
@@ -97,6 +99,7 @@ namespace UnityStandardAssets._2D
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                timesJumped++;
             }
         }
 
@@ -110,6 +113,11 @@ namespace UnityStandardAssets._2D
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
+        }
+
+        public int getTimesJumped()
+        {
+            return timesJumped;
         }
     }
 }

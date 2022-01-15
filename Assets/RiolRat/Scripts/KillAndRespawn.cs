@@ -20,6 +20,8 @@ public class KillAndRespawn : MonoBehaviour
     private Animator PlayerAnimator;
     private Rigidbody2D rigidbodyy;
 
+    private int amountOfDeaths;
+
     public TextMeshProUGUI DeathCounter;
     public GameObject VirtualCamera;
 
@@ -128,7 +130,8 @@ public class KillAndRespawn : MonoBehaviour
             this.transform.position = SpawnPoint.position + new Vector3(0, 1, 0);
             VirtualCamera.gameObject.SetActive(false);
             VirtualCamera.gameObject.SetActive(true);
-            DeathCounter.text = (Convert.ToInt32(DeathCounter.text) + 1).ToString();
+            amountOfDeaths++;
+            DeathCounter.text = "" + amountOfDeaths;
         }
 
         else if (PutPlayerBackToSpawnPoint == true && ReachedCheckpoint)
@@ -136,7 +139,8 @@ public class KillAndRespawn : MonoBehaviour
             this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
             VirtualCamera.gameObject.SetActive(false);
             VirtualCamera.gameObject.SetActive(true);
-            DeathCounter.text = (Convert.ToInt32(DeathCounter.text) + 1).ToString();
+            amountOfDeaths++;
+            DeathCounter.text = "" + amountOfDeaths;
         }
 
         UnFreezePlayer();
@@ -173,5 +177,10 @@ public class KillAndRespawn : MonoBehaviour
                 ActivationCircleColliders[i].enabled = true;//If the player respawned within the radious of this object
             }
         }
+    }
+
+    public int getAmountOfDeaths()
+    {
+        return amountOfDeaths;
     }
 }

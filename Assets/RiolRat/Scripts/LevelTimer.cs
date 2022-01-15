@@ -10,20 +10,19 @@ public class LevelTimer : MonoBehaviour
 
     private string LevelTime;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float timeCompleted;
 
-    // Update is called once per frame
-    void Update()
+    public float getTimeCompleted()
     {
-
+        return timeCompleted;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        timeCompleted = Time.timeSinceLevelLoad;
+
+
+
         minutes = (int)(Time.timeSinceLevelLoad / 60f) % 60;
         seconds = (int)(Time.timeSinceLevelLoad % 60f);
         milliseconds = (int)(Time.timeSinceLevelLoad * 1000f) % 1000;

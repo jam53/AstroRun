@@ -76,26 +76,26 @@ public class GPGSAutenthicator : MonoBehaviour
         });
     }
 
-        #region SaveToGooglePlay
-        //// Logic to do when the user is logged in
-        //if (Social.localUser.authenticated)
-        //{
-        //    string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
-        //    DataToSaveHolder[KeyIndex] = DataTooSave; //Update whatever data needs to be updated
-        //    PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
-        //    OpenSave(true);//Call the function to upload the data to the cloud.
-        //}
-        //
-        //// Logic to do when the user isnt logged in
-        //else
-        //{
-        //    PlayerPrefs.SetInt("UnUploadedData", 1); //Set this to true, so that we know that we 
-        //    // have to upload some data to the cloud, the very next time we have internet/are loged in
-        //    string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
-        //    DataToSaveHolder[KeyIndex] = DataTooSave;//Update whatever data needs to be updated
-        //    PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
-        //}
-        #endregion
+    #region SaveToGooglePlay
+    //// Logic to do when the user is logged in
+    //if (Social.localUser.authenticated)
+    //{
+    //    string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
+    //    DataToSaveHolder[KeyIndex] = DataTooSave; //Update whatever data needs to be updated
+    //    PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
+    //    OpenSave(true);//Call the function to upload the data to the cloud.
+    //}
+    //
+    //// Logic to do when the user isnt logged in
+    //else
+    //{
+    //    PlayerPrefs.SetInt("UnUploadedData", 1); //Set this to true, so that we know that we 
+    //    // have to upload some data to the cloud, the very next time we have internet/are loged in
+    //    string[] DataToSaveHolder = PlayerPrefsX.GetStringArray("AstroRun"); //Get the savefile and put it in a temporary variable
+    //    DataToSaveHolder[KeyIndex] = DataTooSave;//Update whatever data needs to be updated
+    //    PlayerPrefsX.SetStringArray("AstroRun", DataToSaveHolder);//Save the temp array to the savefile
+    //}
+    #endregion
 
     #region SaveToGooglePlay
     // This should be called when we launch the application, to download any changes from the cloud
@@ -198,6 +198,34 @@ public class GPGSAutenthicator : MonoBehaviour
     //    }
     //}
     #endregion
+
+    //Submit achievement to Google Play
+    public void UnlockAtFullSpeed()
+    {//This unlocks a regular achievement
+        Social.ReportProgress(GPGSIds.achievement_at_full_speed, 100f, null);
+    }
+
+    public void UnlockNeverGiveUp()
+    {
+        Social.ReportProgress(GPGSIds.achievement_never_give_up, 100f, null);
+    }
+
+    public void UnlockHippityHop()
+    {
+        Social.ReportProgress(GPGSIds.achievement_hippity_hop, 100f, null);
+    }
+
+    public void UnlockImmortal()
+    {
+        Social.ReportProgress(GPGSIds.achievement_immortal, 100f, null);
+    }
+
+    public void IncrementMrMoneyBags(int amount)
+    {//This updates an Incremental achievement
+        PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_mr_moneybags, amount, null);
+    }
+
+
 
 
     //Post score to leaderboard

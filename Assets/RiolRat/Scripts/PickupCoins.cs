@@ -114,4 +114,9 @@ public class PickupCoins : MonoBehaviour
         }
         
     }
+
+    public int getAmountOfCoins()
+    {
+        return Coins;
+    }
 }

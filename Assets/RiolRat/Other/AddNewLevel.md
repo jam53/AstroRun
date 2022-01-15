@@ -19,6 +19,8 @@ Please follow the steps stated in this document, in chronological order
 
 ## The scene before the new level
 - Add a 'LevelComplete', and assign everything in it
+- Under the hierarchy, find the `AchievementsHandler` gameobject. Set the `MrMoneyBags` variable to true and assign the `NextLeveLoader4`, `PickupCoins` variables
+
 
 ---
 

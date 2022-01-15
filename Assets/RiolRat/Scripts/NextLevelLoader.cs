@@ -13,16 +13,13 @@ public class NextLevelLoader : MonoBehaviour
     public int LevelToUnlock;
 
     private Collider2D colllider;
+
+    private bool levelCompleted;
+
     // Start is called before the first frame update
     void Start()
     {
         colllider = this.GetComponent<Collider2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void FadeToLevel ()
@@ -44,13 +41,19 @@ public class NextLevelLoader : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            levelCompleted = true;
             if (LevelToUnlock > SaveLoadManager.slm.astroRunData.highestUnlockedLevel)
             {
                 SaveLoadManager.slm.astroRunData.highestUnlockedLevel = LevelToUnlock;
                 SaveLoadManager.slm.SaveJSONToDisk();
             }
-            colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoogs
+            colllider.enabled = false; // anders kan je blijven springen op de collider, en ga je mega hoog
             FadeToLevel();
         }
+    }
+
+    public bool getLevelCompleted()
+    {
+        return levelCompleted;
     }
 }
