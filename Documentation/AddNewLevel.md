@@ -1,5 +1,5 @@
 # Adding a new level
-Please follow the steps stated in this document, in chronological order
+Please follow the steps stated in this document, in chronological order.
 
 ## The new scene itself
 - Add a `LevelTimer` prefab to the new level, and assign everything in it
@@ -18,7 +18,7 @@ Please follow the steps stated in this document, in chronological order
 ---
 
 ## The scene before the new level
-- Add a 'LevelComplete', and assign everything in it
+- Add a 'LevelComplete' prefab, and assign everything in it
 - Under the hierarchy, find the `AchievementsHandler` gameobject. Set the `MrMoneyBags` variable to true and assign the `NextLeveLoader4`, `PickupCoins` variables
 
 
@@ -49,7 +49,7 @@ Please follow the steps stated in this document, in chronological order
 ---
 
 ## Editor
-- Copy the [Google Play Console](https://play.google.com/console/about/) Resources, and import them in Unity
+- Copy the [Google Play Console](https://play.google.com/console/about/) Resources, and import them into Unity
 	1) Open the [Google Play Console](https://play.google.com/console/about/)
 	2) Open AstroRun
 	3) Play-gamesservices
@@ -58,12 +58,9 @@ Please follow the steps stated in this document, in chronological order
 	6) Bronnen ophalen
 	7) Copy the Android (xml) 
 	8) Go back to Unity
-	9) Windows
-	10) Google Play Games
+	9) Window > Google Play Games > Setup > Android Setup
+	10) Paste 
 	11) Setup
-	12) Android Setup
-	13) Paste 
-	14) Setup
 - Add the new scene to the buildsettings (File > Build Settings)
 
 ---

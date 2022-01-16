@@ -1,4 +1,7 @@
-For troubleshooting and debugging, it is often very helpful to capture the device logs. The device logs contain information about the status of a running application on the device and any errors encountered. The IAP Engineering team requires logs for open issues. It is assumed here that you have an Android device configured with Developer options and attached to a PC with a USB cable. These steps show the process on a Windows system and works similarly on a Mac
+# Capturing device logs on android
+
+
+It is assumed here that you have an Android device configured with Developer options and attached to a PC with a USB cable. These steps show the process on a Windows system and works similarly on a Mac.
 
 1. In Unity, find the location of the Android SDK. From the Edit menu, choose Preferences/External Tools
 2. Look for the Android SDK. On my system it was C:\Users\[username]\AppData\Local\Android\sdk
