@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2002147638710703649}
   - component: {fileID: 4189247115068263697}
   m_Layer: 4
-  m_Name: Water2
+  m_Name: WaterReflections
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 100.14, y: -5.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2574699065067561060}
   m_Father: {fileID: 0}
@@ -91,8 +92,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4619520792464445748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0.010000229, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2574699065067561060}
   m_RootOrder: 2
@@ -124,13 +126,13 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.466505
+  orthographic size: 2.5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 39
+    m_Bits: 295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: cbd5545e329244e4789b601227e09a05, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -162,6 +164,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -185,9 +188,9 @@ GameObject:
   - component: {fileID: 9132827239171976335}
   - component: {fileID: 5220130058506915460}
   - component: {fileID: 8545933914043376853}
-  - component: {fileID: 1275963782685330960}
   - component: {fileID: 8147059569739287352}
   - component: {fileID: 4241896613130464955}
+  - component: {fileID: 989972850}
   m_Layer: 4
   m_Name: Water2
   m_TagString: Untagged
@@ -205,6 +208,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 638499495995484030}
   - {fileID: 7200329483841620094}
@@ -266,7 +270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 89de52230ae420a46a9ef1f1903f487d, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -310,27 +314,6 @@ MonoBehaviour:
   neighbourTransfer: 0.03
   splashPlayerPrefab: {fileID: 114804191753921972, guid: b0babd94205c1974ab821bc52a53b027,
     type: 3}
---- !u!50 &1275963782685330960
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4963540033775646837}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!331 &8147059569739287352
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -401,6 +384,32 @@ BuoyancyEffector2D:
   m_FlowAngle: 0
   m_FlowMagnitude: 0
   m_FlowVariation: 0
+--- !u!114 &989972850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4963540033775646837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12679a46fc8acc47a76168644fb1edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 5220130058506915460}
+  camera: {fileID: 508587034124581522}
+  pixelsPerUnit: 64
+  color: {r: 0.5411765, g: 0.6745098, b: 0.8039216, a: 0.8509804}
+  verticalSqueezeRatio: 1
+  verticalCameraOffset: -4.99
+  waterShader: {fileID: -6465566751694194690, guid: 11a8f8a0d9a37be499ccdf2acee9bd10,
+    type: 3}
+  turbulencesStrength: 0.1
+  waterSpeed: 0.015
+  refraction: -1
+  noiseScale: 10
+  noisePower: 0.03
+  waveInversedScale: {x: 1, y: 1}
 --- !u!1 &5684473855712366872
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +438,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2574699065067561060}
   m_RootOrder: 1
@@ -5174,7 +5184,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 30416b542ac1dd049b116f11a8b5c8c7, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5196,6 +5205,7 @@ ParticleSystemRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_RenderMode: 0
+  m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -5219,6 +5229,10 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
+  m_MeshWeighting: 1
+  m_MeshWeighting1: 1
+  m_MeshWeighting2: 1
+  m_MeshWeighting3: 1
   m_MaskInteraction: 0
 --- !u!1 &5705646185213762607
 GameObject:
@@ -5248,6 +5262,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2574699065067561060}
   m_RootOrder: 0
@@ -10030,7 +10045,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 16194fae16baf814d95567a14a521d5d, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10052,6 +10066,7 @@ ParticleSystemRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_RenderMode: 0
+  m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -10075,4 +10090,8 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
+  m_MeshWeighting: 1
+  m_MeshWeighting1: 1
+  m_MeshWeighting2: 1
+  m_MeshWeighting3: 1
   m_MaskInteraction: 0
