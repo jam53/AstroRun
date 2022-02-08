@@ -58,6 +58,8 @@ public class WaterReflectionEditor : Editor
         waterReflection.refraction = EditorGUILayout.FloatField(new GUIContent("Refraction/Reflection", "How much refraction (> 0) or Reflection(< 0) patterns are visible."), waterReflection.refraction);
         waterReflection.noiseScale = EditorGUILayout.FloatField(new GUIContent("Noise Scale", "Scale of noise. Used to move and distord turbulences in a more realistic way."), waterReflection.noiseScale);
         waterReflection.noisePower = EditorGUILayout.FloatField(new GUIContent("Noise Power", "Power given to noise. Used to move and distord turbulences in a more realistic way."), waterReflection.noisePower);
+        waterReflection.offset = EditorGUILayout.Vector2Field(new GUIContent("Offset", " "), waterReflection.offset);
+        waterReflection.alpha = EditorGUILayout.FloatField(new GUIContent("Alpha", " "), waterReflection.alpha);
         waterReflection.waveInversedScale = EditorGUILayout.Vector2Field(new GUIContent("Pattern Size Reduction", "Wave patterns inversed scale."), waterReflection.waveInversedScale);
         EditorGUI.indentLevel--;
 

@@ -29,6 +29,8 @@ public class WaterReflection : MonoBehaviour
     public float noisePower = 0.03f;
     // Wave patterns inversed scale.
     public Vector2 waveInversedScale = Vector2.one;
+    public Vector2 offset = Vector2.zero;
+    public float alpha = 0.85f;
 
     private RenderTexture renderTexture;
     private Material waterMaterial;
@@ -64,6 +66,8 @@ public class WaterReflection : MonoBehaviour
             waterMaterial.SetFloat("_NoiseScale", noiseScale);
             waterMaterial.SetFloat("_NoisePower", noisePower);
             waterMaterial.SetVector("_PatternSizeReduction", waveInversedScale);
+            waterMaterial.SetVector("_OffSet", offset);
+            waterMaterial.SetFloat("_Alpha", alpha);
 
             spriteRenderer.material = waterMaterial;
         }
