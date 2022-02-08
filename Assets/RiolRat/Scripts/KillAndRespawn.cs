@@ -74,24 +74,7 @@ public class KillAndRespawn : MonoBehaviour
     public void RespawnPauseMenu ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //if (ReloadScene == true)
-        //{
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //}
 
-        //else if (PutPlayerBackToSpawnPoint == true && !ReachedCheckpoint)
-        //{
-        //    this.transform.position = SpawnPoint.position + new Vector3(0, 1, 0);
-        //    VirtualCamera.gameObject.SetActive(false);
-        //    VirtualCamera.gameObject.SetActive(true);
-        //}
-
-        //else if (PutPlayerBackToSpawnPoint == true && ReachedCheckpoint)
-        //{
-        //    this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
-        //    VirtualCamera.gameObject.SetActive(false);
-        //    VirtualCamera.gameObject.SetActive(true);
-        //}
     }
 
     private IEnumerator FreezePlayer()
@@ -127,6 +110,8 @@ public class KillAndRespawn : MonoBehaviour
 
         else if (PutPlayerBackToSpawnPoint == true && !ReachedCheckpoint)
         {
+            rigidbodyy.velocity = Vector2.zero;
+
             this.transform.position = SpawnPoint.position + new Vector3(0, 1, 0);
             VirtualCamera.gameObject.SetActive(false);
             VirtualCamera.gameObject.SetActive(true);
@@ -136,6 +121,8 @@ public class KillAndRespawn : MonoBehaviour
 
         else if (PutPlayerBackToSpawnPoint == true && ReachedCheckpoint)
         {
+            rigidbodyy.velocity = Vector2.zero;
+
             this.transform.position = CheckPoint.position + new Vector3(0, 1, 0);
             VirtualCamera.gameObject.SetActive(false);
             VirtualCamera.gameObject.SetActive(true);
