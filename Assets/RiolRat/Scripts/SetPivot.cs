@@ -10,10 +10,4 @@ public class SetPivot : MonoBehaviour
         this.GetComponent<RectTransform>().pivot = new Vector2(-0.39f, 0.5f);
         //Zodat de tekst gecentreerd komt te staan
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

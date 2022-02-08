@@ -47,10 +47,4 @@ public class InAppUpdates : MonoBehaviour
         NewUpdateAvaible.SetActive(false);
         LevelCanBeLoaded = true;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

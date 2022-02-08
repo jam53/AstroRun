@@ -19,10 +19,4 @@ public class EnableDisablePP : MonoBehaviour
             MainCamera.GetUniversalAdditionalCameraData().renderPostProcessing = false;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
