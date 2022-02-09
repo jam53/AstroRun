@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossLevel10 : MonoBehaviour
 {
     public GameObject upDownSpikesHolder;
-    private Transform[] upDownSpikes;
+    private List<GameObject> upDownSpikes;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -13,17 +13,23 @@ public class BossLevel10 : MonoBehaviour
         //This does however cause scripts that use LeanTween to have some issues. Objects will only be affected by LeanTween (in the editor )
         // by activating domain reloading under project settings. Or by making a change to a script and recompiling 
     {
-        upDownSpikes = upDownSpikesHolder.GetComponentsInChildren<Transform>();
-
-        for (int i = 1; i < upDownSpikes.Length; i += 4)
-        {//We beginnen op 1, want het eerste element (0) in de array is de spike holder, en dus niet een spike
-            LeanTween.moveY(upDownSpikes[i].gameObject, -4.77f, 1f).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
-            LeanTween.moveY(upDownSpikes[i+1].gameObject, -4.77f, 1f).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
+        foreach (Transform transform in upDownSpikesHolder.GetComponentInChildren<Transform>())
+        {//Get all the child gameobjects
+            if (transform != this.gameObject.transform)
+            {
+                upDownSpikes.Add(transform.gameObject);
+            }
         }
-        for (int i = 3; i < upDownSpikes.Length; i += 4)
+
+        for (int i = 0; i < upDownSpikes.Count; i += 4)
+        {//We beginnen op 1, want het eerste element (0) in de array is de spike holder, en dus niet een spike
+            LeanTween.moveY(upDownSpikes[i], -4.77f, 1f).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
+            LeanTween.moveY(upDownSpikes[i+1], -4.77f, 1f).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
+        }
+        for (int i = 2; i < upDownSpikes.Count; i += 4)
         {
-            LeanTween.moveY(upDownSpikes[i ].gameObject, -6.784f, 1).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
-            LeanTween.moveY(upDownSpikes[i + 1].gameObject, -6.784f, 1).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
+            LeanTween.moveY(upDownSpikes[i ], -6.784f, 1).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
+            LeanTween.moveY(upDownSpikes[i + 1], -6.784f, 1).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
         }
 
 
@@ -41,5 +47,29 @@ public class BossLevel10 : MonoBehaviour
         //De spikes gaan naar beneden als de speler langer dan een seconde stil staat/een spike gaat naar beneden als de speler er 1 seconde geleden onder stond
         //De rest van het pdf doc
         //Timeline gebruiken/zelf een gwn in script de camera moven. Best een apparte camera maken, en de camera die de speler volgt even uitschakelen
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            LeanTween.cancelAll(); //Stop the spikes from going up and down
+            
+            foreach (GameObject spike in upDownSpikes)
+            {
+                LeanTween.moveY(spike, -6.6f, 0.5f); //Move the spikes to the correct height, just under the ground
+                LeanTween.rotateZ(spike, 180f, 0.5f).setDelay(0.5f); //Flip the spike, so it faces down
+                LeanTween.moveY(spike, -5.5f, 0.5f).setDelay(1f); //Move the spikes a bit up, so they are under the ground
+                StartCoroutine(enableDropSpike(spike));
+            }
+        }
+    }
+
+    private IEnumerator enableDropSpike(GameObject spike)
+    {
+        yield return new WaitForSeconds(1);
+
+        spike.GetComponentInChildren<DropSpikeIfPlayerDetected>().enabled = true;
+        spike.GetComponentInChildren<BoxCollider2D>().enabled = true;
     }
 }
