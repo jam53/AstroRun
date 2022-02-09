@@ -21,7 +21,11 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+        private PlayerMovement defaultMovement;
+        public PlayerMovement waterMovement;
+
         private int timesJumped = 0; //Used for an achievement
+        private bool swimming = false;
 
         private void Awake()
         {
@@ -30,6 +34,16 @@ namespace UnityStandardAssets._2D
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        }
+
+        private void Start()
+        {
+            defaultMovement = new PlayerMovement();
+
+            defaultMovement.linearDrag = m_Rigidbody2D.drag;
+            defaultMovement.gravityScale = m_Rigidbody2D.gravityScale;
+            defaultMovement.maxSpeed = m_MaxSpeed;
+            defaultMovement.jumpForce = m_JumpForce;
         }
 
 
@@ -93,7 +107,7 @@ namespace UnityStandardAssets._2D
                 }
             }
             // If the player should jump...
-            if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+            if ((m_Grounded && jump && m_Anim.GetBool("Ground")) || (jump && swimming))
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
@@ -118,6 +132,32 @@ namespace UnityStandardAssets._2D
         public int getTimesJumped()
         {
             return timesJumped;
+        }
+
+        public void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Swimmable"))
+            {
+                m_MaxSpeed = waterMovement.maxSpeed;
+                m_JumpForce = waterMovement.jumpForce;
+                m_Rigidbody2D.drag = waterMovement.linearDrag;
+                m_Rigidbody2D.gravityScale = waterMovement.gravityScale;
+
+                swimming = true;
+            }
+        }
+
+        public void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Swimmable"))
+            {
+                m_MaxSpeed = defaultMovement.maxSpeed;
+                m_JumpForce = defaultMovement.jumpForce;
+                m_Rigidbody2D.drag = defaultMovement.linearDrag;
+                m_Rigidbody2D.gravityScale = defaultMovement.gravityScale;
+
+                swimming = false;
+            }
         }
     }
 }
