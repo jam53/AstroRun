@@ -101,6 +101,11 @@ public class OpenLevelSelection : MonoBehaviour
             GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9(SaveLoadManager.slm.astroRunData.timeToSubmitLevel1_9);
         }
 
+        if (SaveLoadManager.slm.astroRunData.timeToSubmitLevel10 != 0)
+        {
+            GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9(SaveLoadManager.slm.astroRunData.timeToSubmitLevel10);
+        }
+
         SaveLoadManager.slm.SaveJSONToDisk();
     }
 }

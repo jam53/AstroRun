@@ -69,6 +69,10 @@ public class LevelTimer : MonoBehaviour
                 oldTimeString = SaveLoadManager.slm.astroRunData.bestTimeLevel1_9;
                 break;
 
+            case "bestTimeLevel10":
+                oldTimeString = SaveLoadManager.slm.astroRunData.bestTimeLevel10;
+                break;
+
             default:
                 oldTimeString = "";
                 Debug.LogWarning("Couldn't load best time for level: " + keyName);
@@ -114,6 +118,10 @@ public class LevelTimer : MonoBehaviour
 
                 case "bestTimeLevel1_9":
                     SaveLoadManager.slm.astroRunData.bestTimeLevel1_9 = LevelTime;
+                    break;
+
+                case "bestTimeLevel10":
+                    SaveLoadManager.slm.astroRunData.bestTimeLevel10 = LevelTime;
                     break;
 
                 default:
@@ -167,6 +175,11 @@ public class LevelTimer : MonoBehaviour
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level9")
             {
                 GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel9((long)(Time.timeSinceLevelLoad * 1000f));
+            }
+
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level10")
+            {
+                GPGSAutenthicator.GPGSZelf.UpdateLeaderboardScoreLevel10((long)(Time.timeSinceLevelLoad * 1000f));
             }
         }
     }

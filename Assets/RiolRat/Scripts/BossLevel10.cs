@@ -61,19 +61,6 @@ public class BossLevel10 : MonoBehaviour
         }
     }
 
-    public void upDownSpikesStage2()
-    {
-        //Wanneer de speler op de plek komt waar die ene coin staat, faze 2.
-        //Met LeanTween of Unity animatie de spikes roteren naar onder toe
-        //Dan met een van deze twee:
-        //easeType = LeanTweenType.punch;
-        //easeType = LeanTweenType.easeInOutElastic;
-        //De spikes naar beneden laten gaan
-        //De spikes gaan naar beneden als de speler langer dan een seconde stil staat/een spike gaat naar beneden als de speler er 1 seconde geleden onder stond
-        //De rest van het pdf doc
-        //Timeline gebruiken/zelf een gwn in script de camera moven. Best een apparte camera maken, en de camera die de speler volgt even uitschakelen
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.transform.position.y <= -6 && collision.gameObject.transform.position.y >= - 11 && collision.CompareTag("Player"))

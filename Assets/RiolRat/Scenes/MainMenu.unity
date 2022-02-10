@@ -601,16 +601,16 @@ MonoBehaviour:
     In no event shall Jam54 be held liable for any damages arising from the use of
     this software.
 
-    You must give appropriate credit, provide a link to the
-    license.
+    You must give appropriate credit, provide a link to the license.
 
-    You may not use AstroRun for commercial purposes.
+    You
+    may not use AstroRun for commercial purposes.
 
-    If you remix,
-    transform, or build upon AstroRun, you may not distribute the modified material.
+    If you remix, transform, or
+    build upon AstroRun, you may not distribute the modified material.
 
-    For
-    any questions, you can contact me on jam54.help@outlook.com
+    For any
+    questions, you can contact me on jam54.help@outlook.com
 
 '
   m_isRightToLeft: 0
@@ -11341,6 +11341,7 @@ MonoBehaviour:
   - {fileID: 850833966}
   - {fileID: 2061876052}
   - {fileID: 1336218443}
+  - {fileID: 1955416478}
   LevelsInfo:
   - {fileID: 11400000, guid: 76a095028809ab648b07b9a614e8b68a, type: 2}
   - {fileID: 11400000, guid: ccb2cf2ee0f8fac4b851eb279962daef, type: 2}
@@ -11351,6 +11352,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8a671ef882f4064394f4bedceb0e600, type: 2}
   - {fileID: 11400000, guid: c489905058b04614b8e9532e6ae3d286, type: 2}
   - {fileID: 11400000, guid: 3459aeacc2140c34fbddf7e9d3806432, type: 2}
+  - {fileID: 11400000, guid: 11defa7606f5fbe479221137d384b610, type: 2}
 --- !u!114 &491724763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52584,7 +52586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852fea2d12bd5ed4b857a9126cd825fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmountOfLevels: 9
+  AmountOfLevels: 10
   PricePerLevel: 500
   TotalCoins: {fileID: 1420538289}
   buttonIndex: 0

@@ -57,6 +57,7 @@ public class ResetCoins : MonoBehaviour
             SaveLoadManager.slm.astroRunData.coinsLevel1_7 = 0; //Level 7 coins
             SaveLoadManager.slm.astroRunData.coinsLevel1_8 = 0; //Level 8 coins
             SaveLoadManager.slm.astroRunData.coinsLevel1_9 = 0; //Level 9 coins
+            SaveLoadManager.slm.astroRunData.coinsLevel10 = 0; //Level 10 coins
 
             SaveLoadManager.slm.astroRunData.coinsWorld1 = 0; //World 1 coins
 

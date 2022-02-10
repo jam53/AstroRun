@@ -36,6 +36,7 @@ public static class GPGSIds
         public const string leaderboard_level_9 = "CggIjqvd8UMQAhAO"; // <GPGSID>
         public const string achievement_never_give_up = "CggIjqvd8UMQAhAQ"; // <GPGSID>
         public const string achievement_hippity_hop = "CggIjqvd8UMQAhAR"; // <GPGSID>
+        public const string leaderboard_level_10 = "CggIjqvd8UMQAhAV"; // <GPGSID>
         public const string achievement_at_full_speed = "CggIjqvd8UMQAhAP"; // <GPGSID>
         public const string achievement_fashionista = "CggIjqvd8UMQAhAU"; // <GPGSID>
         public const string achievement_mr_moneybags = "CggIjqvd8UMQAhAT"; // <GPGSID>

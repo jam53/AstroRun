@@ -390,4 +390,22 @@ public class GPGSAutenthicator : MonoBehaviour
             }
         });
     }
+
+    public void UpdateLeaderboardScoreLevel10(long TimeInMilliseconds)
+    {
+        Social.ReportScore(TimeInMilliseconds, GPGSIds.leaderboard_level_10, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Updated To LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel10 = 0;
+            }
+
+            else if (!success)
+            {
+                Debug.Log("Couldnt submit score to LeaderBoard");
+                SaveLoadManager.slm.astroRunData.timeToSubmitLevel10 = TimeInMilliseconds; SaveLoadManager.slm.SaveJSONToDisk();
+            }
+        });
+    }
 }

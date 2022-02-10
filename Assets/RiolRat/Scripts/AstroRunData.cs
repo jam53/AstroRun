@@ -16,7 +16,7 @@ public class AstroRunData
     public string bestTimeLevel1_7 = "99:99:99";
     public string bestTimeLevel1_8 = "99:99:99";
     public string bestTimeLevel1_9 = "99:99:99";
-    //Nieuwe naam van levels, exact dezelfde als scene naming scheme. Dus Level 2_1 wordt dan Level11
+    public string bestTimeLevel10 = "99:99:99";
 
     public int totalCoins = 0; //Total coins collected across all levels
 
@@ -29,7 +29,7 @@ public class AstroRunData
     public int coinsLevel1_7 = 0; 
     public int coinsLevel1_8 = 0; 
     public int coinsLevel1_9 = 0;
-    //Nieuwe naam van levels, exact dezelfde als scene naming scheme. Dus Level 2_1 wordt dan Level11
+    public int coinsLevel10 = 0;
 
     public int coinsWorld1 = 0; //Coins collected in world 1
 
@@ -46,7 +46,7 @@ public class AstroRunData
     public long timeToSubmitLevel1_7 = 0;
     public long timeToSubmitLevel1_8 = 0;
     public long timeToSubmitLevel1_9 = 0;
-    //Nieuwe naam van levels, exact dezelfde als scene naming scheme. Dus Level 2_1 wordt dan Level11
+    public long timeToSubmitLevel10 = 0;
 
     public bool qualitySettings = true; //Quality settings true = high quality, false = low quality
 

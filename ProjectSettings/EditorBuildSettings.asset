@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RiolRat/Scenes/World 1/Level9.unity
     guid: 8f81a35b4e1e03142b1eff6b848a7614
+  - enabled: 1
+    path: Assets/RiolRat/Scenes/World 1/Level10.unity
+    guid: f9f048bf3eafaae4fb10b3f0c9b42797
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 3a3213a01b4601343adeafc5d9504cbd,
       type: 2}
