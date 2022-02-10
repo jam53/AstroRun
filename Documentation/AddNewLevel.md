@@ -2,12 +2,15 @@
 Please follow the steps stated in this document, in chronological order.
 
 ## The new scene itself
-- Add a `LevelTimer` prefab to the new level, and assign everything in it
+- Add a `LevelTimer` prefab to the new level, and assign *bestTimeLevelx* as the value of `KeyName`
 - Change the text that displays what the current level is
 	1) \<new level>.unity
 	2) Canvas
 	3) BlackLevelFade
 	4) Text (TMP)
+	5) Localize String Event
+	6) Local variables
+	7) Assign the index of the level to the variable `Integer`
 - Adjust the `PickupCoins` script
 	1) \<new level>.unity
 	2) Player
@@ -18,8 +21,14 @@ Please follow the steps stated in this document, in chronological order.
 ---
 
 ## The scene before the new level
-- Add a 'LevelComplete' prefab, and assign everything in it
-- Under the hierarchy, find the `AchievementsHandler` gameobject. Set the `MrMoneyBags` variable to true and assign the `NextLeveLoader4`, `PickupCoins` variables
+- Add a 'LevelComplete' prefab
+	- NextLevelLoader.cs
+		- Black Level Fade Animator: `Drag and drop the Canvas > BlackLevelFade gameobject`
+		- Name Scene To Load: `Levelx`
+		- Level To Unlock: `x`
+	- MusicChanger.cs
+		- Background Source: `Drag and drop the BackgroundMusic gameobject` 
+- Under the hierarchy, find the `AchievementsHandler` gameobject. Set the `MrMoneyBags` variable to true and assign the `NextLeveLoader4`, `PickupCoins` variables by using the select window
 
 
 ---
@@ -34,14 +43,12 @@ Please follow the steps stated in this document, in chronological order.
 - Add a leaderboard for the new level
 	1) Open the [Google Play Console](https://play.google.com/console/about/)
 	2) Open AstroRun
-	3) Play-gamesservices
-	4) Instellen en beheren
-	5) Scoreborden
+	3) Play-gamesservices > Instellen en beheren > Scoreborden
 	6) Scorebord maken
 	- Naam: `Level x`
 	- Indeling: `Duur`
 	- Sorteervolgorde: `Kleinste eerst`
-	- Sorteervolgorde: `Aanzetten`
+	- Beveiliging tegen manipulatie: `Aanzetten`
 	- Limieten: `/`
 	7) Opslaan als concept + controleren
 	8) Publiceren
@@ -52,16 +59,14 @@ Please follow the steps stated in this document, in chronological order.
 - Copy the [Google Play Console](https://play.google.com/console/about/) Resources, and import them into Unity
 	1) Open the [Google Play Console](https://play.google.com/console/about/)
 	2) Open AstroRun
-	3) Play-gamesservices
-	4) Instellen en beheren
-	5) Scoreborden
+	3) Play-gamesservices > Instellen en beheren > Scoreborden
 	6) Bronnen ophalen
 	7) Copy the Android (xml) 
 	8) Go back to Unity
 	9) Window > Google Play Games > Setup > Android Setup
 	10) Paste 
 	11) Setup
-- Add the new scene to the buildsettings (File > Build Settings)
+- Add the new scene to the build settings (File > Build Settings)
 
 ---
 
@@ -111,5 +116,5 @@ Please follow the steps stated in this document, in chronological order.
 
 ## MainMenu.unity
 1) Canvas > SubMenu_LevelSelectWorld > OptionList > Viewport > Row1 > World1_Button > `OpenLevel Selection.cs`
-	- 	Assign the UI button + the LevelsInfo scriptableobject
+	- Assign the UI button + the LevelsInfo scriptableobject
 ---
