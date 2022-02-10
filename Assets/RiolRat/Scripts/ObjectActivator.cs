@@ -6,44 +6,42 @@ public class ObjectActivator : MonoBehaviour
 {
     public string ActivatorTag;
 
-    public bool DeactivateOnExit;
-
     public GameObject[] Objects;
+
+    private bool activated;
 
     // Start is called before the first frame update
     void Start()
     {
-        foreach (var item in Objects)
+        foreach (GameObject gameObject in Objects)
         {
-            item.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == ActivatorTag)
+        if (collision.tag == ActivatorTag && !activated)
         {
             foreach (var item in Objects)
             {
                 item.SetActive(true);
             }
+
+            activated = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == ActivatorTag && DeactivateOnExit)
+        if (collision.tag == ActivatorTag)
         {
             foreach (var item in Objects)
             {
                 item.SetActive(false);
             }
+
+            activated = false;
         }
     }
 }

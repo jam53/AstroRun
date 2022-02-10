@@ -38,7 +38,7 @@ namespace UnityStandardAssets._2D
 
         private void Start()
         {
-            defaultMovement = new PlayerMovement();
+            defaultMovement = ScriptableObject.CreateInstance<PlayerMovement>();
 
             defaultMovement.linearDrag = m_Rigidbody2D.drag;
             defaultMovement.gravityScale = m_Rigidbody2D.gravityScale;
