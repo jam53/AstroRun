@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class BossLevel10 : MonoBehaviour
 {
+    [Header("Stage 1: Moving spikes")]
     public GameObject upDownSpikesHolder;
     private List<GameObject> upDownSpikes;
+
+
+    [Header("Stage 2: Moving acid")]
+    public GameObject acidMoving;
+    public Vector3 acidMoveUnitsPerSecond;
+
+    private Vector3 acidMovingStartPosition;
+    private bool resetAcidPosition;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -32,8 +41,24 @@ public class BossLevel10 : MonoBehaviour
             LeanTween.moveY(upDownSpikes[i + 1], -6.784f, 1).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
         }
 
+    }
 
+    private void Start()
+    {
+        acidMovingStartPosition = acidMoving.transform.position;
+    }
 
+    private void Update()
+    {
+        if (resetAcidPosition)
+        {
+            acidMoving.transform.position = acidMovingStartPosition;
+            resetAcidPosition = false;
+        }
+        else
+        {
+            acidMoving.transform.Translate(acidMoveUnitsPerSecond * Time.deltaTime, Space.World);
+        }
     }
 
     public void upDownSpikesStage2()
@@ -51,8 +76,8 @@ public class BossLevel10 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
+        if (collision.gameObject.transform.position.y <= -6 && collision.gameObject.transform.position.y >= - 11 && collision.CompareTag("Player"))
+        {//Check if this is the collider that is used for the spikes' movement && if it's the player touching the collider
             LeanTween.cancelAll(); //Stop the spikes from going up and down
             
             foreach (GameObject spike in upDownSpikes)
@@ -62,6 +87,14 @@ public class BossLevel10 : MonoBehaviour
                 LeanTween.moveY(spike, -5.45f, 0.5f).setDelay(1f); //Move the spikes a bit up, so they are under the ground
                 StartCoroutine(enableDropSpike(spike));
             }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.transform.position.y < -25 && collision.CompareTag("Player"))
+        {//Check if this is the collider that is used for the acidMoving gameobject's movement && if it's the player touching the collider
+            resetAcidPosition = true;
         }
     }
 
