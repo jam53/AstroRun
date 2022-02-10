@@ -59,7 +59,7 @@ public class BossLevel10 : MonoBehaviour
             {
                 LeanTween.moveY(spike, -6.6f, 0.5f); //Move the spikes to the correct height, just under the ground
                 LeanTween.rotateZ(spike, 180f, 0.5f).setDelay(0.5f); //Flip the spike, so it faces down
-                LeanTween.moveY(spike, -5.5f, 0.5f).setDelay(1f); //Move the spikes a bit up, so they are under the ground
+                LeanTween.moveY(spike, -5.45f, 0.5f).setDelay(1f); //Move the spikes a bit up, so they are under the ground
                 StartCoroutine(enableDropSpike(spike));
             }
         }
