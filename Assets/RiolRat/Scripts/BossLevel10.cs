@@ -55,7 +55,7 @@ public class BossLevel10 : MonoBehaviour
             acidMoving.transform.position = acidMovingStartPosition;
             resetAcidPosition = false;
         }
-        else
+        else if (acidMoving.transform.position.y <= -3.2)
         {
             acidMoving.transform.Translate(acidMoveUnitsPerSecond * Time.deltaTime, Space.World);
         }
