@@ -6,7 +6,7 @@ public class BossLevel10 : MonoBehaviour
 {
     [Header("Stage 1: Moving spikes")]
     public GameObject upDownSpikesHolder;
-    private List<GameObject> upDownSpikes;
+    private List<GameObject> upDownSpikes = new List<GameObject>();
 
 
     [Header("Stage 2: Moving acid")]
@@ -16,12 +16,10 @@ public class BossLevel10 : MonoBehaviour
     private Vector3 acidMovingStartPosition;
     private bool resetAcidPosition;
 
-    // Start is called before the first frame update
     void OnEnable()
-        //Note: Keep in mind that Domain reloading is disabled in project settings > play mode. This was done to enter play mode inside the editor.
-        //This does however cause scripts that use LeanTween to have some issues. Objects will only be affected by LeanTween (in the editor )
-        // by activating domain reloading under project settings. Or by making a change to a script and recompiling 
     {
+        LeanTween.reset();
+
         foreach (Transform transform in upDownSpikesHolder.GetComponentInChildren<Transform>())
         {//Get all the child gameobjects
             if (transform != this.gameObject.transform)
@@ -31,7 +29,7 @@ public class BossLevel10 : MonoBehaviour
         }
 
         for (int i = 0; i < upDownSpikes.Count; i += 4)
-        {//We beginnen op 1, want het eerste element (0) in de array is de spike holder, en dus niet een spike
+        {
             LeanTween.moveY(upDownSpikes[i], -4.77f, 1f).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
             LeanTween.moveY(upDownSpikes[i+1], -4.77f, 1f).setLoopPingPong().setEase(LeanTweenType.easeInOutExpo);
         }
