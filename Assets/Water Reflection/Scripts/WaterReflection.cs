@@ -22,15 +22,11 @@ public class WaterReflection : MonoBehaviour
     // Water's speed.
     public float waterSpeed = 0.01f;
     // How much refraction (> 0) or Reflection(< 0) patterns are visible.
-    public float refraction = 0.5f;
-    // Scale of noise. Used to move and distord turbulences in a more realistic way.
-    public float noiseScale = 10;
-    // Power given to noise. Used to move and distord turbulences in a more realistic way.
-    public float noisePower = 0.03f;
-    // Wave patterns inversed scale.
-    public Vector2 waveInversedScale = Vector2.one;
-    public Vector2 offset = Vector2.zero;
-    public float alpha = 0.85f;
+    public Texture2D waterTexture;
+    public Texture2D gradient;
+    public bool mirrorReflection;
+    public Vector3 offset = Vector3.zero;
+
 
     private RenderTexture renderTexture;
     private Material waterMaterial;
@@ -39,6 +35,12 @@ public class WaterReflection : MonoBehaviour
     {
         // Unity modify camera's aspect when game starts (according to your screen dimensions). So we call UpdateCamera here to override it.
         UpdateCamera();
+
+    }
+
+    private void Start()
+    {
+        camera.transform.position += offset;
     }
 
     public void UpdateCamera()
@@ -59,15 +61,12 @@ public class WaterReflection : MonoBehaviour
 
             waterMaterial = new Material(waterShader);
             waterMaterial.SetTexture("_RenderTex", renderTexture);
+            waterMaterial.SetTexture("_WaterTexture", waterTexture);
+            waterMaterial.SetTexture("_Gradient", gradient);
             waterMaterial.SetColor("_Color", color);
             waterMaterial.SetFloat("_TurbulencesStrength", turbulencesStrength);
             waterMaterial.SetFloat("_WaterSpeed", waterSpeed);
-            waterMaterial.SetFloat("_Refraction", refraction);
-            waterMaterial.SetFloat("_NoiseScale", noiseScale);
-            waterMaterial.SetFloat("_NoisePower", noisePower);
-            waterMaterial.SetVector("_PatternSizeReduction", waveInversedScale);
-            waterMaterial.SetVector("_OffSet", offset);
-            waterMaterial.SetFloat("_Alpha", alpha);
+            waterMaterial.SetInt("_MirrorReflection", mirrorReflection ? 1 : 0);
 
             spriteRenderer.material = waterMaterial;
         }

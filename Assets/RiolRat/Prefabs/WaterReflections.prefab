@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActivatorTag: Player
-  DeactivateOnExit: 1
   Objects:
   - {fileID: 4963540033775646837}
 --- !u!58 &4189247115068263697
@@ -92,7 +91,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4619520792464445748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.010000229, z: -1}
+  m_LocalPosition: {x: 0, y: -4.99, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -126,7 +125,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.5
+  orthographic size: 0
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -399,19 +398,17 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5220130058506915460}
   camera: {fileID: 508587034124581522}
   pixelsPerUnit: 64
-  color: {r: 0.5411765, g: 0.6745098, b: 0.8039216, a: 0.8509804}
+  color: {r: 0.5411765, g: 0.6745098, b: 0.8039216, a: 1}
   verticalSqueezeRatio: 1
   verticalCameraOffset: -4.99
-  waterShader: {fileID: -6465566751694194690, guid: 11a8f8a0d9a37be499ccdf2acee9bd10,
+  waterShader: {fileID: -6465566751694194690, guid: 483aa1a0528fa53409fbed0f3ecda73e,
     type: 3}
-  turbulencesStrength: 0.1
-  waterSpeed: 0.015
-  refraction: -1
-  noiseScale: 10
-  noisePower: 0.03
-  waveInversedScale: {x: 1, y: 1}
-  offset: {x: 0, y: 0}
-  alpha: 0.85
+  turbulencesStrength: 0.63
+  waterSpeed: 0.13
+  waterTexture: {fileID: 2800000, guid: e0711100f7acbaf4ea2a188a48b9f20a, type: 3}
+  gradient: {fileID: 0}
+  mirrorReflection: 0
+  offset: {x: -0.07, y: 0, z: 0}
 --- !u!1 &5684473855712366872
 GameObject:
   m_ObjectHideFlags: 0
