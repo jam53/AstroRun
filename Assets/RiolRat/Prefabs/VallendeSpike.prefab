@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9193570260274180447}
   - component: {fileID: 9193570260274180446}
   - component: {fileID: 9193570260274180441}
-  - component: {fileID: 9193570260274180444}
+  - component: {fileID: 8979552463812025807}
   - component: {fileID: 2997718787162618434}
   - component: {fileID: 393100788625598527}
   m_Layer: 0
@@ -31,6 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5854164, y: 0.5854164, z: 0.5854164}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -107,8 +108,8 @@ MonoBehaviour:
   GeluidBijTerugGaan: {fileID: 8300000, guid: be0a3b2f17576874db649570d1b87fb7, type: 3}
   PlayTerugGaan: 0
   source: {fileID: 2997718787162618434}
---- !u!61 &9193570260274180444
-BoxCollider2D:
+--- !u!60 &8979552463812025807
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,9 +131,39 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.13, y: 5.12}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.02125, y: -2.55}
+      - {x: 0.40375, y: -1.7637501}
+      - {x: 0.99875003, y: -2.57125}
+      - {x: 1.33875, y: -2.57125}
+      - {x: 2.57125, y: -1.33875}
+      - {x: 2.57125, y: -1.08375}
+      - {x: 2.55, y: -1.0625}
+      - {x: 2.57125, y: -0.7225}
+      - {x: 2.57125, y: 1.275}
+      - {x: 1.9975001, y: 2.4225001}
+      - {x: 1.445, y: 2.5925}
+      - {x: -0.1275, y: 2.5925}
+      - {x: -0.255, y: 2.5075}
+      - {x: -1.12625, y: 2.5925}
+      - {x: -1.38125, y: 2.5925}
+      - {x: -1.955, y: 2.4225001}
+      - {x: -2.57125, y: 1.36}
+      - {x: -2.57125, y: 1.16875}
+      - {x: -1.97625, y: 0.85}
+      - {x: -2.55, y: 0.0425}
+      - {x: -2.55, y: -0.02125}
+      - {x: -2.52875, y: -0.06375}
+      - {x: -1.97625, y: -0.36125}
+      - {x: -2.57125, y: -0.9775}
+      - {x: -2.57125, y: -1.36}
+      - {x: -1.4662501, y: -2.57125}
+      - {x: -1.19, y: -2.57125}
+      - {x: -1.16875, y: -2.55}
+      - {x: -0.8075, y: -1.7637501}
+      - {x: -0.06375, y: -2.57125}
+      - {x: -0.0425, y: -2.57125}
 --- !u!82 &2997718787162618434
 AudioSource:
   m_ObjectHideFlags: 0
