@@ -28,7 +28,7 @@ Please follow the steps stated in this document, in chronological order.
 		- Level To Unlock: `x`
 	- MusicChanger.cs
 		- Background Source: `Drag and drop the BackgroundMusic gameobject` 
-- Under the hierarchy, find the `AchievementsHandler` gameobject. Set the `MrMoneyBags` variable to true and assign the `NextLeveLoader4`, `PickupCoins` variables by using the select window
+- Under the hierarchy, find the `AchievementsHandler` gameobject. Set the `MrMoneyBags` variable to true, assign the `NextLeveLoader4` variable and `PickupCoins` variable by using the select window
 
 
 ---
@@ -82,9 +82,9 @@ Please follow the steps stated in this document, in chronological order.
 
 ### <u>LevelTimer.cs</u>
 - Add a case statement 
-	- `case "bestTimeLevelx`
+	- `case "bestTimeLevelx"`
 - Add another case statement a bit lower in the script 
-	- `case "bestTimeLevelx`
+	- `case "bestTimeLevelx"`
 - Add an if; to update the time on the leaderboard
 	- `if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Levelx")`
 
@@ -95,6 +95,10 @@ Please follow the steps stated in this document, in chronological order.
 ### <u>ResetCoins.cs</u>
 - Add the following line inside the `ResettCoins()` method
 	- `SaveLoadManager.slm.astroRunData.coinsLevelx = 0;`
+
+### <u>PickupCoins.cs</u>
+- Add another case statement a bit lower in the script 
+	- `case "coinsLevelx"`
 
 ---
 
