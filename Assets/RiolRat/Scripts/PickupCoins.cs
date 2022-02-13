@@ -94,6 +94,11 @@ public class PickupCoins : MonoBehaviour
                 case "coinsLevel1_9":
                     SaveLoadManager.slm.astroRunData.coinsLevel1_9 += 1;
                     break;
+
+                case "coinsLevel10":
+                    SaveLoadManager.slm.astroRunData.coinsLevel10 += 1;
+                    break;
+
                 default:
                     Debug.LogWarning("Couldn't increment amount of coins collected for level: " + keyName);
                     break;
