@@ -91,7 +91,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4619520792464445748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.99, z: -1}
+  m_LocalPosition: {x: 0, y: 0.010000229, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -125,7 +125,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0
+  orthographic size: 2.5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -403,8 +403,8 @@ MonoBehaviour:
   verticalCameraOffset: -4.99
   waterShader: {fileID: -6465566751694194690, guid: 483aa1a0528fa53409fbed0f3ecda73e,
     type: 3}
-  turbulencesStrength: 0.63
-  waterSpeed: 0.13
+  turbulencesStrength: 1.2
+  waterSpeed: 0.08
   waterTexture: {fileID: 2800000, guid: e0711100f7acbaf4ea2a188a48b9f20a, type: 3}
   gradient: {fileID: 0}
   mirrorReflection: 0
