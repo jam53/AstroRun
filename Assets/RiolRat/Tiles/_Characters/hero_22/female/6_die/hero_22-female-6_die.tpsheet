@@ -1,0 +1,27 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:540502fa2c3ee10942c10359085afc64:e2f3097f4f67a1d8e4c0abea67a28c3c:f9c39fd6d1d6dc8f109671f4a9e20918$
+#
+:format=40300
+:texture=hero_22-female-6_die.png
+:size=2048x1024
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+1;0;724;300;300; 0.5;0.5; 0;0;0;0
+2;300;724;300;300; 0.5;0.5; 0;0;0;0
+3;600;724;300;300; 0.5;0.5; 0;0;0;0
+4;900;724;300;300; 0.5;0.5; 0;0;0;0
+5;1200;724;300;300; 0.5;0.5; 0;0;0;0
+6;1500;724;300;300; 0.5;0.5; 0;0;0;0
+7;0;424;300;300; 0.5;0.5; 0;0;0;0
+8;300;424;300;300; 0.5;0.5; 0;0;0;0
+9;600;424;300;300; 0.5;0.5; 0;0;0;0
+10;900;424;300;300; 0.5;0.5; 0;0;0;0
+11;1200;424;300;300; 0.5;0.5; 0;0;0;0
+12;1500;424;300;300; 0.5;0.5; 0;0;0;0

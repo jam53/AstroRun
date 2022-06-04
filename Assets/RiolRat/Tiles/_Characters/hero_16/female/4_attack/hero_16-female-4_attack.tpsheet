@@ -1,0 +1,27 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:0f785bb9e3471a6305f8b1eca83cd053:63e35b1e2a45efb032237d5d842e3e99:07a73f26aa1eec8d232cdf3051b4dd63$
+#
+:format=40300
+:texture=hero_16-female-4_attack.png
+:size=2048x1024
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+1;0;724;300;300; 0.5;0.5; 0;0;0;0
+2;300;724;300;300; 0.5;0.5; 0;0;0;0
+3;600;724;300;300; 0.5;0.5; 0;0;0;0
+4;900;724;300;300; 0.5;0.5; 0;0;0;0
+5;1200;724;300;300; 0.5;0.5; 0;0;0;0
+6;1500;724;300;300; 0.5;0.5; 0;0;0;0
+7;0;424;300;300; 0.5;0.5; 0;0;0;0
+8;300;424;300;300; 0.5;0.5; 0;0;0;0
+9;600;424;300;300; 0.5;0.5; 0;0;0;0
+10;900;424;300;300; 0.5;0.5; 0;0;0;0
+11;1200;424;300;300; 0.5;0.5; 0;0;0;0
+12;1500;424;300;300; 0.5;0.5; 0;0;0;0
