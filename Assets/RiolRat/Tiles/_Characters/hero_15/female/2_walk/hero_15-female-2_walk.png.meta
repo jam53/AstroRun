@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -71,7 +73,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 100
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -114,7 +116,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63d2540c3264974bab6e19339ed3e7c
+      internalID: 1813019802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 724
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec57982e54fbf7b4a9894c4bf2878e3b
+      internalID: -1555356538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 724
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ec47b97202ced469fdf0809825fc6b
+      internalID: -674134405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 724
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5492de916be85e54998352e55af4e6a7
+      internalID: -205448305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 724
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa4b17bf0da12d4ead3eb2a35a68fb1
+      internalID: 2139147628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 724
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fbbda9eb8ed7445aa005f95914cad1
+      internalID: 1826317579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ae72bee8b72c8428472302a9ee19d1
+      internalID: -1477306024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 424
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59a3f4063063fb43935e8f82d89081e
+      internalID: 1478185884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 424
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de11c23a43aaa442bd1e52b8e29a3eb
+      internalID: -281217444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 424
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3dcafd9c95a894c9610c431ec9a016
+      internalID: 1008541253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 424
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd03dfca932f88d40bf1cf794cc0a610
+      internalID: -1977071230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 424
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990376cef395d984d915bf1b154b207e
+      internalID: 1375574834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa7918fe21f6c84c97dd570183c7184
+      internalID: 386925911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 124
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e4e8dd84c6f7b4ea008c7e223754d4
+      internalID: -1940410644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 124
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4443eed5fba7d3048aac9c2f518a6f2d
+      internalID: 1732725422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_15-female-2_walk_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 124
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cbbeaa38848f049a2743ee75d5d2be
+      internalID: -1946139242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,10 +463,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hero_15-female-2_walk_10: -1977071230
+      hero_15-female-2_walk_12: 386925911
+      hero_15-female-2_walk_14: 1732725422
+      hero_15-female-2_walk_2: -674134405
+      hero_15-female-2_walk_5: 1826317579
+      hero_15-female-2_walk_3: -205448305
+      hero_15-female-2_walk_7: 1478185884
+      hero_15-female-2_walk_15: -1946139242
+      hero_15-female-2_walk_1: -1555356538
+      hero_15-female-2_walk_13: -1940410644
+      hero_15-female-2_walk_0: 1813019802
+      hero_15-female-2_walk_6: -1477306024
+      hero_15-female-2_walk_11: 1375574834
+      hero_15-female-2_walk_9: 1008541253
+      hero_15-female-2_walk_4: 2139147628
+      hero_15-female-2_walk_8: -281217444
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

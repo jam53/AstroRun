@@ -940,8 +940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6441789816739639019, guid: 5ef3ca7e743290d448e5e48c3d4ebc9c,
-    type: 3}
+  m_Sprite: {fileID: 776105851, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1119,6 +1118,7 @@ MonoBehaviour:
     bestTimeLevel1_7: 99:99:99
     bestTimeLevel1_8: 99:99:99
     bestTimeLevel1_9: 99:99:99
+    bestTimeLevel10: 99:99:99
     totalCoins: 0
     coinsLevel1_1: 0
     coinsLevel1_2: 0
@@ -1129,6 +1129,7 @@ MonoBehaviour:
     coinsLevel1_7: 0
     coinsLevel1_8: 0
     coinsLevel1_9: 0
+    coinsLevel10: 0
     coinsWorld1: 0
     highestUnlockedLevel: 1
     audioSettings: 0
@@ -1141,6 +1142,7 @@ MonoBehaviour:
     timeToSubmitLevel1_7: 0
     timeToSubmitLevel1_8: 0
     timeToSubmitLevel1_9: 0
+    timeToSubmitLevel10: 0
     qualitySettings: 1
     dialogueBoxCoinsResetTimer: 0
     dialogueBuyingNewLevels: 0
@@ -1674,8 +1676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6876196804455891898, guid: 5ef3ca7e743290d448e5e48c3d4ebc9c,
-    type: 3}
+  m_Sprite: {fileID: -138931186, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2221,6 +2222,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

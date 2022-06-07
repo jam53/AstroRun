@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hero_19_Male
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: b373085592dd538459216810f4113557, type: 3}
+    - {fileID: 2800000, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+    - {fileID: 2800000, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+    - {fileID: 2800000, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1152601803, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 1545866689, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 2143978352, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -1538139048, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 1043105843, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -948127140, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 1617168983, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -457757230, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -391664260, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 286279434, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -810678383, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -770710819, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -442820169, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 1052098129, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -1355301488, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: -1499093961, guid: 4eca621065a0c5a4d811a9405dbbf02e, type: 3}
+  - {fileID: 892090342, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -1174063405, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -1362055165, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 2110875158, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 1972045707, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -836269123, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -832363888, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -8691590, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -433001664, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -762651501, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 1446390822, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -1181996446, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 1962151174, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 79310882, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -2144184203, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: -1269643836, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 831626366, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: 139044229, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -2084906551, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -1314869166, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: 1575296736, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -1856299569, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -210224497, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: 355763303, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -1556264268, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -55332303, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -1342617828, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -651082335, guid: 57f4b817803c89643a1331ee59df3afc, type: 3}
+  - {fileID: -2105272473, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 212191156, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -223095216, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -856466372, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 2083016298, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -1512881602, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -1549026990, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -80005074, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 1250509534, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 1435370715, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -450386758, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 1437166001, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -2087504923, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 1145610213, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: 1991710133, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  - {fileID: -1325814806, guid: 87523e484efd2074093476fd6dcea3ae, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - hero_19-male-3_run_5
+  - hero_19-male-3_run_4
+  - hero_19-male-3_run_7
+  - hero_19-male-3_run_6
+  - hero_19-male-3_run_1
+  - hero_19-male-3_run_0
+  - hero_19-male-3_run_3
+  - hero_19-male-3_run_2
+  - hero_19-male-3_run_9
+  - hero_19-male-3_run_8
+  - hero_19-male-3_run_14
+  - hero_19-male-3_run_15
+  - hero_19-male-3_run_10
+  - hero_19-male-3_run_11
+  - hero_19-male-3_run_12
+  - hero_19-male-3_run_13
+  - hero_19-male-1_idle_13
+  - hero_19-male-1_idle_12
+  - hero_19-male-1_idle_11
+  - hero_19-male-1_idle_10
+  - hero_19-male-1_idle_15
+  - hero_19-male-1_idle_14
+  - hero_19-male-1_idle_8
+  - hero_19-male-1_idle_9
+  - hero_19-male-1_idle_0
+  - hero_19-male-1_idle_1
+  - hero_19-male-1_idle_2
+  - hero_19-male-1_idle_3
+  - hero_19-male-1_idle_4
+  - hero_19-male-1_idle_5
+  - hero_19-male-1_idle_6
+  - hero_19-male-1_idle_7
+  - hero_19-male-6_die_10
+  - hero_19-male-6_die_11
+  - hero_19-male-6_die_1
+  - hero_19-male-6_die_0
+  - hero_19-male-6_die_3
+  - hero_19-male-6_die_2
+  - hero_19-male-6_die_5
+  - hero_19-male-6_die_4
+  - hero_19-male-6_die_7
+  - hero_19-male-6_die_6
+  - hero_19-male-6_die_9
+  - hero_19-male-6_die_8
+  - hero_19-male-2_walk_0
+  - hero_19-male-2_walk_1
+  - hero_19-male-2_walk_2
+  - hero_19-male-2_walk_3
+  - hero_19-male-2_walk_4
+  - hero_19-male-2_walk_5
+  - hero_19-male-2_walk_6
+  - hero_19-male-2_walk_7
+  - hero_19-male-2_walk_8
+  - hero_19-male-2_walk_9
+  - hero_19-male-2_walk_13
+  - hero_19-male-2_walk_12
+  - hero_19-male-2_walk_11
+  - hero_19-male-2_walk_10
+  - hero_19-male-2_walk_15
+  - hero_19-male-2_walk_14
+  m_RenderDataMap: {}
+  m_Tag: Hero_19_Male
+  m_IsVariant: 0

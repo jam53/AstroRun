@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainMenu
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 510666ba1d646354c9e7eaf56fecb232, type: 3}
+    - {fileID: 2800000, guid: 75e1c1f5ae01c9241b5fd6148b0e5620, type: 3}
+    - {fileID: 2800000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
+    - {fileID: 2800000, guid: 45aa1f29fcaced947ad384d6df65cc82, type: 3}
+    - {fileID: 2800000, guid: c49293c3bc129bb4781fabad81a57785, type: 3}
+    - {fileID: 2800000, guid: 406dba8820d6b984caa7a8642c555f10, type: 3}
+    - {fileID: 2800000, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c49293c3bc129bb4781fabad81a57785, type: 3}
+  - {fileID: 21300000, guid: 03bdf0d3e2f6afb4096b0ddf85b929ff, type: 3}
+  - {fileID: 21300000, guid: 263bf23489246124893ce5482a8910cb, type: 3}
+  - {fileID: 21300000, guid: 0dc290a428f5d1146a9a1bfb36fda69d, type: 3}
+  - {fileID: 21300000, guid: a9df501523b90cb4fa5ecfbe587e7c2e, type: 3}
+  - {fileID: 21300000, guid: 75e1c1f5ae01c9241b5fd6148b0e5620, type: 3}
+  - {fileID: 21300000, guid: e6e100a67022fda4388f169c3b107990, type: 3}
+  - {fileID: 21300000, guid: 1da79ef61b949ca4bae8f6a577e443ed, type: 3}
+  - {fileID: -2287147699655142797, guid: 406dba8820d6b984caa7a8642c555f10, type: 3}
+  - {fileID: 21300000, guid: 45aa1f29fcaced947ad384d6df65cc82, type: 3}
+  - {fileID: 21300000, guid: 00208c59fca60874da59812397c94a3f, type: 3}
+  - {fileID: 21300000, guid: c6a3a33a44d2b374295587220b1c43bb, type: 3}
+  - {fileID: -812039542, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -2011305600, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -1399331594, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -138931186, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: 2021139357, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -200204089, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -232721838, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -802314807, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: 1029881786, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -405352162, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: -671245847, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: 776105851, guid: 54b664ca75dbece4ea3a07f76313b928, type: 3}
+  - {fileID: 21300000, guid: 1c77ca2cca2941e42a4c32639bbf66e5, type: 3}
+  - {fileID: 21300000, guid: 6871593f506da1847b92f70058a92e6f, type: 3}
+  - {fileID: 21300000, guid: 0e9193bf5cc242143913c2299afc69c1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - arrows+double+arrow+doublechevronleft+left+icon-1320185729725994033
+  - 4
+  - locked-padlock
+  - 8
+  - 9
+  - Splash
+  - 6
+  - 1
+  - Back-Arrow-Left-chevron-512_0
+  - RoundedEdgesSquare
+  - 7
+  - 3
+  - Empty1024x1024_1
+  - Empty1024x1024_0
+  - Empty1024x1024_3
+  - Empty1024x1024_2
+  - Empty1024x1024_5
+  - Empty1024x1024_4
+  - Empty1024x1024_7
+  - Empty1024x1024_6
+  - Empty1024x1024_9
+  - Empty1024x1024_8
+  - Empty1024x1024_10
+  - Empty1024x1024_11
+  - 2
+  - 5
+  - 10
+  m_RenderDataMap: {}
+  m_Tag: MainMenu
+  m_IsVariant: 0

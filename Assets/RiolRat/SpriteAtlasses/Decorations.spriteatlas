@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Decorations
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 17b71639b7b6ed74097241a54f11fbb2, type: 3}
+    - {fileID: 102900000, guid: 057a0e7a69f7c5245a722864ce710b00, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b94b23723dfa2e84e9de0fdeb406695d, type: 3}
+  - {fileID: 21300000, guid: 0e141e3371de4a745962f5fa234ae937, type: 3}
+  - {fileID: 21300000, guid: aab1a34364efa9a4989660a4d494c344, type: 3}
+  - {fileID: 21300000, guid: 1fa7f5c36a465e54bb121986ce5caea8, type: 3}
+  - {fileID: 21300000, guid: d3e97dc46c3ce5243979b58db6d4921c, type: 3}
+  - {fileID: 21300000, guid: 1797de06f3e509a40b074ba304b1f4e7, type: 3}
+  - {fileID: 21300000, guid: 3db354165a4809e4fbdab2816db81297, type: 3}
+  - {fileID: 21300000, guid: fd34a2a65254b0a4c8c9d50f5f6b18ff, type: 3}
+  - {fileID: 21300000, guid: 6e00a1c687a75084da4cc84b3c795faf, type: 3}
+  - {fileID: 21300000, guid: b356bb7778e1fa248a61d541e70edad9, type: 3}
+  - {fileID: 21300000, guid: 5393c5683005af347ba09cfe5b7ea298, type: 3}
+  - {fileID: 21300000, guid: 61c2dd2916fc61b459144e04f38e5131, type: 3}
+  - {fileID: 21300000, guid: 1a2d384997b417c49a00c59440b49727, type: 3}
+  - {fileID: 21300000, guid: 75bbd849a8be84a4dbc03e1a589904bf, type: 3}
+  - {fileID: 21300000, guid: 2d659df94231aee4ca32a55360b204b6, type: 3}
+  - {fileID: 21300000, guid: 904cc5faec8bd3340a6f6f419d53d88c, type: 3}
+  - {fileID: 21300000, guid: e08b2a8bd08d6e94ca6b30f4f24a4521, type: 3}
+  - {fileID: 21300000, guid: d2bfaa7ed758c45418b2ad7971ae8a0e, type: 3}
+  - {fileID: 21300000, guid: 313d1e4fbf28331428b7f4a589423205, type: 3}
+  - {fileID: 21300000, guid: 81720abf9497de840a457ce9a9d82e2f, type: 3}
+  - {fileID: 21300000, guid: f390f0effc03cd64c8e09fd4faa570cd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Autumn Bush
+  - Tree
+  - Sign_1
+  - Bush (2)
+  - Flower-2
+  - Winter Bush
+  - Autumn Tree
+  - Crate
+  - Mushroom_1
+  - Flower-3
+  - Stone
+  - Tree_1
+  - Bush (3)
+  - Flower-1
+  - Tree_3
+  - Mushroom_2
+  - Tree_2
+  - Bush (4)
+  - Bush (1)
+  - Winter Tree
+  - Bush
+  m_RenderDataMap: {}
+  m_Tag: Decorations
+  m_IsVariant: 0

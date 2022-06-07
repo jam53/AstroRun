@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hero_18_Female
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+    - {fileID: 2800000, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+    - {fileID: 2800000, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+    - {fileID: 2800000, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -544726668, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 1294798564, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -1325129869, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -1329182211, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -164165972, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 609328625, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -691053084, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 1494206701, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -1492852729, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 256498340, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 1112236936, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 1755007620, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 999681251, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -1630821660, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -1877329884, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: 218394779, guid: e4624b20616f2314d93d9b2834e81c24, type: 3}
+  - {fileID: -721239382, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: -921183692, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 739827517, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 1082264950, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: -446629912, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: -1002947772, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 1388738818, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: -334258343, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 267558958, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: -311333277, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 208332061, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 419789382, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 961038676, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 2132599010, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 408909361, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: -755365736, guid: faa3c107ae5d88c47a72763db6626aa8, type: 3}
+  - {fileID: 687579373, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 15718721, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 1346032206, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -64133841, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 645993766, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -1431560664, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -252992979, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 1300665716, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 722673805, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 743140344, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -431677519, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 1395201290, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -1593866367, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -1802885334, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -791965661, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -931144509, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: -1439505588, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: -1973238468, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 2144571524, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 2072912590, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 341480322, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: -852183178, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 124669376, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 1473654528, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 678243133, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: 1058517029, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: -590101442, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  - {fileID: -869640217, guid: 20cb111a3eeba664aaff00f58e8c19c0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - hero_18-female-2_walk_15
+  - hero_18-female-2_walk_14
+  - hero_18-female-2_walk_13
+  - hero_18-female-2_walk_12
+  - hero_18-female-2_walk_11
+  - hero_18-female-2_walk_10
+  - hero_18-female-2_walk_8
+  - hero_18-female-2_walk_9
+  - hero_18-female-2_walk_4
+  - hero_18-female-2_walk_5
+  - hero_18-female-2_walk_6
+  - hero_18-female-2_walk_7
+  - hero_18-female-2_walk_0
+  - hero_18-female-2_walk_1
+  - hero_18-female-2_walk_2
+  - hero_18-female-2_walk_3
+  - hero_18-female-3_run_10
+  - hero_18-female-3_run_11
+  - hero_18-female-3_run_12
+  - hero_18-female-3_run_13
+  - hero_18-female-3_run_14
+  - hero_18-female-3_run_15
+  - hero_18-female-3_run_9
+  - hero_18-female-3_run_8
+  - hero_18-female-3_run_1
+  - hero_18-female-3_run_0
+  - hero_18-female-3_run_3
+  - hero_18-female-3_run_2
+  - hero_18-female-3_run_5
+  - hero_18-female-3_run_4
+  - hero_18-female-3_run_7
+  - hero_18-female-3_run_6
+  - hero_18-female-1_idle_8
+  - hero_18-female-1_idle_9
+  - hero_18-female-1_idle_4
+  - hero_18-female-1_idle_5
+  - hero_18-female-1_idle_6
+  - hero_18-female-1_idle_7
+  - hero_18-female-1_idle_0
+  - hero_18-female-1_idle_1
+  - hero_18-female-1_idle_2
+  - hero_18-female-1_idle_3
+  - hero_18-female-1_idle_15
+  - hero_18-female-1_idle_14
+  - hero_18-female-1_idle_13
+  - hero_18-female-1_idle_12
+  - hero_18-female-1_idle_11
+  - hero_18-female-1_idle_10
+  - hero_18-female-6_die_10
+  - hero_18-female-6_die_11
+  - hero_18-female-6_die_9
+  - hero_18-female-6_die_8
+  - hero_18-female-6_die_5
+  - hero_18-female-6_die_4
+  - hero_18-female-6_die_7
+  - hero_18-female-6_die_6
+  - hero_18-female-6_die_1
+  - hero_18-female-6_die_0
+  - hero_18-female-6_die_3
+  - hero_18-female-6_die_2
+  m_RenderDataMap: {}
+  m_Tag: Hero_18_Female
+  m_IsVariant: 0

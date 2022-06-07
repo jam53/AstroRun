@@ -21,6 +21,7 @@ MonoBehaviour:
     m_Address: Assets/RiolRat/Localization/Tables/UI Text Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 8b07f671b309b3e49979d194b2bd884a, type: 2}
   m_SchemaSet:
