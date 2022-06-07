@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.2d.animation": {
-      "version": "7.0.5",
+      "version": "7.0.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -38,6 +38,17 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.2d.psdimporter": {
+      "version": "6.0.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.animation": "7.0.4",
+        "com.unity.2d.common": "6.0.3",
+        "com.unity.2d.sprite": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -63,14 +74,16 @@
       "dependencies": {}
     },
     "com.unity.2d.tilemap.extras": {
-      "version": "https://github.com/Unity-Technologies/2d-extras.git",
-      "depth": 0,
-      "source": "git",
+      "version": "2.2.2",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "com.unity.modules.tilemap": "1.0.0",
-        "com.unity.2d.tilemap": "1.0.0"
+        "com.unity.2d.tilemap": "1.0.0",
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
       },
-      "hash": "7bac29caf2db04323260d437581e1cc5f22df2c7"
+      "url": "https://packages.unity.com"
     },
     "com.unity.addressables": {
       "version": "1.19.19",
@@ -108,6 +121,20 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
+    },
+    "com.unity.feature.2d": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.2d.animation": "7.0.5",
+        "com.unity.2d.pixel-perfect": "5.0.1",
+        "com.unity.2d.psdimporter": "6.0.3",
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.2d.spriteshape": "7.0.4",
+        "com.unity.2d.tilemap": "1.0.0",
+        "com.unity.2d.tilemap.extras": "2.2.2"
+      }
     },
     "com.unity.ide.visualstudio": {
       "version": "2.0.15",
