@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 3286693547317567764}
   - component: {fileID: 1095544590}
   - component: {fileID: 2441722503556998898}
+  - component: {fileID: -7357402797616279592}
   m_Layer: 0
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -483,6 +484,58 @@ MonoBehaviour:
   SpawnPoint: {fileID: 0}
   DeathCounter: {fileID: 0}
   VirtualCamera: {fileID: 0}
+--- !u!114 &-7357402797616279592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bde02038e28b243bd2765d3fbe8324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 9500000}
+  animatorOverrideControllers:
+  - {fileID: 22100000, guid: b690ea943bf290540a4ebb60074f8178, type: 2}
+  - {fileID: 22100000, guid: 4dbd51ee80961f745907a2956f54dd50, type: 2}
+  - {fileID: 22100000, guid: ccd8588f81b487f4c9c1d09d2010bf9b, type: 2}
+  - {fileID: 22100000, guid: 61082982f50b9664fbf8e58d38446ddc, type: 2}
+  - {fileID: 22100000, guid: 6c8c528f9a0e4a64f94ecde970cc2bae, type: 2}
+  - {fileID: 22100000, guid: 16e94b6ab30193649b5f04ff0a445c2e, type: 2}
+  - {fileID: 22100000, guid: 70622309229e62d4e8b6d6ec38b3e383, type: 2}
+  - {fileID: 22100000, guid: 23be0faf1892af848b5c8732a5d74318, type: 2}
+  - {fileID: 22100000, guid: 5fda4c2b4d770ff41ae26e3f7460265e, type: 2}
+  - {fileID: 22100000, guid: 7166010a446080f44b849947a7aef4eb, type: 2}
+  - {fileID: 22100000, guid: 4fc9f61751e47a147acfacc0ca05a7a1, type: 2}
+  - {fileID: 22100000, guid: a577145bef1d72e44b27f41fb218b8da, type: 2}
+  - {fileID: 22100000, guid: 87b668f08ca7ebc45a6af71162affbcc, type: 2}
+  - {fileID: 22100000, guid: f2cff97e75cfbaf4fa6d0fa9f9783055, type: 2}
+  - {fileID: 22100000, guid: 82d23536ec744c4459123bd5407f637f, type: 2}
+  - {fileID: 22100000, guid: f9817277a3f097647aa159b8f3fdc563, type: 2}
+  - {fileID: 22100000, guid: 4821acb0935480b48825efe71630cb02, type: 2}
+  - {fileID: 22100000, guid: 0126dd58a3217ba47a8003eb3782f11f, type: 2}
+  - {fileID: 22100000, guid: ad43720c6fc06ff46b6e89a01f25a942, type: 2}
+  - {fileID: 22100000, guid: 762e0eccfb3b0884abaf2eb9cd742e33, type: 2}
+  - {fileID: 22100000, guid: 2b47c428d688a8240855c6d2c8c41e3a, type: 2}
+  - {fileID: 22100000, guid: 266116af8e4ada14da15094a47f0cf12, type: 2}
+  - {fileID: 22100000, guid: f7c5c8aeca6821849a05deb80610741b, type: 2}
+  - {fileID: 22100000, guid: f114a5866bf634f468392b7be71c5941, type: 2}
+  - {fileID: 22100000, guid: d9f8f69b9969d70488e07632748200b1, type: 2}
+  - {fileID: 22100000, guid: e9a525f6a1578a74b86498c5e61400a9, type: 2}
+  - {fileID: 22100000, guid: 243daf275431cc6499d59b8ae957b22c, type: 2}
+  - {fileID: 22100000, guid: f84b7f744ea16bd4e859b13bc2be5254, type: 2}
+  - {fileID: 22100000, guid: ff14033ce5036e248895b5b76035f02e, type: 2}
+  - {fileID: 22100000, guid: 41d58a1a6993d9749ae71ed8cee92ab7, type: 2}
+  - {fileID: 22100000, guid: 4a4c63fdb6a689d4697d9fbe1f7fc1bd, type: 2}
+  - {fileID: 22100000, guid: c2905036ed1abf449a201abe2d7b0a8d, type: 2}
+  - {fileID: 22100000, guid: f1e7569c04623cb4896632d6b67f374d, type: 2}
+  - {fileID: 22100000, guid: 3e82ab0d6f5fa8441b9f96b777d2afc9, type: 2}
+  - {fileID: 22100000, guid: 57902ae0fe9fd0045857083dabdd0d5d, type: 2}
+  - {fileID: 22100000, guid: e1234e6ed152b8d4d89bd7a95d3c556b, type: 2}
+  - {fileID: 22100000, guid: ff21aa58dcd58bc418bfc10a61ea28e1, type: 2}
+  - {fileID: 22100000, guid: a30fb455adc494a42881c6ebc43b013c, type: 2}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0

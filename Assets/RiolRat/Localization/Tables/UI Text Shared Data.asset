@@ -277,6 +277,14 @@ MonoBehaviour:
     m_Key: LevelSmart
     m_Metadata:
       m_Items: []
+  - m_Id: 56126035320766464
+    m_Key: Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56126040878219264
+    m_Key: Equipped
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

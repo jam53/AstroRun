@@ -11,6 +11,7 @@ public class BuyStuffInShop : MonoBehaviour
     public int AmountOfLevels;//The amount of levels that are currently in the game
     public int PricePerLevel;
     public TextMeshProUGUI TotalCoins;//Displayed at the right upper corner of the screen, how many coins the user has
+    public TextMeshProUGUI TotalCoinsShop;//Displayed at the right upper corner of the screen, how many coins the user has
     public int buttonIndex;//This gets updated through ShopVierkant. This way we will know what button the user clicked, and  
     //what action we should perform. e.g. show an ad, or unlock a new level, ..
 
@@ -75,6 +76,7 @@ public class BuyStuffInShop : MonoBehaviour
             SaveLoadManager.slm.SaveJSONToDisk();
 
             TotalCoins.text = "" + SaveLoadManager.slm.astroRunData.totalCoins; //Update the User's coins in the UI
+            TotalCoinsShop.text = "" + SaveLoadManager.slm.astroRunData.totalCoins; //Update the User's coins in the UI
 
 
 

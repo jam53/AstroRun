@@ -2084,7 +2084,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 170, y: -187}
-  m_SizeDelta: {x: 800, y: 93.365524}
+  m_SizeDelta: {x: 1500, y: 93.365524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70117045
 MonoBehaviour:
@@ -13980,51 +13980,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78776e4fa99723a4ab4f88c347d5d6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Display: {fileID: 1814720192}
-  Price: {fileID: 1872729830}
-  SkinThumbnail:
-  - {fileID: 21300000, guid: c82cc2253a20a5f43a0ac713c23634e6, type: 3}
-  - {fileID: 21300000, guid: 6cccdf99035296846a7906dc1d9ebc92, type: 3}
-  - {fileID: 21300000, guid: f0789cdf65492164d831b5aedf228b58, type: 3}
-  - {fileID: 21300000, guid: 769916a9567ab0e4e936db2dd6a7b3d4, type: 3}
-  - {fileID: 21300000, guid: d8097dab4f0961847b64a08d5dc8a1aa, type: 3}
-  - {fileID: 21300000, guid: 14e7f31b741541342806b5bb97688dda, type: 3}
-  - {fileID: 21300000, guid: 1d31c4c24a42649429583bb010671657, type: 3}
-  - {fileID: 21300000, guid: 51dbd7e5ff3324a4587dd7b95da9c4be, type: 3}
-  - {fileID: 21300000, guid: 33f63c067b6b06040860fb7b7b5cc8e1, type: 3}
-  - {fileID: 21300000, guid: db094b3e5dc867a488226c847f3df9e8, type: 3}
-  - {fileID: 21300000, guid: 6f2781f52db6eb04299a9bb5a5f743ea, type: 3}
-  - {fileID: 21300000, guid: 3c8615ddefcd18c439395e754a952b1a, type: 3}
-  - {fileID: 21300000, guid: 939eef5058c3aa2499c5b75987d2a5be, type: 3}
-  - {fileID: 21300000, guid: b6998066fdaa1e249919b1b76335abfa, type: 3}
-  - {fileID: 21300000, guid: 93ef09fc4b88bc54e8d1d376e3018e3e, type: 3}
-  - {fileID: 21300000, guid: 146f8646b890e814ab78560ae9dddacc, type: 3}
-  - {fileID: 21300000, guid: 697d11b9a4ea0d148bc92512de103f3d, type: 3}
-  - {fileID: 21300000, guid: fbe2ee91bc3ae8741abf7a9f7f0ff0d3, type: 3}
-  - {fileID: 21300000, guid: 5aba2d9c4fff90c44a214c4b54db6b06, type: 3}
-  SkinPrice:
-  - 0
-  - 250
-  - 500
-  - 750
-  - 1000
-  - 1250
-  - 1500
-  - 1750
-  - 2000
-  - 2250
-  - 2500
-  - 2750
-  - 3000
-  - 3250
-  - 3500
-  - 3750
-  - 4000
-  - 4250
-  - 10000
-  Coins: {fileID: 1779055754}
-  Owned_Text: {fileID: 1844488911}
-  Owned: 0
+  display: {fileID: 1814720192}
+  unOwned_Text: {fileID: 1779055754}
+  owned_Text: {fileID: 1844488911}
+  skinThumbnail:
+  - {fileID: 1447995243, guid: bdc362dcbf88e97419927d5b25eab4f0, type: 3}
+  - {fileID: -252992979, guid: 791086572a979b74c9ff638dec4e46f7, type: 3}
+  - {fileID: 1461389098, guid: daa25f04d6ee18c4c8881f300dd5947f, type: 3}
+  - {fileID: 1449869111, guid: 29f2131c82e84b74d9ce99e5a6271a12, type: 3}
+  - {fileID: 1912902400, guid: 892fe6098f7c46740a2f0073f3472423, type: 3}
+  - {fileID: 1683333089, guid: 4d60d5adb117008488a30902390547d6, type: 3}
+  - {fileID: 1171875152, guid: 826bf562083d9c847901f4637c0c4037, type: 3}
+  - {fileID: -985321549, guid: 356961d2134e0884e8c53471fc89d706, type: 3}
+  - {fileID: -1212804957, guid: cd34163164c743249a953f4044c9e759, type: 3}
+  - {fileID: 802999485, guid: b161dc0012721164c8a142fc5b352432, type: 3}
+  - {fileID: -2139624538, guid: 1ead03ca7cada254995c2d07748e414d, type: 3}
+  - {fileID: 976596993, guid: 5be9bc6583df7fb44b8ad757038a38dc, type: 3}
+  - {fileID: 204280934, guid: c498be4e43ce7034e9eaf736317077fc, type: 3}
+  - {fileID: 735837896, guid: 3fdc86bbc2824f54f9b40cd5149ce525, type: 3}
+  - {fileID: 155380847, guid: f7d78f93ae68a2546828287ab75449ff, type: 3}
+  - {fileID: -2000679797, guid: 0fcc43d2d0d964d4d8f209801df9124a, type: 3}
+  - {fileID: -433001664, guid: b373085592dd538459216810f4113557, type: 3}
+  - {fileID: 1990141198, guid: 23e4238eb53c80c4ba0f09ebe847f582, type: 3}
+  - {fileID: 1644541851, guid: 567d61bb9ed4dce45a6b5d42097261c1, type: 3}
+  - {fileID: -2096913708, guid: 5b1a746dd25fe1d4eb033e22b317f67b, type: 3}
+  - {fileID: 412211028, guid: 63fcb4fa1d6b5b145905369aa46c5375, type: 3}
+  - {fileID: 882704720, guid: 616bd1fc645c8294694e28be5f9a37a0, type: 3}
+  - {fileID: -1286710917, guid: 71b47e500b921a94fa89383ef70b100a, type: 3}
+  - {fileID: -843511508, guid: 94c2912ced26fad44ac44a6fdda29939, type: 3}
+  - {fileID: 1609723879, guid: 882f1a09c1415e54c94c94df92d5b4bf, type: 3}
+  - {fileID: 84974807, guid: 1c130b8cacb41274b9fdf81dccc5d221, type: 3}
+  - {fileID: -11518837, guid: 53bcfcbdef660b344aa5168b8c991be9, type: 3}
+  - {fileID: 2116195586, guid: b9e20166bf2e15740a0f1c0d53f63ca1, type: 3}
+  - {fileID: -2046654777, guid: f951232825bacc84ab4af649e95aba08, type: 3}
+  - {fileID: -546629936, guid: d2c3cb1d538880147bae6f0490184b4b, type: 3}
+  - {fileID: -821310830, guid: ffcb2a3613aa33145af03e749a2ebfc5, type: 3}
+  - {fileID: -651390098, guid: 49949abcb2227de4c9b001d271201cd2, type: 3}
+  - {fileID: -1338291624, guid: 39080f2166717fe49bf16577dc427d88, type: 3}
+  - {fileID: 576107643, guid: b9f1bf3e39c907d478330a4b7654d23e, type: 3}
+  - {fileID: -1136619047, guid: 8d21a3002cfc9ac4fa0811dcaa9a24b0, type: 3}
+  - {fileID: -150877973, guid: 1ba318b13f0e7c743b2c6726473863f0, type: 3}
+  - {fileID: -2029170571, guid: 852cac9d983eea741978dbff757125f4, type: 3}
+  - {fileID: -703671326, guid: beb01ea180992e044ab9890da3411f5d, type: 3}
+  pricePerSkin: 1500
+  totalCoins_Text: {fileID: 1040771163}
+  totalCoinsShop_Text: {fileID: 2026485686}
 --- !u!1 &628397871
 GameObject:
   m_ObjectHideFlags: 0
@@ -15708,7 +15708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &677737135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23753,12 +23753,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 626585960}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: GoRight
-        m_Mode: 1
+        m_MethodName: changePreviewedSkin
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -34176,7 +34176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1637385264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35108,12 +35108,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 626585960}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: GoLeft
-        m_Mode: 1
+        m_MethodName: changePreviewedSkin
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -36613,8 +36613,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1779055755}
+  - component: {fileID: 1779055756}
   m_Layer: 5
-  m_Name: Coins
+  m_Name: UnOwned_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36642,6 +36643,62 @@ RectTransform:
   m_AnchoredPosition: {x: -170, y: -710}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1779055756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779055754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1872729830}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626585960}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: buySkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1781463354
 GameObject:
   m_ObjectHideFlags: 0
@@ -38131,7 +38188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 938ceb21c43f80d40bade1a1b39238ff, type: 3}
+  m_Sprite: {fileID: 1447995243, guid: bdc362dcbf88e97419927d5b25eab4f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38960,6 +39017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1844488912}
+  - component: {fileID: 1844488913}
   m_Layer: 5
   m_Name: Owned_Text
   m_TagString: Untagged
@@ -38989,6 +39047,62 @@ RectTransform:
   m_AnchoredPosition: {x: -170, y: -710}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1844488913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844488911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 70117045}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626585960}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: equipSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1851409958
 GameObject:
   m_ObjectHideFlags: 0
@@ -52589,6 +52703,7 @@ MonoBehaviour:
   AmountOfLevels: 10
   PricePerLevel: 500
   TotalCoins: {fileID: 1420538289}
+  TotalCoinsShop: {fileID: 2026485686}
   buttonIndex: 0
 --- !u!1 &6939213076318598216
 GameObject:

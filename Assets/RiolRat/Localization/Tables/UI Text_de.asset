@@ -357,6 +357,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 8592859466626498572
+  - m_Id: 56126040878219264
+    m_Localized: Ausgestattet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56126035320766464
+    m_Localized: "W\xE4hle"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
