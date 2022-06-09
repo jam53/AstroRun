@@ -225,6 +225,11 @@ public class GPGSAutenthicator : MonoBehaviour
         PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_mr_moneybags, amount, null);
     }
 
+    public void UnlockFashionista()
+    {
+        Social.ReportProgress(GPGSIds.achievement_fashionista, 100f, null);
+    }
+
 
 
 

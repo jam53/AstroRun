@@ -77,6 +77,11 @@ public class Shop : MonoBehaviour
             totalCoinsShop_Text.text = "" + SaveLoadManager.slm.astroRunData.totalCoins; //Update the User's coins in the UI
 
             loadSkin(selectedSkin);
+
+            if (SaveLoadManager.slm.astroRunData.ownedSkins.Count >= skinThumbnail.Length)
+            {
+                GPGSAutenthicator.GPGSZelf.UnlockFashionista();
+            }
         }
     }
 

@@ -29,9 +29,6 @@ public class AchievementsHandler : MonoBehaviour
     public NextLevelLoader nextLevelLoader4;
     public PickupCoins pickupCoins;
 
-    [Header("Achievement: Fashionista")]
-    public bool Fashionista;
-
 
     // Update is called once per frame
     void Update()
