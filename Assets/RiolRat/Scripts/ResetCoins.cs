@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class ResetCoins : MonoBehaviour
 {
-    private DateTime _lastAdTime;
+    private DateTime lastCoinReset;
 
-    private float seconds, minutes, houres;
+    private float seconds, minutes, hours;
 
     private string LevelTime;
 
@@ -18,8 +18,7 @@ public class ResetCoins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //_lastAdTime = Convert.ToDateTime(GPGSAutenthicator.GPGSZelf.LoadString(19)); // Load the last reset
-        _lastAdTime = Convert.ToDateTime(PlayerPrefs.GetString("AdTime")); // Load the last reset
+        lastCoinReset = Convert.ToDateTime(SaveLoadManager.slm.astroRunData.CoinsResetTime); // Load the last reset
     }
 
     // Update is called once per frame
@@ -27,11 +26,11 @@ public class ResetCoins : MonoBehaviour
     {
         ResettCoins();
 
-        houres = (int)(_lastAdTime.AddDays(1).Subtract(DateTime.Now).TotalSeconds / 3600f) % 60;
-        minutes = (int)(_lastAdTime.AddDays(1).Subtract(DateTime.Now).TotalSeconds / 60f) % 60;
-        seconds = (int)(_lastAdTime.AddDays(1).Subtract(DateTime.Now).TotalSeconds % 60f);
+        hours = (int)(lastCoinReset.AddDays(1).Subtract(DateTime.Now).TotalSeconds / 3600f) % 60;
+        minutes = (int)(lastCoinReset.AddDays(1).Subtract(DateTime.Now).TotalSeconds / 60f) % 60;
+        seconds = (int)(lastCoinReset.AddDays(1).Subtract(DateTime.Now).TotalSeconds % 60f);
 
-        LevelTime = houres.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00");
+        LevelTime = hours.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00");
 
         TimeUntillResetWorld.text = LevelTime;
         TimeUntillResetLevel.text = LevelTime;
@@ -41,11 +40,10 @@ public class ResetCoins : MonoBehaviour
     //Reset the coins collected from all levels. So they can be collected again
     public void ResettCoins()
     {
-        if (_lastAdTime.AddDays(1) < DateTime.Now) //if 24 houres passed
+        if (lastCoinReset.AddDays(1) < DateTime.Now || lastCoinReset > (DateTime.Now).AddDays(2)) //if 24 hours passed since last coin reset || last coin reset is in the future
         {
-            _lastAdTime = DateTime.Now; //Reset the countdown
-            //GPGSAutenthicator.GPGSZelf.SaveString(19, Convert.ToString(DateTime.Now));
-            PlayerPrefs.SetString("AdTime", Convert.ToString(DateTime.Now));
+            lastCoinReset = DateTime.Now; //Reset the countdown
+            SaveLoadManager.slm.astroRunData.CoinsResetTime = Convert.ToString(DateTime.Now);
 
             // Reset the collected coins
             SaveLoadManager.slm.astroRunData.coinsLevel1_1 = 0; //Level 1 coins

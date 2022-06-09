@@ -60,4 +60,6 @@ public class AstroRunData
     public List<int> ownedSkins = new List<int> {0, 1}; //This set holds the ids of the unlocked skins. See Assets/RiolRat/Other/SkinsIDs.md
 
     public int selectedSkin = 0; //The skin that the user selected
+
+    public string CoinsResetTime = Convert.ToString(DateTime.Now); //The last time the coins were reset
 }
