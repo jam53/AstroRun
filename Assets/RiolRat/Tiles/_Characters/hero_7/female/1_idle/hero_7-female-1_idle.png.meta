@@ -20,7 +20,6 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -64,7 +63,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -465,7 +463,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       hero_7-female-1_idle_5: -1599037690
-      hero_7-female-1_idle_0: 976596993
+      hero_7-female-1_idle_1: 1488290793
       hero_7-female-1_idle_4: -1634401141
       hero_7-female-1_idle_13: -340837631
       hero_7-female-1_idle_14: -1888539711
@@ -478,10 +476,11 @@ TextureImporter:
       hero_7-female-1_idle_8: -39542068
       hero_7-female-1_idle_12: 2018568985
       hero_7-female-1_idle_3: 1607954536
-      hero_7-female-1_idle_1: 1488290793
       hero_7-female-1_idle_15: -1574840111
+      hero_7-female-1_idle_0: 976596993
   spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
