@@ -40,5 +40,10 @@ sysinfo.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+###
+# Other
+###
 UserSettings/Layouts/default-2021.dwlt
 UserSettings/EditorUserSettings.asset
+.idea/
