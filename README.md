@@ -23,6 +23,8 @@ Although nowadays most of the work is done by the programmer. The game used to b
 
 ### [Adding new levels](/Documentation/AddNewLevel.md)
 
+### [Adding new skins](/Documentation/AddNewSkin.md)
+
 ### [Building the project](/Documentation/BuildingTheGame.md)
 
 ### [Capturing device logs on Android](/Documentation/CaptureAndroidLogs_AdbLogcat.md)
