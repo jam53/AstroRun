@@ -34,3 +34,7 @@ Inside Unity navigate to:
 *Edit > Preferences > External Tools*
 
 **Uncheck** `Android SDK Tools Installed with Unity (recommended)` and input the **path** to the **Android SDK** on your system.
+
+## (Resolving Android Dependencies) Could not create an instance of type org.gradle.initialization.DefaultSettings_Decorated
+- *Edit > Preferences > External Tools*
+- Uncheck the checkboxes of JDK, SDK, NDK and Gradle and enter the same paths that were there when the checkboxes were checked. 
