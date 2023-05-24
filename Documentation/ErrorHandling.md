@@ -37,4 +37,7 @@ Inside Unity navigate to:
 
 ## (Resolving Android Dependencies) Could not create an instance of type org.gradle.initialization.DefaultSettings_Decorated
 - *Edit > Preferences > External Tools*
-- Uncheck the checkboxes of JDK, SDK, NDK and Gradle and enter the same paths that were there when the checkboxes were checked. 
+    - Uncheck the checkboxes of JDK, SDK, NDK and Gradle and enter the same paths that were there when the checkboxes were checked. 
+- Set the value of the *JAVA_HOME* environment variable in Windows to the path next to the JDK's checkbox.
+    - Restart Unity.
+    - Toggle the *Export Project* checkbox in the build settings, this will cause the *Resolving Android Dependencies* to restart.
