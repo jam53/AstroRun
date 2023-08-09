@@ -588,10 +588,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Copyright (C) 2020 - 2022 by Jam54 - All Rights Reserved
+  m_text: 'Copyright (C) 2020 by Jam54 - All Rights Reserved
 
-    AstroRun
-    can not be copied and/or distributed without the express permission of Jam54.
+    AstroRun can not
+    be copied and/or distributed without the express permission of Jam54.
 
     The
     name Jam54 and/or AstroRun shall not be used without prior written authorization
