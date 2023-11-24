@@ -28,3 +28,5 @@ Although nowadays most of the work is done by the programmer. The game used to b
 ### [Building the project](/Documentation/BuildingTheGame.md)
 
 ### [Capturing device logs on Android](/Documentation/CaptureAndroidLogs_AdbLogcat.md)
+
+### [Achievements and leaderboards](/Documentation/AchievementsAndLeaderboards.md)
