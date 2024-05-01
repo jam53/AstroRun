@@ -41,3 +41,6 @@ Inside Unity navigate to:
 - Set the value of the *JAVA_HOME* environment variable in Windows to the path next to the JDK's checkbox.
     - Restart Unity.
     - Toggle the *Export Project* checkbox in the build settings, this will cause the *Resolving Android Dependencies* to restart.
+
+## Error during Gradle Sync in Android Studio - Cannot use @TaskAction annotation on method IncrementalTask.taskAction$gradle() because interface ...
+The way to get around this issue is by downgrading to an older version of Android Studio. This approach likely resolves the issue because it also downgrades the version of Gradle bundled with the IDE. I didn't take the time to figure out which version exactly was the latest one that still worked, but using [Android Studio Bumblebee | 2021.1.1 January 25, 2022](https://developer.android.com/studio/archive) I was able to build the exported project from Unity successfully.
