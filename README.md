@@ -6,7 +6,7 @@ AstroRun is an indie game developed by a small team of three people. It's about 
 <br/>
 
 # Playing the game
-You can try out the game for yourself by downloading the APK from [here](https://jamhorn.github.io/Jam54Launcher/7/resources/AstroRun.apk).
+You can try out the game for yourself either by using the [Jam54 Launcher](https://jam54.com/download.html) or by downloading the APK directly from [here](https://jamhorn.github.io/Jam54Launcher/7/resources/AstroRun.apk).
 
 <br/>
 
